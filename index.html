@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KVS Master Dashboard — Adobe Express for Education</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FA0F00'/><text y='.9em' font-size='72' x='15' fill='white' font-weight='900'>A</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js for data visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- GLOBAL SITE HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-wrapper">
+        <div class="adobe-logo-badge">A</div>
+        <div class="brand-title-wrap">
+          <span class="brand-title">KVS Master Dashboard</span>
+          <span class="brand-subtitle">Adobe Express for Education • National Implementation</span>
+        </div>
+      </a>
+
+      <div class="header-live-badge">
+        <span style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span>
+        <span>48,267 Teachers Live • 1,124 KVs</span>
+      </div>
+
+      <div class="header-controls">
+        <div class="role-toggle-group">
+          <button class="role-btn active" onclick="setRole('principal', this)">👨‍💼 Principal View</button>
+          <button class="role-btn" onclick="setRole('ro', this)">🏛️ Regional Officer</button>
+          <button class="role-btn" onclick="setRole('teacher', this)">👩‍🏫 Teacher View</button>
+        </div>
+
+        <button class="btn-header" onclick="exportDashboardExcel()">📥 Export Report</button>
+        <button class="btn-header primary" onclick="window.print()">🖨️ Print Dashboard</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN DASHBOARD CONTENT -->
+  <main class="main-content">
+
+    <!-- TOP FRAMEWORK BANNER -->
+    <div class="framework-top-banner">
+      <div class="framework-top-left">
+        <div class="framework-pill-tag">National Portal</div>
+        <div>
+          <h1 class="framework-top-title">Kendriya Vidyalaya Sangathan — Master Implementation Portal</h1>
+          <p class="framework-top-subtitle" id="activeScopeSubtitle">National KVS View • All 28 Regions Grounded in Semi-Annual Report</p>
+        </div>
+      </div>
+      <div>
+        <span style="background:rgba(255,255,255,0.15);padding:6px 16px;border-radius:9999px;font-size:0.8rem;font-weight:800;">Academic Cycle: 2025–26</span>
+      </div>
+    </div>
+
+    <!-- ==================== STREAMLINED FLOW CONTROL BAR ==================== -->
+    <div class="flow-control-row">
+      <!-- 1. PRINCIPAL -->
+      <div class="flow-step-card principal-card">
+        <div class="p-avatar-circle">👤</div>
+        <div class="p-role-title">PRINCIPAL</div>
+        <div class="p-role-sub">School Admin / RO</div>
+      </div>
+
+      <div class="flow-step-arrow">➔</div>
+
+      <!-- 2. REGION (DROPDOWN) -->
+      <div class="flow-step-card" style="border-color:#86EFAC;">
+        <div class="step-card-header green">
+          <span>1. REGION</span>
+          <span style="font-size:10px;text-transform:none;">(Dropdown) ▼</span>
+        </div>
+        <select id="regionSelect" class="filter-select-lg" onchange="onRegionChange()">
+          <!-- Populated from data.js -->
+        </select>
+        <div class="step-meta-hint">Select to filter entire dashboard by region</div>
+      </div>
+
+      <div class="flow-step-arrow">➔</div>
+
+      <!-- 3. KV CODE / SCHOOL (DROPDOWN) -->
+      <div class="flow-step-card" style="border-color:#FDE047;">
+        <div class="step-card-header yellow">
+          <span>2. KV CODE / SCHOOL</span>
+          <span style="font-size:10px;text-transform:none;">(Dropdown) ▼</span>
+        </div>
+        <select id="kvSelect" class="filter-select-lg" onchange="onKVChange()">
+          <!-- Populated dynamically based on region -->
+        </select>
+        <div class="step-meta-hint">Instant filter by 4-digit KV code or name</div>
+      </div>
+
+      <div class="flow-step-arrow">➔</div>
+
+      <!-- 4. PROGRAM SELECTOR -->
+      <div class="flow-step-card" style="border-color:#FCA5A5;justify-content:center;">
+        <div class="step-card-header red" style="margin-bottom:6px;">
+          <span>PROGRAM LEVEL</span>
+          <span style="font-size:10px;">Select Below ▼</span>
+        </div>
+        <div style="font-size:0.75rem;font-weight:700;color:var(--ink-secondary);line-height:1.3;">
+          Click any program tab below to explore deep dossiers & live analytics.
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== EXECUTIVE KPI RIBBON ==================== -->
+    <div class="kpi-ribbon">
+      <div class="kpi-metric-card">
+        <div class="kpi-icon-bubble blue">👥</div>
+        <div class="kpi-data">
+          <span class="kpi-title">Total Faculty</span>
+          <span class="kpi-number" id="kpiTotalTeachers">48,267</span>
+          <span class="kpi-subtext">Registered across network</span>
+        </div>
+      </div>
+
+      <div class="kpi-metric-card">
+        <div class="kpi-icon-bubble green">🎓</div>
+        <div class="kpi-data">
+          <span class="kpi-title">CPD Attended</span>
+          <span class="kpi-number" id="kpiCpdAttended">7,840</span>
+          <span class="kpi-subtext">Active workshop participants</span>
+        </div>
+      </div>
+
+      <div class="kpi-metric-card">
+        <div class="kpi-icon-bubble red">🏆</div>
+        <div class="kpi-data">
+          <span class="kpi-title">CPD Certified</span>
+          <span class="kpi-number" id="kpiCpdCertified">10,451</span>
+          <span class="kpi-subtext">Verified credentials dispatched</span>
+        </div>
+      </div>
+
+      <div class="kpi-metric-card">
+        <div class="kpi-icon-bubble purple">💻</div>
+        <div class="kpi-data">
+          <span class="kpi-title">DCAIS Milestone</span>
+          <span class="kpi-number" id="kpiDcaisStatus">822 Enrolled</span>
+          <span class="kpi-subtext">Innovation curriculum track</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PROGRAM NAVIGATION TABS ==================== -->
+    <div class="program-nav-tabs">
+      <button class="prog-nav-btn active" data-tab="cpd" onclick="switchProgram('cpd')">
+        <div class="tab-icon-box">🎓</div>
+        <div class="tab-text-box">
+          <h4>Program A: CPD Academy</h4>
+          <p>Continuous Professional Development • Modules 1–6</p>
+        </div>
+      </button>
+
+      <button class="prog-nav-btn" data-tab="dcais" onclick="switchProgram('dcais')">
+        <div class="tab-icon-box">💻</div>
+        <div class="tab-text-box">
+          <h4>Program B: DCAIS Innovation</h4>
+          <p>Digital Creativity & Innovation Skills • Grades 6–8</p>
+        </div>
+      </button>
+
+      <button class="prog-nav-btn" data-tab="insights" onclick="switchProgram('insights')">
+        <div class="tab-icon-box">📊</div>
+        <div class="tab-text-box">
+          <h4>Data Insights & Action Radar</h4>
+          <p>Remediation Radar, Funnels & Leaderboards</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- ==================== PANEL A: CPD ACADEMY ==================== -->
+    <div id="panel-cpd" class="workspace-panel active">
+      
+      <!-- CPD OVERVIEW & FUNNEL CHARTS -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>Overview Page (Page-2) — CPD Progression & Funnel Analytics</h3>
+            <p>Module completion progression across CPD 1 to CPD 6 grounded in Semi Annual Report</p>
+          </div>
+          <span class="status-pill yes">2025–26 Verified</span>
+        </div>
+
+        <!-- CHARTS ROW -->
+        <div class="charts-grid-2">
+          <!-- CHART 1: CPD Funnel -->
+          <div class="chart-box">
+            <div class="chart-header">
+              <span>📊 CPD Certification Funnel (Drop-off Curve)</span>
+              <span style="font-size:0.75rem;color:var(--adobe-red);font-weight:800;">52% at CPD 1</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="cpdFunnelChart"></canvas>
+            </div>
+          </div>
+
+          <!-- CHART 2: Teacher Categories Pie -->
+          <div class="chart-box">
+            <div class="chart-header">
+              <span>🥧 Teacher Category Distribution (Attendance)</span>
+              <span style="font-size:0.75rem;color:var(--success);font-weight:800;">7,840 Total</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="teacherCategoryChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- CPD PROGRESSION TABLE -->
+        <div class="data-table-wrap">
+          <table class="app-table">
+            <thead>
+              <tr>
+                <th>Module ID</th>
+                <th>Accredited Module Name</th>
+                <th>Workshop Attended</th>
+                <th>Submitted</th>
+                <th>Eligible Teachers</th>
+                <th>Received Certificate</th>
+                <th>Conversion Rate</th>
+              </tr>
+            </thead>
+            <tbody id="cpdOverviewTableBody">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CPD TEACHER ROSTER DOSSIER -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>CPD Module Detailed Page (Page-3) — Teacher Roster Dossier</h3>
+            <p>Individual educator attendance, assignment submission, eligibility, and certificate status</p>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;">
+            <select id="moduleFilterSelect" class="filter-select-lg" style="width:160px;" onchange="renderTeacherRoster()">
+              <option value="All">All Modules</option>
+              <option value="CPD 1">CPD 1</option>
+              <option value="CPD 2">CPD 2</option>
+              <option value="CPD 3">CPD 3</option>
+              <option value="CPD 4">CPD 4</option>
+              <option value="CPD 5">CPD 5</option>
+              <option value="CPD 6">CPD 6</option>
+            </select>
+            <input type="text" id="teacherSearchInput" class="filter-select-lg" style="width:260px;" placeholder="Search teacher, subject, school..." onkeyup="renderTeacherRoster()">
+          </div>
+        </div>
+
+        <div class="data-table-wrap">
+          <table class="app-table">
+            <thead>
+              <tr>
+                <th>Teacher Name</th>
+                <th>Category</th>
+                <th>Subject</th>
+                <th>School & Code</th>
+                <th>Assigned Module</th>
+                <th>Attended</th>
+                <th>Submitted</th>
+                <th>Certificate</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="teacherRosterTableBody">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CPD CONTENT / OUTPUT RESOURCES -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>CPD Content / Output Page (Page-4) — Curriculum & Creative Resources</h3>
+            <p>Direct integration with NCERT digital worksheets, assignments, design templates, and portfolios</p>
+          </div>
+        </div>
+
+        <div class="output-tiles-grid">
+          <a href="https://express.adobe.com" target="_blank" class="output-tile-item">
+            <div class="tile-icon-circle">📑</div>
+            <h5>NCERT Digital Worksheets</h5>
+            <p>Standardized interactive printable PDF worksheets aligned with NEP 2020</p>
+          </a>
+
+          <a href="https://express.adobe.com" target="_blank" class="output-tile-item">
+            <div class="tile-icon-circle">📝</div>
+            <h5>Classroom Assignments</h5>
+            <p>Cross-curricular creative prompts and rubrics for grades 6 to 10</p>
+          </a>
+
+          <a href="https://express.adobe.com" target="_blank" class="output-tile-item">
+            <div class="tile-icon-circle">🎨</div>
+            <h5>Creative Resources</h5>
+            <p>Pre-built Adobe Express graphic templates, posters, and presentation decks</p>
+          </a>
+
+          <a href="https://express.adobe.com" target="_blank" class="output-tile-item">
+            <div class="tile-icon-circle">🔗</div>
+            <h5>Gallery Link / Output</h5>
+            <p>Digital portfolio links and teacher creative submission repository</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== PANEL B: DCAIS INNOVATION ==================== -->
+    <div id="panel-dcais" class="workspace-panel">
+      
+      <!-- DCAIS STATUS & ADOPTION -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>Module Status Page (Page-2) — DCAIS Adoption Stages</h3>
+            <p>Tracking 822 Kendriya Vidyalayas across orientation, curriculum, projects, and showcase</p>
+          </div>
+          <span class="status-pill yes">822 KVs Active</span>
+        </div>
+
+        <div class="charts-grid-2">
+          <!-- DCAIS Funnel Chart -->
+          <div class="chart-box">
+            <div class="chart-header">
+              <span>📊 DCAIS 4-Stage Adoption Funnel (Schools)</span>
+              <span style="font-size:0.75rem;color:var(--navy-dark);font-weight:800;">822 Tracked</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="dcaisAdoptionChart"></canvas>
+            </div>
+          </div>
+
+          <!-- DCAIS Table -->
+          <div class="data-table-wrap">
+            <table class="app-table">
+              <thead>
+                <tr>
+                  <th>Stage</th>
+                  <th>DCAIS Milestone</th>
+                  <th>Active Schools</th>
+                  <th>Total Enrolled</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="dcaisStatusTableBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- DCAIS GRADE-LEVEL GALLERY SHOWCASE -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>Module Detailed Page (Page-3) — Gallery Links Created by Grade</h3>
+            <p>Validation of middle-school digital creative outputs and live Express showcase links</p>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+          <div style="background:var(--surface-subtle);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:22px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <h4 style="font-size:1.1rem;font-weight:900;">Grade 6 Innovation</h4>
+              <span class="status-pill yes">✓ Gallery Live</span>
+            </div>
+            <p style="font-size:0.84rem;color:var(--ink-secondary);margin-bottom:14px;">Flyer & Poster Design • 28 Projects Submitted</p>
+            <div style="font-size:0.8rem;color:var(--ink-muted);margin-bottom:16px;">Verified by: <strong>Khushbu Agrawal (PRT Eng)</strong></div>
+            <a href="https://express.adobe.com" target="_blank" class="btn-header primary" style="width:100%;justify-content:center;">View Student Outputs ↗</a>
+          </div>
+
+          <div style="background:var(--surface-subtle);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:22px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <h4 style="font-size:1.1rem;font-weight:900;">Grade 7 Innovation</h4>
+              <span class="status-pill yes">✓ Gallery Live</span>
+            </div>
+            <p style="font-size:0.84rem;color:var(--ink-secondary);margin-bottom:14px;">Infographic & Video Presentation • 34 Projects</p>
+            <div style="font-size:0.8rem;color:var(--ink-muted);margin-bottom:16px;">Verified by: <strong>Ravindra Sisodia (TGT SST)</strong></div>
+            <a href="https://express.adobe.com" target="_blank" class="btn-header primary" style="width:100%;justify-content:center;">View Student Outputs ↗</a>
+          </div>
+
+          <div style="background:var(--surface-subtle);border:1.5px solid var(--border-light);border-radius:var(--radius-md);padding:22px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <h4 style="font-size:1.1rem;font-weight:900;">Grade 8 Innovation</h4>
+              <span class="status-pill pending">● In Progress</span>
+            </div>
+            <p style="font-size:0.84rem;color:var(--ink-secondary);margin-bottom:14px;">Digital Storytelling • 18 Projects In Review</p>
+            <div style="font-size:0.8rem;color:var(--ink-muted);margin-bottom:16px;">Teacher In-charge: <strong>Shweta Yadav (PRT Eng)</strong></div>
+            <button class="btn-header" style="width:100%;justify-content:center;border-color:var(--adobe-red);color:var(--adobe-red);" onclick="showToast('Reminder sent to Grade 8 coordinator to finalize gallery.')">Send Coordinator Reminder</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- DCAIS DETAILED VIEW TILES -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>DCAIS Detailed View (Page-4) — Verification & Student Portfolios</h3>
+            <p>School-level gallery links, student creative packages, and implementation status</p>
+          </div>
+        </div>
+
+        <div class="output-tiles-grid" style="grid-template-columns:repeat(3,1fr);">
+          <div class="output-tile-item" onclick="showToast('Generated school gallery preview token: express.adobe.com/kvs-showcase')">
+            <div class="tile-icon-circle" style="background:#DBEAFE;color:#1E40AF;">🖼️</div>
+            <h5>Gallery Preview</h5>
+            <p>Live student web gallery showcase link for school community</p>
+          </div>
+
+          <div class="output-tile-item" onclick="showToast('Accessing 1,747 verified student creative project submissions...')">
+            <div class="tile-icon-circle" style="background:#DCFCE7;color:#166534;">🎒</div>
+            <h5>Student Outputs</h5>
+            <p>Posters, Infographics, Express Videos, and Web Portfolios</p>
+          </div>
+
+          <div class="output-tile-item" onclick="showToast('School DCAIS Implementation Milestone: Level 4 Certified')">
+            <div class="tile-icon-circle" style="background:#FEF3C7;color:#854D0E;">📊</div>
+            <h5>Implementation Status</h5>
+            <p>School accreditation badges and digital milestone roadmap</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== PANEL C: DATA INSIGHTS & ACTION RADAR ==================== -->
+    <div id="panel-insights" class="workspace-panel">
+      
+      <!-- 6 ACTION CARDS -->
+      <div class="app-card" style="background:#FEFCE8;border-color:#FEF08A;">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3 style="color:#854D0E;">DATA INSIGHTS & ACTION (EXECUTIVE REMEDIATION RADAR)</h3>
+            <p>Algorithmic bottleneck detection, gap analysis, and 1-click administrative interventions</p>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">📊</span>
+              <strong style="color:#854D0E;font-size:0.95rem;">Program Progress</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              National tracking active across 28 Regions & 1,124 KVs. Overall certification index at 68%.
+            </p>
+            <button class="btn-header" style="font-size:0.75rem;padding:4px 10px;" onclick="showToast('Dispatched national progress report summary to ROs')">View Progress Report ↗</button>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">📈</span>
+              <strong style="color:#854D0E;font-size:0.95rem;">Performance Comparison</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              Benchmarking regional conversion velocity: Tinsukia (#1), Ranchi (#2), Jaipur (#3).
+            </p>
+            <button class="btn-header" style="font-size:0.75rem;padding:4px 10px;" onclick="showToast('Downloaded Inter-regional benchmark matrix')">Benchmark Matrix ↗</button>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">⚠️</span>
+              <strong style="color:var(--danger);font-size:0.95rem;">Gaps & Pending Radar</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              Alert: 63% drop-off between CPD 1 & 2. Over 3,426 educators need activation to Module 2.
+            </p>
+            <button class="btn-header" style="font-size:0.75rem;padding:4px 10px;border-color:var(--adobe-red);color:var(--adobe-red);" onclick="showToast('Dispatched automated CPD 2 enrollment invitations to 3,426 teachers')">⚡ Bulk Nudge CPD 2</button>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">📋</span>
+              <strong style="color:#854D0E;font-size:0.95rem;">Follow-up Required</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              Identified 18 teachers in selected scope who attended workshops but have not submitted assignments.
+            </p>
+            <button class="btn-header" style="font-size:0.75rem;padding:4px 10px;" onclick="showToast('Generated pre-filled WhatsApp follow-up roster')">View Follow-up List ↗</button>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">🏆</span>
+              <strong style="color:#854D0E;font-size:0.95rem;">Top Performing Schools</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              Recognition for KV 1002, KV 1046, and KV 1759 for 100% faculty accreditation and gallery launches.
+            </p>
+            <button class="btn-header" style="font-size:0.75rem;padding:4px 10px;" onclick="showToast('Issued digital appreciation badges to top 10 KVs')">Send Appreciation ↗</button>
+          </div>
+
+          <div style="background:#FFFFFF;border:1px solid #FEF08A;border-radius:10px;padding:16px;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:22px;">🎯</span>
+              <strong style="color:var(--adobe-red);font-size:0.95rem;">Action Plan & Intervention</strong>
+            </div>
+            <p style="font-size:0.82rem;color:var(--ink-secondary);line-height:1.4;margin-bottom:12px;">
+              Execute 1-click WhatsApp and Email reminders to pending educators across all registered schools.
+            </p>
+            <button class="btn-header primary" style="font-size:0.75rem;padding:4px 10px;" onclick="showToast('Dispatched personalized notifications to all pending faculty!')">⚡ Trigger Action Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- REGIONAL PERFORMANCE LEADERBOARD TABLE & BAR CHART -->
+      <div class="app-card">
+        <div class="card-title-row">
+          <div class="card-heading">
+            <h3>Regional Performance Leaderboard (Top 10 Regions)</h3>
+            <p>Comparative certification output, active KVs, and faculty conversion rates</p>
+          </div>
+        </div>
+
+        <div class="charts-grid-2">
+          <!-- Regional Bar Chart -->
+          <div class="chart-box">
+            <div class="chart-header">
+              <span>📊 Top Regions by Dispatched Certificates</span>
+              <span style="font-size:0.75rem;color:var(--navy-dark);font-weight:800;">Top 7</span>
+            </div>
+            <div class="chart-canvas-wrap">
+              <canvas id="regionalLeaderboardChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Leaderboard Table -->
+          <div class="data-table-wrap">
+            <table class="app-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Region</th>
+                  <th>Faculty</th>
+                  <th>KVs</th>
+                  <th>Attended</th>
+                  <th>Certified</th>
+                  <th>Conversion</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="insightsLeaderboardBody">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ==================== KEY BENEFITS SECTION ==================== -->
+    <div class="app-card" style="background:#F0F9FF;border-color:#BAE6FD;margin-top:20px;">
+      <div class="card-title-row" style="margin-bottom:14px;">
+        <div class="card-heading">
+          <h3 style="color:#0369A1;">KEY BENEFITS OF UNIFIED KVS DASHBOARD</h3>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;">
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">🏫</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">Single Platform</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">CPD & DCAIS unified</div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">👁️</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">End-to-End Visibility</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">Training to student impact</div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">⏱️</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">Saves Time</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">Zero manual Excel collation</div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">📊</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">Data-Driven</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">Real-time telemetry on 48k</div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">🤝</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">High Engagement</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">Badges & verified credentials</div>
+        </div>
+
+        <div style="background:#FFFFFF;border:1px solid #BAE6FD;border-radius:10px;padding:12px 10px;text-align:center;">
+          <div style="font-size:24px;margin-bottom:4px;">🏅</div>
+          <div style="font-size:0.78rem;font-weight:800;color:var(--navy-dark);margin-bottom:2px;">Program Success</div>
+          <div style="font-size:0.72rem;color:var(--ink-muted);">High curriculum adoption</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-flow-tracker">
+      Flow: <span>Region</span> ➔ <span>KV Code / School</span> ➔ <span>Program (CPD / DCAIS)</span> ➔ <span>Module / Teacher Dossier</span> ➔ <span>Implementation & Output</span> ➔ <span>Action</span>
+    </div>
+    <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:6px;">
+      © 2026 Adobe Express for Education × Kendriya Vidyalaya Sangathan (KVS). All rights reserved.
+    </p>
+    <p style="font-size:0.75rem;color:rgba(255,255,255,0.45);">
+      Official KVS Implementation Dashboard • Grounded in Semi Annual Report.xlsx
+    </p>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+  
+  <!-- CERTIFICATE MODAL -->
+  <div id="certModal" class="modal-overlay" onclick="closeCertModal()">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header-row">
+        <h4>Accredited Certificate Preview</h4>
+        <button class="btn-close-modal" onclick="closeCertModal()">✕</button>
+      </div>
+
+      <div style="border:2px solid var(--border-light);border-radius:12px;padding:28px;text-align:center;background:#FAF8F5;margin-bottom:20px;">
+        <div style="font-size:11px;font-weight:800;color:var(--adobe-red);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Certificate of Completion</div>
+        <h2 id="certModalTeacherName" style="font-size:1.6rem;font-weight:900;color:var(--navy-dark);margin-bottom:4px;">Teacher Name</h2>
+        <p style="font-size:0.85rem;color:var(--ink-secondary);margin-bottom:12px;" id="certModalSchoolName">KV School Name</p>
+        <p style="font-size:0.85rem;line-height:1.5;color:var(--ink-secondary);margin-bottom:18px;">
+          has successfully completed accredited professional training in<br>
+          <strong id="certModalModuleName" style="color:var(--navy-dark);font-size:1rem;">CPD 1: Digital Creativity Foundations</strong><br>
+          under the Adobe Express for Education × Kendriya Vidyalaya Sangathan Initiative.
+        </p>
+        <div style="display:flex;justify-content:center;gap:36px;font-size:0.75rem;font-weight:700;color:var(--ink-muted);border-top:1px solid #E2E8F0;padding-top:14px;">
+          <span>Dispatched: Verified</span>
+          <span>Credential ID: ADV-KVS-2026</span>
+          <span>Status: Certified</span>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;gap:12px;">
+        <button class="btn-header" onclick="closeCertModal()">Close</button>
+        <button class="btn-header primary" onclick="showToast('Downloaded official PDF certificate document!');closeCertModal();">Download Certificate PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- REMINDER MODAL -->
+  <div id="reminderModal" class="modal-overlay" onclick="closeReminderModal()">
+    <div class="modal-card" onclick="event.stopPropagation()">
+      <div class="modal-header-row">
+        <h4>Send Assignment Reminder</h4>
+        <button class="btn-close-modal" onclick="closeReminderModal()">✕</button>
+      </div>
+
+      <div style="margin-bottom:16px;">
+        <p style="font-size:0.85rem;color:var(--ink-secondary);margin-bottom:8px;">
+          Reminding: <strong id="reminderTeacherName">Teacher Name</strong> (<span id="reminderEmail">email</span>)<br>
+          Module: <strong id="reminderModuleName">CPD 1</strong>
+        </p>
+        <label style="font-size:0.75rem;font-weight:800;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:4px;">Personalized Message:</label>
+        <textarea id="reminderMessageText" rows="4" style="width:100%;padding:10px;border:1.5px solid var(--border-light);border-radius:8px;font-size:0.85rem;outline:none;font-family:inherit;"></textarea>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;gap:12px;">
+        <button class="btn-header" onclick="closeReminderModal()">Cancel</button>
+        <button class="btn-header primary" onclick="copyReminderMessage()">Copy for WhatsApp 📋</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="appToast" class="app-toast">Notification message</div>
+
+  <!-- SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
