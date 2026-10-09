@@ -358,7 +358,106 @@
       text-transform: uppercase;
     }
 
-    /* ==================== 2 BIG OPTIONS: CPD & DCAIS ==================== */
+    /* ==================== MULTI-VIEW CONTAINERS & NAVIGATION ==================== */
+    .view-container {
+      animation: fadeIn 0.25s ease;
+    }
+
+    .view-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-nav-back:hover {
+      border-color: var(--red);
+      color: var(--red);
+      background: var(--red-subtle);
+    }
+
+    .btn-nav-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--slate-100);
+      border: 1.5px solid var(--slate-200);
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--slate-800);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-nav-switch:hover {
+      background: #FFFFFF;
+      border-color: var(--slate-400);
+    }
+
+    .btn-print-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--slate-900);
+      color: #FFFFFF;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+      white-space: nowrap;
+    }
+
+    .btn-print-action:hover {
+      background: var(--red);
+      transform: translateY(-1px);
+    }
+
+    .btn-csv-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFFFFF;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-200);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-csv-action:hover {
+      border-color: var(--slate-400);
+      color: var(--slate-900);
+    }
+
+    /* ==================== 2 BIG OPTIONS ON HOME PAGE ==================== */
     .program-choice-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -367,29 +466,46 @@
       animation: fadeIn 0.25s ease;
     }
 
-    .choice-card {
+    .portal-card {
       background: #FFFFFF;
       border: 2px solid var(--slate-200);
       border-radius: var(--radius-xl);
-      padding: 24px 28px;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
+      padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
     }
 
-    .choice-card:hover {
+    .portal-card:hover {
       border-color: var(--red);
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-lg);
     }
 
-    .choice-card.active {
-      border-color: var(--red);
-      background: #FFFDFD;
-      box-shadow: 0 8px 26px rgba(250, 15, 0, 0.12);
+    .btn-enter-portal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--red);
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+      margin-top: 16px;
+      box-shadow: 0 4px 14px rgba(250, 15, 0, 0.25);
+    }
+
+    .btn-enter-portal:hover {
+      background: var(--red-hover);
+      transform: translateY(-1px);
     }
 
     .choice-card-top {
@@ -412,42 +528,6 @@
       border-radius: var(--radius-full);
       background: var(--slate-100);
       color: var(--slate-600);
-    }
-
-    .choice-card.active .choice-badge {
-      background: var(--red-subtle);
-      color: var(--red);
-    }
-
-    .choice-card h3 {
-      font-size: 1.35rem;
-      font-weight: 900;
-      color: var(--slate-900);
-      letter-spacing: -0.015em;
-      margin-bottom: 6px;
-    }
-
-    .choice-card p {
-      font-size: 0.88rem;
-      color: var(--slate-600);
-      line-height: 1.45;
-      margin-bottom: 16px;
-    }
-
-    .choice-stats {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 14px;
-      border-top: 1px solid var(--slate-100);
-      font-size: 0.84rem;
-      font-weight: 800;
-      color: var(--slate-700);
-    }
-
-    .choice-arrow {
-      color: var(--red);
-      font-weight: 900;
     }
 
     /* ==================== DETAILS SECTIONS ==================== */

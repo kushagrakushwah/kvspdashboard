@@ -371,7 +371,106 @@
       text-transform: uppercase;
     }
 
-    /* ==================== 2 BIG OPTIONS: CPD & DCAIS ==================== */
+    /* ==================== MULTI-VIEW CONTAINERS & NAVIGATION ==================== */
+    .view-container {
+      animation: fadeIn 0.25s ease;
+    }
+
+    .view-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-nav-back:hover {
+      border-color: var(--red);
+      color: var(--red);
+      background: var(--red-subtle);
+    }
+
+    .btn-nav-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--slate-100);
+      border: 1.5px solid var(--slate-200);
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--slate-800);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-nav-switch:hover {
+      background: #FFFFFF;
+      border-color: var(--slate-400);
+    }
+
+    .btn-print-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--slate-900);
+      color: #FFFFFF;
+      border: none;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.15);
+      white-space: nowrap;
+    }
+
+    .btn-print-action:hover {
+      background: var(--red);
+      transform: translateY(-1px);
+    }
+
+    .btn-csv-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFFFFF;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-200);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-csv-action:hover {
+      border-color: var(--slate-400);
+      color: var(--slate-900);
+    }
+
+    /* ==================== 2 BIG OPTIONS ON HOME PAGE ==================== */
     .program-choice-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -380,29 +479,46 @@
       animation: fadeIn 0.25s ease;
     }
 
-    .choice-card {
+    .portal-card {
       background: #FFFFFF;
       border: 2px solid var(--slate-200);
       border-radius: var(--radius-xl);
-      padding: 24px 28px;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: var(--shadow-sm);
+      padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
     }
 
-    .choice-card:hover {
+    .portal-card:hover {
       border-color: var(--red);
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-lg);
     }
 
-    .choice-card.active {
-      border-color: var(--red);
-      background: #FFFDFD;
-      box-shadow: 0 8px 26px rgba(250, 15, 0, 0.12);
+    .btn-enter-portal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--red);
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-size: 0.92rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+      margin-top: 16px;
+      box-shadow: 0 4px 14px rgba(250, 15, 0, 0.25);
+    }
+
+    .btn-enter-portal:hover {
+      background: var(--red-hover);
+      transform: translateY(-1px);
     }
 
     .choice-card-top {
@@ -425,42 +541,6 @@
       border-radius: var(--radius-full);
       background: var(--slate-100);
       color: var(--slate-600);
-    }
-
-    .choice-card.active .choice-badge {
-      background: var(--red-subtle);
-      color: var(--red);
-    }
-
-    .choice-card h3 {
-      font-size: 1.35rem;
-      font-weight: 900;
-      color: var(--slate-900);
-      letter-spacing: -0.015em;
-      margin-bottom: 6px;
-    }
-
-    .choice-card p {
-      font-size: 0.88rem;
-      color: var(--slate-600);
-      line-height: 1.45;
-      margin-bottom: 16px;
-    }
-
-    .choice-stats {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 14px;
-      border-top: 1px solid var(--slate-100);
-      font-size: 0.84rem;
-      font-weight: 800;
-      color: var(--slate-700);
-    }
-
-    .choice-arrow {
-      color: var(--red);
-      font-weight: 900;
     }
 
     /* ==================== DETAILS SECTIONS ==================== */
@@ -804,217 +884,308 @@
     </div>
   </header>
 
-  <!-- ==================== MAIN CONTENT (ALL ON THE SAME PAGE) ==================== -->
+  <!-- ==================== MAIN CONTENT (SEPARATE VIEWS / PAGES) ==================== -->
   <main class="main-wrapper">
 
-    <!-- STEP 1 & 2: SELECTOR CARD -->
-    <div class="selector-card">
-      <div class="selector-title-row">
-        <h2>Select Your Institution</h2>
-        <p>Choose your KVS Region and School to view your school's personalized report.</p>
-      </div>
-
-      <div class="selector-inputs-grid">
-        <div class="field-group">
-          <label>1. Select Region</label>
-          <select id="regionSelect" class="selector-select" onchange="onRegionChange()">
-            <option value="">Choose Region...</option>
-            <!-- Populated dynamically -->
-          </select>
+    <!-- ==================== VIEW 1: HOME / SELECTION ==================== -->
+    <div id="viewHome" class="view-container active-view">
+      <!-- Selector Card -->
+      <div class="selector-card">
+        <div class="selector-title-row">
+          <h2>Select Your Institution</h2>
+          <p>Choose your KVS Region and School to access your school's dedicated dashboard.</p>
         </div>
 
-        <div class="field-group">
-          <label>2. Select KV School (KV Code)</label>
-          <select id="schoolSelect" class="selector-select" disabled onchange="onSchoolChange()">
-            <option value="">First choose a region...</option>
-          </select>
+        <div class="selector-inputs-grid">
+          <div class="field-group">
+            <label>1. Select Region</label>
+            <select id="regionSelect" class="selector-select" onchange="onRegionChange()">
+              <option value="">Choose Region...</option>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label>2. Select KV School (KV Code)</label>
+            <select id="schoolSelect" class="selector-select" disabled onchange="onSchoolChange()">
+              <option value="">First choose a region...</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick Select Region Chips -->
+        <div class="quick-chips-row">
+          <span class="quick-chips-label">Quick Region:</span>
+          <button class="chip-btn" onclick="quickSelectRegion('Mumbai')">Mumbai</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Delhi')">Delhi</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Chennai')">Chennai</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Bengaluru')">Bengaluru</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Ahmedabad')">Ahmedabad</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Jammu')">Jammu</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Kolkata')">Kolkata</button>
+          <button class="chip-btn" onclick="quickSelectRegion('Hyderabad')">Hyderabad</button>
         </div>
       </div>
 
-      <!-- Quick Select Region Chips -->
-      <div class="quick-chips-row">
-        <span class="quick-chips-label">Quick Region:</span>
-        <button class="chip-btn" onclick="quickSelectRegion('Mumbai')">Mumbai</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Delhi')">Delhi</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Chennai')">Chennai</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Bengaluru')">Bengaluru</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Ahmedabad')">Ahmedabad</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Jammu')">Jammu</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Kolkata')">Kolkata</button>
-        <button class="chip-btn" onclick="quickSelectRegion('Hyderabad')">Hyderabad</button>
+      <!-- The 2 Big Options: CPD & DCAIS (Appears when school is selected) -->
+      <div id="homeProgramsCard" style="display:none;margin-top:24px;">
+        <div style="background:var(--slate-100);border:1.5px solid var(--slate-200);border-radius:var(--radius-lg);padding:14px 22px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:38px;height:38px;background:var(--slate-900);color:#FFFFFF;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:0.8rem;" id="homeSelectedSchoolBadge">KV</div>
+            <div>
+              <div style="font-size:1.05rem;font-weight:900;color:var(--slate-900);" id="homeSelectedSchoolTitle">School Name</div>
+              <div style="font-size:0.75rem;color:var(--slate-600);font-weight:700;" id="homeSelectedSchoolRegion">Region</div>
+            </div>
+          </div>
+          <span style="font-size:0.75rem;font-weight:800;text-transform:uppercase;color:var(--red);background:var(--red-subtle);padding:5px 14px;border-radius:var(--radius-full);border:1px solid var(--red-border);">Choose Program to Enter Below</span>
+        </div>
+
+        <div class="program-choice-grid">
+          <!-- Option 1: CPD -->
+          <div class="portal-card">
+            <div>
+              <div class="choice-card-top">
+                <div class="choice-icon">🎓</div>
+                <span class="choice-badge">Teacher Training</span>
+              </div>
+              <h3 style="font-size:1.45rem;font-weight:900;color:var(--slate-900);margin-bottom:8px;">CPD Academy</h3>
+              <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.5;margin-bottom:14px;">
+                Continuous Professional Development (Modules 1–6), certification roster, and teacher assignment tracking.
+              </p>
+              <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--radius-md);padding:10px 14px;font-size:0.85rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
+                📊 Faculty Status: <span id="homeCpdStats" style="color:var(--red);">0 Certified • 0 Attended</span>
+              </div>
+            </div>
+            <button class="btn-enter-portal" onclick="navigateTo('cpd')">
+              <span>Open CPD Portal</span>
+              <span>➔</span>
+            </button>
+          </div>
+
+          <!-- Option 2: DCAIS -->
+          <div class="portal-card">
+            <div>
+              <div class="choice-card-top">
+                <div class="choice-icon">🚀</div>
+                <span class="choice-badge">School & Student Innovation</span>
+              </div>
+              <h3 style="font-size:1.45rem;font-weight:900;color:var(--slate-900);margin-bottom:8px;">DCAIS Innovation</h3>
+              <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.5;margin-bottom:14px;">
+                Digital Creativity & Innovation Skills (Stages M1–M4), classroom projects (Grades 6–8), and student output.
+              </p>
+              <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--radius-md);padding:10px 14px;font-size:0.85rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
+                🚀 School Status: <span id="homeDcaisStats" style="color:var(--blue);">Stage M1 Active • 0 Students</span>
+              </div>
+            </div>
+            <button class="btn-enter-portal" style="background:var(--slate-900);" onclick="navigateTo('dcais')">
+              <span>Open DCAIS Portal</span>
+              <span>➔</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- ================================================================
-         SCHOOL CONTENT: REVEALS ON THE SAME PAGE AS REQUESTED!
-         ================================================================ -->
-    <div id="schoolSection" style="display:none;">
+    <!-- ==================== VIEW 2: DEDICATED CPD PORTAL ==================== -->
+    <div id="viewCpd" class="view-container" style="display:none;">
+      <!-- Navigation Bar -->
+      <div class="view-nav-bar">
+        <button class="btn-nav-back" onclick="navigateTo('home')">
+          <span>← Back to School Selector</span>
+        </button>
+        <button class="btn-nav-switch" onclick="navigateTo('dcais')">
+          <span>Switch to DCAIS Innovation 🚀</span>
+        </button>
+      </div>
 
-      <!-- 1. PERSONALIZED SCHOOL SUMMARY -->
+      <!-- Personalized School Summary Banner -->
       <div class="school-summary-banner">
         <div class="school-summary-left">
           <div class="kv-badge-square">
             <span>KV</span>
-            <span id="schoolCodeBadge">1006</span>
+            <span id="cpdSchoolCodeBadge">1006</span>
           </div>
           <div>
-            <h1 class="school-name-title" id="schoolNameTitle">Kendriya Vidyalaya School Name</h1>
+            <h1 class="school-name-title" id="cpdSchoolNameTitle">Kendriya Vidyalaya School Name</h1>
             <div class="school-meta-tags">
-              <span class="tag-pill" id="schoolRegionTag">Region</span>
-              <span class="tag-pill green" id="schoolRatingTag">Rating: A+</span>
-              <span class="tag-pill blue" id="schoolDcaisTag">DCAIS: M2 Active</span>
+              <span class="tag-pill" id="cpdSchoolRegionTag">Region</span>
+              <span class="tag-pill green" id="cpdSchoolRatingTag">Rating: A+</span>
+              <span class="tag-pill blue">CPD Teacher Academy</span>
             </div>
           </div>
         </div>
 
-        <div class="school-summary-kpis">
-          <div class="mini-kpi">
-            <span class="mini-kpi-val" id="sumFaculty">42</span>
-            <span class="mini-kpi-lbl">Faculty</span>
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+          <div class="school-summary-kpis">
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="cpdSumFaculty">42</span>
+              <span class="mini-kpi-lbl">Faculty</span>
+            </div>
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="cpdSumCertified" style="color:var(--red);">12</span>
+              <span class="mini-kpi-lbl">Certified</span>
+            </div>
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="cpdSumAttended">18</span>
+              <span class="mini-kpi-lbl">Attended</span>
+            </div>
           </div>
-          <div class="mini-kpi">
-            <span class="mini-kpi-val" id="sumCertified">12</span>
-            <span class="mini-kpi-lbl">Certified</span>
-          </div>
-          <div class="mini-kpi">
-            <span class="mini-kpi-val" id="sumStage">M2</span>
-            <span class="mini-kpi-lbl">DCAIS Stage</span>
+
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <button class="btn-print-action" onclick="printSchoolReport('cpd')">
+              <span>🖨️ Print School CPD Report</span>
+            </button>
+            <button class="btn-csv-action" onclick="exportSchoolCsv('cpd')">
+              <span>📥 Export CSV Roster</span>
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- 2. THE TWO BIG OPTIONS: CPD & DCAIS -->
-      <div class="program-choice-grid">
-        <!-- CPD OPTION CARD -->
-        <div class="choice-card active" id="btnChoiceCpd" onclick="selectProgram('cpd')">
-          <div class="choice-card-top">
-            <div class="choice-icon">🎓</div>
-            <span class="choice-badge">Teacher Training</span>
+      <!-- CPD Analytics & Roster -->
+      <div class="charts-row">
+        <div class="chart-box">
+          <h4>Teacher Category Distribution</h4>
+          <div class="canvas-wrap"><canvas id="chartCpdCat"></canvas></div>
+        </div>
+        <div class="chart-box">
+          <h4>CPD Completion Funnel (Modules 1–6)</h4>
+          <div class="canvas-wrap"><canvas id="chartCpdFunnel"></canvas></div>
+        </div>
+      </div>
+
+      <div class="table-box">
+        <div class="table-header-row">
+          <div>
+            <h4>Teacher Faculty Roster & Certification Status</h4>
+            <p>Real registered teachers for this school from Semi Annual Report.xlsx</p>
           </div>
-          <h3>CPD Academy</h3>
-          <p>Continuous Professional Development (Modules 1–6), certification roster, and teacher assignment tracking.</p>
-          <div class="choice-stats">
-            <span id="cpdChoiceStats">12 Certified • 18 Attended</span>
-            <span class="choice-arrow" id="arrowCpd">● Viewing Details ↓</span>
+          <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
+        </div>
+
+        <div class="table-scroll">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Teacher Name</th>
+                <th>Category</th>
+                <th>Subject</th>
+                <th>Module</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="rosterTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== VIEW 3: DEDICATED DCAIS PORTAL ==================== -->
+    <div id="viewDcais" class="view-container" style="display:none;">
+      <!-- Navigation Bar -->
+      <div class="view-nav-bar">
+        <button class="btn-nav-back" onclick="navigateTo('home')">
+          <span>← Back to School Selector</span>
+        </button>
+        <button class="btn-nav-switch" onclick="navigateTo('cpd')">
+          <span>Switch to CPD Academy 🎓</span>
+        </button>
+      </div>
+
+      <!-- Personalized School Summary Banner -->
+      <div class="school-summary-banner">
+        <div class="school-summary-left">
+          <div class="kv-badge-square" style="background:#1E1B4B;">
+            <span>KV</span>
+            <span id="dcaisSchoolCodeBadge">1006</span>
+          </div>
+          <div>
+            <h1 class="school-name-title" id="dcaisSchoolNameTitle">Kendriya Vidyalaya School Name</h1>
+            <div class="school-meta-tags">
+              <span class="tag-pill" id="dcaisSchoolRegionTag">Region</span>
+              <span class="tag-pill blue" id="dcaisSchoolStageTag">DCAIS: M2 Active</span>
+              <span class="tag-pill green">Innovation Program</span>
+            </div>
           </div>
         </div>
 
-        <!-- DCAIS OPTION CARD -->
-        <div class="choice-card" id="btnChoiceDcais" onclick="selectProgram('dcais')">
-          <div class="choice-card-top">
-            <div class="choice-icon">🚀</div>
-            <span class="choice-badge">School & Student Innovation</span>
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+          <div class="school-summary-kpis">
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="dcaisSumFaculty">42</span>
+              <span class="mini-kpi-lbl">Faculty</span>
+            </div>
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="dcaisSumStage" style="color:var(--blue);">M2</span>
+              <span class="mini-kpi-lbl">Stage</span>
+            </div>
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="dcaisSumStudents" style="color:var(--green);">14</span>
+              <span class="mini-kpi-lbl">Students</span>
+            </div>
           </div>
-          <h3>DCAIS Innovation</h3>
-          <p>Digital Creativity & Innovation Skills (Stages M1–M4), classroom projects (Grades 6–8), and student output.</p>
-          <div class="choice-stats">
-            <span id="dcaisChoiceStats">Stage M2 Active • 14 Students</span>
-            <span class="choice-arrow" id="arrowDcais">Click to View ↓</span>
+
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <button class="btn-print-action" style="background:#1E1B4B;" onclick="printSchoolReport('dcais')">
+              <span>🖨️ Print School DCAIS Report</span>
+            </button>
+            <button class="btn-csv-action" onclick="exportSchoolCsv('dcais')">
+              <span>📥 Export CSV Projects</span>
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- 3. DETAILED VIEW FOR CPD (Expands on the same page!) -->
-      <div id="detailsCpdSection" class="details-section">
-        <!-- CPD Charts Row -->
-        <div class="charts-row">
-          <div class="chart-box">
-            <h4>Teacher Category Distribution</h4>
-            <div class="canvas-wrap"><canvas id="chartCpdCat"></canvas></div>
-          </div>
-          <div class="chart-box">
-            <h4>CPD Completion Funnel (Modules 1–6)</h4>
-            <div class="canvas-wrap"><canvas id="chartCpdFunnel"></canvas></div>
-          </div>
-        </div>
+      <!-- 4 DCAIS Stage Cards -->
+      <div class="dcais-stages-row" id="dcaisStagesRow"></div>
 
-        <!-- Teacher Faculty Roster Table -->
-        <div class="table-box">
-          <div class="table-header-row">
-            <div>
-              <h4>Teacher Faculty Roster & Certification Status</h4>
-              <p>Real registered teachers for this school from Semi Annual Report.xlsx</p>
-            </div>
-            <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
+      <!-- Grade 6-8 NCERT Projects -->
+      <div class="grade-projects-box">
+        <h4>Classroom Implementation Projects (Grades 6–8)</h4>
+        <div class="grade-cards-row">
+          <div class="grade-card">
+            <span class="grade-pill">Grade 6</span>
+            <h5>Visual Summaries & Posters</h5>
+            <p>Design thinking principles, color theory, typography, and curriculum posters.</p>
           </div>
-
-          <div class="table-scroll">
-            <table class="styled-table">
-              <thead>
-                <tr>
-                  <th>Teacher Name</th>
-                  <th>Category</th>
-                  <th>Subject</th>
-                  <th>Module</th>
-                  <th>Status</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody id="rosterTableBody">
-                <!-- Rendered dynamically -->
-              </tbody>
-            </table>
+          <div class="grade-card">
+            <span class="grade-pill">Grade 7</span>
+            <h5>Infographics & Science Videos</h5>
+            <p>Process diagrams, science explainers, video storytelling, and lab presentations.</p>
+          </div>
+          <div class="grade-card">
+            <span class="grade-pill">Grade 8</span>
+            <h5>Digital Portfolios & Web Pages</h5>
+            <p>Multimedia storytelling, project showcases, and student portfolio links.</p>
           </div>
         </div>
       </div>
 
-      <!-- 4. DETAILED VIEW FOR DCAIS (Expands on the same page!) -->
-      <div id="detailsDcaisSection" class="details-section" style="display:none;">
-        <!-- DCAIS 4 Stage Cards -->
-        <div class="dcais-stages-row" id="dcaisStagesRow">
-          <!-- Module 1, 2, 3, 4 with Active/Pending badges -->
-        </div>
-
-        <!-- Grade 6-8 NCERT Projects -->
-        <div class="grade-projects-box">
-          <h4>Classroom Implementation Projects (Grades 6–8)</h4>
-          <div class="grade-cards-row">
-            <div class="grade-card">
-              <span class="grade-pill">Grade 6</span>
-              <h5>Visual Summaries & Posters</h5>
-              <p>Design thinking principles, color theory, typography, and curriculum posters.</p>
-            </div>
-            <div class="grade-card">
-              <span class="grade-pill">Grade 7</span>
-              <h5>Infographics & Science Videos</h5>
-              <p>Process diagrams, science explainers, video storytelling, and lab presentations.</p>
-            </div>
-            <div class="grade-card">
-              <span class="grade-pill">Grade 8</span>
-              <h5>Digital Portfolios & Web Pages</h5>
-              <p>Multimedia storytelling, project showcases, and student portfolio links.</p>
-            </div>
+      <!-- Student Bootcamp Table -->
+      <div class="table-box">
+        <div class="table-header-row">
+          <div>
+            <h4>Student Creative Output & Bootcamp Credentials</h4>
+            <p>Verified student submissions from the Summer Bootcamp</p>
           </div>
         </div>
 
-        <!-- Student Bootcamp Roster Table -->
-        <div class="table-box">
-          <div class="table-header-row">
-            <div>
-              <h4>Student Creative Output & Bootcamp Credentials</h4>
-              <p>Verified student submissions from the Summer Bootcamp</p>
-            </div>
-          </div>
-
-          <div class="table-scroll">
-            <table class="styled-table">
-              <thead>
-                <tr>
-                  <th>Student Name</th>
-                  <th>Grade</th>
-                  <th>Project Track</th>
-                  <th>Status</th>
-                  <th>Credential</th>
-                </tr>
-              </thead>
-              <tbody id="bootcampTableBody">
-                <!-- Rendered dynamically -->
-              </tbody>
-            </table>
-          </div>
+        <div class="table-scroll">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Student Name</th>
+                <th>Grade</th>
+                <th>Project Track</th>
+                <th>Status</th>
+                <th>Credential</th>
+              </tr>
+            </thead>
+            <tbody id="bootcampTableBody"></tbody>
+          </table>
         </div>
       </div>
-
     </div>
 
   </main>
