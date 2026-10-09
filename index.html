@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KVS Implementation Portal — Adobe Express for Education</title>
+  <title>KVS Principal Portal — Adobe Express for Education</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FA0F00'/><text y='.9em' font-size='72' x='15' fill='white' font-weight='900'>A</text></svg>">
   <!-- Chart.js for data visualizations -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- EMBEDDED INLINE CSS: GUARANTEES 100% RELIABLE STYLING WITH ZERO UNSTYLED FLASH -->
+  <!-- EMBEDDED INLINE STYLESHEET (100% RELIABLE, ZERO UNSTYLED FLASH) -->
   <style>
     :root {
       --red: #FA0F00;
       --red-hover: #D60C00;
       --red-subtle: #FFF1F0;
+      --red-border: rgba(250, 15, 0, 0.25);
+
       --slate-900: #0F172A;
       --slate-800: #1E293B;
       --slate-700: #334155;
       --slate-600: #475569;
       --slate-500: #64748B;
+      --slate-400: #94A3B8;
       --slate-200: #E2E8F0;
       --slate-100: #F1F5F9;
       --slate-50:  #F8FAFC;
+
       --white: #FFFFFF;
       --green: #10B981;
       --green-subtle: #ECFDF5;
@@ -29,14 +34,17 @@
       --blue-subtle:  #EFF6FF;
       --amber: #F59E0B;
       --amber-subtle: #FFFBEB;
+
       --radius-sm: 8px;
       --radius-md: 12px;
       --radius-lg: 16px;
       --radius-xl: 20px;
       --radius-full: 9999px;
+
       --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
       --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
       --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.08);
+
       --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -58,7 +66,7 @@
       flex-direction: column;
     }
 
-    /* HEADER */
+    /* HEADER - CLEAN, PRINCIPAL ONLY, NO UNUSED BUTTONS */
     .site-header {
       position: sticky;
       top: 0;
@@ -75,7 +83,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
     }
 
     .brand-wrapper {
@@ -83,7 +90,6 @@
       align-items: center;
       gap: 12px;
       text-decoration: none;
-      cursor: pointer;
     }
 
     .adobe-logo-badge {
@@ -102,7 +108,7 @@
     }
 
     .brand-title {
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       font-weight: 900;
       color: var(--slate-900);
       letter-spacing: -0.01em;
@@ -112,172 +118,86 @@
     .brand-subtitle {
       font-size: 0.72rem;
       font-weight: 700;
-      color: var(--slate-500);
+      color: var(--red);
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
 
-    .header-telemetry-pill {
+    .principal-badge-pill {
       display: flex;
       align-items: center;
       gap: 8px;
       background: var(--slate-100);
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--slate-700);
-    }
-
-    .telemetry-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--green);
-    }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .role-pill-group {
-      display: flex;
-      background: var(--slate-100);
-      padding: 3px;
-      border-radius: var(--radius-full);
-    }
-
-    .role-pill {
-      padding: 5px 14px;
-      border: none;
-      background: transparent;
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--slate-600);
-      border-radius: var(--radius-full);
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .role-pill.active {
-      background: #FFFFFF;
-      color: var(--slate-900);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-
-    .btn-header-clean {
-      padding: 7px 16px;
+      padding: 6px 16px;
       border-radius: var(--radius-full);
       font-size: 0.8rem;
-      font-weight: 700;
-      border: 1.5px solid var(--slate-200);
-      background: #FFFFFF;
-      color: var(--slate-700);
-      cursor: pointer;
-      transition: var(--transition);
-      text-decoration: none;
+      font-weight: 800;
+      color: var(--slate-800);
+      border: 1px solid var(--slate-200);
     }
 
-    .btn-header-clean:hover {
-      border-color: var(--slate-400);
-      color: var(--slate-900);
-      background: var(--slate-50);
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 6px var(--green);
     }
 
     /* MAIN CONTAINER */
     .main-wrapper {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 36px 24px 64px;
+      padding: 28px 24px 64px;
       flex: 1;
       width: 100%;
     }
 
-    .portal-view {
-      display: none;
-      animation: fadeIn 0.25s ease;
-    }
-
-    .portal-view.active {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(6px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ================================================================
-       PAGE 1: CLEAN COMMAND SELECTOR
-       ================================================================ */
-    .gateway-center-wrap {
-      max-width: 840px;
-      margin: 20px auto 40px;
-      text-align: center;
-    }
-
-    .gateway-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--red-subtle);
-      color: var(--red);
-      font-size: 0.78rem;
-      font-weight: 800;
-      padding: 5px 14px;
-      border-radius: var(--radius-full);
-      margin-bottom: 16px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .gateway-heading {
-      font-size: clamp(2.1rem, 3.8vw, 2.85rem);
-      font-weight: 900;
-      color: var(--slate-900);
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 12px;
-    }
-
-    .gateway-subheading {
-      font-size: 1.1rem;
-      color: var(--slate-600);
-      margin-bottom: 36px;
-      line-height: 1.5;
-    }
-
-    /* THE SELECTOR CARD BOX */
-    .selector-card-box {
+    /* ==================== SELECTOR CARD ==================== */
+    .selector-card {
       background: #FFFFFF;
       border: 1.5px solid var(--slate-200);
       border-radius: var(--radius-xl);
-      padding: 32px;
-      box-shadow: var(--shadow-lg);
-      text-align: left;
-      margin-bottom: 36px;
+      padding: 28px 32px;
+      box-shadow: var(--shadow-card);
+      margin-bottom: 24px;
     }
 
-    .selector-grid {
+    .selector-title-row {
+      margin-bottom: 20px;
+    }
+
+    .selector-title-row h2 {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+
+    .selector-title-row p {
+      font-size: 0.9rem;
+      color: var(--slate-600);
+    }
+
+    .selector-inputs-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr auto;
-      gap: 18px;
-      align-items: flex-end;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 16px;
     }
 
-    .selector-field-wrap {
+    .field-group {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
 
-    .selector-field-label {
-      font-size: 0.8rem;
+    .field-group label {
+      font-size: 0.78rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       color: var(--slate-500);
     }
 
@@ -306,129 +226,63 @@
       cursor: not-allowed;
     }
 
-    .btn-primary-action {
-      padding: 13px 28px;
-      border-radius: var(--radius-md);
-      font-size: 0.95rem;
-      font-weight: 800;
-      background: var(--red);
-      color: #FFFFFF;
-      border: none;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: var(--transition);
-      box-shadow: 0 4px 14px rgba(250, 15, 0, 0.25);
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-primary-action:hover {
-      background: var(--red-hover);
-      transform: translateY(-1px);
-    }
-
-    .btn-primary-action:disabled {
-      background: var(--slate-200);
-      color: var(--slate-400);
-      box-shadow: none;
-      cursor: not-allowed;
-    }
-
-    /* QUICK CHIPS */
+    /* Quick Chips */
     .quick-chips-row {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
       flex-wrap: wrap;
-      margin-top: 18px;
-      padding-top: 18px;
+      padding-top: 14px;
       border-top: 1px solid var(--slate-100);
     }
 
-    .quick-chip-label {
+    .quick-chips-label {
       font-size: 0.78rem;
       font-weight: 700;
       color: var(--slate-500);
-      margin-right: 4px;
     }
 
-    .quick-chip {
-      padding: 6px 14px;
+    .chip-btn {
+      padding: 5px 12px;
       background: var(--slate-50);
       border: 1px solid var(--slate-200);
       border-radius: var(--radius-full);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
       color: var(--slate-700);
       cursor: pointer;
       transition: var(--transition);
     }
 
-    .quick-chip:hover {
+    .chip-btn:hover {
       border-color: var(--red);
       color: var(--red);
       background: var(--red-subtle);
     }
 
-    /* NATIONAL SUMMARY TILES */
-    .national-glance-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-top: 48px;
-    }
-
-    .glance-tile {
-      background: #FFFFFF;
-      border: 1.5px solid var(--slate-200);
-      border-radius: var(--radius-lg);
-      padding: 24px 20px;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .glance-num {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--slate-900);
-      line-height: 1.1;
-      margin-bottom: 4px;
-    }
-
-    .glance-label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--slate-500);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    /* ================================================================
-       PAGE 2: CLEAN SCHOOL DASHBOARD
-       ================================================================ */
-    .school-header-card {
+    /* ==================== PERSONALIZED SCHOOL SUMMARY ==================== */
+    .school-summary-banner {
       background: #FFFFFF;
       border: 1.5px solid var(--slate-200);
       border-radius: var(--radius-xl);
       padding: 24px 28px;
-      margin-bottom: 24px;
       box-shadow: var(--shadow-card);
+      margin-bottom: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 20px;
       flex-wrap: wrap;
+      animation: fadeIn 0.25s ease;
     }
 
-    .school-title-group {
+    .school-summary-left {
       display: flex;
       align-items: center;
       gap: 16px;
     }
 
-    .school-kv-badge {
+    .kv-badge-square {
       width: 58px;
       height: 58px;
       border-radius: 14px;
@@ -441,211 +295,266 @@
       flex-shrink: 0;
     }
 
-    .school-kv-badge span:first-child {
+    .kv-badge-square span:first-child {
       font-size: 0.65rem;
       font-weight: 800;
       opacity: 0.75;
     }
 
-    .school-kv-badge span:last-child {
-      font-size: 1.2rem;
+    .kv-badge-square span:last-child {
+      font-size: 1.25rem;
       font-weight: 900;
       line-height: 1;
     }
 
-    .school-h1 {
-      font-size: 1.55rem;
+    .school-name-title {
+      font-size: 1.5rem;
       font-weight: 900;
       color: var(--slate-900);
       letter-spacing: -0.02em;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
-    .school-meta-pills {
+    .school-meta-tags {
       display: flex;
       align-items: center;
       gap: 8px;
       flex-wrap: wrap;
     }
 
-    .meta-pill {
-      font-size: 0.75rem;
+    .tag-pill {
+      font-size: 0.76rem;
       font-weight: 700;
       padding: 3px 10px;
       border-radius: var(--radius-full);
       background: var(--slate-100);
-      color: var(--slate-600);
+      color: var(--slate-700);
     }
 
-    .meta-pill.green {
+    .tag-pill.green {
       background: var(--green-subtle);
       color: var(--green);
     }
 
-    .meta-pill.blue {
+    .tag-pill.blue {
       background: var(--blue-subtle);
       color: var(--blue);
     }
 
-    /* 4 CORE EXECUTIVE METRIC CARDS */
-    .metric-cards-row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      margin-bottom: 24px;
-    }
-
-    .metric-card {
-      background: #FFFFFF;
-      border: 1.5px solid var(--slate-200);
-      border-radius: var(--radius-lg);
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .metric-card-top {
+    .school-summary-kpis {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
+      gap: 24px;
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 12px 20px;
     }
 
-    .metric-card-title {
-      font-size: 0.76rem;
-      font-weight: 800;
-      color: var(--slate-500);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    .mini-kpi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .metric-card-num {
-      font-size: 2.3rem;
+    .mini-kpi-val {
+      font-size: 1.4rem;
       font-weight: 900;
       color: var(--slate-900);
-      line-height: 1;
-      margin-bottom: 6px;
+      line-height: 1.1;
     }
 
-    .metric-card-sub {
-      font-size: 0.82rem;
+    .mini-kpi-lbl {
+      font-size: 0.72rem;
       font-weight: 700;
-      color: var(--slate-600);
+      color: var(--slate-500);
+      text-transform: uppercase;
     }
 
-    /* CHARTS SPLIT ROW */
-    .charts-split-row {
+    /* ==================== 2 BIG OPTIONS: CPD & DCAIS ==================== */
+    .program-choice-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       margin-bottom: 28px;
+      animation: fadeIn 0.25s ease;
     }
 
-    .clean-chart-card {
+    .choice-card {
       background: #FFFFFF;
-      border: 1.5px solid var(--slate-200);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .clean-chart-header {
-      margin-bottom: 16px;
-    }
-
-    .clean-chart-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--slate-900);
-      letter-spacing: -0.01em;
-    }
-
-    .chart-canvas-container {
-      position: relative;
-      height: 260px;
-      width: 100%;
-    }
-
-    /* TABS */
-    .clean-tabs-bar {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 20px;
-      border-bottom: 1.5px solid var(--slate-200);
-      padding-bottom: 12px;
-    }
-
-    .tab-pill-btn {
-      padding: 8px 18px;
-      border-radius: var(--radius-full);
-      border: 1px solid transparent;
-      background: transparent;
-      font-size: 0.88rem;
-      font-weight: 800;
-      color: var(--slate-600);
+      border: 2px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 24px 28px;
       cursor: pointer;
       transition: var(--transition);
-    }
-
-    .tab-pill-btn:hover {
-      background: var(--slate-100);
-      color: var(--slate-900);
-    }
-
-    .tab-pill-btn.active {
-      background: var(--slate-900);
-      color: #FFFFFF;
-    }
-
-    .tab-content-panel {
-      display: none;
-      animation: fadeIn 0.2s ease;
-    }
-
-    .tab-content-panel.active {
-      display: block;
-    }
-
-    /* TABLE */
-    .clean-table-card {
-      background: #FFFFFF;
-      border: 1.5px solid var(--slate-200);
-      border-radius: var(--radius-lg);
-      padding: 24px;
       box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .table-filter-bar {
+    .choice-card:hover {
+      border-color: var(--red);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .choice-card.active {
+      border-color: var(--red);
+      background: #FFFDFD;
+      box-shadow: 0 8px 26px rgba(250, 15, 0, 0.12);
+    }
+
+    .choice-card-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .choice-icon {
+      font-size: 1.8rem;
+    }
+
+    .choice-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      background: var(--slate-100);
+      color: var(--slate-600);
+    }
+
+    .choice-card.active .choice-badge {
+      background: var(--red-subtle);
+      color: var(--red);
+    }
+
+    .choice-card h3 {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      letter-spacing: -0.015em;
+      margin-bottom: 6px;
+    }
+
+    .choice-card p {
+      font-size: 0.88rem;
+      color: var(--slate-600);
+      line-height: 1.45;
       margin-bottom: 16px;
-      gap: 12px;
+    }
+
+    .choice-stats {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid var(--slate-100);
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--slate-700);
+    }
+
+    .choice-arrow {
+      color: var(--red);
+      font-weight: 900;
+    }
+
+    /* ==================== DETAILS SECTIONS ==================== */
+    .details-section {
+      animation: fadeIn 0.25s ease;
+    }
+
+    /* Charts Row */
+    .charts-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .chart-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .chart-box h4 {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      margin-bottom: 14px;
+    }
+
+    .canvas-wrap {
+      position: relative;
+      height: 250px;
+      width: 100%;
+    }
+
+    /* Tables Box */
+    .table-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .table-header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
       flex-wrap: wrap;
     }
 
-    .search-input-clean {
+    .table-header-row h4 {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      margin-bottom: 2px;
+    }
+
+    .table-header-row p {
+      font-size: 0.82rem;
+      color: var(--slate-500);
+    }
+
+    .table-search-input {
       padding: 9px 14px;
       border: 1.5px solid var(--slate-200);
       border-radius: var(--radius-md);
       font-size: 0.85rem;
       font-weight: 600;
       outline: none;
-      min-width: 260px;
+      min-width: 250px;
       transition: var(--transition);
     }
 
-    .search-input-clean:focus {
+    .table-search-input:focus {
       border-color: var(--red);
     }
 
-    .clean-table {
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .styled-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
     }
 
-    .clean-table th {
+    .styled-table th {
       padding: 12px 14px;
       font-size: 0.75rem;
       font-weight: 800;
@@ -655,14 +564,14 @@
       border-bottom: 1.5px solid var(--slate-200);
     }
 
-    .clean-table td {
+    .styled-table td {
       padding: 13px 14px;
       font-size: 0.88rem;
       border-bottom: 1px solid var(--slate-100);
       color: var(--slate-800);
     }
 
-    .clean-table tr:hover td {
+    .styled-table tr:hover td {
       background: var(--slate-50);
     }
 
@@ -683,27 +592,57 @@
     .dot.green { background: var(--green); }
     .dot.amber { background: var(--amber); }
 
-    /* DCAIS BOXES */
-    .dcais-4-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+    .btn-action-small {
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.76rem;
+      font-weight: 700;
+      border: 1px solid var(--slate-200);
+      background: #FFFFFF;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
     }
 
-    .dcais-box {
+    .btn-action-small:hover {
+      border-color: var(--slate-400);
+      color: var(--slate-900);
+    }
+
+    .btn-action-small.red-nudge {
+      border-color: var(--red);
+      color: var(--red);
+      background: var(--red-subtle);
+    }
+
+    .btn-action-small.red-nudge:hover {
+      background: var(--red);
+      color: #FFFFFF;
+    }
+
+    /* DCAIS 4 STAGES */
+    .dcais-stages-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .dcais-stage-box {
       background: #FFFFFF;
       border: 1.5px solid var(--slate-200);
-      border-radius: var(--radius-lg);
+      border-radius: var(--radius-xl);
       padding: 22px;
       box-shadow: var(--shadow-sm);
     }
 
-    .dcais-box.completed {
+    .dcais-stage-box.completed {
       border-color: var(--green);
       background: #FAFDFB;
     }
 
-    .dcais-tag {
+    .dcais-stage-num {
       font-size: 0.72rem;
       font-weight: 900;
       color: var(--slate-500);
@@ -711,11 +650,67 @@
       margin-bottom: 4px;
     }
 
-    .dcais-name {
+    .dcais-stage-name {
       font-size: 1.05rem;
       font-weight: 800;
       color: var(--slate-900);
       margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    /* Grade Projects */
+    .grade-projects-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .grade-projects-box h4 {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      margin-bottom: 16px;
+    }
+
+    .grade-cards-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .grade-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+    }
+
+    .grade-pill {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      background: #FFFFFF;
+      border: 1px solid var(--slate-200);
+      color: var(--slate-700);
+      margin-bottom: 8px;
+    }
+
+    .grade-card h5 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+    }
+
+    .grade-card p {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.45;
     }
 
     /* MODALS */
@@ -765,220 +760,186 @@
       margin-top: auto;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     @media (max-width: 900px) {
-      .selector-grid { grid-template-columns: 1fr; }
-      .national-glance-strip,
-      .metric-cards-row,
-      .dcais-4-grid,
-      .charts-split-row { grid-template-columns: 1fr; }
+      .selector-inputs-grid,
+      .program-choice-grid,
+      .charts-row,
+      .dcais-stages-row,
+      .grade-cards-row {
+        grid-template-columns: 1fr;
+      }
+      .school-summary-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .school-summary-kpis {
+        width: 100%;
+        justify-content: space-around;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- ==================== HEADER ==================== -->
+  <!-- ==================== HEADER (PRINCIPALS ONLY) ==================== -->
   <header class="site-header">
     <div class="header-container">
-      <a class="brand-wrapper" onclick="showGatewayView()">
+      <div class="brand-wrapper">
         <div class="adobe-logo-badge">A</div>
         <div>
-          <span class="brand-title">KVS Implementation Portal</span>
+          <span class="brand-title">KVS Principal Portal</span>
           <span class="brand-subtitle">Adobe Express for Education</span>
         </div>
-      </a>
-
-      <div class="header-telemetry-pill">
-        <span class="telemetry-dot"></span>
-        <span>48,267 Teachers • 1,202 Schools • 25 Regions</span>
       </div>
 
-      <div class="header-right">
-        <div class="role-pill-group">
-          <button class="role-pill active" onclick="setRole('principal', this)">Principal View</button>
-          <button class="role-pill" onclick="setRole('ro', this)">Regional Officer</button>
-        </div>
-        <button class="btn-header-clean" onclick="window.print()">Print Report</button>
+      <div class="principal-badge-pill">
+        <span class="pulse-dot"></span>
+        <span>Principal Command Center</span>
       </div>
     </div>
   </header>
 
-  <!-- ==================== MAIN CONTENT ==================== -->
+  <!-- ==================== MAIN CONTENT (ALL ON THE SAME PAGE) ==================== -->
   <main class="main-wrapper">
 
-    <!-- ================================================================
-         VIEW 1: CLEAN GATEWAY SELECTOR (SIMPLE, COMPREHENDABLE)
-         ================================================================ -->
-    <div id="viewGateway" class="portal-view active">
+    <!-- STEP 1 & 2: SELECTOR CARD -->
+    <div class="selector-card">
+      <div class="selector-title-row">
+        <h2>Select Your Institution</h2>
+        <p>Choose your KVS Region and School to view your school's personalized report.</p>
+      </div>
 
-      <div class="gateway-center-wrap">
-        <div class="gateway-badge">National Portal</div>
-        <h1 class="gateway-heading">Kendriya Vidyalaya Sangathan</h1>
-        <p class="gateway-subheading">Select your region and school to view performance.</p>
-
-        <!-- THE 2-STEP COMMAND BAR -->
-        <div class="selector-card-box">
-          <div class="selector-grid">
-            <div class="selector-field-wrap">
-              <label class="selector-field-label">1. Select Region</label>
-              <select id="mainRegionSelect" class="selector-select" onchange="onRegionSelected()">
-                <option value="">Choose Region...</option>
-                <!-- Populated dynamically -->
-              </select>
-            </div>
-
-            <div class="selector-field-wrap">
-              <label class="selector-field-label">2. Select School (KV Code)</label>
-              <select id="mainSchoolSelect" class="selector-select" disabled onchange="onSchoolSelected()">
-                <option value="">First choose a region...</option>
-              </select>
-            </div>
-
-            <div>
-              <button id="btnLaunchDashboard" class="btn-primary-action" disabled onclick="launchSelectedSchool()">
-                View Dashboard ➔
-              </button>
-            </div>
-          </div>
-
-          <!-- Quick Access Popular Regions -->
-          <div class="quick-chips-row">
-            <span class="quick-chip-label">Quick select:</span>
-            <button class="quick-chip" onclick="quickPickRegion('Mumbai')">Mumbai</button>
-            <button class="quick-chip" onclick="quickPickRegion('Delhi')">Delhi</button>
-            <button class="quick-chip" onclick="quickPickRegion('Chennai')">Chennai</button>
-            <button class="quick-chip" onclick="quickPickRegion('Bengaluru')">Bengaluru</button>
-            <button class="quick-chip" onclick="quickPickRegion('Ahmedabad')">Ahmedabad</button>
-            <button class="quick-chip" onclick="quickPickRegion('Hyderabad')">Hyderabad</button>
-          </div>
+      <div class="selector-inputs-grid">
+        <div class="field-group">
+          <label>1. Select Region</label>
+          <select id="regionSelect" class="selector-select" onchange="onRegionChange()">
+            <option value="">Choose Region...</option>
+            <!-- Populated dynamically -->
+          </select>
         </div>
 
-        <!-- 4 Clean National Tiles At A Glance -->
-        <div class="national-glance-strip">
-          <div class="glance-tile">
-            <div class="glance-num" id="natTeachersNum">48,267</div>
-            <div class="glance-label">Total Faculty</div>
-          </div>
-          <div class="glance-tile">
-            <div class="glance-num" id="natSchoolsNum">1,202</div>
-            <div class="glance-label">Kendriya Vidyalayas</div>
-          </div>
-          <div class="glance-tile">
-            <div class="glance-num" id="natCertifiedNum">10,451</div>
-            <div class="glance-label">CPD Certified</div>
-          </div>
-          <div class="glance-tile">
-            <div class="glance-num" id="natDcaisNum">822</div>
-            <div class="glance-label">DCAIS Schools</div>
-          </div>
+        <div class="field-group">
+          <label>2. Select KV School (KV Code)</label>
+          <select id="schoolSelect" class="selector-select" disabled onchange="onSchoolChange()">
+            <option value="">First choose a region...</option>
+          </select>
         </div>
       </div>
 
+      <!-- Quick Select Region Chips -->
+      <div class="quick-chips-row">
+        <span class="quick-chips-label">Quick Region:</span>
+        <button class="chip-btn" onclick="quickSelectRegion('Mumbai')">Mumbai</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Delhi')">Delhi</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Chennai')">Chennai</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Bengaluru')">Bengaluru</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Ahmedabad')">Ahmedabad</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Jammu')">Jammu</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Kolkata')">Kolkata</button>
+        <button class="chip-btn" onclick="quickSelectRegion('Hyderabad')">Hyderabad</button>
+      </div>
     </div>
 
     <!-- ================================================================
-         VIEW 2: CLEAN SCHOOL DASHBOARD (VISUAL, COMPREHENDABLE)
+         SCHOOL CONTENT: REVEALS ON THE SAME PAGE AS REQUESTED!
          ================================================================ -->
-    <div id="viewSchool" class="portal-view">
+    <div id="schoolSection" style="display:none;">
 
-      <!-- School Header Card -->
-      <div class="school-header-card">
-        <div class="school-title-group">
-          <div class="school-kv-badge">
+      <!-- 1. PERSONALIZED SCHOOL SUMMARY -->
+      <div class="school-summary-banner">
+        <div class="school-summary-left">
+          <div class="kv-badge-square">
             <span>KV</span>
-            <span id="schoolBadgeCode">1006</span>
+            <span id="schoolCodeBadge">1006</span>
           </div>
           <div>
-            <h1 class="school-h1" id="schoolNameHeading">Kendriya Vidyalaya Ankleshwar ONGC</h1>
-            <div class="school-meta-pills">
-              <span class="meta-pill" id="schoolMetaRegion">Ahmedabad Region</span>
-              <span class="meta-pill green" id="schoolMetaRating">Top Tier</span>
-              <span class="meta-pill blue" id="schoolMetaStage">Stage M2</span>
+            <h1 class="school-name-title" id="schoolNameTitle">Kendriya Vidyalaya School Name</h1>
+            <div class="school-meta-tags">
+              <span class="tag-pill" id="schoolRegionTag">Region</span>
+              <span class="tag-pill green" id="schoolRatingTag">Rating: A+</span>
+              <span class="tag-pill blue" id="schoolDcaisTag">DCAIS: M2 Active</span>
             </div>
           </div>
         </div>
 
-        <div>
-          <button class="btn-header-clean" onclick="showGatewayView()">← Change School</button>
-        </div>
-      </div>
-
-      <!-- 4 Core Executive Metric Cards -->
-      <div class="metric-cards-row">
-        <div class="metric-card">
-          <div class="metric-card-top">
-            <span class="metric-card-title">Total Faculty</span>
-            <span style="font-size:1.1rem;">👥</span>
+        <div class="school-summary-kpis">
+          <div class="mini-kpi">
+            <span class="mini-kpi-val" id="sumFaculty">42</span>
+            <span class="mini-kpi-lbl">Faculty</span>
           </div>
-          <div class="metric-card-num" id="metricFacultyNum">47</div>
-          <div class="metric-card-sub">Enrolled Teachers</div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-card-top">
-            <span class="metric-card-title">CPD Certified</span>
-            <span style="font-size:1.1rem;">🏆</span>
+          <div class="mini-kpi">
+            <span class="mini-kpi-val" id="sumCertified">12</span>
+            <span class="mini-kpi-lbl">Certified</span>
           </div>
-          <div class="metric-card-num" id="metricCertifiedNum">12</div>
-          <div class="metric-card-sub" id="metricCertifiedSub">25.5% Conversion</div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-card-top">
-            <span class="metric-card-title">DCAIS Stage</span>
-            <span style="font-size:1.1rem;">🚀</span>
-          </div>
-          <div class="metric-card-num" id="metricStageNum">M2</div>
-          <div class="metric-card-sub" id="metricStageSub">Curriculum Active</div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-card-top">
-            <span class="metric-card-title">Student Bootcamp</span>
-            <span style="font-size:1.1rem;">🎒</span>
-          </div>
-          <div class="metric-card-num" id="metricBootcampNum">14</div>
-          <div class="metric-card-sub">Credentials Issued</div>
-        </div>
-      </div>
-
-      <!-- 2 Visual Charts Split Row -->
-      <div class="charts-split-row">
-        <div class="clean-chart-card">
-          <div class="clean-chart-header">
-            <h3 class="clean-chart-title">Teacher Category Breakdown</h3>
-          </div>
-          <div class="chart-canvas-container">
-            <canvas id="chartTeacherCategory"></canvas>
-          </div>
-        </div>
-
-        <div class="clean-chart-card">
-          <div class="clean-chart-header">
-            <h3 class="clean-chart-title">CPD Completion Funnel (Modules 1–6)</h3>
-          </div>
-          <div class="chart-canvas-container">
-            <canvas id="chartCpdFunnel"></canvas>
+          <div class="mini-kpi">
+            <span class="mini-kpi-val" id="sumStage">M2</span>
+            <span class="mini-kpi-lbl">DCAIS Stage</span>
           </div>
         </div>
       </div>
 
-      <!-- Clean Tabs Bar -->
-      <div class="clean-tabs-bar">
-        <button class="tab-pill-btn active" onclick="switchCleanTab('faculty', this)">Faculty List</button>
-        <button class="tab-pill-btn" onclick="switchCleanTab('dcais', this)">DCAIS Modules</button>
-        <button class="tab-pill-btn" onclick="switchCleanTab('bootcamp', this)">Student Output</button>
+      <!-- 2. THE TWO BIG OPTIONS: CPD & DCAIS -->
+      <div class="program-choice-grid">
+        <!-- CPD OPTION CARD -->
+        <div class="choice-card active" id="btnChoiceCpd" onclick="selectProgram('cpd')">
+          <div class="choice-card-top">
+            <div class="choice-icon">🎓</div>
+            <span class="choice-badge">Teacher Training</span>
+          </div>
+          <h3>CPD Academy</h3>
+          <p>Continuous Professional Development (Modules 1–6), certification roster, and teacher assignment tracking.</p>
+          <div class="choice-stats">
+            <span id="cpdChoiceStats">12 Certified • 18 Attended</span>
+            <span class="choice-arrow" id="arrowCpd">● Viewing Details ↓</span>
+          </div>
+        </div>
+
+        <!-- DCAIS OPTION CARD -->
+        <div class="choice-card" id="btnChoiceDcais" onclick="selectProgram('dcais')">
+          <div class="choice-card-top">
+            <div class="choice-icon">🚀</div>
+            <span class="choice-badge">School & Student Innovation</span>
+          </div>
+          <h3>DCAIS Innovation</h3>
+          <p>Digital Creativity & Innovation Skills (Stages M1–M4), classroom projects (Grades 6–8), and student output.</p>
+          <div class="choice-stats">
+            <span id="dcaisChoiceStats">Stage M2 Active • 14 Students</span>
+            <span class="choice-arrow" id="arrowDcais">Click to View ↓</span>
+          </div>
+        </div>
       </div>
 
-      <!-- TAB 1: FACULTY LIST -->
-      <div id="tabPanel-faculty" class="tab-content-panel active">
-        <div class="clean-table-card">
-          <div class="table-filter-bar">
-            <input type="text" id="facultySearchInput" class="search-input-clean" placeholder="Filter teacher by name or subject..." oninput="filterFacultyTable(this.value)">
-            <button class="btn-header-clean" onclick="exportSchoolCSV()">Export CSV 📥</button>
+      <!-- 3. DETAILED VIEW FOR CPD (Expands on the same page!) -->
+      <div id="detailsCpdSection" class="details-section">
+        <!-- CPD Charts Row -->
+        <div class="charts-row">
+          <div class="chart-box">
+            <h4>Teacher Category Distribution</h4>
+            <div class="canvas-wrap"><canvas id="chartCpdCat"></canvas></div>
+          </div>
+          <div class="chart-box">
+            <h4>CPD Completion Funnel (Modules 1–6)</h4>
+            <div class="canvas-wrap"><canvas id="chartCpdFunnel"></canvas></div>
+          </div>
+        </div>
+
+        <!-- Teacher Faculty Roster Table -->
+        <div class="table-box">
+          <div class="table-header-row">
+            <div>
+              <h4>Teacher Faculty Roster & Certification Status</h4>
+              <p>Real registered teachers for this school from Semi Annual Report.xlsx</p>
+            </div>
+            <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
           </div>
 
-          <div style="overflow-x:auto;">
-            <table class="clean-table">
+          <div class="table-scroll">
+            <table class="styled-table">
               <thead>
                 <tr>
                   <th>Teacher Name</th>
@@ -989,7 +950,7 @@
                   <th>Action</th>
                 </tr>
               </thead>
-              <tbody id="facultyTableBody">
+              <tbody id="rosterTableBody">
                 <!-- Rendered dynamically -->
               </tbody>
             </table>
@@ -997,18 +958,46 @@
         </div>
       </div>
 
-      <!-- TAB 2: DCAIS MODULES -->
-      <div id="tabPanel-dcais" class="tab-content-panel">
-        <div class="dcais-4-grid" id="dcaisCardsGrid">
-          <!-- Rendered dynamically -->
+      <!-- 4. DETAILED VIEW FOR DCAIS (Expands on the same page!) -->
+      <div id="detailsDcaisSection" class="details-section" style="display:none;">
+        <!-- DCAIS 4 Stage Cards -->
+        <div class="dcais-stages-row" id="dcaisStagesRow">
+          <!-- Module 1, 2, 3, 4 with Active/Pending badges -->
         </div>
-      </div>
 
-      <!-- TAB 3: STUDENT OUTPUT -->
-      <div id="tabPanel-bootcamp" class="tab-content-panel">
-        <div class="clean-table-card">
-          <div style="overflow-x:auto;">
-            <table class="clean-table">
+        <!-- Grade 6-8 NCERT Projects -->
+        <div class="grade-projects-box">
+          <h4>Classroom Implementation Projects (Grades 6–8)</h4>
+          <div class="grade-cards-row">
+            <div class="grade-card">
+              <span class="grade-pill">Grade 6</span>
+              <h5>Visual Summaries & Posters</h5>
+              <p>Design thinking principles, color theory, typography, and curriculum posters.</p>
+            </div>
+            <div class="grade-card">
+              <span class="grade-pill">Grade 7</span>
+              <h5>Infographics & Science Videos</h5>
+              <p>Process diagrams, science explainers, video storytelling, and lab presentations.</p>
+            </div>
+            <div class="grade-card">
+              <span class="grade-pill">Grade 8</span>
+              <h5>Digital Portfolios & Web Pages</h5>
+              <p>Multimedia storytelling, project showcases, and student portfolio links.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Bootcamp Roster Table -->
+        <div class="table-box">
+          <div class="table-header-row">
+            <div>
+              <h4>Student Creative Output & Bootcamp Credentials</h4>
+              <p>Verified student submissions from the Summer Bootcamp</p>
+            </div>
+          </div>
+
+          <div class="table-scroll">
+            <table class="styled-table">
               <thead>
                 <tr>
                   <th>Student Name</th>
@@ -1032,7 +1021,7 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
-    © 2026 Adobe Express for Education × Kendriya Vidyalaya Sangathan (KVS). All rights reserved.
+    © 2026 Adobe Express for Education × Kendriya Vidyalaya Sangathan (KVS). Dedicated Principal Portal.
   </footer>
 
   <!-- ==================== MODALS ==================== -->
@@ -1041,7 +1030,7 @@
   <div id="certModal" class="modal-overlay" onclick="closeCertModal()">
     <div class="modal-dialog" onclick="event.stopPropagation()">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-        <h3 style="font-size:1.15rem;font-weight:800;color:var(--slate-900);">Certificate of Completion</h3>
+        <h3 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);">Certificate of Completion</h3>
         <button style="border:none;background:transparent;cursor:pointer;font-size:1.1rem;" onclick="closeCertModal()">✕</button>
       </div>
 
@@ -1056,8 +1045,8 @@
       </div>
 
       <div style="display:flex;justify-content:flex-end;gap:10px;">
-        <button class="btn-header-clean" onclick="closeCertModal()">Close</button>
-        <button class="btn-primary-action" style="padding:8px 18px;font-size:0.85rem;" onclick="showToast('Downloaded official PDF certificate!');closeCertModal();">Download PDF</button>
+        <button class="btn-action-small" style="padding:7px 16px;" onclick="closeCertModal()">Close</button>
+        <button class="btn-action-small red-nudge" style="padding:7px 16px;" onclick="downloadCertPdf()">Download PDF 📄</button>
       </div>
     </div>
   </div>
@@ -1066,7 +1055,7 @@
   <div id="reminderModal" class="modal-overlay" onclick="closeReminderModal()">
     <div class="modal-dialog" onclick="event.stopPropagation()">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-        <h3 style="font-size:1.15rem;font-weight:800;color:var(--slate-900);">Send WhatsApp Reminder</h3>
+        <h3 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);">Send WhatsApp Reminder</h3>
         <button style="border:none;background:transparent;cursor:pointer;font-size:1.1rem;" onclick="closeReminderModal()">✕</button>
       </div>
 
@@ -1078,8 +1067,9 @@
       </div>
 
       <div style="display:flex;justify-content:flex-end;gap:10px;">
-        <button class="btn-header-clean" onclick="closeReminderModal()">Cancel</button>
-        <button class="btn-primary-action" style="padding:8px 18px;font-size:0.85rem;" onclick="copyReminderText()">Copy for WhatsApp 📋</button>
+        <button class="btn-action-small" style="padding:7px 16px;" onclick="closeReminderModal()">Cancel</button>
+        <button class="btn-action-small" style="padding:7px 16px;" onclick="copyReminderText()">Copy Message 📋</button>
+        <button class="btn-action-small red-nudge" style="padding:7px 16px;" onclick="sendWhatsAppReminder()">Open WhatsApp 💬</button>
       </div>
     </div>
   </div>
