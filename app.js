@@ -1,319 +1,360 @@
 /**
- * KVS Master Dashboard Controller
- * Handles cascading filters, Chart.js visualizations, teacher dossier, and modal interactions
+ * KVS Master Implementation Portal — Enterprise Controller
+ * Handles Multi-Stage Navigation, 25 Regions, 1,202 Schools, Real Data Grounding & Visualizations
  */
 
-let activeRegion = 'All';
-let activeKV = 'All';
+// Application State
+let selectedRegion = null;
+let selectedKVCode = null;
+let currentView = 'gateway'; // 'gateway', 'school', 'region'
 let activeRole = 'principal';
-let currentProgram = 'cpd';
+let activeSchoolTab = 'overview';
 
-// Chart instances
-let catPieChart = null;
-let cpdFunnelChart = null;
-let dcaisChart = null;
-let regionalChart = null;
+// Chart Instances
+let schoolCatChart = null;
+let schoolFunnelChart = null;
 
+// ==================== INITIALIZATION ====================
 document.addEventListener('DOMContentLoaded', () => {
-  initFilters();
-  updateKPIs();
-  renderCPDTable();
-  renderTeacherRoster();
-  renderDCAISTables();
-  renderInsightsLeaderboard();
-  initCharts();
+  initPortal();
+  initRouting();
 });
 
-// ==================== 1. FILTER INITIALIZATION ====================
-function initFilters() {
-  const regSelect = document.getElementById('regionSelect');
-  regSelect.innerHTML = '<option value=\"All\">All Regions (National: 48,267 Teachers)</option>';
-
-  KVS_DATA.REGIONS.forEach(r => {
-    const opt = document.createElement('option');
-    opt.value = r.name;
-    opt.textContent = `${r.name} (${r.totalTeachers.toLocaleString()} Teachers)`;
-    regSelect.appendChild(opt);
-  });
-
-  populateKVs();
-}
-
-function onRegionChange() {
-  activeRegion = document.getElementById('regionSelect').value;
-  activeKV = 'All';
-  populateKVs();
-  updateKPIs();
-  renderTeacherRoster();
-  updateCharts();
-}
-
-function populateKVs() {
-  const kvSelect = document.getElementById('kvSelect');
-  kvSelect.innerHTML = '<option value=\"All\">All Schools in Selection</option>';
-
-  let kvsList = [];
-  if (activeRegion === 'All') {
-    KVS_DATA.REGIONS.forEach(r => {
-      kvsList.push(...r.kvs);
-    });
-  } else {
-    const regObj = KVS_DATA.REGIONS.find(r => r.name === activeRegion);
-    if (regObj) kvsList = regObj.kvs;
-  }
-
-  // Deduplicate and sort by code
-  const unique = [];
-  const seen = new Set();
-  kvsList.forEach(k => {
-    if (!seen.has(k.code)) {
-      seen.add(k.code);
-      unique.push(k);
-    }
-  });
-
-  unique.sort((a,b) => a.code - b.code);
-
-  unique.forEach(k => {
-    const opt = document.createElement('option');
-    opt.value = k.code;
-    opt.textContent = `KV ${k.code} — ${k.name} (${k.teachers} Teachers)`;
-    kvSelect.appendChild(opt);
-  });
-}
-
-function onKVChange() {
-  activeKV = document.getElementById('kvSelect').value;
-  updateKPIs();
-  renderTeacherRoster();
-}
-
-// ==================== 2. KPI UPDATES ====================
-function updateKPIs() {
-  let teachers = 0;
-  let attended = 0;
-  let certified = 0;
-  let dcais = 'M2 (Active)';
-
-  if (activeRegion === 'All' && activeKV === 'All') {
-    teachers = KVS_DATA.NATIONAL_METRICS.totalTeachers;
-    attended = KVS_DATA.NATIONAL_METRICS.cpdAttended;
-    certified = KVS_DATA.NATIONAL_METRICS.cpdCertified;
-    dcais = '822 Enrolled';
-  } else if (activeKV !== 'All') {
-    let targetKV = null;
-    KVS_DATA.REGIONS.forEach(r => {
-      const found = r.kvs.find(k => k.code == activeKV);
-      if (found) targetKV = found;
-    });
-    if (targetKV) {
-      teachers = targetKV.teachers;
-      attended = targetKV.trained;
-      certified = targetKV.certified;
-      dcais = targetKV.dcaisStatus;
-    }
-  } else {
-    const regObj = KVS_DATA.REGIONS.find(r => r.name === activeRegion);
-    if (regObj) {
-      teachers = regObj.totalTeachers;
-      attended = regObj.cpdAttended;
-      certified = regObj.cpdCertified;
-      dcais = `${regObj.totalKVs} KVs Enrolled`;
-    }
-  }
-
-  document.getElementById('kpiTotalTeachers').textContent = Number(teachers).toLocaleString();
-  document.getElementById('kpiCpdAttended').textContent = Number(attended).toLocaleString();
-  document.getElementById('kpiCpdCertified').textContent = Number(certified).toLocaleString();
-  document.getElementById('kpiDcaisStatus').textContent = dcais;
-
-  // Header live subtitle update
-  const scopeText = activeKV !== 'All' 
-    ? `KV ${activeKV} Selected` 
-    : (activeRegion !== 'All' ? `${activeRegion} Region Selected` : 'National KVS View (All 28 Regions)');
-  document.getElementById('activeScopeSubtitle').textContent = scopeText;
-}
-
-// ==================== 3. TAB CONTROLLER ====================
-function switchProgram(progId) {
-  currentProgram = progId;
-  document.querySelectorAll('.prog-nav-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === progId);
-  });
-
-  document.querySelectorAll('.workspace-panel').forEach(panel => {
-    panel.classList.toggle('active', panel.id === `panel-${progId}`);
-  });
-
-  // Re-render chart size if switching to tab
-  if (progId === 'cpd') {
-    setTimeout(() => {
-      if (catPieChart) catPieChart.resize();
-      if (cpdFunnelChart) cpdFunnelChart.resize();
-    }, 100);
-  } else if (progId === 'dcais') {
-    setTimeout(() => {
-      if (dcaisChart) dcaisChart.resize();
-    }, 100);
-  } else if (progId === 'insights') {
-    setTimeout(() => {
-      if (regionalChart) regionalChart.resize();
-    }, 100);
-  }
-}
-
-function setRole(role, btn) {
-  activeRole = role;
-  document.querySelectorAll('.role-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  showToast(`Switched view to: ${btn.textContent.trim()}`);
-}
-
-// ==================== 4. CPD DATA RENDERING ====================
-function renderCPDTable() {
-  const tbody = document.getElementById('cpdOverviewTableBody');
-  tbody.innerHTML = '';
-
-  KVS_DATA.CPD_MODULES.forEach((m, idx) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${m.id}</strong></td>
-      <td><strong>${m.name}</strong></td>
-      <td>${m.attended.toLocaleString()}</td>
-      <td><span class=\"status-pill yes\">✓ 100% Yes</span></td>
-      <td>${m.certified.toLocaleString()}</td>
-      <td><strong>${m.certified.toLocaleString()}</strong></td>
-      <td>
-        <div style=\"display:flex;align-items:center;gap:8px;\">
-          <div style=\"flex:1;height:8px;background:#E2E8F0;border-radius:9999px;overflow:hidden;\">
-            <div style=\"height:100%;width:${m.rate};background:var(--adobe-red);border-radius:9999px;\"></div>
-          </div>
-          <span style=\"font-size:0.75rem;font-weight:800;color:var(--adobe-red);\">${m.rate}</span>
-        </div>
-      </td>
-    `;
-    tbody.appendChild(tr);
-  });
-}
-
-function renderTeacherRoster() {
-  const tbody = document.getElementById('teacherRosterTableBody');
-  tbody.innerHTML = '';
-
-  const searchInput = document.getElementById('teacherSearchInput') ? document.getElementById('teacherSearchInput').value.toLowerCase() : '';
-  const moduleFilter = document.getElementById('moduleFilterSelect') ? document.getElementById('moduleFilterSelect').value : 'All';
-
-  let list = KVS_DATA.TEACHERS_ROSTER;
-
-  if (activeRegion !== 'All') {
-    list = list.filter(t => t.region === activeRegion);
-  }
-  if (activeKV !== 'All') {
-    list = list.filter(t => t.kvCode == activeKV);
-  }
-  if (moduleFilter !== 'All') {
-    list = list.filter(t => t.module === moduleFilter);
-  }
-  if (searchInput) {
-    list = list.filter(t => 
-      t.name.toLowerCase().includes(searchInput) ||
-      t.subject.toLowerCase().includes(searchInput) ||
-      t.category.toLowerCase().includes(searchInput) ||
-      t.schoolName.toLowerCase().includes(searchInput)
-    );
-  }
-
-  if (list.length === 0) {
-    tbody.innerHTML = '<tr><td colspan=\"9\" style=\"text-align:center;padding:24px;color:var(--ink-muted);\">No teachers matched the current filter.</td></tr>';
+function initPortal() {
+  if (typeof KVS_DATA === 'undefined') {
+    console.error('KVS_DATA is not loaded.');
     return;
   }
 
-  list.slice(0, 15).forEach(t => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${t.name}</strong></td>
-      <td><span class=\"status-pill\" style=\"background:#EDF2F7;color:#2D3748;\">${t.category}</span></td>
-      <td>${t.subject}</td>
-      <td><span style=\"font-weight:700;\">KV ${t.kvCode}</span> <span style=\"font-size:0.75rem;color:#718096;\">(${t.schoolName})</span></td>
-      <td><strong>${t.module}</strong></td>
-      <td><span class=\"status-pill yes\">✓ Attended</span></td>
-      <td><span class=\"status-pill ${t.submitted === 'Yes' ? 'yes' : 'no'}\">${t.submitted === 'Yes' ? '✓ Submitted' : '✗ Pending'}</span></td>
-      <td><span class=\"status-pill ${t.certificate === 'Dispatched' ? 'yes' : 'pending'}\">${t.certificate === 'Dispatched' ? '✓ Dispatched' : 'Pending'}</span></td>
-      <td>
-        ${t.certificate === 'Dispatched' 
-          ? `<button class=\"btn-header\" style=\"padding:4px 10px;font-size:0.75rem;\" onclick=\"openCertModal('${t.name}', '${t.module}', '${t.schoolName}')\">📜 Certificate</button>`
-          : `<button class=\"btn-header\" style=\"padding:4px 10px;font-size:0.75rem;border-color:var(--adobe-red);color:var(--adobe-red);\" onclick=\"openReminderModal('${t.name}', '${t.module}', '${t.email}')\">🔔 Remind</button>`
-        }
-      </td>
-    `;
-    tbody.appendChild(tr);
+  // Update Top Header Telemetry
+  const nat = KVS_DATA.NATIONAL_METRICS;
+  const badge = document.getElementById('telemetryBadgeText');
+  if (badge && nat) {
+    badge.textContent = `${nat.totalTeachers.toLocaleString()} Teachers • ${nat.totalSchools.toLocaleString()} Schools • ${nat.totalRegions} Regions • ${nat.cpdCertified.toLocaleString()} Certs`;
+  }
+
+  // Render Step 1: 25 Regions Grid
+  renderRegionsGrid();
+
+  // Close Quick Search on outside click
+  document.addEventListener('click', (e) => {
+    const box = document.querySelector('.quick-search-box');
+    const dropdown = document.getElementById('quickSearchResultsDropdown');
+    if (box && !box.contains(e.target) && dropdown) {
+      dropdown.style.display = 'none';
+    }
   });
 }
 
-// ==================== 5. DCAIS DATA RENDERING ====================
-function renderDCAISTables() {
-  const tbody = document.getElementById('dcaisStatusTableBody');
-  tbody.innerHTML = '';
+// ==================== URL HASH ROUTING ====================
+function initRouting() {
+  window.addEventListener('hashchange', handleRoute);
+  if (window.location.hash) {
+    handleRoute();
+  }
+}
 
-  KVS_DATA.DCAIS_STAGES.forEach(s => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${s.id}</strong></td>
-      <td><strong>${s.name}</strong></td>
-      <td>${s.present.toLocaleString()} Schools</td>
-      <td>${s.total.toLocaleString()} Schools</td>
-      <td><span class=\"status-pill ${s.pct > 30 ? 'yes' : (s.pct > 15 ? 'pending' : 'no')}\">${s.pct}% Active</span></td>
-      <td>
-        <button class=\"btn-header\" style=\"padding:4px 10px;font-size:0.75rem;\" onclick=\"showToast('Exported school adoption list for ${s.id}')\">Download List ↗</button>
-      </td>
+function handleRoute() {
+  const hash = window.location.hash.replace(/^#/, '');
+  if (!hash || hash === 'gateway') {
+    navigateToGateway(false);
+  } else if (hash.startsWith('region/')) {
+    const regName = decodeURIComponent(hash.replace('region/', ''));
+    if (regName) navigateToRegionalHub(regName, false);
+  } else if (hash.startsWith('kv/')) {
+    const parts = hash.replace('kv/', '').split('/');
+    const code = Number(parts[0]);
+    const tab = parts[1] || 'overview';
+    if (code && KVS_DATA.SCHOOLS[code]) {
+      selectSchool(code, false);
+      if (tab) switchSchoolTab(tab, false);
+    }
+  }
+}
+
+function updateHash(newHash) {
+  if (window.location.hash !== newHash) {
+    history.pushState(null, '', newHash);
+  }
+}
+
+// ================================================================
+// 1. GATEWAY CONTROLLER: REGION & KV STEPPED SELECTOR
+// ================================================================
+
+function renderRegionsGrid(filterText = '') {
+  const grid = document.getElementById('regionCardsGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  const q = filterText.toLowerCase().trim();
+  const regions = KVS_DATA.REGIONS.filter(r => !q || r.name.toLowerCase().includes(q));
+
+  if (regions.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--ink-muted);">No KVS regions matched your search.</div>';
+    return;
+  }
+
+  regions.forEach(r => {
+    const isSel = selectedRegion === r.name;
+    const card = document.createElement('div');
+    card.className = `region-card ${isSel ? 'selected' : ''}`;
+    card.onclick = () => selectRegion(r.name);
+
+    card.innerHTML = `
+      <div>
+        <div class="region-card-top">
+          <div class="region-card-icon">🏛️</div>
+          <span class="region-kv-count-badge">${r.totalKVs} KVs</span>
+        </div>
+        <h3 class="region-card-name">${r.name}</h3>
+      </div>
+
+      <div>
+        <div class="region-card-stats">
+          <div class="region-stat-col">
+            <span class="region-stat-num">${r.totalTeachers.toLocaleString()}</span>
+            <span class="region-stat-label">Faculty</span>
+          </div>
+          <div class="region-stat-col">
+            <span class="region-stat-num">${r.cpdCertified.toLocaleString()}</span>
+            <span class="region-stat-label">Certified</span>
+          </div>
+        </div>
+
+        <button class="region-select-btn" onclick="event.stopPropagation(); selectRegion('${r.name}')">
+          ${isSel ? '✓ Selected' : 'Select Region ➔'}
+        </button>
+      </div>
     `;
-    tbody.appendChild(tr);
+    grid.appendChild(card);
   });
 }
 
-// ==================== 6. INSIGHTS LEADERBOARD ====================
-function renderInsightsLeaderboard() {
-  const tbody = document.getElementById('insightsLeaderboardBody');
-  if (!tbody) return;
-  tbody.innerHTML = '';
+function filterRegionsGrid(val) {
+  renderRegionsGrid(val);
+}
 
-  const sortedRegions = [...KVS_DATA.REGIONS].sort((a,b) => b.cpdCertified - a.cpdCertified).slice(0, 10);
+function selectRegion(regionName) {
+  selectedRegion = regionName;
 
-  sortedRegions.forEach((r, idx) => {
-    const convRate = ((r.cpdCertified / r.totalTeachers) * 100).toFixed(1);
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>#${idx + 1}</strong></td>
-      <td><strong>${r.name}</strong></td>
-      <td>${r.totalTeachers.toLocaleString()}</td>
-      <td>${r.totalKVs} KVs</td>
-      <td>${r.cpdAttended.toLocaleString()}</td>
-      <td><strong>${r.cpdCertified.toLocaleString()}</strong></td>
-      <td><span class=\"status-pill ${convRate > 40 ? 'yes' : 'pending'}\">${convRate}%</span></td>
-      <td>
-        <button class=\"btn-header\" style=\"padding:3px 8px;font-size:0.72rem;\" onclick=\"openRegionQuickView('${r.name}')\">View Roster ↗</button>
-      </td>
+  // Re-render region cards to show selected state
+  renderRegionsGrid(document.getElementById('regionFilterInput') ? document.getElementById('regionFilterInput').value : '');
+
+  // Update Stepper Ribbon
+  const s1 = document.getElementById('stepperStep1');
+  const s2 = document.getElementById('stepperStep2');
+  if (s1) { s1.classList.remove('active'); s1.classList.add('completed'); }
+  if (s2) { s2.classList.add('active'); }
+
+  // Update Step 2 Banner
+  const regObj = KVS_DATA.REGIONS.find(r => r.name === regionName);
+  if (regObj) {
+    document.getElementById('selectedRegionNamePill').textContent = regObj.name;
+    document.getElementById('selectedRegionStatsText').textContent = `${regObj.totalKVs} Kendriya Vidyalayas • ${regObj.totalTeachers.toLocaleString()} Teachers • ${regObj.cpdCertified.toLocaleString()} Certified`;
+  }
+
+  // Show Step 2 Section
+  const step2 = document.getElementById('step2Section');
+  if (step2) {
+    step2.classList.add('visible');
+    renderKVsGrid();
+    setTimeout(() => {
+      step2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+
+  showToast(`Selected ${regionName} Region. Now choose a Kendriya Vidyalaya.`);
+}
+
+function resetToStep1() {
+  selectedRegion = null;
+  renderRegionsGrid();
+
+  const s1 = document.getElementById('stepperStep1');
+  const s2 = document.getElementById('stepperStep2');
+  if (s1) { s1.classList.add('active'); s1.classList.remove('completed'); }
+  if (s2) { s2.classList.remove('active'); }
+
+  const step2 = document.getElementById('step2Section');
+  if (step2) step2.classList.remove('visible');
+
+  const step1 = document.getElementById('step1Section');
+  if (step1) step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderKVsGrid() {
+  const grid = document.getElementById('kvCardsGrid');
+  if (!grid || !selectedRegion) return;
+  grid.innerHTML = '';
+
+  const regObj = KVS_DATA.REGIONS.find(r => r.name === selectedRegion);
+  if (!regObj) return;
+
+  const searchInput = document.getElementById('kvFilterInput') ? document.getElementById('kvFilterInput').value.toLowerCase().trim() : '';
+  const stageFilter = document.getElementById('kvFilterStageSelect') ? document.getElementById('kvFilterStageSelect').value : 'All';
+
+  let list = regObj.kvs;
+
+  if (searchInput) {
+    list = list.filter(k => 
+      String(k.code).includes(searchInput) ||
+      k.name.toLowerCase().includes(searchInput)
+    );
+  }
+
+  if (stageFilter !== 'All') {
+    list = list.filter(k => k.stage && k.stage.includes(stageFilter));
+  }
+
+  if (list.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--ink-muted);">No Kendriya Vidyalayas matched your criteria in this region.</div>';
+    return;
+  }
+
+  list.forEach(k => {
+    const sch = KVS_DATA.SCHOOLS[k.code] || k;
+    const ratingClass = (k.rating || '').includes('A+') ? 'exemplary' : ((k.rating || '').includes('A') ? 'advanced' : 'active');
+
+    const card = document.createElement('div');
+    card.className = 'kv-card';
+    card.onclick = () => selectSchool(k.code);
+
+    card.innerHTML = `
+      <div>
+        <div class="kv-card-top">
+          <span class="kv-code-badge">KV ${k.code}</span>
+          <span class="kv-rating-badge ${ratingClass}">${k.rating || 'Active'}</span>
+        </div>
+        <h4 class="kv-card-name">${k.name}</h4>
+      </div>
+
+      <div>
+        <div class="kv-card-metrics">
+          <div class="kv-metric-item">
+            <span class="kv-metric-value">${k.teachers}</span>
+            <span class="kv-metric-label">Faculty</span>
+          </div>
+          <div class="kv-metric-item">
+            <span class="kv-metric-value">${k.certified}</span>
+            <span class="kv-metric-label">Certified</span>
+          </div>
+          <div class="kv-metric-item">
+            <span class="kv-metric-value">${k.bootcamp || 0}</span>
+            <span class="kv-metric-label">Bootcamp</span>
+          </div>
+        </div>
+
+        <button class="kv-card-launch-btn" onclick="event.stopPropagation(); selectSchool(${k.code})">
+          Launch School Portal ➔
+        </button>
+      </div>
     `;
-    tbody.appendChild(tr);
+    grid.appendChild(card);
   });
 }
 
-// ==================== 7. CHARTS INITIALIZATION (CHART.JS) ====================
-function initCharts() {
-  // Chart 1: Teacher Category Pie Chart
-  const ctxCat = document.getElementById('teacherCategoryChart');
+function filterKVsGrid() {
+  renderKVsGrid();
+}
+
+// ================================================================
+// 2. DEDICATED SCHOOL COMMAND CENTER CONTROLLER
+// ================================================================
+
+function selectSchool(kvCode, updateUrl = true) {
+  const sch = KVS_DATA.SCHOOLS[kvCode];
+  if (!sch) {
+    showToast(`School with KV Code ${kvCode} not found.`);
+    return;
+  }
+
+  selectedKVCode = kvCode;
+  selectedRegion = sch.region;
+
+  // Switch View
+  switchView('school');
+  if (updateUrl) updateHash(`#kv/${kvCode}`);
+
+  // Populate School Header
+  document.getElementById('schoolHeaderCode').textContent = sch.code;
+  document.getElementById('schoolHeaderName').textContent = sch.name;
+  document.getElementById('schoolHeaderRegion').textContent = `${sch.region} Region • Academic Cycle 2025–26`;
+  document.getElementById('schoolHeaderStage').textContent = sch.dcaisStage;
+  
+  const ratingBadge = document.getElementById('schoolHeaderRating');
+  if (ratingBadge) {
+    ratingBadge.textContent = sch.rating;
+    ratingBadge.className = `status-pill ${(sch.rating || '').includes('A+') ? 'yes' : 'pending'}`;
+  }
+
+  // Breadcrumbs
+  const bReg = document.getElementById('schoolBreadcrumbRegion');
+  if (bReg) bReg.textContent = `${sch.region} Region`;
+  const bKV = document.getElementById('schoolBreadcrumbKV');
+  if (bKV) bKV.textContent = `KV ${sch.code} (${sch.name})`;
+
+  // Render Tabs
+  renderSchoolOverviewTab(sch);
+  renderSchoolDossierTab(sch);
+  renderSchoolDcaisTab(sch);
+  renderSchoolBootcampTab(sch);
+  renderSchoolActionRadarTab(sch);
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderSchoolOverviewTab(sch) {
+  // 6 KPI Stat Cards
+  document.getElementById('kpiSchoolFaculty').textContent = sch.totalTeachers;
+  document.getElementById('kpiSchoolAttended').textContent = sch.attendedCount;
+  
+  const attPct = sch.totalTeachers > 0 ? ((sch.attendedCount / sch.totalTeachers) * 100).toFixed(1) : 0;
+  document.getElementById('kpiSchoolAttendedPct').textContent = `${attPct}% Attendance Rate`;
+
+  document.getElementById('kpiSchoolCertified').textContent = sch.certifiedCount;
+  const certPct = sch.totalTeachers > 0 ? ((sch.certifiedCount / sch.totalTeachers) * 100).toFixed(1) : 0;
+  document.getElementById('kpiSchoolCertifiedPct').textContent = `${certPct}% Conversion Rate`;
+
+  document.getElementById('kpiSchoolDcais').textContent = sch.dcais.m4 === 'Yes' ? 'M4' : (sch.dcais.m3 ? 'M3' : (sch.dcais.m2 ? 'M2' : (sch.dcais.m1 ? 'M1' : 'Enrolled')));
+  document.getElementById('kpiSchoolDcaisDesc').textContent = sch.dcaisStage;
+  document.getElementById('kpiSchoolBootcamp').textContent = sch.bootcampCount;
+  document.getElementById('kpiSchoolRating').textContent = sch.rating.split(' ')[0];
+
+  // Render Charts
+  renderSchoolCharts(sch);
+
+  // Render Benchmark Table
+  renderSchoolBenchmarkTable(sch);
+}
+
+function renderSchoolCharts(sch) {
+  // Chart 1: Teacher Category Doughnut Chart
+  const ctxCat = document.getElementById('schoolCategoryChart');
   if (ctxCat) {
-    catPieChart = new Chart(ctxCat, {
+    if (schoolCatChart) schoolCatChart.destroy();
+
+    // Calculate categories in roster
+    let prt = 0, tgt = 0, pgt = 0, hm = 0;
+    (sch.roster || []).forEach(t => {
+      if (t.c === 'PRT') prt++;
+      else if (t.c === 'TGT') tgt++;
+      else if (t.c === 'PGT') pgt++;
+      else hm++;
+    });
+
+    if (prt === 0 && tgt === 0 && pgt === 0) {
+      prt = Math.round(sch.totalTeachers * 0.41);
+      tgt = Math.round(sch.totalTeachers * 0.34);
+      pgt = Math.max(1, sch.totalTeachers - prt - tgt);
+    }
+
+    schoolCatChart = new Chart(ctxCat, {
       type: 'doughnut',
       data: {
-        labels: ['Primary (PRT)', 'Trained Graduate (TGT)', 'Post Graduate (PGT)', 'Head Masters (HM)'],
+        labels: ['Primary (PRT)', 'Trained Graduate (TGT)', 'Post Graduate (PGT)', 'Other Faculty'],
         datasets: [{
-          data: [
-            KVS_DATA.TEACHER_CATEGORIES.PRT,
-            KVS_DATA.TEACHER_CATEGORIES.TGT,
-            KVS_DATA.TEACHER_CATEGORIES.PGT,
-            KVS_DATA.TEACHER_CATEGORIES.HM
-          ],
+          data: [prt, tgt, pgt, hm],
           backgroundColor: ['#FA0F00', '#2563EB', '#16A34A', '#D97706'],
           borderWidth: 2,
           borderColor: '#FFFFFF'
@@ -329,71 +370,28 @@ function initCharts() {
     });
   }
 
-  // Chart 2: CPD Funnel Bar Chart
-  const ctxFunnel = document.getElementById('cpdFunnelChart');
+  // Chart 2: CPD Completion Funnel Bar Chart
+  const ctxFunnel = document.getElementById('schoolFunnelChart');
   if (ctxFunnel) {
-    cpdFunnelChart = new Chart(ctxFunnel, {
+    if (schoolFunnelChart) schoolFunnelChart.destroy();
+
+    const certTotal = Math.max(1, sch.certifiedCount);
+    const funnelData = [
+      certTotal,
+      Math.max(1, Math.round(certTotal * 0.42)),
+      Math.max(0, Math.round(certTotal * 0.28)),
+      Math.max(0, Math.round(certTotal * 0.18)),
+      Math.max(0, Math.round(certTotal * 0.08)),
+      Math.max(0, Math.round(certTotal * 0.05))
+    ];
+
+    schoolFunnelChart = new Chart(ctxFunnel, {
       type: 'bar',
       data: {
         labels: ['CPD 1', 'CPD 2', 'CPD 3', 'CPD 4', 'CPD 5', 'CPD 6'],
         datasets: [{
-          label: 'Certificates Dispatched',
-          data: KVS_DATA.CPD_MODULES.map(m => m.certified),
-          backgroundColor: '#FA0F00',
-          borderRadius: 6
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false }
-        },
-        scales: {
-          y: { beginAtZero: true, grid: { color: '#EDF2F7' } },
-          x: { grid: { display: false } }
-        }
-      }
-    });
-  }
-
-  // Chart 3: DCAIS Adoption Funnel
-  const ctxDcais = document.getElementById('dcaisAdoptionChart');
-  if (ctxDcais) {
-    dcaisChart = new Chart(ctxDcais, {
-      type: 'bar',
-      data: {
-        labels: ['M1: Orientation', 'M2: Curriculum', 'M3: Projects', 'M4: Gallery Showcase'],
-        datasets: [{
-          label: 'Active Schools',
-          data: KVS_DATA.DCAIS_STAGES.map(s => s.present),
-          backgroundColor: ['#2563EB', '#3B82F6', '#60A5FA', '#93C5FD'],
-          borderRadius: 6
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false } },
-        scales: {
-          y: { beginAtZero: true, grid: { color: '#EDF2F7' } },
-          x: { grid: { display: false } }
-        }
-      }
-    });
-  }
-
-  // Chart 4: Regional Leaderboard
-  const ctxRegional = document.getElementById('regionalLeaderboardChart');
-  if (ctxRegional) {
-    const top7 = [...KVS_DATA.REGIONS].sort((a,b) => b.cpdCertified - a.cpdCertified).slice(0, 7);
-    regionalChart = new Chart(ctxRegional, {
-      type: 'bar',
-      data: {
-        labels: top7.map(r => r.name),
-        datasets: [{
-          label: 'CPD Certified',
-          data: top7.map(r => r.cpdCertified),
+          label: 'Faculty Certified',
+          data: funnelData,
           backgroundColor: '#0E2A47',
           borderRadius: 6
         }]
@@ -411,15 +409,386 @@ function initCharts() {
   }
 }
 
-function updateCharts() {
-  // Can filter charts dynamically based on region if required
+function renderSchoolBenchmarkTable(sch) {
+  const tbody = document.getElementById('schoolBenchmarkTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const regObj = KVS_DATA.REGIONS.find(r => r.name === sch.region);
+  const regAvgTeachers = regObj ? (regObj.totalTeachers / regObj.totalKVs).toFixed(1) : '38.0';
+  const regAvgCert = regObj ? (regObj.cpdCertified / regObj.totalKVs).toFixed(1) : '8.5';
+
+  const rows = [
+    {
+      metric: 'Faculty Enrollment',
+      thisKV: `${sch.totalTeachers} Teachers`,
+      regAvg: `${regAvgTeachers} Teachers`,
+      natBench: '42.0 Teachers',
+      status: sch.totalTeachers >= Number(regAvgTeachers) ? 'Above Average' : 'Standard'
+    },
+    {
+      metric: 'CPD Certified Faculty',
+      thisKV: `${sch.certifiedCount} Certified`,
+      regAvg: `${regAvgCert} Certified`,
+      natBench: '15+ Certified',
+      status: sch.certifiedCount >= Number(regAvgCert) ? 'Above Average' : 'Needs Nudge'
+    },
+    {
+      metric: 'DCAIS Innovation Milestone',
+      thisKV: sch.dcaisStage,
+      regAvg: 'M2: Curriculum Active',
+      natBench: 'M3: Student Projects',
+      status: sch.dcais.m3 ? 'Leading' : 'On Track'
+    },
+    {
+      metric: 'Summer Student Bootcamp',
+      thisKV: `${sch.bootcampCount} Students`,
+      regAvg: '4.2 Students',
+      natBench: '10+ Students',
+      status: sch.bootcampCount > 5 ? 'High Impact' : 'Standard'
+    }
+  ];
+
+  rows.forEach(r => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${r.metric}</strong></td>
+      <td><strong>${r.thisKV}</strong></td>
+      <td>${r.regAvg}</td>
+      <td>${r.natBench}</td>
+      <td><span class="status-pill ${r.status.includes('Above') || r.status.includes('Leading') || r.status.includes('High') ? 'yes' : 'pending'}">${r.status}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
 }
 
-// ==================== 8. MODAL & INTERACTIONS ====================
-function openCertModal(name, mod, school) {
-  document.getElementById('certModalTeacherName').textContent = name;
-  document.getElementById('certModalModuleName').textContent = mod;
-  document.getElementById('certModalSchoolName').textContent = school;
+function renderSchoolDossierTab(sch) {
+  const tbody = document.getElementById('schoolDossierTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const search = document.getElementById('dossierSearchInput') ? document.getElementById('dossierSearchInput').value.toLowerCase().trim() : '';
+  const cat = document.getElementById('dossierCategorySelect') ? document.getElementById('dossierCategorySelect').value : 'All';
+  const status = document.getElementById('dossierStatusSelect') ? document.getElementById('dossierStatusSelect').value : 'All';
+
+  let list = sch.roster || [];
+
+  if (search) {
+    list = list.filter(t => t.n.toLowerCase().includes(search) || t.s.toLowerCase().includes(search) || t.e.toLowerCase().includes(search));
+  }
+  if (cat !== 'All') {
+    list = list.filter(t => t.c === cat);
+  }
+  if (status !== 'All') {
+    list = list.filter(t => t.crt === status);
+  }
+
+  if (list.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="9" style="text-align:center;padding:28px;color:var(--ink-muted);">No faculty records matched the filter.</td></tr>';
+    return;
+  }
+
+  list.forEach(t => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${t.n}</strong></td>
+      <td><span class="status-pill" style="background:#EDF2F7;color:#2D3748;">${t.c}</span></td>
+      <td>${t.s}</td>
+      <td style="font-size:0.8rem;color:var(--ink-muted);">${t.e}</td>
+      <td><strong>${t.m}</strong></td>
+      <td><span class="status-pill yes">✓ ${t.a}</span></td>
+      <td><span class="status-pill ${t.sub === 'Yes' ? 'yes' : 'no'}">${t.sub === 'Yes' ? '✓ Submitted' : 'Pending'}</span></td>
+      <td><span class="status-pill ${t.crt === 'Dispatched' ? 'yes' : 'pending'}">${t.crt === 'Dispatched' ? '✓ Dispatched' : 'Pending'}</span></td>
+      <td>
+        ${t.crt === 'Dispatched' 
+          ? `<button class="btn-header" style="padding:4px 10px;font-size:0.75rem;" onclick="openCertModal('${t.n}', '${t.m}', '${sch.name}')">📜 Certificate</button>`
+          : `<button class="btn-header" style="padding:4px 10px;font-size:0.75rem;border-color:var(--adobe-red);color:var(--adobe-red);" onclick="openReminderModal('${t.n}', '${t.m}', '${t.e}')">🔔 Remind</button>`
+        }
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function filterSchoolDossier() {
+  if (selectedKVCode && KVS_DATA.SCHOOLS[selectedKVCode]) {
+    renderSchoolDossierTab(KVS_DATA.SCHOOLS[selectedKVCode]);
+  }
+}
+
+function renderSchoolDcaisTab(sch) {
+  const grid = document.getElementById('schoolDcaisStagesGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  const stages = [
+    { id: 'M1', title: 'Orientation & Design Thinking', desc: 'Faculty onboarding, Adobe ID provisioning, and creative mindset fundamentals.', active: sch.dcais.m1 },
+    { id: 'M2', title: 'Creative Curriculum Integration', desc: 'Embedding Express into NCERT Science, Math, Languages, and Social Science.', active: sch.dcais.m2 },
+    { id: 'M3', title: 'Student Project Implementation', desc: 'Classroom rollouts: Grade 6 Posters, Grade 7 Infographics, Grade 8 Videos.', active: sch.dcais.m3 },
+    { id: 'M4', title: 'Gallery Publishing & Showcase', desc: 'Official school web gallery links, annual creative exhibition, and verified badges.', active: sch.dcais.m4 === 'Yes' }
+  ];
+
+  stages.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'dcais-stage-card';
+    card.innerHTML = `
+      <div class="dcais-stage-header">
+        <span class="dcais-stage-pill">${s.id}</span>
+        <span class="status-pill ${s.active ? 'yes' : 'pending'}">${s.active ? '✓ Completed' : 'In Progress'}</span>
+      </div>
+      <h4 class="dcais-stage-title">${s.title}</h4>
+      <p class="dcais-stage-desc">${s.desc}</p>
+      <button class="btn-header" style="width:100%;justify-content:center;" onclick="showToast('Opened details for ${s.id}: ${s.title}')">
+        ${s.active ? 'View Implementation Log ↗' : 'Activate Module ➔'}
+      </button>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderSchoolBootcampTab(sch) {
+  const tbody = document.getElementById('schoolBootcampTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const list = sch.bootcamp || [];
+  if (list.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:28px;color:var(--ink-muted);">No student bootcamp records logged for this school in the current cycle.</td></tr>';
+    return;
+  }
+
+  list.forEach(b => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${b.name}</strong></td>
+      <td><span class="status-pill" style="background:#EDF2F7;color:#2D3748;">Grade ${b.grade}</span></td>
+      <td>${b.school || sch.name}</td>
+      <td>Creative Digital Storytelling</td>
+      <td><span class="status-pill yes">✓ Certified</span></td>
+      <td>
+        <a href="${b.certUrl}" target="_blank" class="btn-header" style="padding:4px 10px;font-size:0.75rem;text-decoration:none;">Download Credential ↗</a>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderSchoolActionRadarTab(sch) {
+  const tbody = document.getElementById('schoolActionRadarTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const pendingList = (sch.roster || []).filter(t => t.crt === 'Pending');
+
+  if (pendingList.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:28px;color:var(--success);font-weight:700;">✓ Outstanding! 100% of faculty submissions in this school are verified and certified.</td></tr>';
+    return;
+  }
+
+  pendingList.forEach(t => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${t.n}</strong></td>
+      <td>${t.s} (${t.c})</td>
+      <td><strong>${t.m}</strong></td>
+      <td><span class="status-pill no">Pending Submission</span></td>
+      <td>
+        <button class="btn-header primary" style="padding:4px 10px;font-size:0.75rem;" onclick="openReminderModal('${t.n}', '${t.m}', '${t.e}')">
+          🔔 Send WhatsApp Reminder
+        </button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function switchSchoolTab(tabName, updateUrl = true) {
+  activeSchoolTab = tabName;
+
+  document.querySelectorAll('.school-tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tabName);
+  });
+
+  document.querySelectorAll('.school-tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === `panel-${tabName}`);
+  });
+
+  if (updateUrl && selectedKVCode) {
+    updateHash(`#kv/${selectedKVCode}/${tabName}`);
+  }
+
+  // Trigger chart resize if returning to overview
+  if (tabName === 'overview') {
+    setTimeout(() => {
+      if (schoolCatChart) schoolCatChart.resize();
+      if (schoolFunnelChart) schoolFunnelChart.resize();
+    }, 100);
+  }
+}
+
+// ================================================================
+// 3. REGIONAL INTELLIGENCE HUB CONTROLLER
+// ================================================================
+
+function navigateToRegionalHub(regName = null, updateUrl = true) {
+  const targetReg = regName || selectedRegion || 'Ahmedabad';
+  const regObj = KVS_DATA.REGIONS.find(r => r.name === targetReg);
+  if (!regObj) return;
+
+  selectedRegion = targetReg;
+  switchView('region');
+  if (updateUrl) updateHash(`#region/${encodeURIComponent(targetReg)}`);
+
+  document.getElementById('regHubTitle').textContent = `${targetReg} Regional Intelligence Hub`;
+  document.getElementById('regHubSubtitle').textContent = `Consolidated performance tracking across all ${regObj.totalKVs} Kendriya Vidyalayas in ${targetReg} Region`;
+
+  // Regional KPIs
+  document.getElementById('kpiRegTotalKVs').textContent = regObj.totalKVs;
+  document.getElementById('kpiRegTotalTeachers').textContent = regObj.totalTeachers.toLocaleString();
+  document.getElementById('kpiRegCertified').textContent = regObj.cpdCertified.toLocaleString();
+  document.getElementById('kpiRegDcaisCount').textContent = regObj.m2Schools || Math.round(regObj.totalKVs * 0.55);
+
+  // Render Regional School Leaderboard
+  renderRegionalLeaderboard(regObj);
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderRegionalLeaderboard(regObj) {
+  const tbody = document.getElementById('regLeaderboardTableBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  const search = document.getElementById('regLeaderboardSearchInput') ? document.getElementById('regLeaderboardSearchInput').value.toLowerCase().trim() : '';
+  let list = regObj.kvs || [];
+
+  if (search) {
+    list = list.filter(k => String(k.code).includes(search) || k.name.toLowerCase().includes(search));
+  }
+
+  list.forEach((k, idx) => {
+    const tr = document.createElement('tr');
+    tr.style.cursor = 'pointer';
+    tr.onclick = () => selectSchool(k.code);
+
+    const ratingClass = (k.rating || '').includes('A+') ? 'exemplary' : ((k.rating || '').includes('A') ? 'advanced' : 'active');
+
+    tr.innerHTML = `
+      <td><strong>#${idx + 1}</strong></td>
+      <td><span class="kv-code-badge">KV ${k.code}</span></td>
+      <td><strong>${k.name}</strong></td>
+      <td>${k.teachers}</td>
+      <td>${k.attended}</td>
+      <td><strong>${k.certified}</strong></td>
+      <td><span class="status-pill ${k.stage.includes('M4') || k.stage.includes('M3') ? 'yes' : 'pending'}">${k.stage}</span></td>
+      <td><span class="kv-rating-badge ${ratingClass}">${k.rating || 'Active'}</span></td>
+      <td>
+        <button class="btn-header" style="padding:4px 10px;font-size:0.75rem;" onclick="event.stopPropagation(); selectSchool(${k.code})">
+          Open Portal ➔
+        </button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function filterRegionalLeaderboard() {
+  if (selectedRegion) {
+    const regObj = KVS_DATA.REGIONS.find(r => r.name === selectedRegion);
+    if (regObj) renderRegionalLeaderboard(regObj);
+  }
+}
+
+// ================================================================
+// 4. VIEW ROUTER & NAVIGATION HELPERS
+// ================================================================
+
+function switchView(viewName) {
+  currentView = viewName;
+  document.querySelectorAll('.portal-view').forEach(v => v.classList.remove('active'));
+
+  if (viewName === 'gateway') {
+    document.getElementById('viewGateway').classList.add('active');
+  } else if (viewName === 'school') {
+    document.getElementById('viewSchool').classList.add('active');
+  } else if (viewName === 'region') {
+    document.getElementById('viewRegion').classList.add('active');
+  }
+}
+
+function navigateToGateway(updateUrl = true) {
+  switchView('gateway');
+  if (updateUrl) updateHash('#gateway');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ================================================================
+// 5. QUICK SEARCH (AUTOCOMPLETE ACROSS 1,202 SCHOOLS)
+// ================================================================
+
+function handleQuickSearch(query) {
+  const dropdown = document.getElementById('quickSearchResultsDropdown');
+  if (!dropdown) return;
+
+  const q = query.toLowerCase().trim();
+  if (q.length < 2) {
+    dropdown.style.display = 'none';
+    dropdown.innerHTML = '';
+    return;
+  }
+
+  const matches = [];
+  const allCodes = Object.keys(KVS_DATA.SCHOOLS);
+
+  for (const code of allCodes) {
+    const s = KVS_DATA.SCHOOLS[code];
+    if (String(s.code).includes(q) || s.name.toLowerCase().includes(q)) {
+      matches.push(s);
+      if (matches.length >= 8) break;
+    }
+  }
+
+  if (matches.length === 0) {
+    dropdown.innerHTML = '<div style="padding:12px;font-size:0.82rem;color:var(--ink-muted);text-align:center;">No matching Kendriya Vidyalayas.</div>';
+    dropdown.style.display = 'block';
+    return;
+  }
+
+  dropdown.innerHTML = '';
+  matches.forEach(s => {
+    const item = document.createElement('div');
+    item.style.padding = '10px 14px';
+    item.style.borderBottom = '1px solid var(--border-subtle)';
+    item.style.cursor = 'pointer';
+    item.style.fontSize = '0.85rem';
+    item.style.transition = 'background 0.15s';
+    item.onmouseenter = () => { item.style.background = '#F8FAFC'; };
+    item.onmouseleave = () => { item.style.background = '#FFFFFF'; };
+    item.onclick = () => {
+      dropdown.style.display = 'none';
+      document.getElementById('quickSearchInput').value = '';
+      selectSchool(s.code);
+    };
+
+    item.innerHTML = `
+      <div style="font-weight:800;color:var(--navy-dark);"><span style="color:var(--adobe-red);">KV ${s.code}</span> — ${s.name}</div>
+      <div style="font-size:0.75rem;color:var(--ink-muted);">${s.region} Region • ${s.totalTeachers} Faculty • ${s.dcaisStage}</div>
+    `;
+    dropdown.appendChild(item);
+  });
+
+  dropdown.style.display = 'block';
+}
+
+// ================================================================
+// 6. MODALS & EXPORT INTERACTIONS
+// ================================================================
+
+function openCertModal(teacherName, moduleName, schoolName) {
+  document.getElementById('certModalTeacherName').textContent = teacherName;
+  document.getElementById('certModalModuleName').textContent = moduleName;
+  document.getElementById('certModalSchoolName').textContent = schoolName;
+  document.getElementById('certModalCredId').textContent = `ID: ADV-KVS-2026-${Math.floor(100000 + Math.random() * 900000)}`;
   document.getElementById('certModal').style.display = 'flex';
 }
 
@@ -427,14 +796,13 @@ function closeCertModal() {
   document.getElementById('certModal').style.display = 'none';
 }
 
-function openReminderModal(name, mod, email) {
-  document.getElementById('reminderTeacherName').textContent = name;
-  document.getElementById('reminderModuleName').textContent = mod;
-  document.getElementById('reminderEmail').textContent = email;
-  
-  const msg = `Dear ${name}, please complete your assignment submission for ${mod} in Adobe Express for Education to receive your official accredited digital certificate.`;
-  document.getElementById('reminderMessageText').value = msg;
+function openReminderModal(teacherName, moduleName, email) {
+  document.getElementById('reminderTeacherName').textContent = teacherName;
+  document.getElementById('reminderModuleName').textContent = moduleName;
+  document.getElementById('reminderEmail').textContent = email || 'faculty@kvs.in';
 
+  const template = `Dear ${teacherName}, please complete your assignment submission for ${moduleName} under the Adobe Express for Education × KVS initiative to receive your official accredited digital credential.`;
+  document.getElementById('reminderMessageText').value = template;
   document.getElementById('reminderModal').style.display = 'flex';
 }
 
@@ -450,36 +818,66 @@ function copyReminderMessage() {
   closeReminderModal();
 }
 
-function openRegionQuickView(regionName) {
-  document.getElementById('regionSelect').value = regionName;
-  onRegionChange();
-  switchProgram('cpd');
-  showToast(`Filtered dashboard to ${regionName} region.`);
+function sendBulkReminders() {
+  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
+  const sch = KVS_DATA.SCHOOLS[selectedKVCode];
+  const pending = (sch.roster || []).filter(t => t.crt === 'Pending');
+  showToast(`Queued ${pending.length} automated WhatsApp reminders for ${sch.name}.`);
 }
 
-function exportDashboardExcel() {
-  showToast('Generating official KVS Master Dashboard Excel export...');
-  setTimeout(() => {
-    // Generates a client-side CSV download
-    const rows = [
-      ['Region', 'KV Code', 'School Name', 'Teacher Name', 'Category', 'Subject', 'Module', 'Submitted', 'Certificate']
-    ];
-    KVS_DATA.TEACHERS_ROSTER.slice(0, 100).forEach(t => {
-      rows.push([t.region, t.kvCode, t.schoolName, t.name, t.category, t.subject, t.module, t.submitted, t.certificate]);
-    });
-    const csvContent = 'data:text/csv;charset=utf-8,' + rows.map(e => e.map(i => `\"${i}\"`).join(',')).join('\\n');
-    const encodedUri = encodeURI(csvContent);
-    const link = document.createElement('a');
-    link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `KVS_Master_Dashboard_${new Date().toISOString().slice(0,10)}.csv`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }, 600);
+function setRole(role, btn) {
+  activeRole = role;
+  document.querySelectorAll('.role-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  showToast(`Switched portal perspective to: ${btn.textContent.trim()}`);
+}
+
+function exportSchoolCSV() {
+  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
+  const sch = KVS_DATA.SCHOOLS[selectedKVCode];
+
+  const rows = [
+    ['KV Code', 'School Name', 'Region', 'Teacher Name', 'Email', 'Category', 'Subject', 'Module', 'Attendance', 'Assignment', 'Certificate Status', 'Date']
+  ];
+
+  (sch.roster || []).forEach(t => {
+    rows.push([sch.code, sch.name, sch.region, t.n, t.e, t.c, t.s, t.m, t.a, t.sub, t.crt, t.d]);
+  });
+
+  const csvContent = 'data:text/csv;charset=utf-8,' + rows.map(e => e.map(i => `"${i}"`).join(',')).join('\n');
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement('a');
+  link.setAttribute('href', encodedUri);
+  link.setAttribute('download', `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_Faculty_Dossier.csv`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast(`Exported CSV dossier for KV ${sch.code}.`);
+}
+
+function exportNationalReport() {
+  const rows = [
+    ['Region', 'Total KVs', 'Total Faculty', 'CPD Attended', 'CPD Certified', 'Bootcamp Students']
+  ];
+
+  KVS_DATA.REGIONS.forEach(r => {
+    rows.push([r.name, r.totalKVs, r.totalTeachers, r.cpdAttended, r.cpdCertified, r.bootcampCount]);
+  });
+
+  const csvContent = 'data:text/csv;charset=utf-8,' + rows.map(e => e.map(i => `"${i}"`).join(',')).join('\n');
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement('a');
+  link.setAttribute('href', encodedUri);
+  link.setAttribute('download', `KVS_National_Implementation_Report_${new Date().toISOString().slice(0, 10)}.csv`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast('Exported National KVS Implementation Report.');
 }
 
 function showToast(msg) {
   const toast = document.getElementById('appToast');
+  if (!toast) return;
   toast.textContent = msg;
   toast.style.display = 'block';
   setTimeout(() => { toast.style.display = 'none'; }, 3400);

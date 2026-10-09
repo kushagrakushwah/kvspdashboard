@@ -1,5 +1,5 @@
-# 🎓 KVS Master Dashboard — Adobe Express for Education
-> **Kendriya Vidyalaya Sangathan (KVS) National Implementation & Analytics Portal**  
+# 🎓 KVS Master Implementation Portal — Adobe Express for Education
+> **Kendriya Vidyalaya Sangathan (KVS) National Multi-Stage Command Portal**  
 > **Source Telemetry:** Grounded in 74,000+ verified records from `Semi Annual Report.xlsx`  
 > **Live Deployment:** [https://kushagrakushwah.github.io/kvspdashboard/](https://kushagrakushwah.github.io/kvspdashboard/)
 
@@ -7,77 +7,86 @@
 
 ## 🌟 Executive Overview
 
-The **KVS Master Dashboard** is an enterprise-grade digital analytics and management portal engineered for **School Principals, Regional Officers (ROs), and KVS Commissioners**. It monitors the end-to-end national rollout of **Adobe Express for Education** across India.
+The **KVS Master Implementation Portal** is an enterprise-grade digital analytics and management web application engineered for **School Principals, Regional Officers (ROs), and KVS Commissioners**.
 
-It tracks:
-- **48,267 Teachers** registered across **28 KVS Regions**
-- **1,124 Kendriya Vidyalayas** searchable by 4-digit KV Code
-- **10,451 Accredited CPD Certificates** dispatched to faculty
-- **7,840 Active Workshop Participants**
-- **822 Schools** actively enrolled in the DCAIS Digital Innovation Hub
-- **1,747 Summer Bootcamp Credentials** issued to students in grades 6 to 12
+Unlike static single-page dashboards, this portal operates as a **true multi-stage institutional command system**:
+1. **Stepped Selection Gateway (`#gateway`):** First select one of the **25 Official KVS Regions**, then smoothly select any of the **1,202 Kendriya Vidyalayas** (searchable by 4-digit KV Code or school name).
+2. **Dedicated School Command Center (`#kv/[code]`):** Launches an extensive, deep-dive portal tailored specifically to that school's registered faculty, CPD certifications, DCAIS innovation progress, and student bootcamp output.
+3. **Regional Intelligence Hub (`#region/[name]`):** Allows Regional Officers to monitor all KVs across an entire region with interactive leaderboards and comparative analytics.
 
 ---
 
-## ⚡ Streamlined 3-Tier Architecture
+## 📊 Grounded Telemetry from `Semi Annual Report.xlsx`
 
-Following executive guidelines, the portal eliminates intermediate cluster/school-overview screens and presents a direct, high-speed command flow:
+Every metric in the portal is computed and validated against the official national semi-annual telemetry:
+- **48,267 Registered Teachers** cataloged across India
+- **1,202 Kendriya Vidyalayas** mapped by 4-digit KV Code and branch name
+- **25 KVS Regions:** Agra, Ahmedabad, Bengaluru, Bhopal, Bhubaneswar, Chandigarh, Chennai, Dehradun, Delhi, Ernakulam, Gurugram, Guwahati, Hyderabad, Jabalpur, Jaipur, Jammu, Kolkata, Lucknow, Mumbai, Patna, Raipur, Ranchi, Silchar, Tinsukia, Varanasi
+- **10,451 Accredited CPD Certificates** dispatched across Modules 1 to 6
+- **7,840 Active Workshop Attendance Records**
+- **822 Schools in DCAIS Digital Innovation** (M1: 449, M2: 277, M3: 159, M4: 49)
+- **1,747 Summer Bootcamp Students** across Grades 6 to 12
+
+---
+
+## ⚡ Stepped Application Flow
 
 ```
-👤 PRINCIPAL ➔ 1. REGION (Dropdown) ➔ 2. KV CODE / SCHOOL (Dropdown & Instant Search) ➔ PROGRAM LEVEL
+1. GATEWAY ➔ Select Region (25 Cards) ➔ 2. Select KV Code / School (Grid & Instant Search) ➔ 3. DEDICATED SCHOOL COMMAND CENTER
 ```
 
-### 1. 🎓 Program A: CPD Academy (Continuous Professional Development)
-- **Overview Page:** Interactive progression table across **CPD 1 to CPD 6** (Digital Foundations, Visual Communication, Collaborative Projects, Advanced Infographics, Interactive Classrooms, Evaluation Mastery).
-- **Interactive Visualizations (Chart.js):**
-  - **Funnel Drop-off Curve:** Tracks drop-off from CPD 1 (5,438 certified) down to CPD 6 (364 certified).
-  - **Teacher Category Breakdown (Pie Chart):** PRT (40.8%), TGT (33.9%), PGT (24.8%), HM (0.5%).
-- **Teacher Roster Dossier:** Filterable live directory of teachers with search by name, subject, category, or status.
-  - Action buttons: `📜 View Certificate` (preview official credential) and `🔔 Send WhatsApp Reminder`.
-- **Content & Output Resources:** One-click access to NCERT Digital Worksheets, Classroom Assignments, Creative Design Templates, and Student Portfolios.
+### 1. 🏛️ Page 1: Gateway & Stepped Selector (`#gateway`)
+- **Step 1: Region Selection:** Interactive grid of 25 regions with live school counts, total faculty, and certified teachers.
+- **Step 2: School Selection:** Filters down to all schools in the chosen region. Live search by 4-digit code (e.g. `1006`, `1066`, `1409`, `1778`) or name.
+- **Quick Switcher:** Instant auto-complete modal across all 1,202 schools from anywhere in the app.
 
-### 2. 💻 Program B: DCAIS Innovation (Digital Creativity & Innovation Skills)
-- **Module Status Page:** Real-time tracking of 822 schools across 4 stages:
-  - **M1: Orientation & Design Thinking** (449 Schools / 54.6% Active)
-  - **M2: Creative Curriculum Integration** (277 Schools / 33.7% Active)
-  - **M3: Student Project Implementation** (159 Schools / 19.3% Active)
-  - **M4: Gallery Publishing & Showcase** (49 Schools / 6.0% Active)
-- **Grade-Level Gallery Hub:** Validation of digital student projects across Grade 6 (Posters), Grade 7 (Infographics & Videos), and Grade 8 (Digital Storytelling).
-- **DCAIS Detailed View:** Live web gallery link generator, student creative package repository, and implementation milestone badges.
+### 2. 🏫 Page 2: Dedicated School Command Center (`#kv/[code]`)
+Dedicated to the selected school with 5 deep-dive sub-pages:
+- **Tab 1: 📊 Executive Command & KPIs:**
+  - 6 Key Stat Cards: Total Faculty, Attendance Rate, Certification Conversion, DCAIS Stage, Bootcamp Students, Performance Index.
+  - Interactive Visualizations: Faculty Category Doughnut Chart (PRT/TGT/PGT/HM) and CPD Completion Funnel (Modules 1–6).
+  - Institutional Benchmark Matrix comparing school against Regional Average and National Benchmark.
+- **Tab 2: 👩‍🏫 Faculty Dossier & CPD Records:**
+  - Full roster of registered teachers for this KV.
+  - Search by teacher name, subject, or email; filter by category and certification status.
+  - Actions: Official Certificate preview & download, WhatsApp / Email reminder generation.
+- **Tab 3: 🎨 DCAIS Innovation & Curriculum:**
+  - 4-Stage Adoption tracker: M1 (Design Thinking), M2 (Curriculum), M3 (Student Projects), M4 (Gallery).
+  - Classroom project modules for Grade 6, 7, and 8 with NCERT-aligned digital project kits.
+- **Tab 4: 🎒 Summer Student Bootcamp:**
+  - Real student participants from this school/region with verified credential download links.
+- **Tab 5: 🎯 Smart Action & Intervention Radar:**
+  - Auto-flags teachers who completed CPD 1 but have pending submissions for CPD 2 (63% national drop-off remediation).
+  - 1-Click WhatsApp bulk reminder generator.
 
-### 3. 📊 Data Insights & Action Radar (Executive Remediation Hub)
-- **Gaps & Pending Radar:** Flags the 63% drop-off between CPD 1 and 2 to re-engage educators.
-- **Regional Performance Leaderboard:** Comparative analysis of top regions (Tinsukia, Ranchi, Jaipur, Varanasi, Chennai, Bengaluru, Ahmedabad).
-- **Action Plan & Intervention:** 1-Click WhatsApp & Email reminder generator with pre-drafted templates.
-- **Top Performing Schools:** Digital recognition badges for high-performing KVs.
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend:** Modern Semantic HTML5, CSS3 Custom Properties (Design Tokens), Vanilla JavaScript (ES6+)
-- **Charts:** [Chart.js 4.4](https://www.chartjs.org/) via CDN (Pie charts, Funnel Bar charts, Doughnut charts)
-- **Zero Backend Dependencies:** 100% client-side data querying for instant 60 FPS performance and GitHub Pages compatibility.
-- **Responsive & Print-Ready:** Custom print stylesheet for executive presentation PDF generation (`Ctrl + P`).
+### 3. 🌐 Page 3: Regional Intelligence Hub (`#region/[name]`)
+- Consolidated regional overview for Regional Officers and Commissioners.
+- Complete school leaderboard ranking all KVs in the region.
+- One-click drill-down into any school's dedicated command center.
 
 ---
 
-## 🚀 Local Development & Preview
+## 🛠️ Technology Stack & Performance
 
-To run locally:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kushagrakushwah/kvspdashboard.git
-   cd kvspdashboard
-   ```
-2. Open `index.html` in any modern web browser:
+- **Frontend:** Semantic HTML5, CSS3 Custom Properties (Design Tokens), Vanilla JavaScript (ES6+)
+- **Visualizations:** [Chart.js 4.4](https://www.chartjs.org/) via CDN
+- **Zero Backend Dependencies:** 100% client-side data querying for instant 60 FPS transitions and GitHub Pages hosting.
+- **URL Hash Routing:** `#gateway`, `#region/[name]`, `#kv/[code]`, `#kv/[code]/[tab]` with full browser history support.
+- **Responsive & Print-Ready:** Custom print stylesheet for executive PDF exports (`Ctrl + P`).
+
+---
+
+## 🚀 Local Development
+
+1. Open `index.html` in any web browser:
    ```bash
    start index.html
    ```
+2. Or serve using any local static web server:
+   ```bash
+   npx serve .
+   ```
 
 ---
 
-## 📄 License & Attribution
-
-© 2026 Adobe Systems & Kendriya Vidyalaya Sangathan (KVS). All rights reserved.  
-Built for the national digital creativity and education initiative.
+© 2026 Adobe Systems & Kendriya Vidyalaya Sangathan (KVS). All rights reserved.
