@@ -1,37 +1,212 @@
 /**
- * KVS Principal Portal — Controller
+ * KVS Principal Portal — Complete Controller (Full Overhaul)
  * Architecture:
- * - View 1: Institution & Program Selection (Main Hub)
- * - View 2: Dedicated School CPD Portal (Personalized summary, charts, faculty roster, Certificate modal, WhatsApp, Print & Export)
- * - View 3: Dedicated School DCAIS Portal (Personalized summary, 4 stages, Grade 6-8 projects, Student Bootcamp, Print & Export)
+ * - View 1: Institution & Program Selection with Fast Combobox Search & Regional Benchmarking
+ * - View 2: Dedicated School CPD Portal (A4 Print Dossier, WhatsApp Group Broadcast, Filter Pills, Roster)
+ * - View 3: Dedicated School DCAIS Portal (A4 Print Dossier, Artifact Showcase Modal, 4 Stages, Bootcamp)
  */
 
 let selectedRegion = '';
 let selectedKVCode = null;
 let currentView = 'home';
+let currentRosterFilter = 'all';
+let allSchoolsList = [];
 let catChart = null;
 let funnelChart = null;
 
+// Creative Artifacts Metadata
+const ARTIFACT_METADATA = [
+  {
+    grade: "Grade 6 • Science & Environmental Studies",
+    title: "Ecosystem Conservation & Biodiversity Poster",
+    emoji: "🌱",
+    bg: "#FFF1F0",
+    color: "#FA0F00",
+    theme: "Design Thinking & Visual Communication (NCERT Chapter 7)",
+    tools: "Adobe Express Visual Layout, Typography Pairing, Vector Assets",
+    description: "Students utilized design thinking principles to identify regional deforestation issues and synthesized solutions into high-impact visual posters.",
+    rubric: "Visual hierarchy (40%), clarity of environmental message (30%), typography and color contrast (30%).",
+    competencies: "Visual Literacy, Environmental Sensitivity, Digital Media Composition"
+  },
+  {
+    grade: "Grade 7 • Social Science (History)",
+    title: "Medieval Indian Architecture & Heritage Infographic",
+    emoji: "🏛️",
+    bg: "#EFF6FF",
+    color: "#3B82F6",
+    theme: "Curriculum Integration & Historical Process Mapping (NCERT Chapter 5)",
+    tools: "Adobe Express Timeline Layout, Information Chunking, Custom Iconography",
+    description: "Students mapped the architectural evolution of Qutub Minar, Konark Sun Temple, and Red Fort with annotations and historical context.",
+    rubric: "Historical fidelity (35%), graphic organization (35%), structured storytelling (30%).",
+    competencies: "Historical Inquiry, Analytical Thinking, Infographic Construction"
+  },
+  {
+    grade: "Grade 8 • Digital Creativity Skills",
+    title: "Personal Creative Portfolio & Academic Showcase",
+    emoji: "💻",
+    bg: "#ECFDF5",
+    color: "#10B981",
+    theme: "Multimedia Web Page Design & Digital Identity (NEP 2020 Aligned)",
+    tools: "Adobe Express Web Page Builder, Responsive Layouts, Embedded Assets",
+    description: "Students built interactive digital portfolios featuring project highlights, personal essays, science reflections, and creative artwork.",
+    rubric: "Navigation clarity (30%), depth of creative reflections (40%), responsive web aesthetics (30%).",
+    competencies: "Digital Identity, Self-Reflective Pedagogy, Web Publishing"
+  },
+  {
+    grade: "Summer Innovation Bootcamp • Special Credential",
+    title: "Animated Science Story Explainer Video",
+    emoji: "🎬",
+    bg: "#FAF5FF",
+    color: "#8B5CF6",
+    theme: "Creative Storytelling, Audio Pacing & Kinetic Visuals",
+    tools: "Adobe Express Video Generator, Audio Narration, Motion Transitions",
+    description: "Bootcamp participants created 60-second animated scientific explanations of the Water Cycle, Lunar Eclipses, and Photosynthesis.",
+    rubric: "Conceptual clarity (40%), audiovisual synchrony (30%), engagement factor (30%).",
+    competencies: "Scientific Storytelling, Audio-Visual Production, Creative Problem Solving"
+  }
+];
+
 document.addEventListener('DOMContentLoaded', () => {
   initPortal();
+
+  // Close combobox when clicking outside
+  document.addEventListener('click', (e) => {
+    const wrap = document.querySelector('.combobox-wrap');
+    if (wrap && !wrap.contains(e.target)) {
+      hideComboboxDropdown();
+    }
+  });
 });
 
 function initPortal() {
   if (typeof KVS_DATA === 'undefined') return;
 
-  const regSelect = document.getElementById('regionSelect');
-  if (!regSelect) return;
+  // Build flattened school lookup array for instant typeahead
+  allSchoolsList = Object.values(KVS_DATA.SCHOOLS).map(s => ({
+    code: s.code,
+    name: s.name,
+    region: s.region,
+    totalTeachers: s.totalTeachers,
+    certifiedCount: s.certifiedCount,
+    rating: s.rating
+  }));
 
-  regSelect.innerHTML = '<option value="">Choose Region...</option>';
-  KVS_DATA.REGIONS.forEach(r => {
-    const opt = document.createElement('option');
-    opt.value = r.name;
-    opt.textContent = `${r.name} (${r.totalKVs} KVs)`;
-    regSelect.appendChild(opt);
-  });
+  // Populate Region Dropdown
+  const regSelect = document.getElementById('regionSelect');
+  if (regSelect) {
+    regSelect.innerHTML = '<option value="">Choose Region...</option>';
+    KVS_DATA.REGIONS.forEach(r => {
+      const opt = document.createElement('option');
+      opt.value = r.name;
+      opt.textContent = `${r.name} (${r.totalKVs} KVs)`;
+      regSelect.appendChild(opt);
+    });
+  }
 }
 
-// ==================== 1. REGION & SCHOOL CASCADE ====================
+// ==================== 1. FAST COMBOBOX / TYPEAHEAD ====================
+
+function onGlobalSearchInput(val) {
+  const q = val.toLowerCase().trim();
+  const clearBtn = document.getElementById('comboboxClearBtn');
+  if (clearBtn) clearBtn.style.display = q.length > 0 ? 'block' : 'none';
+
+  const dropdown = document.getElementById('comboboxDropdown');
+  if (!dropdown) return;
+
+  if (q.length === 0) {
+    dropdown.style.display = 'none';
+    dropdown.innerHTML = '';
+    return;
+  }
+
+  // Filter across all 1,202 schools
+  const matches = allSchoolsList.filter(s => 
+    String(s.code).includes(q) || 
+    s.name.toLowerCase().includes(q) ||
+    s.region.toLowerCase().includes(q)
+  ).slice(0, 12);
+
+  if (matches.length === 0) {
+    dropdown.innerHTML = '<div style="padding:14px;text-align:center;color:var(--slate-400);font-size:0.85rem;">No matching Kendriya Vidyalayas found.</div>';
+    dropdown.style.display = 'block';
+    return;
+  }
+
+  dropdown.innerHTML = '';
+  matches.forEach(m => {
+    const div = document.createElement('div');
+    div.className = 'combobox-item';
+    div.onclick = () => selectSchoolFromCombobox(m.code);
+    div.innerHTML = `
+      <div class="combobox-item-left">
+        <span class="combobox-kv-pill">KV ${m.code}</span>
+        <div>
+          <div class="combobox-name">${m.name}</div>
+          <div class="combobox-reg">${m.region} Region • Rating: ${m.rating}</div>
+        </div>
+      </div>
+      <span style="font-size:0.75rem;font-weight:800;color:var(--red);">Select ➔</span>
+    `;
+    dropdown.appendChild(div);
+  });
+
+  dropdown.style.display = 'block';
+}
+
+function showComboboxDropdown() {
+  const input = document.getElementById('globalSchoolSearch');
+  if (input && input.value.trim().length > 0) {
+    onGlobalSearchInput(input.value);
+  }
+}
+
+function hideComboboxDropdown() {
+  const dropdown = document.getElementById('comboboxDropdown');
+  if (dropdown) dropdown.style.display = 'none';
+}
+
+function clearCombobox() {
+  const input = document.getElementById('globalSchoolSearch');
+  if (input) input.value = '';
+  const clearBtn = document.getElementById('comboboxClearBtn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  hideComboboxDropdown();
+}
+
+function selectSchoolFromCombobox(code) {
+  const sch = KVS_DATA.SCHOOLS[code];
+  if (!sch) return;
+
+  hideComboboxDropdown();
+  const input = document.getElementById('globalSchoolSearch');
+  if (input) input.value = `KV ${sch.code} — ${sch.name} (${sch.region})`;
+  const clearBtn = document.getElementById('comboboxClearBtn');
+  if (clearBtn) clearBtn.style.display = 'block';
+
+  // Synchronize region dropdown
+  const regSelect = document.getElementById('regionSelect');
+  if (regSelect) regSelect.value = sch.region;
+
+  // Repopulate and synchronize school dropdown
+  const regObj = KVS_DATA.REGIONS.find(r => r.name === sch.region);
+  const schSelect = document.getElementById('schoolSelect');
+  if (regObj && schSelect) {
+    schSelect.innerHTML = '<option value="">Select KV School (Code / Name)...</option>';
+    regObj.kvs.forEach(k => {
+      const opt = document.createElement('option');
+      opt.value = k.code;
+      opt.textContent = `KV ${k.code} — ${k.name}`;
+      schSelect.appendChild(opt);
+    });
+    schSelect.disabled = false;
+    schSelect.value = sch.code;
+  }
+
+  setSchool(sch.code);
+}
+
+// ==================== 2. REGION & SCHOOL CASCADE ====================
 
 function onRegionChange() {
   const regSelect = document.getElementById('regionSelect');
@@ -81,13 +256,43 @@ function quickSelectRegion(regName) {
   onRegionChange();
 }
 
-// ==================== 2. SET SCHOOL & PREPARE DATA ====================
+// ==================== 3. REGIONAL BENCHMARK COMPUTATION ====================
+
+function computeRegionalBenchmark(sch) {
+  const regSchools = Object.values(KVS_DATA.SCHOOLS).filter(s => s.region === sch.region);
+  if (regSchools.length === 0) return { text: "Regional Leader", cls: "gold" };
+
+  const totalCert = regSchools.reduce((acc, s) => acc + s.certifiedCount, 0);
+  const totalFaculty = regSchools.reduce((acc, s) => acc + s.totalTeachers, 0);
+  const regAvgRate = totalFaculty > 0 ? (totalCert / totalFaculty) * 100 : 20;
+
+  const schoolRate = (sch.certifiedCount / Math.max(1, sch.totalTeachers)) * 100;
+
+  // Sort schools in region by certification count
+  const sorted = [...regSchools].sort((a, b) => (b.certifiedCount / b.totalTeachers) - (a.certifiedCount / a.totalTeachers));
+  const rank = sorted.findIndex(s => s.code === sch.code) + 1;
+  const percentile = Math.round((rank / sorted.length) * 100);
+
+  if (percentile <= 15) {
+    return { text: `🥇 Top 10% in ${sch.region}`, cls: "gold" };
+  } else if (percentile <= 35) {
+    return { text: `🥈 Top 25% in ${sch.region}`, cls: "gold" };
+  } else if (schoolRate >= regAvgRate) {
+    const diff = Math.round(schoolRate - regAvgRate);
+    return { text: `📈 +${diff}% Above Region Avg (${Math.round(regAvgRate)}%)`, cls: "green" };
+  } else {
+    return { text: `🎯 Target: Region Avg is ${Math.round(regAvgRate)}%`, cls: "" };
+  }
+}
+
+// ==================== 4. SET SCHOOL & PREPARE DATA ====================
 
 function setSchool(kvCode) {
   const sch = KVS_DATA.SCHOOLS[kvCode];
   if (!sch) return;
 
   selectedKVCode = kvCode;
+  const benchmark = computeRegionalBenchmark(sch);
 
   // 1. Update Home Page Program Cards
   const homePrograms = document.getElementById('homeProgramsCard');
@@ -98,12 +303,17 @@ function setSchool(kvCode) {
     const reg = document.getElementById('homeSelectedSchoolRegion');
     const cpdStats = document.getElementById('homeCpdStats');
     const dcaisStats = document.getElementById('homeDcaisStats');
+    const benchPill = document.getElementById('homeBenchmarkPill');
 
     if (badge) badge.textContent = `KV ${sch.code}`;
     if (title) title.textContent = `KV ${sch.code} — ${sch.name}`;
     if (reg) reg.textContent = `${sch.region} Region • Academic Rating: ${sch.rating}`;
     if (cpdStats) cpdStats.textContent = `${sch.certifiedCount} Certified • ${sch.attendedCount} Attended`;
     if (dcaisStats) dcaisStats.textContent = `${sch.dcaisStage} • ${sch.bootcampCount} Students`;
+    if (benchPill) {
+      benchPill.textContent = benchmark.text;
+      benchPill.className = `benchmark-pill ${benchmark.cls}`;
+    }
   }
 
   // 2. Pre-populate CPD View
@@ -114,6 +324,7 @@ function setSchool(kvCode) {
   const cpdFaculty = document.getElementById('cpdSumFaculty');
   const cpdCert = document.getElementById('cpdSumCertified');
   const cpdAtt = document.getElementById('cpdSumAttended');
+  const cpdBench = document.getElementById('cpdBenchmarkPill');
 
   if (cpdBadge) cpdBadge.textContent = sch.code;
   if (cpdTitle) cpdTitle.textContent = sch.name;
@@ -122,6 +333,10 @@ function setSchool(kvCode) {
   if (cpdFaculty) cpdFaculty.textContent = sch.totalTeachers;
   if (cpdCert) cpdCert.textContent = sch.certifiedCount;
   if (cpdAtt) cpdAtt.textContent = sch.attendedCount;
+  if (cpdBench) {
+    cpdBench.textContent = benchmark.text;
+    cpdBench.className = `benchmark-pill ${benchmark.cls}`;
+  }
 
   // 3. Pre-populate DCAIS View
   const dcaisBadge = document.getElementById('dcaisSchoolCodeBadge');
@@ -131,6 +346,7 @@ function setSchool(kvCode) {
   const dcaisFaculty = document.getElementById('dcaisSumFaculty');
   const dcaisSumStage = document.getElementById('dcaisSumStage');
   const dcaisStudents = document.getElementById('dcaisSumStudents');
+  const dcaisBench = document.getElementById('dcaisBenchmarkPill');
 
   if (dcaisBadge) dcaisBadge.textContent = sch.code;
   if (dcaisTitle) dcaisTitle.textContent = sch.name;
@@ -139,14 +355,21 @@ function setSchool(kvCode) {
   if (dcaisFaculty) dcaisFaculty.textContent = sch.totalTeachers;
   if (dcaisSumStage) dcaisSumStage.textContent = sch.dcaisStage.split(':')[0];
   if (dcaisStudents) dcaisStudents.textContent = sch.bootcampCount;
+  if (dcaisBench) {
+    dcaisBench.textContent = `🚀 ${sch.dcaisStage}`;
+  }
+
+  // Update Roster Filter Pill counts
+  updateRosterFilterCounts(sch.roster || []);
 
   // Render sub-elements
+  currentRosterFilter = 'all';
   renderRosterTable(sch.roster || []);
   renderDcaisStages(sch);
   renderBootcampTable(sch.bootcamp || []);
 }
 
-// ==================== 3. MULTI-VIEW NAVIGATION ====================
+// ==================== 5. MULTI-VIEW NAVIGATION ====================
 
 function navigateTo(viewName) {
   currentView = viewName;
@@ -175,7 +398,7 @@ function navigateTo(viewName) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ==================== 4. CPD CHARTS & ROSTER ====================
+// ==================== 6. CPD CHARTS & ROSTER ====================
 
 function renderCpdCharts(sch) {
   // Chart 1: Teacher Category Doughnut
@@ -256,13 +479,73 @@ function renderCpdCharts(sch) {
   }
 }
 
+// Roster Filter Pills
+function updateRosterFilterCounts(roster) {
+  let cert = 0, pend = 0, prt = 0, tgt = 0, pgt = 0;
+  roster.forEach(t => {
+    if (t.crt === 'Dispatched') cert++;
+    else pend++;
+    if (t.c === 'PRT') prt++;
+    else if (t.c === 'TGT') tgt++;
+    else if (t.c === 'PGT') pgt++;
+  });
+
+  const cAll = document.getElementById('countFilterAll');
+  const cCert = document.getElementById('countFilterCertified');
+  const cPend = document.getElementById('countFilterPending');
+  const cPrt = document.getElementById('countFilterPRT');
+  const cTgt = document.getElementById('countFilterTGT');
+  const cPgt = document.getElementById('countFilterPGT');
+
+  if (cAll) cAll.textContent = roster.length;
+  if (cCert) cCert.textContent = cert;
+  if (cPend) cPend.textContent = pend;
+  if (cPrt) cPrt.textContent = prt;
+  if (cTgt) cTgt.textContent = tgt;
+  if (cPgt) cPgt.textContent = pgt;
+}
+
+function setRosterFilter(filterType, btn) {
+  currentRosterFilter = filterType;
+
+  // Update active pill button
+  document.querySelectorAll('#rosterFilterPills .filter-pill').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  filterRoster();
+}
+
+function filterRoster() {
+  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
+  const searchInput = document.getElementById('rosterSearch');
+  const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+  const all = KVS_DATA.SCHOOLS[selectedKVCode].roster || [];
+  const filtered = all.filter(t => {
+    // 1. Check search text
+    const matchesSearch = q === '' || t.n.toLowerCase().includes(q) || t.s.toLowerCase().includes(q);
+    if (!matchesSearch) return false;
+
+    // 2. Check category / status filter pill
+    if (currentRosterFilter === 'all') return true;
+    if (currentRosterFilter === 'certified') return t.crt === 'Dispatched';
+    if (currentRosterFilter === 'pending') return t.crt !== 'Dispatched';
+    if (currentRosterFilter === 'PRT') return t.c === 'PRT';
+    if (currentRosterFilter === 'TGT') return t.c === 'TGT';
+    if (currentRosterFilter === 'PGT') return t.c === 'PGT';
+    return true;
+  });
+
+  renderRosterTable(filtered);
+}
+
 function renderRosterTable(roster) {
   const tbody = document.getElementById('rosterTableBody');
   if (!tbody) return;
   tbody.innerHTML = '';
 
   if (roster.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--slate-400);">No faculty records found for this school.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--slate-400);">No faculty records found matching criteria.</td></tr>';
     return;
   }
 
@@ -293,15 +576,7 @@ function renderRosterTable(roster) {
   });
 }
 
-function filterRoster(val) {
-  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
-  const q = val.toLowerCase().trim();
-  const all = KVS_DATA.SCHOOLS[selectedKVCode].roster || [];
-  const filtered = all.filter(t => t.n.toLowerCase().includes(q) || t.s.toLowerCase().includes(q));
-  renderRosterTable(filtered);
-}
-
-// ==================== 5. DCAIS STAGES & BOOTCAMP ====================
+// ==================== 7. DCAIS STAGES & BOOTCAMP ====================
 
 function renderDcaisStages(sch) {
   const grid = document.getElementById('dcaisStagesRow');
@@ -352,7 +627,96 @@ function renderBootcampTable(list) {
   });
 }
 
-// ==================== 6. EXECUTIVE PRINT & DOWNLOAD FOR PRINCIPALS ====================
+// ==================== 8. STUDENT ARTIFACT MODAL ====================
+
+function openArtifactModal(idx) {
+  const art = ARTIFACT_METADATA[idx];
+  if (!art) return;
+
+  document.getElementById('artModalGrade').textContent = art.grade;
+  document.getElementById('artModalTitle').textContent = art.title;
+
+  const content = document.getElementById('artModalContent');
+  if (content) {
+    content.innerHTML = `
+      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px;">
+        <div style="width:68px;height:68px;border-radius:12px;background:${art.bg};color:${art.color};display:flex;align-items:center;justify-content:center;font-size:2.2rem;flex-shrink:0;">
+          ${art.emoji}
+        </div>
+        <div>
+          <div style="font-size:0.75rem;font-weight:900;text-transform:uppercase;color:${art.color};letter-spacing:0.06em;">NCERT Pedagogical Unit</div>
+          <h4 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);margin:2px 0 4px;">${art.theme}</h4>
+          <div style="font-size:0.8rem;color:var(--slate-600);font-weight:700;">Creative Tool: ${art.tools}</div>
+        </div>
+      </div>
+
+      <div style="background:#FFFFFF;border:1px solid var(--slate-200);border-radius:10px;padding:16px;margin-bottom:14px;">
+        <div style="font-size:0.75rem;font-weight:800;text-transform:uppercase;color:var(--slate-500);margin-bottom:4px;">Project Implementation Overview:</div>
+        <p style="font-size:0.88rem;color:var(--slate-800);line-height:1.5;margin:0;">${art.description}</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="background:#FFFFFF;border:1px solid var(--slate-200);border-radius:8px;padding:12px;">
+          <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;color:var(--slate-500);margin-bottom:2px;">Assessment Rubric:</div>
+          <div style="font-size:0.82rem;color:var(--slate-700);">${art.rubric}</div>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid var(--slate-200);border-radius:8px;padding:12px;">
+          <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;color:var(--slate-500);margin-bottom:2px;">Target Competencies:</div>
+          <div style="font-size:0.82rem;color:var(--slate-700);">${art.competencies}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  const modal = document.getElementById('artifactModal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeArtifactModal() {
+  const modal = document.getElementById('artifactModal');
+  if (modal) modal.style.display = 'none';
+}
+
+// ==================== 9. WHATSAPP STAFF GROUP BROADCAST ====================
+
+function openBroadcastModal() {
+  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
+  const sch = KVS_DATA.SCHOOLS[selectedKVCode];
+  const pendingCount = Math.max(0, sch.totalTeachers - sch.certifiedCount);
+
+  const text = `*Kendriya Vidyalaya Sangathan — Faculty Notice*\n*KV ${sch.code} — ${sch.name}*\n\nDear Esteemed Faculty,\n\nHeartiest congratulations to our *${sch.certifiedCount} teachers* who have earned verified Adobe Express Continuous Professional Development (CPD) certification!\n\nFor our *${pendingCount} colleagues* currently completing assignments, a gentle reminder to submit your module outputs at express.adobe.com before this Friday to receive official Ministry-recognized credentials.\n\nLet us continue fostering digital creativity in our classrooms.\n\n— *Principal, KV ${sch.code} ${sch.name}*`;
+
+  const txtArea = document.getElementById('broadcastText');
+  if (txtArea) txtArea.value = text;
+
+  const modal = document.getElementById('broadcastModal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeBroadcastModal() {
+  const modal = document.getElementById('broadcastModal');
+  if (modal) modal.style.display = 'none';
+}
+
+function copyBroadcastText() {
+  const txt = document.getElementById('broadcastText');
+  if (!txt) return;
+  txt.select();
+  navigator.clipboard.writeText(txt.value);
+  showToast('Copied announcement to clipboard! Ready to paste into WhatsApp group.');
+  closeBroadcastModal();
+}
+
+function sendWhatsAppBroadcast() {
+  const txt = document.getElementById('broadcastText');
+  if (!txt) return;
+  const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(txt.value)}`;
+  window.open(url, '_blank');
+  closeBroadcastModal();
+  showToast('WhatsApp opened with broadcast announcement!');
+}
+
+// ==================== 10. GOVERNMENT-GRADE A4 PRINTABLE DOSSIER ====================
 
 function printSchoolReport(type) {
   if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) {
@@ -368,17 +732,18 @@ function printSchoolReport(type) {
   }
 
   const now = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+  const refId = `KVS-ADOBE-${type.toUpperCase()}-${sch.code}-${Math.floor(1000 + Math.random() * 9000)}`;
 
   if (type === 'cpd') {
     const rosterRows = (sch.roster || []).map((t, idx) => `
       <tr>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">${idx + 1}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;font-weight:bold;">${t.n}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">${t.c}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">${t.s}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">${t.m}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;font-weight:bold;color:${t.crt === 'Dispatched' ? '#10B981' : '#F59E0B'};">
-          ${t.crt === 'Dispatched' ? '✓ Certified' : '○ Pending'}
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;text-align:center;">${idx + 1}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:bold;">${t.n}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">${t.c}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">${t.s}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:600;">${t.m}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:bold;color:${t.crt === 'Dispatched' ? '#10B981' : '#D97706'};">
+          ${t.crt === 'Dispatched' ? '✓ Dispatched & Certified' : '○ Assignment Pending'}
         </td>
       </tr>
     `).join('');
@@ -389,86 +754,110 @@ function printSchoolReport(type) {
         <head>
           <title>CPD Executive Dossier — KV ${sch.code} ${sch.name}</title>
           <style>
-            @page { size: portrait; margin: 12mm; }
-            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #0F172A; margin: 0; padding: 24px; }
-            .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #FA0F00; padding-bottom: 16px; margin-bottom: 20px; }
-            .title-box h1 { font-size: 22px; margin: 0 0 4px; color: #0F172A; }
-            .title-box p { font-size: 13px; color: #64748B; margin: 0; }
-            .badge { background: #FA0F00; color: #fff; padding: 6px 14px; border-radius: 6px; font-weight: 900; font-size: 13px; }
-            .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; background: #F8FAFC; padding: 14px; border-radius: 8px; border: 1px solid #E2E8F0; }
-            .summary-box { text-align: center; }
-            .summary-val { font-size: 20px; font-weight: 900; color: #0F172A; }
-            .summary-lbl { font-size: 11px; color: #64748B; text-transform: uppercase; font-weight: bold; }
-            table { width: 100%; border-collapse: collapse; margin-top: 14px; }
-            th { text-align: left; background: #F1F5F9; padding: 8px 10px; font-size: 11px; text-transform: uppercase; color: #475569; border-bottom: 2px solid #CBD5E1; }
-            .sign-row { display: flex; justify-content: space-between; margin-top: 48px; padding-top: 24px; border-top: 1px dashed #CBD5E1; }
-            .sign-box { text-align: center; width: 200px; }
-            .sign-line { border-top: 1px solid #0F172A; margin-top: 40px; padding-top: 6px; font-size: 12px; font-weight: bold; }
+            @page { size: A4 portrait; margin: 10mm 12mm; }
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #0F172A; margin: 0; padding: 12px; }
+            .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2.5px solid #FA0F00; padding-bottom: 12px; margin-bottom: 14px; }
+            .logo-title h1 { font-size: 19px; margin: 0 0 2px; color: #0F172A; font-family: Georgia, serif; }
+            .logo-title p { font-size: 11px; color: #64748B; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+            .dossier-tag { background: #FA0F00; color: #fff; padding: 6px 12px; border-radius: 6px; font-weight: 900; font-size: 11px; text-transform: uppercase; text-align: right; }
+            .meta-strip { display: flex; justify-content: space-between; align-items: flex-start; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 12px; }
+            .summary-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+            .s-tile { border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px; text-align: center; background: #FFFFFF; }
+            .s-val { font-size: 18px; font-weight: 900; color: #0F172A; }
+            .s-lbl { font-size: 10px; color: #64748B; text-transform: uppercase; font-weight: bold; }
+            table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            th { text-align: left; background: #F1F5F9; padding: 7px 8px; font-size: 10px; text-transform: uppercase; color: #475569; border-bottom: 2px solid #CBD5E1; }
+            .qr-sign-block { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 36px; padding-top: 18px; border-top: 1px dashed #CBD5E1; }
+            .qr-box { display: flex; align-items: center; gap: 12px; font-size: 10px; color: #64748B; }
+            .qr-fake { width: 48px; height: 48px; border: 2px solid #0F172A; padding: 3px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+            .qr-fake span { background: #0F172A; border-radius: 1px; }
+            .sign-area { display: flex; gap: 40px; }
+            .sign-col { text-align: center; width: 160px; font-size: 11px; font-weight: bold; border-top: 1px solid #0F172A; padding-top: 6px; }
           </style>
         </head>
         <body>
-          <div class="header">
-            <div class="title-box">
-              <h1>Kendriya Vidyalaya Sangathan × Adobe Express for Education</h1>
-              <p>Continuous Professional Development (CPD) — Official School Executive Dossier</p>
+          <div class="header-bar">
+            <div class="logo-title">
+              <h1>Kendriya Vidyalaya Sangathan × Adobe Express</h1>
+              <p>Continuous Professional Development (CPD) • Official Principal Dossier</p>
             </div>
-            <div class="badge">KV ${sch.code}</div>
-          </div>
-
-          <div style="margin-bottom:18px;">
-            <h2 style="font-size:18px;margin:0 0 4px;">${sch.name}</h2>
-            <p style="font-size:13px;color:#475569;margin:0;">
-              <strong>Region:</strong> ${sch.region} &nbsp;|&nbsp; 
-              <strong>Academic Rating:</strong> ${sch.rating} &nbsp;|&nbsp; 
-              <strong>Date of Generation:</strong> ${now}
-            </p>
-          </div>
-
-          <div class="summary-grid">
-            <div class="summary-box">
-              <div class="summary-val">${sch.totalTeachers}</div>
-              <div class="summary-lbl">Total Faculty</div>
-            </div>
-            <div class="summary-box">
-              <div class="summary-val" style="color:#FA0F00;">${sch.certifiedCount}</div>
-              <div class="summary-lbl">Certified Teachers</div>
-            </div>
-            <div class="summary-box">
-              <div class="summary-val">${sch.attendedCount}</div>
-              <div class="summary-lbl">Attended Training</div>
-            </div>
-            <div class="summary-box">
-              <div class="summary-val" style="color:#10B981;">${Math.round((sch.certifiedCount / Math.max(1, sch.totalTeachers)) * 100)}%</div>
-              <div class="summary-lbl">Certification Rate</div>
+            <div class="dossier-tag">
+              KV ${sch.code}<br>
+              <span style="font-size:9px;opacity:0.85;">Ministry Aligned</span>
             </div>
           </div>
 
-          <h3 style="font-size:14px;text-transform:uppercase;margin:0 0 6px;color:#334155;">Faculty Training &amp; Certification Roster</h3>
+          <div class="meta-strip">
+            <div>
+              <div style="font-size:15px;font-weight:900;color:#0F172A;">${sch.name}</div>
+              <div style="color:#64748B;margin-top:2px;">
+                <strong>Region:</strong> ${sch.region} &nbsp;|&nbsp; 
+                <strong>Academic Rating:</strong> ${sch.rating} &nbsp;|&nbsp;
+                <strong>Reference:</strong> ${refId}
+              </div>
+            </div>
+            <div style="text-align:right;color:#64748B;">
+              <strong>Date of Generation:</strong> ${now}<br>
+              <strong>Verification URL:</strong> kvsangathan.nic.in
+            </div>
+          </div>
+
+          <div class="summary-cards">
+            <div class="s-tile">
+              <div class="s-val">${sch.totalTeachers}</div>
+              <div class="s-lbl">Total Registered Faculty</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#FA0F00;">${sch.certifiedCount}</div>
+              <div class="s-lbl">Certified Educators</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val">${sch.attendedCount}</div>
+              <div class="s-lbl">Attended Modules 1–6</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#10B981;">${Math.round((sch.certifiedCount / Math.max(1, sch.totalTeachers)) * 100)}%</div>
+              <div class="s-lbl">Certification Ratio</div>
+            </div>
+          </div>
+
+          <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#334155;margin-bottom:4px;">
+            School Faculty Roster &amp; Continuous Professional Development Records
+          </div>
+
           <table>
             <thead>
               <tr>
-                <th style="width:30px;">#</th>
+                <th style="width:25px;text-align:center;">#</th>
                 <th>Teacher Name</th>
                 <th>Category</th>
                 <th>Subject</th>
                 <th>Module</th>
-                <th>Status</th>
+                <th>Certification Status</th>
               </tr>
             </thead>
             <tbody>
-              ${rosterRows || '<tr><td colspan="6" style="text-align:center;padding:16px;">No faculty records registered.</td></tr>'}
+              ${rosterRows || '<tr><td colspan="6" style="text-align:center;padding:14px;">No faculty records registered.</td></tr>'}
             </tbody>
           </table>
 
-          <div class="sign-row">
-            <div class="sign-box">
-              <div class="sign-line">Principal Signature</div>
+          <div class="qr-sign-block">
+            <div class="qr-box">
+              <div class="qr-fake">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span style="background:transparent;"></span><span></span><span></span>
+                <span></span><span></span><span style="background:transparent;"></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div>
+                <strong>Scan for Digital Verification</strong><br>
+                Directorate of Academic Excellence • KVS New Delhi
+              </div>
             </div>
-            <div class="sign-box">
-              <div class="sign-line">School Seal / Stamp</div>
-            </div>
-            <div class="sign-box">
-              <div class="sign-line">KVS Directorate Verification</div>
+
+            <div class="sign-area">
+              <div class="sign-col" style="margin-top:24px;">Principal Signature &amp; Seal</div>
+              <div class="sign-col" style="margin-top:24px;">Regional Officer Verification</div>
             </div>
           </div>
         </body>
@@ -478,11 +867,11 @@ function printSchoolReport(type) {
     // DCAIS Printable Report
     const bootcampRows = (sch.bootcamp || []).map((b, idx) => `
       <tr>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">${idx + 1}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;font-weight:bold;">${b.name}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">Grade ${b.grade}</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;">Digital Storytelling</td>
-        <td style="padding:8px 10px;border-bottom:1px solid #E2E8F0;font-size:12px;color:#10B981;font-weight:bold;">✓ Verified Submission</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;text-align:center;">${idx + 1}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:bold;">${b.name}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">Grade ${b.grade}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">Digital Storytelling &amp; Poster</td>
+        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;color:#10B981;font-weight:bold;">✓ Verified Public Credential</td>
       </tr>
     `).join('');
 
@@ -490,110 +879,137 @@ function printSchoolReport(type) {
       <!DOCTYPE html>
       <html>
         <head>
-          <title>DCAIS Innovation Dossier — KV ${sch.code} ${sch.name}</title>
+          <title>DCAIS Executive Dossier — KV ${sch.code} ${sch.name}</title>
           <style>
-            @page { size: portrait; margin: 12mm; }
-            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #0F172A; margin: 0; padding: 24px; }
-            .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #1E1B4B; padding-bottom: 16px; margin-bottom: 20px; }
-            .title-box h1 { font-size: 22px; margin: 0 0 4px; color: #0F172A; }
-            .title-box p { font-size: 13px; color: #64748B; margin: 0; }
-            .badge { background: #1E1B4B; color: #fff; padding: 6px 14px; border-radius: 6px; font-weight: 900; font-size: 13px; }
-            .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; background: #F8FAFC; padding: 14px; border-radius: 8px; border: 1px solid #E2E8F0; }
-            .summary-box { text-align: center; }
-            .summary-val { font-size: 20px; font-weight: 900; color: #0F172A; }
-            .summary-lbl { font-size: 11px; color: #64748B; text-transform: uppercase; font-weight: bold; }
-            .stage-box-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
-            .s-box { border: 1px solid #CBD5E1; border-radius: 6px; padding: 10px; text-align: center; }
-            .s-box.active { border-color: #10B981; background: #F0FDF4; }
-            table { width: 100%; border-collapse: collapse; margin-top: 14px; }
-            th { text-align: left; background: #F1F5F9; padding: 8px 10px; font-size: 11px; text-transform: uppercase; color: #475569; border-bottom: 2px solid #CBD5E1; }
-            .sign-row { display: flex; justify-content: space-between; margin-top: 48px; padding-top: 24px; border-top: 1px dashed #CBD5E1; }
-            .sign-box { text-align: center; width: 200px; }
-            .sign-line { border-top: 1px solid #0F172A; margin-top: 40px; padding-top: 6px; font-size: 12px; font-weight: bold; }
+            @page { size: A4 portrait; margin: 10mm 12mm; }
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #0F172A; margin: 0; padding: 12px; }
+            .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 2.5px solid #1E1B4B; padding-bottom: 12px; margin-bottom: 14px; }
+            .logo-title h1 { font-size: 19px; margin: 0 0 2px; color: #0F172A; font-family: Georgia, serif; }
+            .logo-title p { font-size: 11px; color: #64748B; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; }
+            .dossier-tag { background: #1E1B4B; color: #fff; padding: 6px 12px; border-radius: 6px; font-weight: 900; font-size: 11px; text-transform: uppercase; text-align: right; }
+            .meta-strip { display: flex; justify-content: space-between; align-items: flex-start; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; font-size: 12px; }
+            .summary-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+            .s-tile { border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px; text-align: center; background: #FFFFFF; }
+            .s-val { font-size: 18px; font-weight: 900; color: #0F172A; }
+            .s-lbl { font-size: 10px; color: #64748B; text-transform: uppercase; font-weight: bold; }
+            .stages-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 16px; }
+            .stage-box { border: 1px solid #E2E8F0; border-radius: 6px; padding: 8px; text-align: center; }
+            .stage-box.active { border-color: #10B981; background: #F0FDF4; }
+            table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            th { text-align: left; background: #F1F5F9; padding: 7px 8px; font-size: 10px; text-transform: uppercase; color: #475569; border-bottom: 2px solid #CBD5E1; }
+            .qr-sign-block { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 36px; padding-top: 18px; border-top: 1px dashed #CBD5E1; }
+            .qr-box { display: flex; align-items: center; gap: 12px; font-size: 10px; color: #64748B; }
+            .qr-fake { width: 48px; height: 48px; border: 2px solid #0F172A; padding: 3px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+            .qr-fake span { background: #0F172A; border-radius: 1px; }
+            .sign-area { display: flex; gap: 40px; }
+            .sign-col { text-align: center; width: 160px; font-size: 11px; font-weight: bold; border-top: 1px solid #0F172A; padding-top: 6px; }
           </style>
         </head>
         <body>
-          <div class="header">
-            <div class="title-box">
-              <h1>Kendriya Vidyalaya Sangathan × Adobe Express for Education</h1>
-              <p>Digital Creativity &amp; Innovation Skills (DCAIS) — Official School Executive Dossier</p>
+          <div class="header-bar">
+            <div class="logo-title">
+              <h1>Kendriya Vidyalaya Sangathan × Adobe Express</h1>
+              <p>Digital Creativity &amp; Innovation Skills (DCAIS) • Official Principal Dossier</p>
             </div>
-            <div class="badge">KV ${sch.code}</div>
-          </div>
-
-          <div style="margin-bottom:18px;">
-            <h2 style="font-size:18px;margin:0 0 4px;">${sch.name}</h2>
-            <p style="font-size:13px;color:#475569;margin:0;">
-              <strong>Region:</strong> ${sch.region} &nbsp;|&nbsp; 
-              <strong>DCAIS Stage:</strong> ${sch.dcaisStage} &nbsp;|&nbsp; 
-              <strong>Date of Generation:</strong> ${now}
-            </p>
-          </div>
-
-          <div class="summary-grid">
-            <div class="summary-box">
-              <div class="summary-val">${sch.totalTeachers}</div>
-              <div class="summary-lbl">Faculty Members</div>
-            </div>
-            <div class="summary-box">
-              <div class="summary-val" style="color:#3B82F6;">${sch.dcaisStage}</div>
-              <div class="summary-lbl">Implementation Level</div>
-            </div>
-            <div class="summary-box">
-              <div class="summary-val" style="color:#10B981;">${sch.bootcampCount}</div>
-              <div class="summary-lbl">Summer Bootcamp Outputs</div>
+            <div class="dossier-tag">
+              KV ${sch.code}<br>
+              <span style="font-size:9px;opacity:0.85;">Curriculum Aligned</span>
             </div>
           </div>
 
-          <h3 style="font-size:14px;text-transform:uppercase;margin:0 0 8px;color:#334155;">DCAIS Curriculum Stages Progress</h3>
-          <div class="stage-box-row">
-            <div class="s-box ${sch.dcais.m1 ? 'active' : ''}">
-              <div style="font-size:11px;font-weight:bold;color:#64748B;">MODULE 1</div>
-              <div style="font-size:13px;font-weight:900;">Design Thinking</div>
-              <div style="font-size:11px;color:${sch.dcais.m1 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m1 ? '✓ Active' : '○ Pending'}</div>
+          <div class="meta-strip">
+            <div>
+              <div style="font-size:15px;font-weight:900;color:#0F172A;">${sch.name}</div>
+              <div style="color:#64748B;margin-top:2px;">
+                <strong>Region:</strong> ${sch.region} &nbsp;|&nbsp; 
+                <strong>DCAIS Stage:</strong> ${sch.dcaisStage} &nbsp;|&nbsp;
+                <strong>Reference:</strong> ${refId}
+              </div>
             </div>
-            <div class="s-box ${sch.dcais.m2 ? 'active' : ''}">
-              <div style="font-size:11px;font-weight:bold;color:#64748B;">MODULE 2</div>
-              <div style="font-size:13px;font-weight:900;">Integration</div>
-              <div style="font-size:11px;color:${sch.dcais.m2 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m2 ? '✓ Active' : '○ Pending'}</div>
-            </div>
-            <div class="s-box ${sch.dcais.m3 ? 'active' : ''}">
-              <div style="font-size:11px;font-weight:bold;color:#64748B;">MODULE 3</div>
-              <div style="font-size:13px;font-weight:900;">Student Projects</div>
-              <div style="font-size:11px;color:${sch.dcais.m3 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m3 ? '✓ Active' : '○ Pending'}</div>
-            </div>
-            <div class="s-box ${sch.dcais.m4 === 'Yes' ? 'active' : ''}">
-              <div style="font-size:11px;font-weight:bold;color:#64748B;">MODULE 4</div>
-              <div style="font-size:13px;font-weight:900;">Showcase</div>
-              <div style="font-size:11px;color:${sch.dcais.m4 === 'Yes' ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m4 === 'Yes' ? '✓ Active' : '○ Pending'}</div>
+            <div style="text-align:right;color:#64748B;">
+              <strong>Date of Generation:</strong> ${now}<br>
+              <strong>NEP 2020 Framework:</strong> Grades 6–8 Active
             </div>
           </div>
 
-          <h3 style="font-size:14px;text-transform:uppercase;margin:0 0 6px;color:#334155;">Student Bootcamp Creative Submissions</h3>
+          <div class="summary-cards">
+            <div class="s-tile">
+              <div class="s-val">${sch.totalTeachers}</div>
+              <div class="s-lbl">School Faculty</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#3B82F6;">${sch.dcaisStage}</div>
+              <div class="s-lbl">Innovation Stage</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#10B981;">${sch.bootcampCount}</div>
+              <div class="s-lbl">Summer Bootcamp Submissions</div>
+            </div>
+          </div>
+
+          <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#334155;margin-bottom:6px;">
+            DCAIS Curriculum Modular Milestone Status
+          </div>
+
+          <div class="stages-strip">
+            <div class="stage-box ${sch.dcais.m1 ? 'active' : ''}">
+              <div style="font-size:10px;font-weight:bold;color:#64748B;">MODULE 1</div>
+              <div style="font-size:12px;font-weight:900;">Design Thinking</div>
+              <div style="font-size:10px;color:${sch.dcais.m1 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m1 ? '✓ Active in School' : '○ Pending'}</div>
+            </div>
+            <div class="stage-box ${sch.dcais.m2 ? 'active' : ''}">
+              <div style="font-size:10px;font-weight:bold;color:#64748B;">MODULE 2</div>
+              <div style="font-size:12px;font-weight:900;">Integration</div>
+              <div style="font-size:10px;color:${sch.dcais.m2 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m2 ? '✓ Active in School' : '○ Pending'}</div>
+            </div>
+            <div class="stage-box ${sch.dcais.m3 ? 'active' : ''}">
+              <div style="font-size:10px;font-weight:bold;color:#64748B;">MODULE 3</div>
+              <div style="font-size:12px;font-weight:900;">Student Projects</div>
+              <div style="font-size:10px;color:${sch.dcais.m3 ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m3 ? '✓ Active in School' : '○ Pending'}</div>
+            </div>
+            <div class="stage-box ${sch.dcais.m4 === 'Yes' ? 'active' : ''}">
+              <div style="font-size:10px;font-weight:bold;color:#64748B;">MODULE 4</div>
+              <div style="font-size:12px;font-weight:900;">Showcase</div>
+              <div style="font-size:10px;color:${sch.dcais.m4 === 'Yes' ? '#10B981' : '#94A3B8'};font-weight:bold;">${sch.dcais.m4 === 'Yes' ? '✓ Active in School' : '○ Pending'}</div>
+            </div>
+          </div>
+
+          <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#334155;margin-bottom:4px;">
+            Student Summer Bootcamp Creative Outputs &amp; Verified Submissions
+          </div>
+
           <table>
             <thead>
               <tr>
-                <th style="width:30px;">#</th>
+                <th style="width:25px;text-align:center;">#</th>
                 <th>Student Name</th>
                 <th>Grade</th>
-                <th>Track</th>
-                <th>Status</th>
+                <th>Project Track</th>
+                <th>Credential Status</th>
               </tr>
             </thead>
             <tbody>
-              ${bootcampRows || '<tr><td colspan="5" style="text-align:center;padding:16px;">No student submissions recorded for this school.</td></tr>'}
+              ${bootcampRows || '<tr><td colspan="5" style="text-align:center;padding:14px;">No student submissions recorded for this school.</td></tr>'}
             </tbody>
           </table>
 
-          <div class="sign-row">
-            <div class="sign-box">
-              <div class="sign-line">Principal Signature</div>
+          <div class="qr-sign-block">
+            <div class="qr-box">
+              <div class="qr-fake">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span style="background:transparent;"></span><span></span><span></span>
+                <span></span><span></span><span style="background:transparent;"></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div>
+                <strong>Scan for Digital Verification</strong><br>
+                Directorate of Academic Excellence • KVS New Delhi
+              </div>
             </div>
-            <div class="sign-box">
-              <div class="sign-line">School Seal / Stamp</div>
-            </div>
-            <div class="sign-box">
-              <div class="sign-line">KVS Directorate Verification</div>
+
+            <div class="sign-area">
+              <div class="sign-col" style="margin-top:24px;">Principal Signature &amp; Seal</div>
+              <div class="sign-col" style="margin-top:24px;">Regional Officer Verification</div>
             </div>
           </div>
         </body>
@@ -605,9 +1021,9 @@ function printSchoolReport(type) {
   printWin.focus();
   setTimeout(() => {
     printWin.print();
-  }, 500);
+  }, 450);
 
-  showToast(`Generated print dossier for KV ${sch.code}! Use Save as PDF.`);
+  showToast(`A4 Official Dossier prepared for KV ${sch.code}! Use Save as PDF.`);
 }
 
 function exportSchoolCsv(type) {
@@ -651,7 +1067,7 @@ function exportSchoolCsv(type) {
   showToast(`Downloaded ${filename}!`);
 }
 
-// ==================== 7. MODALS & TOAST ====================
+// ==================== 11. INDIVIDUAL CERTIFICATE & REMINDER MODALS ====================
 
 function openCertModal(name, mod, school) {
   document.getElementById('modalTeacherName').textContent = name;

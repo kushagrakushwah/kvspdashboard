@@ -470,6 +470,269 @@
       color: var(--slate-900);
     }
 
+    /* ==================== COMBOBOX / FAST TYPEAHEAD ==================== */
+    .combobox-wrap {
+      margin-bottom: 22px;
+      position: relative;
+    }
+
+    .combobox-wrap label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-500);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .combobox-input-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .combobox-icon {
+      position: absolute;
+      left: 14px;
+      font-size: 1rem;
+      color: var(--slate-400);
+      pointer-events: none;
+    }
+
+    .combobox-input {
+      width: 100%;
+      padding: 13px 40px 13px 40px;
+      border: 2px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      outline: none;
+      transition: var(--transition);
+      background: #FFFFFF;
+    }
+
+    .combobox-input:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 4px var(--red-subtle);
+    }
+
+    .combobox-clear-btn {
+      position: absolute;
+      right: 14px;
+      background: transparent;
+      border: none;
+      font-size: 1.1rem;
+      color: var(--slate-400);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .combobox-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 150;
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: 6px;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .combobox-item {
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid var(--slate-100);
+      transition: var(--transition);
+    }
+
+    .combobox-item:last-child {
+      border-bottom: none;
+    }
+
+    .combobox-item:hover, .combobox-item.selected {
+      background: var(--red-subtle);
+    }
+
+    .combobox-item-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .combobox-kv-pill {
+      background: var(--slate-900);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    .combobox-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .combobox-reg {
+      font-size: 0.76rem;
+      color: var(--slate-500);
+      font-weight: 700;
+    }
+
+    /* ==================== BENCHMARK PILLS ==================== */
+    .benchmark-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: #FFFBEB;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .benchmark-pill.gold {
+      background: #FEF3C7;
+      color: #78350F;
+      border-color: #FCD34D;
+      box-shadow: 0 1px 4px rgba(245, 158, 11, 0.2);
+    }
+
+    .benchmark-pill.green {
+      background: var(--green-subtle);
+      color: #065F46;
+      border-color: #A7F3D0;
+    }
+
+    /* ==================== QUICK FILTER PILLS (ROSTER) ==================== */
+    .filter-pills-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .filter-pill {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-full);
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--slate-600);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .filter-pill.active {
+      background: var(--red);
+      color: #FFFFFF;
+      border-color: var(--red);
+      box-shadow: 0 2px 8px rgba(250, 15, 0, 0.25);
+    }
+
+    .btn-whatsapp-broadcast {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+      white-space: nowrap;
+    }
+
+    .btn-whatsapp-broadcast:hover {
+      background: #1EBE5D;
+      transform: translateY(-1px);
+    }
+
+    /* ==================== STUDENT ARTIFACT SHOWCASE ==================== */
+    .artifact-showcase-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .artifact-card {
+      background: var(--slate-50);
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .artifact-card:hover {
+      background: #FFFFFF;
+      border-color: var(--red);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .artifact-thumb {
+      height: 100px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .artifact-title {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+    }
+
+    .artifact-desc {
+      font-size: 0.78rem;
+      color: var(--slate-600);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
     /* ==================== 2 BIG OPTIONS ON HOME PAGE ==================== */
     .program-choice-grid {
       display: grid;
@@ -850,7 +1113,8 @@
       .program-choice-grid,
       .charts-row,
       .dcais-stages-row,
-      .grade-cards-row {
+      .grade-cards-row,
+      .artifact-grid {
         grid-template-columns: 1fr;
       }
       .school-summary-banner {
@@ -896,9 +1160,20 @@
           <p>Choose your KVS Region and School to access your school's dedicated dashboard.</p>
         </div>
 
+        <!-- Fast School Search Combobox (Instant Typeahead across all 1,202 schools) -->
+        <div class="combobox-wrap">
+          <label>⚡ Fast Search by School Name or KV Code</label>
+          <div class="combobox-input-box">
+            <span class="combobox-icon">🔍</span>
+            <input type="text" id="globalSchoolSearch" class="combobox-input" placeholder="Type school name or code (e.g. 1150, Khurda, Powai, Cantt)..." oninput="onGlobalSearchInput(this.value)" onfocus="showComboboxDropdown()" autocomplete="off">
+            <button class="combobox-clear-btn" id="comboboxClearBtn" onclick="clearCombobox()" style="display:none;" title="Clear Search">✕</button>
+          </div>
+          <div id="comboboxDropdown" class="combobox-dropdown" style="display:none;"></div>
+        </div>
+
         <div class="selector-inputs-grid">
           <div class="field-group">
-            <label>1. Select Region</label>
+            <label>1. Or Filter By Region</label>
             <select id="regionSelect" class="selector-select" onchange="onRegionChange()">
               <option value="">Choose Region...</option>
               <!-- Populated dynamically -->
@@ -933,7 +1208,10 @@
           <div style="display:flex;align-items:center;gap:12px;">
             <div style="width:38px;height:38px;background:var(--slate-900);color:#FFFFFF;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:0.8rem;" id="homeSelectedSchoolBadge">KV</div>
             <div>
-              <div style="font-size:1.05rem;font-weight:900;color:var(--slate-900);" id="homeSelectedSchoolTitle">School Name</div>
+              <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <span style="font-size:1.05rem;font-weight:900;color:var(--slate-900);" id="homeSelectedSchoolTitle">School Name</span>
+                <span class="benchmark-pill gold" id="homeBenchmarkPill">🥇 Top 10% in Region</span>
+              </div>
               <div style="font-size:0.75rem;color:var(--slate-600);font-weight:700;" id="homeSelectedSchoolRegion">Region</div>
             </div>
           </div>
@@ -1010,6 +1288,7 @@
             <div class="school-meta-tags">
               <span class="tag-pill" id="cpdSchoolRegionTag">Region</span>
               <span class="tag-pill green" id="cpdSchoolRatingTag">Rating: A+</span>
+              <span class="benchmark-pill gold" id="cpdBenchmarkPill">🥇 Top 10% in Region</span>
               <span class="tag-pill blue">CPD Teacher Academy</span>
             </div>
           </div>
@@ -1033,7 +1312,10 @@
 
           <div style="display:flex;flex-direction:column;gap:8px;">
             <button class="btn-print-action" onclick="printSchoolReport('cpd')">
-              <span>🖨️ Print School CPD Report</span>
+              <span>🖨️ Print Executive Dossier (A4 PDF)</span>
+            </button>
+            <button class="btn-whatsapp-broadcast" onclick="openBroadcastModal()">
+              <span>📢 Staff WhatsApp Broadcast</span>
             </button>
             <button class="btn-csv-action" onclick="exportSchoolCsv('cpd')">
               <span>📥 Export CSV Roster</span>
@@ -1061,6 +1343,16 @@
             <p>Real registered teachers for this school from Semi Annual Report.xlsx</p>
           </div>
           <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
+        </div>
+
+        <!-- Quick Filter Status Pills -->
+        <div class="filter-pills-row" id="rosterFilterPills">
+          <button class="filter-pill active" data-filter="all" onclick="setRosterFilter('all', this)">All Faculty (<span id="countFilterAll">0</span>)</button>
+          <button class="filter-pill" data-filter="certified" onclick="setRosterFilter('certified', this)">Certified (<span id="countFilterCertified">0</span>)</button>
+          <button class="filter-pill" data-filter="pending" onclick="setRosterFilter('pending', this)">Pending (<span id="countFilterPending">0</span>)</button>
+          <button class="filter-pill" data-filter="PRT" onclick="setRosterFilter('PRT', this)">PRT (<span id="countFilterPRT">0</span>)</button>
+          <button class="filter-pill" data-filter="TGT" onclick="setRosterFilter('TGT', this)">TGT (<span id="countFilterTGT">0</span>)</button>
+          <button class="filter-pill" data-filter="PGT" onclick="setRosterFilter('PGT', this)">PGT (<span id="countFilterPGT">0</span>)</button>
         </div>
 
         <div class="table-scroll">
@@ -1105,7 +1397,8 @@
             <div class="school-meta-tags">
               <span class="tag-pill" id="dcaisSchoolRegionTag">Region</span>
               <span class="tag-pill blue" id="dcaisSchoolStageTag">DCAIS: M2 Active</span>
-              <span class="tag-pill green">Innovation Program</span>
+              <span class="benchmark-pill green" id="dcaisBenchmarkPill">🚀 Innovation Program</span>
+              <span class="tag-pill green">NCERT Aligned</span>
             </div>
           </div>
         </div>
@@ -1128,7 +1421,7 @@
 
           <div style="display:flex;flex-direction:column;gap:8px;">
             <button class="btn-print-action" style="background:#1E1B4B;" onclick="printSchoolReport('dcais')">
-              <span>🖨️ Print School DCAIS Report</span>
+              <span>🖨️ Print Executive Dossier (A4 PDF)</span>
             </button>
             <button class="btn-csv-action" onclick="exportSchoolCsv('dcais')">
               <span>📥 Export CSV Projects</span>
@@ -1139,6 +1432,63 @@
 
       <!-- 4 DCAIS Stage Cards -->
       <div class="dcais-stages-row" id="dcaisStagesRow"></div>
+
+      <!-- Student Creative Artifact Showcase -->
+      <div class="artifact-showcase-box">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <div>
+            <h4 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);margin-bottom:2px;">Student Creative Artifact Showcase</h4>
+            <p style="font-size:0.82rem;color:var(--slate-500);">Interactive digital outputs produced in Adobe Express across NCERT curriculum</p>
+          </div>
+          <span style="font-size:0.75rem;font-weight:800;color:var(--red);background:var(--red-subtle);padding:4px 12px;border-radius:var(--radius-full);">Click Any Project to Inspect 👁️</span>
+        </div>
+
+        <div class="artifact-grid">
+          <!-- Card 1 -->
+          <div class="artifact-card" onclick="openArtifactModal(0)">
+            <div>
+              <div class="artifact-thumb" style="background:#FFF1F0;color:#FA0F00;">🌱</div>
+              <span class="grade-pill">Grade 6 Science</span>
+              <div class="artifact-title">Ecosystem Conservation Poster</div>
+              <div class="artifact-desc">Visual layout, design thinking principles, NCERT Environmental Studies unit.</div>
+            </div>
+            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact 👁️</button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="artifact-card" onclick="openArtifactModal(1)">
+            <div>
+              <div class="artifact-thumb" style="background:#EFF6FF;color:#3B82F6;">🏛️</div>
+              <span class="grade-pill">Grade 7 Social Science</span>
+              <div class="artifact-title">Medieval Monuments Infographic</div>
+              <div class="artifact-desc">Process mapping, architectural typography, NCERT History Chapter 5.</div>
+            </div>
+            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact 👁️</button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="artifact-card" onclick="openArtifactModal(2)">
+            <div>
+              <div class="artifact-thumb" style="background:#ECFDF5;color:#10B981;">💻</div>
+              <span class="grade-pill">Grade 8 Digital Skills</span>
+              <div class="artifact-title">Personal Digital Portfolio Web Page</div>
+              <div class="artifact-desc">Multimedia web design, responsive sections, student project reflections.</div>
+            </div>
+            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact 👁️</button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="artifact-card" onclick="openArtifactModal(3)">
+            <div>
+              <div class="artifact-thumb" style="background:#FAF5FF;color:#8B5CF6;">🎬</div>
+              <span class="grade-pill">Bootcamp Special</span>
+              <div class="artifact-title">Animated Science Story Video</div>
+              <div class="artifact-desc">Voiceover storytelling, keyframe animation, summer innovation credential.</div>
+            </div>
+            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact 👁️</button>
+          </div>
+        </div>
+      </div>
 
       <!-- Grade 6-8 NCERT Projects -->
       <div class="grade-projects-box">
@@ -1241,6 +1591,54 @@
         <button class="btn-action-small" style="padding:7px 16px;" onclick="closeReminderModal()">Cancel</button>
         <button class="btn-action-small" style="padding:7px 16px;" onclick="copyReminderText()">Copy Message 📋</button>
         <button class="btn-action-small red-nudge" style="padding:7px 16px;" onclick="sendWhatsAppReminder()">Open WhatsApp 💬</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Staff WhatsApp Group Broadcast Modal -->
+  <div id="broadcastModal" class="modal-overlay" onclick="closeBroadcastModal()">
+    <div class="modal-dialog" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:1.4rem;">📢</span>
+          <div>
+            <h3 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);">Staff WhatsApp Group Broadcast</h3>
+            <p style="font-size:0.8rem;color:var(--slate-500);">Pre-formatted executive announcement for your school faculty group</p>
+          </div>
+        </div>
+        <button style="border:none;background:transparent;cursor:pointer;font-size:1.1rem;" onclick="closeBroadcastModal()">✕</button>
+      </div>
+
+      <div style="margin-bottom:16px;">
+        <textarea id="broadcastText" rows="6" style="width:100%;padding:12px;border:1.5px solid var(--slate-200);border-radius:10px;font-size:0.88rem;line-height:1.5;outline:none;font-family:inherit;background:#FAF8F5;"></textarea>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;gap:10px;">
+        <button class="btn-action-small" style="padding:7px 16px;" onclick="closeBroadcastModal()">Cancel</button>
+        <button class="btn-action-small" style="padding:7px 16px;" onclick="copyBroadcastText()">Copy Announcement 📋</button>
+        <button class="btn-whatsapp-broadcast" style="padding:7px 16px;" onclick="sendWhatsAppBroadcast()">Open WhatsApp 💬</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Student Creative Artifact Preview Modal -->
+  <div id="artifactModal" class="modal-overlay" onclick="closeArtifactModal()">
+    <div class="modal-dialog" style="max-width:680px;" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <div>
+          <span class="grade-pill" id="artModalGrade">Grade 6 Science</span>
+          <h3 id="artModalTitle" style="font-size:1.25rem;font-weight:900;color:var(--slate-900);margin-top:4px;">Project Title</h3>
+        </div>
+        <button style="border:none;background:transparent;cursor:pointer;font-size:1.1rem;" onclick="closeArtifactModal()">✕</button>
+      </div>
+
+      <div id="artModalContent" style="background:#FAF8F5;border:1.5px solid var(--slate-200);border-radius:14px;padding:24px;margin-bottom:20px;">
+        <!-- Filled dynamically -->
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-size:0.8rem;color:var(--slate-500);font-weight:700;">Curriculum: NCERT Digital Skills &amp; NEP 2020 Aligned</span>
+        <button class="btn-action-small red-nudge" style="padding:7px 16px;" onclick="closeArtifactModal()">Done Viewing</button>
       </div>
     </div>
   </div>

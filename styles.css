@@ -457,6 +457,269 @@
       color: var(--slate-900);
     }
 
+    /* ==================== COMBOBOX / FAST TYPEAHEAD ==================== */
+    .combobox-wrap {
+      margin-bottom: 22px;
+      position: relative;
+    }
+
+    .combobox-wrap label {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-500);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .combobox-input-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .combobox-icon {
+      position: absolute;
+      left: 14px;
+      font-size: 1rem;
+      color: var(--slate-400);
+      pointer-events: none;
+    }
+
+    .combobox-input {
+      width: 100%;
+      padding: 13px 40px 13px 40px;
+      border: 2px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      outline: none;
+      transition: var(--transition);
+      background: #FFFFFF;
+    }
+
+    .combobox-input:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 4px var(--red-subtle);
+    }
+
+    .combobox-clear-btn {
+      position: absolute;
+      right: 14px;
+      background: transparent;
+      border: none;
+      font-size: 1.1rem;
+      color: var(--slate-400);
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .combobox-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 150;
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: 6px;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .combobox-item {
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid var(--slate-100);
+      transition: var(--transition);
+    }
+
+    .combobox-item:last-child {
+      border-bottom: none;
+    }
+
+    .combobox-item:hover, .combobox-item.selected {
+      background: var(--red-subtle);
+    }
+
+    .combobox-item-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .combobox-kv-pill {
+      background: var(--slate-900);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    .combobox-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--slate-900);
+    }
+
+    .combobox-reg {
+      font-size: 0.76rem;
+      color: var(--slate-500);
+      font-weight: 700;
+    }
+
+    /* ==================== BENCHMARK PILLS ==================== */
+    .benchmark-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: #FFFBEB;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .benchmark-pill.gold {
+      background: #FEF3C7;
+      color: #78350F;
+      border-color: #FCD34D;
+      box-shadow: 0 1px 4px rgba(245, 158, 11, 0.2);
+    }
+
+    .benchmark-pill.green {
+      background: var(--green-subtle);
+      color: #065F46;
+      border-color: #A7F3D0;
+    }
+
+    /* ==================== QUICK FILTER PILLS (ROSTER) ==================== */
+    .filter-pills-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .filter-pill {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-full);
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--slate-600);
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .filter-pill:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .filter-pill.active {
+      background: var(--red);
+      color: #FFFFFF;
+      border-color: var(--red);
+      box-shadow: 0 2px 8px rgba(250, 15, 0, 0.25);
+    }
+
+    .btn-whatsapp-broadcast {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: #FFFFFF;
+      border: none;
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+      white-space: nowrap;
+    }
+
+    .btn-whatsapp-broadcast:hover {
+      background: #1EBE5D;
+      transform: translateY(-1px);
+    }
+
+    /* ==================== STUDENT ARTIFACT SHOWCASE ==================== */
+    .artifact-showcase-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+    }
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .artifact-card {
+      background: var(--slate-50);
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .artifact-card:hover {
+      background: #FFFFFF;
+      border-color: var(--red);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .artifact-thumb {
+      height: 100px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+
+    .artifact-title {
+      font-size: 0.94rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+    }
+
+    .artifact-desc {
+      font-size: 0.78rem;
+      color: var(--slate-600);
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
     /* ==================== 2 BIG OPTIONS ON HOME PAGE ==================== */
     .program-choice-grid {
       display: grid;
@@ -837,7 +1100,8 @@
       .program-choice-grid,
       .charts-row,
       .dcais-stages-row,
-      .grade-cards-row {
+      .grade-cards-row,
+      .artifact-grid {
         grid-template-columns: 1fr;
       }
       .school-summary-banner {
