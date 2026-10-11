@@ -102,6 +102,9 @@ function initPortal() {
       regSelect.appendChild(opt);
     });
   }
+
+  // Ensure portal starts in full expanded hero mode
+  resetToFullHero();
 }
 
 // ==================== 1. FAST COMBOBOX / TYPEAHEAD ====================
@@ -166,12 +169,45 @@ function hideComboboxDropdown() {
   if (dropdown) dropdown.style.display = 'none';
 }
 
-function clearCombobox() {
+function resetToFullHero() {
+  selectedKVCode = null;
+  const heroCard = document.getElementById('selectorHeroCard');
+  if (heroCard) {
+    heroCard.classList.remove('hero-shrunk');
+    heroCard.classList.add('hero-expanded');
+  }
+
+  const heroShrunkBar = document.getElementById('heroShrunkBar');
+  if (heroShrunkBar) {
+    heroShrunkBar.style.display = 'none';
+  }
+
+  const homePrograms = document.getElementById('homeProgramsCard');
+  if (homePrograms) {
+    homePrograms.style.display = 'none';
+    homePrograms.classList.remove('animate-slide-up');
+  }
+
   const input = document.getElementById('globalSchoolSearch');
   if (input) input.value = '';
   const clearBtn = document.getElementById('comboboxClearBtn');
   if (clearBtn) clearBtn.style.display = 'none';
+
+  const regSelect = document.getElementById('regionSelect');
+  if (regSelect) regSelect.value = '';
+
+  const schSelect = document.getElementById('schoolSelect');
+  if (schSelect) {
+    schSelect.innerHTML = '<option value="">First choose a region...</option>';
+    schSelect.disabled = true;
+  }
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function clearCombobox() {
   hideComboboxDropdown();
+  resetToFullHero();
 }
 
 function selectSchoolFromCombobox(code) {
@@ -211,14 +247,11 @@ function selectSchoolFromCombobox(code) {
 function onRegionChange() {
   const regSelect = document.getElementById('regionSelect');
   const schSelect = document.getElementById('schoolSelect');
-  const homePrograms = document.getElementById('homeProgramsCard');
 
   selectedRegion = regSelect.value;
-  if (homePrograms) homePrograms.style.display = 'none';
 
   if (!selectedRegion) {
-    schSelect.innerHTML = '<option value="">First choose a region...</option>';
-    schSelect.disabled = true;
+    resetToFullHero();
     return;
   }
 
@@ -238,6 +271,10 @@ function onRegionChange() {
   // Auto-select first school so the 2 program options appear immediately
   if (regObj.kvs.length > 0) {
     schSelect.value = regObj.kvs[0].code;
+    const input = document.getElementById('globalSchoolSearch');
+    if (input) input.value = `KV ${regObj.kvs[0].code} — ${regObj.kvs[0].name} (${selectedRegion})`;
+    const clearBtn = document.getElementById('comboboxClearBtn');
+    if (clearBtn) clearBtn.style.display = 'block';
     setSchool(regObj.kvs[0].code);
   }
 }
@@ -294,10 +331,37 @@ function setSchool(kvCode) {
   selectedKVCode = kvCode;
   const benchmark = computeRegionalBenchmark(sch);
 
-  // 1. Update Home Page Program Cards
+  // 0. Smoothly morph selector hero from expanded to shrunk state
+  const heroCard = document.getElementById('selectorHeroCard');
+  if (heroCard) {
+    heroCard.classList.remove('hero-expanded');
+    heroCard.classList.add('hero-shrunk');
+  }
+
+  const heroShrunkBar = document.getElementById('heroShrunkBar');
+  if (heroShrunkBar) {
+    heroShrunkBar.style.display = 'flex';
+  }
+
+  const shrunkTitle = document.getElementById('shrunkSchoolTitle');
+  if (shrunkTitle) {
+    shrunkTitle.textContent = `KV ${sch.code} — ${sch.name} (${sch.region} Region)`;
+  }
+
+  const shrunkBench = document.getElementById('shrunkBenchmarkPill');
+  if (shrunkBench) {
+    shrunkBench.textContent = benchmark.text;
+    shrunkBench.className = `benchmark-pill ${benchmark.cls}`;
+  }
+
+  // 1. Update Home Page Program Cards & Trigger Animation
   const homePrograms = document.getElementById('homeProgramsCard');
   if (homePrograms) {
     homePrograms.style.display = 'block';
+    homePrograms.classList.remove('animate-slide-up');
+    void homePrograms.offsetWidth; // trigger reflow for smooth animation
+    homePrograms.classList.add('animate-slide-up');
+
     const badge = document.getElementById('homeSelectedSchoolBadge');
     const title = document.getElementById('homeSelectedSchoolTitle');
     const reg = document.getElementById('homeSelectedSchoolRegion');
@@ -314,6 +378,11 @@ function setSchool(kvCode) {
       benchPill.textContent = benchmark.text;
       benchPill.className = `benchmark-pill ${benchmark.cls}`;
     }
+
+    // Smooth scroll so the CPD and DCAIS cards are comfortably visible
+    setTimeout(() => {
+      homePrograms.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 150);
   }
 
   // 2. Pre-populate CPD View
