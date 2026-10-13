@@ -49,7 +49,7 @@ Dedicated to the selected school with 5 deep-dive sub-pages:
 - **Tab 2: 👩‍🏫 Faculty Dossier & CPD Records:**
   - Full roster of registered teachers for this KV.
   - Search by teacher name, subject, or email; filter by category and certification status.
-  - Actions: Official Certificate preview & download, WhatsApp / Email reminder generation.
+  - Actions: Official Certificate preview & download, 1-Click reminder notice copying.
 - **Tab 3: 🎨 DCAIS Innovation & Curriculum:**
   - 4-Stage Adoption tracker: M1 (Design Thinking), M2 (Curriculum), M3 (Student Projects), M4 (Gallery).
   - Classroom project modules for Grade 6, 7, and 8 with NCERT-aligned digital project kits.
@@ -57,7 +57,7 @@ Dedicated to the selected school with 5 deep-dive sub-pages:
   - Real student participants from this school/region with verified credential download links.
 - **Tab 5: 🎯 Smart Action & Intervention Radar:**
   - Auto-flags teachers who completed CPD 1 but have pending submissions for CPD 2 (63% national drop-off remediation).
-  - 1-Click WhatsApp bulk reminder generator.
+  - 1-Click bulk reminder notice generator.
 
 ### 3. 🌐 Page 3: Regional Intelligence Hub (`#region/[name]`)
 - Consolidated regional overview for Regional Officers and Commissioners.

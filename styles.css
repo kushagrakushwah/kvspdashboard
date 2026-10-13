@@ -368,113 +368,226 @@
       padding-top: 22px;
     }
 
-    .selector-card.hero-shrunk .hero-preview-collapsible {
-      max-height: 0;
-      opacity: 0;
-      transform: translateY(16px);
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
-      pointer-events: none;
-      overflow: hidden;
+    /* ==================== REGIONAL CPD & DCAIS SUMMARY ==================== */
+    .region-summary-container {
+      background: #FFFFFF;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      animation: heroSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
-    .hero-preview-head {
+    .region-summary-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 14px;
+      gap: 14px;
       flex-wrap: wrap;
-      gap: 8px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--slate-100);
     }
 
-    .hero-preview-head h4 {
-      font-size: 0.86rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--slate-600);
+    .region-summary-header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .hero-preview-hint {
-      font-size: 0.78rem;
+    .region-badge-pill {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      background: var(--slate-100);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--slate-200);
+    }
+
+    .region-summary-meta {
+      font-size: 0.82rem;
       font-weight: 700;
       color: var(--slate-500);
     }
 
-    .hero-preview-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+    .region-step-pill {
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--red);
+      background: var(--red-subtle);
+      border: 1px solid var(--red-border);
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
     }
 
-    .hero-preview-card {
-      background: #FFFFFF;
+    .region-summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 860px) {
+      .region-summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .region-stat-card {
+      background: var(--slate-50);
       border: 1.5px solid var(--slate-200);
       border-radius: var(--radius-lg);
-      padding: 18px 22px;
-      box-shadow: var(--shadow-sm);
+      padding: 22px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       transition: var(--transition);
     }
 
-    .hero-preview-card:hover {
-      border-color: var(--slate-400);
-      box-shadow: var(--shadow-card);
+    .region-stat-card:hover {
+      border-color: var(--slate-300);
+      background: #FFFFFF;
+      box-shadow: var(--shadow-sm);
     }
 
-    .prev-card-top {
+    .reg-card-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .prev-icon {
-      font-size: 1.5rem;
+    .reg-card-icon {
+      font-size: 1.6rem;
     }
 
-    .prev-badge {
+    .reg-card-tag {
       font-size: 0.72rem;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--slate-600);
-      background: var(--slate-100);
-      padding: 3px 9px;
+      padding: 4px 10px;
       border-radius: var(--radius-full);
+      letter-spacing: 0.04em;
     }
 
-    .hero-preview-card h5 {
-      font-size: 1.15rem;
+    .reg-card-tag.cpd {
+      background: var(--red-subtle);
+      color: var(--red);
+      border: 1px solid var(--red-border);
+    }
+
+    .reg-card-tag.dcais {
+      background: var(--blue-subtle);
+      color: var(--blue);
+      border: 1px solid #BFDBFE;
+    }
+
+    .reg-card-title {
+      font-size: 1.25rem;
       font-weight: 900;
       color: var(--slate-900);
       margin-bottom: 6px;
     }
 
-    .hero-preview-card p {
-      font-size: 0.84rem;
+    .reg-card-desc {
+      font-size: 0.82rem;
       color: var(--slate-600);
-      line-height: 1.5;
-      margin-bottom: 12px;
+      line-height: 1.45;
+      margin-bottom: 16px;
     }
 
-    .prev-card-features {
+    .reg-kpi-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .reg-kpi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .reg-kpi-num {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      line-height: 1.1;
+    }
+
+    .reg-kpi-lbl {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--slate-500);
+      text-transform: uppercase;
+    }
+
+    .reg-progress-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .reg-progress-bar {
+      width: 100%;
+      height: 7px;
+      background: var(--slate-200);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .reg-progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.4s ease;
+    }
+
+    .reg-progress-fill.cpd {
+      background: var(--red);
+    }
+
+    .reg-progress-text {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--slate-600);
+    }
+
+    .reg-stages-pill-row {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
     }
 
-    .prev-card-features span {
+    .reg-stage-pill {
       font-size: 0.74rem;
       font-weight: 800;
-      color: var(--slate-700);
-      background: var(--slate-50);
-      border: 1px solid var(--slate-200);
-      padding: 3px 8px;
+      padding: 4px 10px;
       border-radius: 6px;
+      background: #FFFFFF;
+      border: 1px solid var(--slate-200);
+      color: var(--slate-800);
+    }
+
+    .school-summary-banner-compact {
+      background: var(--slate-100);
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 14px 22px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     /* Controls Styling */
@@ -990,27 +1103,6 @@
       box-shadow: 0 2px 8px rgba(250, 15, 0, 0.25);
     }
 
-    .btn-whatsapp-broadcast {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #25D366;
-      color: #FFFFFF;
-      border: none;
-      padding: 8px 16px;
-      border-radius: var(--radius-full);
-      font-size: 0.82rem;
-      font-weight: 800;
-      cursor: pointer;
-      transition: var(--transition);
-      box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
-      white-space: nowrap;
-    }
-
-    .btn-whatsapp-broadcast:hover {
-      background: #1EBE5D;
-      transform: translateY(-1px);
-    }
 
     /* ==================== STUDENT ARTIFACT SHOWCASE ==================== */
     .artifact-showcase-box {

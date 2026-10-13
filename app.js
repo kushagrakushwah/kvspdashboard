@@ -2,7 +2,7 @@
  * KVS Principal Portal — Complete Controller (Full Overhaul)
  * Architecture:
  * - View 1: Institution & Program Selection with Fast Combobox Search & Regional Benchmarking
- * - View 2: Dedicated School CPD Portal (A4 Print Dossier, WhatsApp Group Broadcast, Filter Pills, Roster)
+ * - View 2: Dedicated School CPD Portal (A4 Print Dossier, Filter Pills, Roster, 1-Click Notice)
  * - View 3: Dedicated School DCAIS Portal (A4 Print Dossier, Artifact Showcase Modal, 4 Stages, Bootcamp)
  */
 
@@ -171,6 +171,7 @@ function hideComboboxDropdown() {
 
 function resetToFullHero() {
   selectedKVCode = null;
+  selectedRegion = null;
   const heroCard = document.getElementById('selectorHeroCard');
   if (heroCard) {
     heroCard.classList.remove('hero-shrunk');
@@ -180,6 +181,11 @@ function resetToFullHero() {
   const heroShrunkBar = document.getElementById('heroShrunkBar');
   if (heroShrunkBar) {
     heroShrunkBar.style.display = 'none';
+  }
+
+  const regionSummary = document.getElementById('regionSummaryBlock');
+  if (regionSummary) {
+    regionSummary.style.display = 'none';
   }
 
   const homePrograms = document.getElementById('homeProgramsCard');
@@ -258,7 +264,18 @@ function onRegionChange() {
   const regObj = KVS_DATA.REGIONS.find(r => r.name === selectedRegion);
   if (!regObj) return;
 
-  schSelect.innerHTML = '<option value="">Select KV School (Code / Name)...</option>';
+  // Clear previous school state so user chooses from this region
+  selectedKVCode = null;
+  const heroCard = document.getElementById('selectorHeroCard');
+  if (heroCard) {
+    heroCard.classList.remove('hero-shrunk');
+    heroCard.classList.add('hero-expanded');
+  }
+  const heroShrunkBar = document.getElementById('heroShrunkBar');
+  if (heroShrunkBar) heroShrunkBar.style.display = 'none';
+
+  // Populate school select dropdown with this region's schools
+  schSelect.innerHTML = `<option value="">Select KV School (${regObj.kvs.length} Schools in ${selectedRegion})...</option>`;
   regObj.kvs.forEach(k => {
     const opt = document.createElement('option');
     opt.value = k.code;
@@ -267,16 +284,75 @@ function onRegionChange() {
   });
 
   schSelect.disabled = false;
+  schSelect.value = '';
 
-  // Auto-select first school so the 2 program options appear immediately
-  if (regObj.kvs.length > 0) {
-    schSelect.value = regObj.kvs[0].code;
-    const input = document.getElementById('globalSchoolSearch');
-    if (input) input.value = `KV ${regObj.kvs[0].code} — ${regObj.kvs[0].name} (${selectedRegion})`;
-    const clearBtn = document.getElementById('comboboxClearBtn');
-    if (clearBtn) clearBtn.style.display = 'block';
-    setSchool(regObj.kvs[0].code);
-  }
+  const input = document.getElementById('globalSchoolSearch');
+  if (input) input.value = '';
+  const clearBtn = document.getElementById('comboboxClearBtn');
+  if (clearBtn) clearBtn.style.display = 'none';
+
+  // Hide school programs card until school is explicitly selected
+  const homePrograms = document.getElementById('homeProgramsCard');
+  if (homePrograms) homePrograms.style.display = 'none';
+
+  // Render and display Regional Summary for CPD & DCAIS
+  renderRegionSummary(regObj);
+}
+
+function renderRegionSummary(regObj) {
+  const summaryBlock = document.getElementById('regionSummaryBlock');
+  if (!summaryBlock) return;
+
+  const badge = document.getElementById('regSummaryBadge');
+  const meta = document.getElementById('regSummaryMeta');
+  if (badge) badge.textContent = `📍 ${regObj.name} Region`;
+  if (meta) meta.textContent = `${regObj.totalKVs} Kendriya Vidyalayas • ${regObj.totalTeachers.toLocaleString()} Total Teachers`;
+
+  const cpdDesc = document.getElementById('regCpdDesc');
+  if (cpdDesc) cpdDesc.textContent = `Continuous Professional Development across all ${regObj.totalKVs} schools in ${regObj.name} Region.`;
+
+  const cpdCert = document.getElementById('regCpdCertified');
+  const cpdAtt = document.getElementById('regCpdAttended');
+  const cpdTot = document.getElementById('regCpdTotalFaculty');
+  const cpdFill = document.getElementById('regCpdProgressFill');
+  const cpdText = document.getElementById('regCpdProgressText');
+  const cpdRate = Math.round((regObj.cpdCertified / Math.max(1, regObj.totalTeachers)) * 100);
+
+  if (cpdCert) cpdCert.textContent = regObj.cpdCertified.toLocaleString();
+  if (cpdAtt) cpdAtt.textContent = regObj.cpdAttended.toLocaleString();
+  if (cpdTot) cpdTot.textContent = regObj.totalTeachers.toLocaleString();
+  if (cpdFill) cpdFill.style.width = `${Math.min(100, Math.max(6, cpdRate))}%`;
+  if (cpdText) cpdText.textContent = `${cpdRate}% Regional Certification Rate • Modules 1–6 Grounded Telemetry`;
+
+  const dcaisDesc = document.getElementById('regDcaisDesc');
+  if (dcaisDesc) dcaisDesc.textContent = `Digital Creativity & Innovation Skills (Stages M1–M4) implementation across ${regObj.name} Region.`;
+
+  const dcaisSchools = document.getElementById('regDcaisSchools');
+  const dcaisBoot = document.getElementById('regDcaisBootcamp');
+  const dcaisTotal = document.getElementById('regDcaisTotalSchools');
+  const activeCount = (regObj.m1Schools || 0) + (regObj.m2Schools || 0) + (regObj.m3Schools || 0) + (regObj.m4Schools || 0);
+
+  if (dcaisSchools) dcaisSchools.textContent = activeCount;
+  if (dcaisBoot) dcaisBoot.textContent = (regObj.bootcampCount || 0).toLocaleString();
+  if (dcaisTotal) dcaisTotal.textContent = regObj.totalKVs;
+
+  const m1Pill = document.getElementById('regM1Pill');
+  const m2Pill = document.getElementById('regM2Pill');
+  const m3Pill = document.getElementById('regM3Pill');
+  const m4Pill = document.getElementById('regM4Pill');
+  if (m1Pill) m1Pill.textContent = `Stage M1: ${regObj.m1Schools || 0}`;
+  if (m2Pill) m2Pill.textContent = `Stage M2: ${regObj.m2Schools || 0}`;
+  if (m3Pill) m3Pill.textContent = `Stage M3: ${regObj.m3Schools || 0}`;
+  if (m4Pill) m4Pill.textContent = `Stage M4: ${regObj.m4Schools || 0}`;
+
+  summaryBlock.style.display = 'block';
+  summaryBlock.classList.remove('animate-slide-up');
+  void summaryBlock.offsetWidth;
+  summaryBlock.classList.add('animate-slide-up');
+
+  setTimeout(() => {
+    summaryBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 100);
 }
 
 function onSchoolChange() {
@@ -329,7 +405,12 @@ function setSchool(kvCode) {
   if (!sch) return;
 
   selectedKVCode = kvCode;
+  selectedRegion = sch.region;
   const benchmark = computeRegionalBenchmark(sch);
+
+  // Hide the region summary block so the school summary takes center stage
+  const summaryBlock = document.getElementById('regionSummaryBlock');
+  if (summaryBlock) summaryBlock.style.display = 'none';
 
   // 0. Smoothly morph selector hero from expanded to shrunk state
   const heroCard = document.getElementById('selectorHeroCard');
@@ -372,8 +453,8 @@ function setSchool(kvCode) {
     if (badge) badge.textContent = `KV ${sch.code}`;
     if (title) title.textContent = `KV ${sch.code} — ${sch.name}`;
     if (reg) reg.textContent = `${sch.region} Region • Academic Rating: ${sch.rating}`;
-    if (cpdStats) cpdStats.textContent = `${sch.certifiedCount} Certified • ${sch.attendedCount} Attended`;
-    if (dcaisStats) dcaisStats.textContent = `${sch.dcaisStage} • ${sch.bootcampCount} Students`;
+    if (cpdStats) cpdStats.textContent = `${sch.certifiedCount} Certified • ${sch.attendedCount} Attended • ${sch.totalTeachers} Total Teachers`;
+    if (dcaisStats) dcaisStats.textContent = `${sch.dcaisStage} Active • ${sch.bootcampCount} Bootcamp Students`;
     if (benchPill) {
       benchPill.textContent = benchmark.text;
       benchPill.className = `benchmark-pill ${benchmark.cls}`;
@@ -636,8 +717,8 @@ function renderRosterTable(roster) {
       </td>
       <td>
         ${isCert 
-          ? `<button class="btn-action-small" onclick="openCertModal('${t.n}', '${t.m}', '${sch ? sch.name : ''}')">Certificate 📜</button>`
-          : `<button class="btn-action-small red-nudge" onclick="openReminderModal('${t.n}', '${t.e}')">Remind 🔔</button>`
+          ? `<button class="btn-action-small" onclick="openCertModal('${t.n.replace(/'/g, "\\'")}', '${t.m}', '${sch ? sch.name.replace(/'/g, "\\'") : ''}')">Certificate 📜</button>`
+          : `<button class="btn-action-small" onclick="copyTeacherNotice('${t.n.replace(/'/g, "\\'")}', '${t.e}', '${t.m}')" title="Copy official reminder notice to clipboard">Copy Notice 📋</button>`
         }
       </td>
     `;
@@ -746,44 +827,6 @@ function closeArtifactModal() {
   if (modal) modal.style.display = 'none';
 }
 
-// ==================== 9. WHATSAPP STAFF GROUP BROADCAST ====================
-
-function openBroadcastModal() {
-  if (!selectedKVCode || !KVS_DATA.SCHOOLS[selectedKVCode]) return;
-  const sch = KVS_DATA.SCHOOLS[selectedKVCode];
-  const pendingCount = Math.max(0, sch.totalTeachers - sch.certifiedCount);
-
-  const text = `*Kendriya Vidyalaya Sangathan — Teachers Notice*\n*KV ${sch.code} — ${sch.name}*\n\nDear Esteemed Teachers,\n\nHeartiest congratulations to our *${sch.certifiedCount} teachers* who have earned verified Adobe Express Continuous Professional Development (CPD) certification!\n\nFor our *${pendingCount} colleagues* currently completing assignments, a gentle reminder to submit your module outputs at express.adobe.com before this Friday to receive official Ministry-recognized credentials.\n\nLet us continue fostering digital creativity in our classrooms.\n\n— *Principal, KV ${sch.code} ${sch.name}*`;
-
-  const txtArea = document.getElementById('broadcastText');
-  if (txtArea) txtArea.value = text;
-
-  const modal = document.getElementById('broadcastModal');
-  if (modal) modal.style.display = 'flex';
-}
-
-function closeBroadcastModal() {
-  const modal = document.getElementById('broadcastModal');
-  if (modal) modal.style.display = 'none';
-}
-
-function copyBroadcastText() {
-  const txt = document.getElementById('broadcastText');
-  if (!txt) return;
-  txt.select();
-  navigator.clipboard.writeText(txt.value);
-  showToast('Copied announcement to clipboard! Ready to paste into WhatsApp group.');
-  closeBroadcastModal();
-}
-
-function sendWhatsAppBroadcast() {
-  const txt = document.getElementById('broadcastText');
-  if (!txt) return;
-  const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(txt.value)}`;
-  window.open(url, '_blank');
-  closeBroadcastModal();
-  showToast('WhatsApp opened with broadcast announcement!');
-}
 
 // ==================== 10. GOVERNMENT-GRADE A4 PRINTABLE DOSSIER ====================
 
@@ -1217,31 +1260,10 @@ function downloadCertPdf() {
   showToast('Certificate opened! Use Print ➔ Save as PDF.');
 }
 
-function openReminderModal(name, email) {
-  document.getElementById('reminderTeacherName').textContent = name;
-  document.getElementById('reminderEmail').textContent = email || 'teacher@kvs.in';
-  document.getElementById('reminderText').value = `Dear ${name}, please complete your assignment submission for Adobe Express to receive your verified certification credential.`;
-  document.getElementById('reminderModal').style.display = 'flex';
-}
-
-function closeReminderModal() {
-  document.getElementById('reminderModal').style.display = 'none';
-}
-
-function copyReminderText() {
-  const txt = document.getElementById('reminderText');
-  txt.select();
-  navigator.clipboard.writeText(txt.value);
-  showToast('Copied reminder to clipboard! Ready to paste into WhatsApp.');
-  closeReminderModal();
-}
-
-function sendWhatsAppReminder() {
-  const txt = document.getElementById('reminderText').value;
-  const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(txt)}`;
-  window.open(url, '_blank');
-  closeReminderModal();
-  showToast('WhatsApp opened with reminder!');
+function copyTeacherNotice(name, email, mod) {
+  const text = `Dear ${name}, please complete your assignment submission for Adobe Express ${mod || 'Module'} to receive your official verified certification credential.`;
+  navigator.clipboard.writeText(text);
+  showToast(`Copied official reminder notice for ${name} to clipboard!`);
 }
 
 function showToast(msg) {
