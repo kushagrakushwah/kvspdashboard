@@ -174,13 +174,13 @@
       position: relative;
     }
 
-    /* EXPANDED INITIAL STATE (covers full area gracefully, zero blank whitespace) */
+    /* EXPANDED INITIAL STATE (compact, graceful, zero blank gap) */
     .selector-card.hero-expanded {
-      padding: 38px 42px;
-      min-height: calc(100vh - 170px);
+      padding: 32px 38px;
+      min-height: auto;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 20px;
       background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
       border: 2px solid var(--slate-200);
       box-shadow: 0 16px 44px -8px rgba(15, 23, 42, 0.08);
@@ -190,6 +190,7 @@
     .selector-card.hero-shrunk {
       padding: 16px 24px;
       min-height: auto;
+      gap: 12px;
       border-color: var(--slate-200);
       box-shadow: var(--shadow-sm);
       background: #FFFFFF;
@@ -206,7 +207,7 @@
                   margin 0.4s ease, 
                   transform 0.4s ease;
       overflow: hidden;
-      margin-bottom: 22px;
+      margin-bottom: 0;
     }
 
     .selector-card.hero-shrunk .hero-intro-collapsible {
