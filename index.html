@@ -105,6 +105,15 @@
       font-weight: 900;
       font-family: Georgia, serif;
       box-shadow: 0 2px 8px rgba(250, 15, 0, 0.25);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .adobe-logo-badge:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 14px rgba(250, 15, 0, 0.45);
+      color: #FFFFFF;
     }
 
     .brand-title {
@@ -1467,10 +1476,9 @@
   <header class="site-header">
     <div class="header-container">
       <div class="brand-wrapper">
-        <div class="adobe-logo-badge">A</div>
+        <a href="index.html" class="adobe-logo-badge" onclick="if(window.resetToFullHero){ resetToFullHero(); }" title="Return to Homepage">A</a>
         <div>
-          <span class="brand-title">KVS Principal Portal</span>
-          <span class="brand-subtitle">Adobe Express for Education</span>
+          <a href="index.html" onclick="if(window.resetToFullHero){ resetToFullHero(); }" style="text-decoration:none; color:inherit; cursor:pointer;"><span class="brand-title">KVS Principal Portal</span></a>
         </div>
       </div>
 
