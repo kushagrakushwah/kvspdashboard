@@ -246,7 +246,29 @@
       color: var(--slate-600);
       max-width: 820px;
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
+    }
+
+    .selection-prompt-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--red-subtle);
+      border: 1.5px solid var(--red-border);
+      color: var(--red);
+      font-size: 0.92rem;
+      font-weight: 800;
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 2px 10px rgba(250, 15, 0, 0.08);
+      margin-top: 4px;
+      margin-bottom: 6px;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .selection-prompt-pill .prompt-icon {
+      font-size: 1.15rem;
+      line-height: 1;
     }
 
     .hero-stats-strip {
@@ -1513,36 +1535,19 @@
         <div id="heroIntroBlock" class="hero-intro-collapsible">
           <h1 class="hero-main-title">Kendriya Vidyalaya Principal Command Center</h1>
           <p class="hero-main-subtitle">
-            Official institutional dashboard for monitoring Faculty Professional Development (CPD) and Student Digital Creativity & Innovation (DCAIS). Select your school to access your live portal.
+            Official institutional dashboard for monitoring Teachers Continuous professional Development (CPD) and Student Digital Creativity &amp; Innovation (DCAIS).
           </p>
 
-          <!-- National Impact Telemetry Badges -->
-          <div class="hero-stats-strip">
-            <div class="hero-stat-pill">
-              <span class="stat-num">1,202</span>
-              <span class="stat-lbl">Kendriya Vidyalayas</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="hero-stat-pill">
-              <span class="stat-num">25</span>
-              <span class="stat-lbl">Regional Offices</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="hero-stat-pill">
-              <span class="stat-num">Modules 1–6</span>
-              <span class="stat-lbl">CPD Teacher Training</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="hero-stat-pill">
-              <span class="stat-num">Grades 6–8</span>
-              <span class="stat-lbl">DCAIS Creative Tech</span>
-            </div>
+          <!-- Dedicated School Selection Prompt (Separate from intro paragraph) -->
+          <div class="selection-prompt-pill">
+            <span class="prompt-icon">🏫</span>
+            <span class="prompt-text">Select your school to access your live portal</span>
           </div>
         </div>
 
         <!-- Controls Section (Search + Selectors) -->
         <div class="hero-controls-block">
-          <!-- Fast School Search Combobox (Instant Typeahead across all 1,202 schools) -->
+          <!-- Fast School Search Combobox (Instant Typeahead across all KV schools) -->
           <div class="combobox-wrap">
             <label id="searchLabel">⚡ Fast Search by School Name or KV Code</label>
             <div class="combobox-input-box">
@@ -1595,7 +1600,7 @@
             <div class="hero-preview-card">
               <div class="prev-card-top">
                 <span class="prev-icon">🎓</span>
-                <span class="prev-badge">Faculty Excellence</span>
+                <span class="prev-badge">Teacher Excellence</span>
               </div>
               <h5>CPD Teacher Academy</h5>
               <p>Monitor educator accreditation across 6 certified modules. View PRT, TGT, PGT certification rates, verify credentials, and dispatch 1-click WhatsApp nudges & staff announcements.</p>
@@ -1648,12 +1653,12 @@
                 <div class="choice-icon">🎓</div>
                 <span class="choice-badge">Teacher Training</span>
               </div>
-              <h3 style="font-size:1.45rem;font-weight:900;color:var(--slate-900);margin-bottom:8px;">CPD Academy</h3>
+              <h3 style="font-size:1.45rem;font-weight:900;color:var(--slate-900);margin-bottom:8px;">CPD Module</h3>
               <p style="font-size:0.9rem;color:var(--slate-600);line-height:1.5;margin-bottom:14px;">
-                Continuous Professional Development (Modules 1–6), certification roster, and teacher assignment tracking.
+                Continuous Professional Development (CPD 1–6 completed, 10 total modules to complete), certification roster, and teacher assignment tracking.
               </p>
               <div style="background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--radius-md);padding:10px 14px;font-size:0.85rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
-                📊 Faculty Status: <span id="homeCpdStats" style="color:var(--red);">0 Certified • 0 Attended</span>
+                📊 Teacher Status: <span id="homeCpdStats" style="color:var(--red);">0 Certified • 0 Attended</span>
               </div>
             </div>
             <button class="btn-enter-portal" onclick="navigateTo('cpd')">
@@ -1711,7 +1716,7 @@
               <span class="tag-pill" id="cpdSchoolRegionTag">Region</span>
               <span class="tag-pill green" id="cpdSchoolRatingTag">Rating: A+</span>
               <span class="benchmark-pill gold" id="cpdBenchmarkPill">🥇 Top 10% in Region</span>
-              <span class="tag-pill blue">CPD Teacher Academy</span>
+              <span class="tag-pill blue">CPD Teacher Module</span>
             </div>
           </div>
         </div>
@@ -1720,7 +1725,7 @@
           <div class="school-summary-kpis">
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="cpdSumFaculty">42</span>
-              <span class="mini-kpi-lbl">Faculty</span>
+              <span class="mini-kpi-lbl">Teachers</span>
             </div>
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="cpdSumCertified" style="color:var(--red);">12</span>
@@ -1761,7 +1766,7 @@
       <div class="table-box">
         <div class="table-header-row">
           <div>
-            <h4>Teacher Faculty Roster & Certification Status</h4>
+            <h4>Teacher Roster & Certification Status</h4>
             <p>Real registered teachers for this school from Semi Annual Report.xlsx</p>
           </div>
           <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
@@ -1769,7 +1774,7 @@
 
         <!-- Quick Filter Status Pills -->
         <div class="filter-pills-row" id="rosterFilterPills">
-          <button class="filter-pill active" data-filter="all" onclick="setRosterFilter('all', this)">All Faculty (<span id="countFilterAll">0</span>)</button>
+          <button class="filter-pill active" data-filter="all" onclick="setRosterFilter('all', this)">All Teachers (<span id="countFilterAll">0</span>)</button>
           <button class="filter-pill" data-filter="certified" onclick="setRosterFilter('certified', this)">Certified (<span id="countFilterCertified">0</span>)</button>
           <button class="filter-pill" data-filter="pending" onclick="setRosterFilter('pending', this)">Pending (<span id="countFilterPending">0</span>)</button>
           <button class="filter-pill" data-filter="PRT" onclick="setRosterFilter('PRT', this)">PRT (<span id="countFilterPRT">0</span>)</button>
@@ -1803,7 +1808,7 @@
           <span>← Back to School Selector</span>
         </button>
         <button class="btn-nav-switch" onclick="navigateTo('cpd')">
-          <span>Switch to CPD Academy 🎓</span>
+          <span>Switch to CPD Module 🎓</span>
         </button>
       </div>
 
@@ -1829,7 +1834,7 @@
           <div class="school-summary-kpis">
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="dcaisSumFaculty">42</span>
-              <span class="mini-kpi-lbl">Faculty</span>
+              <span class="mini-kpi-lbl">Teachers</span>
             </div>
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="dcaisSumStage" style="color:var(--blue);">M2</span>
@@ -2025,7 +2030,7 @@
           <span style="font-size:1.4rem;">📢</span>
           <div>
             <h3 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);">Staff WhatsApp Group Broadcast</h3>
-            <p style="font-size:0.8rem;color:var(--slate-500);">Pre-formatted executive announcement for your school faculty group</p>
+            <p style="font-size:0.8rem;color:var(--slate-500);">Pre-formatted executive announcement for your school teachers group</p>
           </div>
         </div>
         <button style="border:none;background:transparent;cursor:pointer;font-size:1.1rem;" onclick="closeBroadcastModal()">✕</button>

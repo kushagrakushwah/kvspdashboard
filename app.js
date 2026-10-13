@@ -123,7 +123,7 @@ function onGlobalSearchInput(val) {
     return;
   }
 
-  // Filter across all 1,202 schools
+  // Filter across all KV schools
   const matches = allSchoolsList.filter(s => 
     String(s.code).includes(q) || 
     s.name.toLowerCase().includes(q) ||
@@ -492,7 +492,7 @@ function renderCpdCharts(sch) {
     catChart = new Chart(ctxCat, {
       type: 'doughnut',
       data: {
-        labels: ['Primary (PRT)', 'Trained Graduate (TGT)', 'Post Graduate (PGT)', 'Other Faculty'],
+        labels: ['Primary (PRT)', 'Trained Graduate (TGT)', 'Post Graduate (PGT)', 'Other Teachers'],
         datasets: [{
           data: [prt, tgt, pgt, hm],
           backgroundColor: ['#FA0F00', '#3B82F6', '#10B981', '#F59E0B'],
@@ -614,7 +614,7 @@ function renderRosterTable(roster) {
   tbody.innerHTML = '';
 
   if (roster.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--slate-400);">No faculty records found matching criteria.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--slate-400);">No teacher records found matching criteria.</td></tr>';
     return;
   }
 
@@ -753,7 +753,7 @@ function openBroadcastModal() {
   const sch = KVS_DATA.SCHOOLS[selectedKVCode];
   const pendingCount = Math.max(0, sch.totalTeachers - sch.certifiedCount);
 
-  const text = `*Kendriya Vidyalaya Sangathan — Faculty Notice*\n*KV ${sch.code} — ${sch.name}*\n\nDear Esteemed Faculty,\n\nHeartiest congratulations to our *${sch.certifiedCount} teachers* who have earned verified Adobe Express Continuous Professional Development (CPD) certification!\n\nFor our *${pendingCount} colleagues* currently completing assignments, a gentle reminder to submit your module outputs at express.adobe.com before this Friday to receive official Ministry-recognized credentials.\n\nLet us continue fostering digital creativity in our classrooms.\n\n— *Principal, KV ${sch.code} ${sch.name}*`;
+  const text = `*Kendriya Vidyalaya Sangathan — Teachers Notice*\n*KV ${sch.code} — ${sch.name}*\n\nDear Esteemed Teachers,\n\nHeartiest congratulations to our *${sch.certifiedCount} teachers* who have earned verified Adobe Express Continuous Professional Development (CPD) certification!\n\nFor our *${pendingCount} colleagues* currently completing assignments, a gentle reminder to submit your module outputs at express.adobe.com before this Friday to receive official Ministry-recognized credentials.\n\nLet us continue fostering digital creativity in our classrooms.\n\n— *Principal, KV ${sch.code} ${sch.name}*`;
 
   const txtArea = document.getElementById('broadcastText');
   if (txtArea) txtArea.value = text;
@@ -874,7 +874,7 @@ function printSchoolReport(type) {
           <div class="summary-cards">
             <div class="s-tile">
               <div class="s-val">${sch.totalTeachers}</div>
-              <div class="s-lbl">Total Registered Faculty</div>
+              <div class="s-lbl">Total Registered Teachers</div>
             </div>
             <div class="s-tile">
               <div class="s-val" style="color:#FA0F00;">${sch.certifiedCount}</div>
@@ -891,7 +891,7 @@ function printSchoolReport(type) {
           </div>
 
           <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#334155;margin-bottom:4px;">
-            School Faculty Roster &amp; Continuous Professional Development Records
+            School Teacher Roster &amp; Continuous Professional Development Records
           </div>
 
           <table>
@@ -906,7 +906,7 @@ function printSchoolReport(type) {
               </tr>
             </thead>
             <tbody>
-              ${rosterRows || '<tr><td colspan="6" style="text-align:center;padding:14px;">No faculty records registered.</td></tr>'}
+              ${rosterRows || '<tr><td colspan="6" style="text-align:center;padding:14px;">No teacher records registered.</td></tr>'}
             </tbody>
           </table>
 
@@ -1004,7 +1004,7 @@ function printSchoolReport(type) {
           <div class="summary-cards">
             <div class="s-tile">
               <div class="s-val">${sch.totalTeachers}</div>
-              <div class="s-lbl">School Faculty</div>
+              <div class="s-lbl">School Teachers</div>
             </div>
             <div class="s-tile">
               <div class="s-val" style="color:#3B82F6;">${sch.dcaisStage}</div>
@@ -1106,7 +1106,7 @@ function exportSchoolCsv(type) {
   let filename = '';
 
   if (type === 'cpd') {
-    filename = `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_CPD_Faculty.csv`;
+    filename = `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_CPD_Teachers.csv`;
     const rows = [
       ['KV Code', 'School Name', 'Region', 'Teacher Name', 'Category', 'Subject', 'Module', 'Status']
     ];
@@ -1219,7 +1219,7 @@ function downloadCertPdf() {
 
 function openReminderModal(name, email) {
   document.getElementById('reminderTeacherName').textContent = name;
-  document.getElementById('reminderEmail').textContent = email || 'faculty@kvs.in';
+  document.getElementById('reminderEmail').textContent = email || 'teacher@kvs.in';
   document.getElementById('reminderText').value = `Dear ${name}, please complete your assignment submission for Adobe Express to receive your verified certification credential.`;
   document.getElementById('reminderModal').style.display = 'flex';
 }
