@@ -2032,26 +2032,47 @@
               </div>
               <h4 class="reg-card-title">CPD Teacher Module</h4>
               <p class="reg-card-desc" id="regCpdDesc">Region-wide Continuous Professional Development (CPD 1–6 completed, 10 total modules to complete).</p>
-              <div class="reg-kpi-row">
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regCpdAttended">0</span>
-                  <span class="reg-kpi-lbl">CPD Attended</span>
+
+              <!-- Regional CPD Donut/Pie Chart & Status Breakdown -->
+              <div class="reg-chart-split">
+                <div class="reg-chart-box">
+                  <canvas id="chartRegCpdPie"></canvas>
                 </div>
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regCpdCertified">0</span>
-                  <span class="reg-kpi-lbl">CPD Certified</span>
-                </div>
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regCpdTotalFaculty">0</span>
-                  <span class="reg-kpi-lbl">Total Teachers</span>
+                <div class="reg-chart-legend">
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot blue"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">CPD Certified:</span>
+                      <strong class="reg-legend-val" id="regCpdCertified">0</strong>
+                      <span class="reg-legend-pct" id="regCpdCertPct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot amber"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Attended (Pending Cert):</span>
+                      <strong class="reg-legend-val" id="regCpdPendingCert">0</strong>
+                      <span class="reg-legend-pct" id="regCpdPendingPct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot slate"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Yet to Attend:</span>
+                      <strong class="reg-legend-val" id="regCpdYetToAttend">0</strong>
+                      <span class="reg-legend-pct" id="regCpdYetPct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-total">
+                    <span>Total Region Teachers:</span>
+                    <strong id="regCpdTotalFaculty">0</strong>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="reg-progress-wrap">
-              <div class="reg-progress-bar">
-                <div class="reg-progress-fill cpd" id="regCpdProgressFill" style="width:0%;"></div>
-              </div>
-              <span class="reg-progress-text" id="regCpdProgressText">0% Regional Certification Rate</span>
+
+            <div class="reg-card-footer-strip">
+              <span id="regCpdAttendedSummary">0 Teachers Attended in Region (0% Attendance Rate)</span>
             </div>
           </div>
 
@@ -2219,6 +2240,29 @@
         </div>
       </div>
 
+      <!-- Leadership CPD 3 Assignment Callout for Principals -->
+      <div style="background:#FFFFFF;border:2px solid #4338CA;border-radius:var(--radius-lg);padding:18px 24px;margin-bottom:24px;box-shadow:var(--shadow-sm);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+        <div style="max-width:720px;">
+          <div style="display:inline-flex;align-items:center;gap:6px;background:#EEF2FF;color:#4338CA;border:1px solid #C7D2FE;padding:3px 10px;border-radius:999px;font-size:0.72rem;font-weight:800;text-transform:uppercase;margin-bottom:6px;">
+            Principal Leadership Assignment • Level A | Chapter 3
+          </div>
+          <h4 style="font-size:1.05rem;font-weight:900;color:var(--slate-900);margin:0 0 4px;">
+            Assignment CPD 3: My Vision Board 2028: Future-Ready School
+          </h4>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin:0;line-height:1.45;">
+            "Create a one-page Vision Board in Adobe Express showcasing your vision for your school in 2028. Use school photos, add future-ready facilities, and include a short vision statement."
+          </p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="https://express.adobe.com/publishedV2/urn:aaid:sc:AP:43759e32-bd25-5bb1-ac71-3e917e44bc1d?promoid=Y69SGM5H&sdid=C4SZ2FYJ&mv=other" target="_blank" rel="noopener noreferrer" class="btn-action-small red-nudge" style="padding:8px 16px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:800;" title="Open Adobe Express Template">
+            Open in Adobe Express ↗
+          </a>
+          <a href="https://adobe.ly/CPD3leadershipsubmissionlink" target="_blank" rel="noopener noreferrer" class="btn-action-small" style="padding:8px 16px;background:#1E1B4B;color:#FFFFFF;border-color:#1E1B4B;text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:800;" title="Submit via Google Form">
+            Submit Form (Google Forms) ↗
+          </a>
+        </div>
+      </div>
+
       <!-- CPD Analytics: Pie Chart & Table for Attendance + Pie Chart & Table for Certificates -->
       <div class="charts-row">
         <!-- Panel 1: CPD Module Attendance -->
@@ -2227,21 +2271,21 @@
             <h4>CPD Module Attendance</h4>
             <span class="tag-pill green" id="badgeCpdAttRate">0 Attended</span>
           </div>
-          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:10px;">Number of teachers who attended each CPD module</p>
-          <div class="chart-with-table-grid">
-            <div class="canvas-wrap" style="height:210px;"><canvas id="chartCpdAttPie"></canvas></div>
-            <div class="table-scroll" style="max-height:220px;">
-              <table class="mini-summary-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th style="text-align:right;">Teachers</th>
-                    <th style="text-align:right;">Share</th>
-                  </tr>
-                </thead>
-                <tbody id="tableCpdAttBody"></tbody>
-              </table>
-            </div>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:14px;">Number of teachers who attended each CPD module</p>
+          <div style="height:190px;max-width:280px;margin:0 auto 16px;position:relative;">
+            <canvas id="chartCpdAttPie"></canvas>
+          </div>
+          <div class="cpd-table-wrap">
+            <table class="cpd-full-table">
+              <thead>
+                <tr>
+                  <th>Module</th>
+                  <th style="text-align:right;">Teachers Attended</th>
+                  <th style="text-align:right;">Share</th>
+                </tr>
+              </thead>
+              <tbody id="tableCpdAttBody"></tbody>
+            </table>
           </div>
         </div>
 
@@ -2251,21 +2295,21 @@
             <h4>CPD Certificates Received</h4>
             <span class="tag-pill blue" id="badgeCpdCertRate">0 Certificates</span>
           </div>
-          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:10px;">Number of certificates received per CPD module</p>
-          <div class="chart-with-table-grid">
-            <div class="canvas-wrap" style="height:210px;"><canvas id="chartCpdCertPie"></canvas></div>
-            <div class="table-scroll" style="max-height:220px;">
-              <table class="mini-summary-table">
-                <thead>
-                  <tr>
-                    <th>Module</th>
-                    <th style="text-align:right;">Certificates</th>
-                    <th style="text-align:right;">Share</th>
-                  </tr>
-                </thead>
-                <tbody id="tableCpdCertBody"></tbody>
-              </table>
-            </div>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:14px;">Number of certificates received per CPD module</p>
+          <div style="height:190px;max-width:280px;margin:0 auto 16px;position:relative;">
+            <canvas id="chartCpdCertPie"></canvas>
+          </div>
+          <div class="cpd-table-wrap">
+            <table class="cpd-full-table">
+              <thead>
+                <tr>
+                  <th>Module</th>
+                  <th style="text-align:right;">Certificates Received</th>
+                  <th style="text-align:right;">Share</th>
+                </tr>
+              </thead>
+              <tbody id="tableCpdCertBody"></tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -2285,9 +2329,6 @@
           <button class="filter-pill" data-filter="attended" onclick="setRosterFilter('attended', this)">CPD Attended (<span id="countFilterAttended">0</span>)</button>
           <button class="filter-pill" data-filter="certified" onclick="setRosterFilter('certified', this)">CPD Certified (<span id="countFilterCertified">0</span>)</button>
           <button class="filter-pill" data-filter="pending" onclick="setRosterFilter('pending', this)">Pending Certificate (<span id="countFilterPending">0</span>)</button>
-          <button class="filter-pill" data-filter="PRT" onclick="setRosterFilter('PRT', this)">PRT (<span id="countFilterPRT">0</span>)</button>
-          <button class="filter-pill" data-filter="TGT" onclick="setRosterFilter('TGT', this)">TGT (<span id="countFilterTGT">0</span>)</button>
-          <button class="filter-pill" data-filter="PGT" onclick="setRosterFilter('PGT', this)">PGT (<span id="countFilterPGT">0</span>)</button>
         </div>
 
         <div class="table-scroll">
@@ -2295,7 +2336,6 @@
             <thead>
               <tr>
                 <th>Teacher Name</th>
-                <th>Category</th>
                 <th>Subject</th>
                 <th>Module</th>
                 <th>CPD Attendance</th>

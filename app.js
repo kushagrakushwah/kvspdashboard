@@ -15,6 +15,7 @@ let currentRosterFilter = 'all';
 let allSchoolsList = [];
 let cpdAttendanceChart = null;
 let cpdCertifiedChart = null;
+let regionalCpdChart = null;
 let dcaisBarChart = null;
 
 const CPD_MODULE_NAMES = {
@@ -234,18 +235,76 @@ function renderRegionSummary(regObj) {
   const cpdDesc = document.getElementById('regCpdDesc');
   if (cpdDesc) cpdDesc.textContent = `Continuous Professional Development across all ${regObj.totalKVs} schools in ${regObj.name} Region.`;
 
-  const cpdCert = document.getElementById('regCpdCertified');
-  const cpdAtt = document.getElementById('regCpdAttended');
-  const cpdTot = document.getElementById('regCpdTotalFaculty');
-  const cpdFill = document.getElementById('regCpdProgressFill');
-  const cpdText = document.getElementById('regCpdProgressText');
-  const cpdRate = Math.round((regObj.cpdCertified / Math.max(1, regObj.totalTeachers)) * 100);
+  const totalTeachers = regObj.totalTeachers || 1;
+  const certified = regObj.cpdCertified || 0;
+  const attended = regObj.cpdAttended || 0;
+  const pendingCert = Math.max(0, attended - certified);
+  const yetToAttend = Math.max(0, totalTeachers - attended);
 
-  if (cpdCert) cpdCert.textContent = regObj.cpdCertified.toLocaleString();
-  if (cpdAtt) cpdAtt.textContent = regObj.cpdAttended.toLocaleString();
-  if (cpdTot) cpdTot.textContent = regObj.totalTeachers.toLocaleString();
-  if (cpdFill) cpdFill.style.width = `${Math.min(100, Math.max(6, cpdRate))}%`;
-  if (cpdText) cpdText.textContent = `${cpdRate}% Regional Certification Rate • CPD 1–6 Completed (10 Total Modules)`;
+  const certRate = Math.round((certified / totalTeachers) * 100);
+  const pendRate = Math.round((pendingCert / totalTeachers) * 100);
+  const yetRate = Math.max(0, 100 - certRate - pendRate);
+  const attRate = Math.round((attended / totalTeachers) * 100);
+
+  const cpdTot = document.getElementById('regCpdTotalFaculty');
+  const cpdCert = document.getElementById('regCpdCertified');
+  const cpdCertPct = document.getElementById('regCpdCertPct');
+  const cpdPend = document.getElementById('regCpdPendingCert');
+  const cpdPendPct = document.getElementById('regCpdPendingPct');
+  const cpdYet = document.getElementById('regCpdYetToAttend');
+  const cpdYetPct = document.getElementById('regCpdYetPct');
+  const cpdAttSum = document.getElementById('regCpdAttendedSummary');
+
+  if (cpdTot) cpdTot.textContent = totalTeachers.toLocaleString();
+  if (cpdCert) cpdCert.textContent = certified.toLocaleString();
+  if (cpdCertPct) cpdCertPct.textContent = `(${certRate}%)`;
+  if (cpdPend) cpdPend.textContent = pendingCert.toLocaleString();
+  if (cpdPendPct) cpdPendPct.textContent = `(${pendRate}%)`;
+  if (cpdYet) cpdYet.textContent = yetToAttend.toLocaleString();
+  if (cpdYetPct) cpdYetPct.textContent = `(${yetRate}%)`;
+  if (cpdAttSum) {
+    cpdAttSum.textContent = `${attended.toLocaleString()} Teachers Attended in ${regObj.name} (${attRate}% Regional Attendance Rate)`;
+  }
+
+  // Render Regional CPD Pie/Donut Chart
+  const ctx = document.getElementById('chartRegCpdPie');
+  if (ctx) {
+    if (regionalCpdChart) regionalCpdChart.destroy();
+    regionalCpdChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: [
+          `CPD Certified: ${certified.toLocaleString()} (${certRate}%)`,
+          `Attended (Pending Cert): ${pendingCert.toLocaleString()} (${pendRate}%)`,
+          `Yet to Attend: ${yetToAttend.toLocaleString()} (${yetRate}%)`
+        ],
+        datasets: [{
+          data: [certified, pendingCert, yetToAttend],
+          backgroundColor: ['#2563EB', '#F59E0B', '#CBD5E1'],
+          borderColor: '#FFFFFF',
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '62%',
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return ` ${context.label}`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
 
   const dcaisDesc = document.getElementById('regDcaisDesc');
   if (dcaisDesc) dcaisDesc.textContent = `Digital Creativity & AI Skills (Modules 1–4) teacher training across ${regObj.name} Region.`;
@@ -640,7 +699,7 @@ function renderCpdCharts(sch) {
     });
   }
 
-  // --- TABLE 1: CPD Module Attendance Mini Table ---
+  // --- TABLE 1: CPD Module Attendance Full Table ---
   const tableAttBody = document.getElementById('tableCpdAttBody');
   if (tableAttBody) {
     tableAttBody.innerHTML = moduleKeys.map((m, idx) => {
@@ -650,23 +709,23 @@ function renderCpdCharts(sch) {
       return `
         <tr>
           <td>
-            <div style="display:flex;align-items:center;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;">
               <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};flex-shrink:0;"></span>
               <div>
-                <strong style="color:var(--slate-900);">${m}</strong>
-                <span style="font-size:0.72rem;color:var(--slate-500);display:block;">${CPD_MODULE_NAMES[m]}</span>
+                <strong style="color:var(--slate-900);font-size:0.88rem;">${m}</strong>
+                <span style="font-size:0.75rem;color:var(--slate-500);display:block;">${CPD_MODULE_NAMES[m]}</span>
               </div>
             </div>
           </td>
-          <td style="text-align:right;font-weight:800;color:var(--slate-900);">${count}</td>
+          <td style="text-align:right;font-weight:800;color:var(--slate-900);font-size:0.88rem;">${count.toLocaleString()}</td>
           <td style="text-align:right;font-weight:700;color:var(--slate-600);">${share}%</td>
         </tr>
       `;
     }).join('') + `
-      <tr style="background:var(--slate-100);font-weight:900;border-top:2px solid var(--slate-300);">
-        <td>Total Attended</td>
-        <td style="text-align:right;color:var(--green);">${totalAttended}</td>
-        <td style="text-align:right;">100%</td>
+      <tr class="total-row" style="background:var(--slate-100);font-weight:900;border-top:2px solid var(--slate-300);">
+        <td><strong>Total Attended</strong></td>
+        <td style="text-align:right;color:var(--green);font-weight:900;font-size:0.92rem;">${totalAttended.toLocaleString()}</td>
+        <td style="text-align:right;font-weight:900;">100%</td>
       </tr>
     `;
   }
@@ -714,7 +773,7 @@ function renderCpdCharts(sch) {
     });
   }
 
-  // --- TABLE 2: CPD Certificates Received Mini Table ---
+  // --- TABLE 2: CPD Certificates Received Full Table ---
   const tableCertBody = document.getElementById('tableCpdCertBody');
   if (tableCertBody) {
     tableCertBody.innerHTML = moduleKeys.map((m, idx) => {
@@ -724,56 +783,47 @@ function renderCpdCharts(sch) {
       return `
         <tr>
           <td>
-            <div style="display:flex;align-items:center;gap:8px;">
+            <div style="display:flex;align-items:center;gap:10px;">
               <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};flex-shrink:0;"></span>
               <div>
-                <strong style="color:var(--slate-900);">${m}</strong>
-                <span style="font-size:0.72rem;color:var(--slate-500);display:block;">${CPD_MODULE_NAMES[m]}</span>
+                <strong style="color:var(--slate-900);font-size:0.88rem;">${m}</strong>
+                <span style="font-size:0.75rem;color:var(--slate-500);display:block;">${CPD_MODULE_NAMES[m]}</span>
               </div>
             </div>
           </td>
-          <td style="text-align:right;font-weight:800;color:var(--slate-900);">${count}</td>
+          <td style="text-align:right;font-weight:800;color:var(--slate-900);font-size:0.88rem;">${count.toLocaleString()}</td>
           <td style="text-align:right;font-weight:700;color:var(--slate-600);">${share}%</td>
         </tr>
       `;
     }).join('') + `
-      <tr style="background:var(--slate-100);font-weight:900;border-top:2px solid var(--slate-300);">
-        <td>Total Certificates</td>
-        <td style="text-align:right;color:var(--blue);">${totalCertified}</td>
-        <td style="text-align:right;">100%</td>
+      <tr class="total-row" style="background:var(--slate-100);font-weight:900;border-top:2px solid var(--slate-300);">
+        <td><strong>Total Certificates</strong></td>
+        <td style="text-align:right;color:var(--blue);font-weight:900;font-size:0.92rem;">${totalCertified.toLocaleString()}</td>
+        <td style="text-align:right;font-weight:900;">100%</td>
       </tr>
     `;
   }
 }
 
-// ==================== 7. TEACHER ATTENDANCE ROSTER (NO ACTION, NO CERTIFICATE COLUMNS) ====================
+// ==================== 7. TEACHER ATTENDANCE ROSTER (ALL TEACHERS — NO CATEGORY) ====================
 
 function updateRosterFilterCounts(roster) {
-  let attended = 0, cert = 0, pend = 0, prt = 0, tgt = 0, pgt = 0;
+  let attended = 0, cert = 0, pend = 0;
   (roster || []).forEach(t => {
     if (t.a === 'Yes') attended++;
     if (t.crt === 'Dispatched') cert++;
     else pend++;
-    if (t.c === 'PRT') prt++;
-    else if (t.c === 'TGT') tgt++;
-    else if (t.c === 'PGT') pgt++;
   });
 
   const cAll = document.getElementById('countFilterAll');
   const cAtt = document.getElementById('countFilterAttended');
   const cCert = document.getElementById('countFilterCertified');
   const cPend = document.getElementById('countFilterPending');
-  const cPrt = document.getElementById('countFilterPRT');
-  const cTgt = document.getElementById('countFilterTGT');
-  const cPgt = document.getElementById('countFilterPGT');
 
   if (cAll) cAll.textContent = (roster || []).length.toLocaleString();
   if (cAtt) cAtt.textContent = attended.toLocaleString();
   if (cCert) cCert.textContent = cert.toLocaleString();
   if (cPend) cPend.textContent = pend.toLocaleString();
-  if (cPrt) cPrt.textContent = prt.toLocaleString();
-  if (cTgt) cTgt.textContent = tgt.toLocaleString();
-  if (cPgt) cPgt.textContent = pgt.toLocaleString();
 }
 
 function setRosterFilter(filterType, btn) {
@@ -804,9 +854,6 @@ function filterRoster() {
     if (currentRosterFilter === 'attended') return t.a === 'Yes';
     if (currentRosterFilter === 'certified') return t.crt === 'Dispatched';
     if (currentRosterFilter === 'pending') return t.crt !== 'Dispatched';
-    if (currentRosterFilter === 'PRT') return t.c === 'PRT';
-    if (currentRosterFilter === 'TGT') return t.c === 'TGT';
-    if (currentRosterFilter === 'PGT') return t.c === 'PGT';
     return true;
   });
 
@@ -819,7 +866,7 @@ function renderRosterTable(roster) {
   tbody.innerHTML = '';
 
   if (!roster || roster.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:28px;color:var(--slate-500);font-weight:600;">No teacher records found matching criteria.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;padding:28px;color:var(--slate-500);font-weight:600;">No teacher records found matching criteria.</td></tr>';
     return;
   }
 
@@ -840,7 +887,6 @@ function renderRosterTable(roster) {
         <strong>${t.n}</strong>
         ${t.schoolName ? `<div style="font-size:0.72rem;color:var(--slate-500);margin-top:2px;">KV ${t.schoolCode || ''} ${t.schoolName}</div>` : ''}
       </td>
-      <td><span style="font-size:0.78rem;background:var(--slate-100);color:var(--slate-800);padding:3px 9px;border-radius:4px;font-weight:800;border:1px solid var(--slate-200);">${t.c}</span></td>
       <td>${t.s}</td>
       <td><strong>${t.m}</strong></td>
       <td>
@@ -852,11 +898,11 @@ function renderRosterTable(roster) {
       </td>
       <td>
         ${isCert 
-          ? `<button class="badge-cert-btn received" onclick="openCertModal('${t.n.replace(/'/g, "\'")}', '${t.m}', '${(t.schoolName || (sch ? sch.name : '')).replace(/'/g, "\'")}')" title="Click to view verified certificate">
+          ? `<button class="badge-cert-btn received" onclick="openCertModal('${t.n.replace(/'/g, "\\'")}', '${t.m}', '${(t.schoolName || (sch ? sch.name : '')).replace(/'/g, "\\'")}')" title="Click to view verified certificate">
                <span class="dot green"></span>
                <span>Certificate Received</span>
              </button>`
-          : `<button class="badge-cert-btn not-received" onclick="copyTeacherNotice('${t.n.replace(/'/g, "\'")}', '${t.e}', '${t.m}')" title="Click to copy official reminder notice">
+          : `<button class="badge-cert-btn not-received" onclick="copyTeacherNotice('${t.n.replace(/'/g, "\\'")}', '${t.e}', '${t.m}')" title="Click to copy official reminder notice">
                <span class="dot amber"></span>
                <span>Not Received</span>
              </button>`
@@ -871,7 +917,7 @@ function renderRosterTable(roster) {
   if (roster.length > maxDisplay) {
     const trMore = document.createElement('tr');
     trMore.innerHTML = `
-      <td colspan="6" style="text-align:center;padding:14px;background:var(--slate-50);color:var(--slate-600);font-size:0.85rem;font-weight:700;">
+      <td colspan="5" style="text-align:center;padding:14px;background:var(--slate-50);color:var(--slate-600);font-size:0.85rem;font-weight:700;">
         Showing first ${maxDisplay} of ${roster.length.toLocaleString()} teachers in ${isRegional ? selectedRegion + ' Region' : 'this school'}. Use the search box above to find any teacher by name or subject.
       </td>
     `;
@@ -1185,7 +1231,6 @@ function printSchoolReport(type) {
       <tr>
         <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;text-align:center;">${idx + 1}</td>
         <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:bold;">${t.n}</td>
-        <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">${t.c}</td>
         <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;">${t.s}</td>
         <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:600;">${t.m}</td>
         <td style="padding:6px 8px;border-bottom:1px solid #E2E8F0;font-size:11px;font-weight:bold;color:${t.a === 'Yes' ? '#059669' : '#D97706'};">
@@ -1268,14 +1313,13 @@ function printSchoolReport(type) {
               <tr>
                 <th style="width:25px;text-align:center;">#</th>
                 <th>Teacher Name</th>
-                <th>Category</th>
                 <th>Subject</th>
                 <th>Module</th>
                 <th>CPD Attendance</th>
               </tr>
             </thead>
             <tbody>
-              ${rosterRows || '<tr><td colspan="6" style="text-align:center;padding:14px;">No teacher records registered.</td></tr>'}
+              ${rosterRows || '<tr><td colspan="5" style="text-align:center;padding:14px;">No teacher records registered.</td></tr>'}
             </tbody>
           </table>
 
@@ -1424,7 +1468,7 @@ function exportSchoolCsv(type) {
   if (type === 'cpd') {
     filename = `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_CPD_Attendance.csv`;
     const rows = [
-      ['KV Code', 'School Name', 'Region', 'Teacher Name', 'Category', 'Subject', 'Module', 'Attendance Status', 'Attendance Date']
+      ['KV Code', 'School Name', 'Region', 'Teacher Name', 'Subject', 'Module', 'Attendance Status', 'Attendance Date']
     ];
     (sch.roster || []).forEach(t => {
       rows.push([
@@ -1432,7 +1476,6 @@ function exportSchoolCsv(type) {
         sch.name,
         sch.region,
         t.n,
-        t.c,
         t.s,
         t.m,
         t.a === 'Yes' ? 'Attended' : 'Not Attended',
