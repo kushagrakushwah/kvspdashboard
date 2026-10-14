@@ -115,7 +115,7 @@ function onGlobalSearchInput(val) {
         <span class="combobox-kv-pill">KV ${s.code}</span>
         <div>
           <div class="combobox-item-name">${s.name}</div>
-          <div class="combobox-item-region">${s.region} Region • Rating: ${s.rating}</div>
+          <div class="combobox-item-region">${s.region} Region • ${s.totalTeachers} Teachers</div>
         </div>
       </div>
       <div class="combobox-item-right">
@@ -355,7 +355,7 @@ function quickSelectRegion(regName) {
 
 function computeRegionalBenchmark(sch) {
   if (sch.code === 'ALL') {
-    return { text: `Regional Aggregate (${sch.region})`, cls: "gold" };
+    return { text: "", cls: "" };
   }
   const regSchools = Object.values(KVS_DATA.SCHOOLS).filter(s => s.region === sch.region);
   if (regSchools.length === 0) return { text: "Regional Leader", cls: "gold" };
@@ -461,8 +461,13 @@ function setSchool(kvCode) {
 
   const shrunkBench = document.getElementById('shrunkBenchmarkPill');
   if (shrunkBench) {
-    shrunkBench.textContent = benchmark.text;
-    shrunkBench.className = `benchmark-pill ${benchmark.cls}`;
+    if (benchmark.text) {
+      shrunkBench.style.display = 'inline-flex';
+      shrunkBench.textContent = benchmark.text;
+      shrunkBench.className = `benchmark-pill ${benchmark.cls}`;
+    } else {
+      shrunkBench.style.display = 'none';
+    }
   }
 
   // Update Home Page Program Cards
@@ -482,14 +487,19 @@ function setSchool(kvCode) {
 
     if (badge) badge.textContent = kvCode === 'ALL' ? 'REGION' : `KV ${sch.code}`;
     if (title) title.textContent = `KV ${sch.code} — ${sch.name}`;
-    if (reg) reg.textContent = `${sch.region} Region • Academic Rating: ${sch.rating}`;
+    if (reg) reg.textContent = `${sch.region} Region`;
     if (cpdStats) cpdStats.textContent = `${sch.attendedCount} Attended • ${sch.certifiedCount} Certified • ${sch.totalTeachers} Total Teachers`;
     
     const dcaisM1Status = sch.dcais && sch.dcais.m1 === 'Yes' ? 'Module 1 Attended' : 'Module 1 Pending';
     if (dcaisStats) dcaisStats.textContent = `${dcaisM1Status} • Teacher Program`;
     if (benchPill) {
-      benchPill.textContent = benchmark.text;
-      benchPill.className = `benchmark-pill ${benchmark.cls}`;
+      if (benchmark.text) {
+        benchPill.style.display = 'inline-flex';
+        benchPill.textContent = benchmark.text;
+        benchPill.className = `benchmark-pill ${benchmark.cls}`;
+      } else {
+        benchPill.style.display = 'none';
+      }
     }
 
     setTimeout(() => {
@@ -515,8 +525,13 @@ function setSchool(kvCode) {
   if (cpdAtt) cpdAtt.textContent = sch.attendedCount;
   if (cpdCert) cpdCert.textContent = sch.certifiedCount;
   if (cpdBench) {
-    cpdBench.textContent = benchmark.text;
-    cpdBench.className = `benchmark-pill ${benchmark.cls}`;
+    if (benchmark.text) {
+      cpdBench.style.display = 'inline-flex';
+      cpdBench.textContent = benchmark.text;
+      cpdBench.className = `benchmark-pill ${benchmark.cls}`;
+    } else {
+      cpdBench.style.display = 'none';
+    }
   }
 
   // Pre-populate DCAIS View Header
@@ -928,7 +943,6 @@ function renderRosterTable(roster) {
 // ==================== 8. DCAIS TEACHER TRAINING VIEW (100% TEACHER FOCUSED) ====================
 
 function renderDcaisView(sch) {
-  renderDcaisStages(sch);
   renderDcaisBarChart(sch);
   renderDcaisSchoolModulesTable(sch);
   highlightDcaisSummarySchoolRegion(sch.region);
@@ -1279,7 +1293,7 @@ function printSchoolReport(type) {
               <div style="font-size:15px;font-weight:900;color:#0F172A;">${sch.name}</div>
               <div style="color:#64748B;margin-top:2px;">
                 <strong>Region:</strong> ${sch.region} &nbsp;|&nbsp; 
-                <strong>Academic Rating:</strong> ${sch.rating} &nbsp;|&nbsp;
+                
                 <strong>Reference:</strong> ${refId}
               </div>
             </div>
@@ -1381,7 +1395,7 @@ function printSchoolReport(type) {
             </div>
             <div style="text-align:right;color:#64748B;">
               <strong>Date:</strong> ${now}<br>
-              <strong>NEP 2020 Aligned:</strong> Teacher Development
+              <strong>Teacher Development:</strong> Continuous Professional Training
             </div>
           </div>
 
