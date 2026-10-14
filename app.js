@@ -16,6 +16,7 @@ let allSchoolsList = [];
 let cpdAttendanceChart = null;
 let cpdCertifiedChart = null;
 let regionalCpdChart = null;
+let regionalDcaisChart = null;
 let dcaisBarChart = null;
 
 const CPD_MODULE_NAMES = {
@@ -307,25 +308,103 @@ function renderRegionSummary(regObj) {
   }
 
   const dcaisDesc = document.getElementById('regDcaisDesc');
-  if (dcaisDesc) dcaisDesc.textContent = `Digital Creativity & AI Skills (Modules 1–4) teacher training across ${regObj.name} Region.`;
+  if (dcaisDesc) dcaisDesc.textContent = `Digital Creativity & AI Skills (Modules 1–4) student innovation across ${regObj.name} Region.`;
 
-  const dcaisSchools = document.getElementById('regDcaisSchools');
-  const dcaisBoot = document.getElementById('regDcaisBootcamp');
-  const dcaisTotal = document.getElementById('regDcaisTotalSchools');
-  const activeCount = (regObj.m1Schools || 0) + (regObj.m2Schools || 0) + (regObj.m3Schools || 0) + (regObj.m4Schools || 0);
+  const m1 = regObj.m1Schools || 0;
+  const m2 = regObj.m2Schools || 0;
+  const m3 = regObj.m3Schools || 0;
+  const m4 = regObj.m4Schools || 0;
+  const totalActiveModules = m1 + m2 + m3 + m4;
+  const bootcampCount = regObj.bootcampCount !== undefined ? regObj.bootcampCount : m1;
+  const totalKVs = regObj.totalKVs || 0;
 
-  if (dcaisSchools) dcaisSchools.textContent = activeCount;
-  if (dcaisBoot) dcaisBoot.textContent = (regObj.m1Schools || 0).toLocaleString();
-  if (dcaisTotal) dcaisTotal.textContent = regObj.totalKVs;
+  const m1Pct = totalActiveModules > 0 ? Math.round((m1 / totalActiveModules) * 100) : 0;
+  const m2Pct = totalActiveModules > 0 ? Math.round((m2 / totalActiveModules) * 100) : 0;
+  const m3Pct = totalActiveModules > 0 ? Math.round((m3 / totalActiveModules) * 100) : 0;
+  const m4Pct = totalActiveModules > 0 ? Math.max(0, 100 - m1Pct - m2Pct - m3Pct) : 0;
 
-  const m1Pill = document.getElementById('regM1Pill');
-  const m2Pill = document.getElementById('regM2Pill');
-  const m3Pill = document.getElementById('regM3Pill');
-  const m4Pill = document.getElementById('regM4Pill');
-  if (m1Pill) m1Pill.textContent = `Module 1: ${regObj.m1Schools || 0}`;
-  if (m2Pill) m2Pill.textContent = `Module 2: ${regObj.m2Schools || 0}`;
-  if (m3Pill) m3Pill.textContent = `Module 3: ${regObj.m3Schools || 0}`;
-  if (m4Pill) m4Pill.textContent = `Module 4: ${regObj.m4Schools || 0}`;
+  const elM1 = document.getElementById('regDcaisM1');
+  const elM2 = document.getElementById('regDcaisM2');
+  const elM3 = document.getElementById('regDcaisM3');
+  const elM4 = document.getElementById('regDcaisM4');
+  const elTotMod = document.getElementById('regDcaisTotalModules');
+
+  const elM1Pct = document.getElementById('regDcaisM1Pct');
+  const elM2Pct = document.getElementById('regDcaisM2Pct');
+  const elM3Pct = document.getElementById('regDcaisM3Pct');
+  const elM4Pct = document.getElementById('regDcaisM4Pct');
+
+  if (elM1) elM1.textContent = m1.toLocaleString();
+  if (elM2) elM2.textContent = m2.toLocaleString();
+  if (elM3) elM3.textContent = m3.toLocaleString();
+  if (elM4) elM4.textContent = m4.toLocaleString();
+  if (elTotMod) elTotMod.textContent = totalActiveModules.toLocaleString();
+
+  if (elM1Pct) elM1Pct.textContent = `(${m1Pct}%)`;
+  if (elM2Pct) elM2Pct.textContent = `(${m2Pct}%)`;
+  if (elM3Pct) elM3Pct.textContent = `(${m3Pct}%)`;
+  if (elM4Pct) elM4Pct.textContent = `(${m4Pct}%)`;
+
+  const dcaisSummaryStrip = document.getElementById('regDcaisSummaryStrip');
+  if (dcaisSummaryStrip) {
+    dcaisSummaryStrip.textContent = `${totalActiveModules} Active Module Completions • ${bootcampCount.toLocaleString()} Bootcamp Students • ${totalKVs} Total Region KVs`;
+  }
+
+  // Render Regional DCAIS Pie/Donut Chart
+  const ctxDcais = document.getElementById('chartRegDcaisPie');
+  if (ctxDcais) {
+    if (regionalDcaisChart) regionalDcaisChart.destroy();
+
+    let labels = [];
+    let data = [];
+    let bgColors = [];
+
+    if (totalActiveModules === 0) {
+      labels = ['No DCAIS modules started yet'];
+      data = [1];
+      bgColors = ['#CBD5E1'];
+    } else {
+      labels = [
+        `Module 1 (Orientation): ${m1.toLocaleString()} (${m1Pct}%)`,
+        `Module 2 (Curriculum): ${m2.toLocaleString()} (${m2Pct}%)`,
+        `Module 3 (Projects): ${m3.toLocaleString()} (${m3Pct}%)`,
+        `Module 4 (Showcase): ${m4.toLocaleString()} (${m4Pct}%)`
+      ];
+      data = [m1, m2, m3, m4];
+      bgColors = ['#2563EB', '#8B5CF6', '#10B981', '#F59E0B'];
+    }
+
+    regionalDcaisChart = new Chart(ctxDcais, {
+      type: 'doughnut',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: data,
+          backgroundColor: bgColors,
+          borderColor: '#FFFFFF',
+          borderWidth: 2,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '62%',
+        plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return ` ${context.label}`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
 
   summaryBlock.style.display = 'block';
   summaryBlock.classList.remove('animate-slide-up');

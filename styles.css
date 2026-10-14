@@ -690,6 +690,8 @@
     }
 
     .reg-legend-dot.blue { background: #2563EB; }
+    .reg-legend-dot.indigo { background: #8B5CF6; }
+    .reg-legend-dot.emerald { background: #10B981; }
     .reg-legend-dot.amber { background: #F59E0B; }
     .reg-legend-dot.slate { background: #94A3B8; }
 
@@ -704,7 +706,7 @@
     .reg-legend-label {
       color: var(--slate-600);
       font-weight: 600;
-      min-width: 130px;
+      min-width: 150px;
     }
 
     .reg-legend-val {

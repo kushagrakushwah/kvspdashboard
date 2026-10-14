@@ -2087,26 +2087,55 @@
               </div>
               <h4 class="reg-card-title">DCAIS Innovation Framework</h4>
               <p class="reg-card-desc" id="regDcaisDesc">Region-wide student digital creativity maturity and bootcamp credentials.</p>
-              <div class="reg-kpi-row">
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regDcaisSchools">0</span>
-                  <span class="reg-kpi-lbl">Active Schools</span>
+
+              <!-- Regional DCAIS Donut/Pie Chart & Status Breakdown -->
+              <div class="reg-chart-split">
+                <div class="reg-chart-box">
+                  <canvas id="chartRegDcaisPie"></canvas>
                 </div>
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regDcaisBootcamp">0</span>
-                  <span class="reg-kpi-lbl">Bootcamp Students</span>
-                </div>
-                <div class="reg-kpi">
-                  <span class="reg-kpi-num" id="regDcaisTotalSchools">0</span>
-                  <span class="reg-kpi-lbl">Total Region KVs</span>
+                <div class="reg-chart-legend">
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot blue"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Module 1 (Orientation):</span>
+                      <strong class="reg-legend-val" id="regDcaisM1">0</strong>
+                      <span class="reg-legend-pct" id="regDcaisM1Pct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot indigo"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Module 2 (Curriculum):</span>
+                      <strong class="reg-legend-val" id="regDcaisM2">0</strong>
+                      <span class="reg-legend-pct" id="regDcaisM2Pct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot emerald"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Module 3 (Projects):</span>
+                      <strong class="reg-legend-val" id="regDcaisM3">0</strong>
+                      <span class="reg-legend-pct" id="regDcaisM3Pct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-item">
+                    <span class="reg-legend-dot amber"></span>
+                    <div class="reg-legend-text">
+                      <span class="reg-legend-label">Module 4 (Showcase):</span>
+                      <strong class="reg-legend-val" id="regDcaisM4">0</strong>
+                      <span class="reg-legend-pct" id="regDcaisM4Pct">(0%)</span>
+                    </div>
+                  </div>
+                  <div class="reg-legend-total">
+                    <span>Total Active Modules:</span>
+                    <strong id="regDcaisTotalModules">0</strong>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="reg-stages-pill-row" id="regDcaisStagesRow">
-              <span class="reg-stage-pill" id="regM1Pill">M1: 0</span>
-              <span class="reg-stage-pill" id="regM2Pill">M2: 0</span>
-              <span class="reg-stage-pill" id="regM3Pill">M3: 0</span>
-              <span class="reg-stage-pill" id="regM4Pill">M4: 0</span>
+
+            <div class="reg-card-footer-strip">
+              <span id="regDcaisSummaryStrip">0 Active Completions • 0 Bootcamp Students • 0 Region KVs</span>
             </div>
           </div>
         </div>
