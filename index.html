@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KVS Principal Portal — Adobe Express for Education</title>
+  <title>KVS Principal Dashboard — Adobe Express for Education</title>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
@@ -14,7 +14,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FA0F00'/><text y='.9em' font-size='72' x='15' fill='white' font-weight='900'>A</text></svg>">
   <!-- Chart.js for data visualizations -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-  <link rel="stylesheet" href="styles.css?v=2.3">
+  <link rel="stylesheet" href="styles.css?v=2.4">
 
   <!-- EMBEDDED INLINE STYLESHEET (100% RELIABLE, ZERO UNSTYLED FLASH) -->
   <style>
@@ -1427,6 +1427,126 @@
       width: 100%;
     }
 
+    .chart-with-table-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .chart-with-table-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mini-summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+
+    .mini-summary-table th {
+      padding: 7px 10px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--slate-600);
+      border-bottom: 1.5px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+
+    .mini-summary-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--slate-100);
+      color: var(--slate-800);
+    }
+
+    .mini-summary-table tr:hover td {
+      background: var(--slate-50);
+    }
+
+    .mini-summary-table tr.total-row td {
+      border-top: 2px solid var(--slate-300);
+      border-bottom: none;
+      font-weight: 900;
+      color: var(--slate-900);
+      background: #F8FAFC;
+    }
+
+    .dcais-summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .dcais-summary-table th {
+      padding: 10px 12px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--slate-700);
+      background: var(--slate-100);
+      border-bottom: 2px solid var(--slate-200);
+      text-align: center;
+    }
+
+    .dcais-summary-table th:first-child {
+      text-align: left;
+    }
+
+    .dcais-summary-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--slate-100);
+      color: var(--slate-800);
+      text-align: center;
+    }
+
+    .dcais-summary-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .dcais-summary-table tr:hover td {
+      background: var(--slate-50);
+    }
+
+    .dcais-summary-table tr.highlight-region td,
+    .dcais-summary-table tr.row-highlight-active td {
+      background: #EFF6FF !important;
+      font-weight: 800;
+      color: #1E40AF;
+    }
+
+    .dcais-summary-table tr.total-row td,
+    .dcais-summary-table tr.row-total td {
+      background: #F1F5F9 !important;
+      font-weight: 900;
+      border-top: 2px solid var(--slate-300);
+      color: var(--slate-900);
+    }
+
+    .val-present {
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .val-absent {
+      color: #D97706;
+      font-weight: 700;
+    }
+
+    .val-planned {
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .val-sep {
+      color: var(--slate-300);
+      margin: 0 4px;
+    }
+
     /* Tables Box */
     .table-box {
       background: #FFFFFF;
@@ -1549,6 +1669,46 @@
     .btn-action-small.red-nudge:hover {
       background: var(--red);
       color: #FFFFFF;
+    }
+
+    .badge-cert-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      background: transparent;
+      font-family: inherit;
+      transition: var(--transition);
+      text-align: left;
+    }
+
+    .badge-cert-btn.received {
+      background: var(--green-subtle);
+      color: var(--green-text);
+      border-color: var(--green-border);
+    }
+
+    .badge-cert-btn.received:hover {
+      background: #D1FAE5;
+      border-color: #059669;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.15);
+    }
+
+    .badge-cert-btn.not-received {
+      background: var(--amber-subtle);
+      color: var(--amber-text);
+      border-color: var(--amber-border);
+    }
+
+    .badge-cert-btn.not-received:hover {
+      background: #FEF3C7;
+      border-color: #D97706;
+      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.15);
     }
 
     /* DCAIS 4 STAGES */
@@ -1738,13 +1898,13 @@
           </svg>
         </a>
         <div>
-          <a href="index.html" onclick="if(window.resetToFullHero){ resetToFullHero(); }" style="text-decoration:none; color:inherit; cursor:pointer;"><span class="brand-title">KVS Principal Portal</span></a>
+          <a href="index.html" onclick="if(window.resetToFullHero){ resetToFullHero(); }" style="text-decoration:none; color:inherit; cursor:pointer;"><span class="brand-title">KVS Principal Dashboard</span></a>
         </div>
       </div>
 
       <div class="principal-badge-pill">
         <span class="pulse-dot"></span>
-        <span>Principal Command Center</span>
+        <span>Principal Dashboard</span>
       </div>
     </div>
   </header>
@@ -1754,17 +1914,17 @@
     <div class="portal-nav-container">
       <button class="portal-nav-tab active" id="navTabHome" onclick="navigateTo('home')">
         <span class="nav-tab-badge">1</span>
-        <span class="nav-tab-title">School Selector &amp; Overview</span>
+        <span class="nav-tab-title">1. School Search &amp; Overview</span>
       </button>
       <div class="portal-nav-sep" aria-hidden="true"></div>
       <button class="portal-nav-tab" id="navTabCpd" onclick="navigateTo('cpd')">
         <span class="nav-tab-badge">2</span>
-        <span class="nav-tab-title">CPD Teacher Module</span>
+        <span class="nav-tab-title">2. CPD Teacher Training</span>
       </button>
       <div class="portal-nav-sep" aria-hidden="true"></div>
       <button class="portal-nav-tab" id="navTabDcais" onclick="navigateTo('dcais')">
         <span class="nav-tab-badge">3</span>
-        <span class="nav-tab-title">DCAIS Student Innovation</span>
+        <span class="nav-tab-title">3. DCAIS Teacher Training</span>
       </button>
     </div>
   </nav>
@@ -1780,27 +1940,27 @@
         <!-- Shrunk Top Bar (Visible ONLY when shrunk/compact) -->
         <div id="heroShrunkBar" class="hero-shrunk-bar" style="display:none;">
           <div class="hero-shrunk-left">
-            <span class="hero-shrunk-tag">ACTIVE INSTITUTION:</span>
+            <span class="hero-shrunk-tag">Current School:</span>
             <span class="hero-shrunk-title" id="shrunkSchoolTitle">KV 1150 — Powai, IIT Campus</span>
             <span class="benchmark-pill gold" id="shrunkBenchmarkPill">Top 10% in Region</span>
           </div>
           <button class="btn-change-school" onclick="resetToFullHero()" title="Select a different Kendriya Vidyalaya">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
-            <span>Change School / Search Again</span>
+            <span>Change School</span>
           </button>
         </div>
 
         <!-- Hero Intro Block (Visible when expanded, collapsibly hides when shrunk) -->
         <div id="heroIntroBlock" class="hero-intro-collapsible">
-          <h1 class="hero-main-title">Kendriya Vidyalaya Principal Command Center</h1>
+          <h1 class="hero-main-title">Kendriya Vidyalaya Principal Dashboard</h1>
           <p class="hero-main-subtitle">
-            Official institutional dashboard for monitoring Teachers Continuous Professional Development (CPD) and Student Digital Creativity &amp; Innovation Skills (DCAIS).
+            Dashboard for tracking Teacher CPD Training and DCAIS Modules.
           </p>
 
           <!-- Dedicated School Selection Prompt (Separate from intro paragraph) -->
           <div class="selection-prompt-pill">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:4px;"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
-            <span class="prompt-text">Select your school below to access live faculty &amp; student metrics</span>
+            <span class="prompt-text">Select your Kendriya Vidyalaya below to view teacher training details:</span>
           </div>
         </div>
 
@@ -1955,41 +2115,41 @@
                 <span class="choice-icon-wrap red">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
                 </span>
-                <span class="choice-badge">Teacher Training &amp; Pedagogy</span>
+                <span class="choice-badge">Teacher Training</span>
               </div>
-              <h3>CPD Teacher Module</h3>
+              <h3>CPD Teacher Training</h3>
               <p>
-                Continuous Professional Development (CPD 1–6 completed, 10 total modules to complete), verified certification roster, and teacher assignment records.
+                Continuous Professional Development across Modules 1 to 6 (out of 10 total modules), teacher attendance records, and training status.
               </p>
               <div style="background:var(--slate-50);border:1.5px solid var(--slate-200);border-radius:var(--radius-md);padding:11px 16px;font-size:0.88rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
-                Faculty Status: <span id="homeCpdStats" style="color:var(--red);">0 Attended • 0 Certified</span>
+                Teacher Status: <span id="homeCpdStats" style="color:var(--red);">0 Attended</span>
               </div>
             </div>
             <button class="btn-enter-portal" onclick="event.stopPropagation();navigateTo('cpd')">
-              <span>Open CPD Teacher Module</span>
+              <span>Open CPD Module</span>
               <span class="btn-arrow" style="font-size:1.15rem;font-weight:900;">→</span>
             </button>
           </div>
 
           <!-- Option 2: DCAIS -->
-          <div class="portal-card" onclick="navigateTo('dcais')" style="cursor:pointer;" title="Click to open full DCAIS innovation details">
+          <div class="portal-card" onclick="navigateTo('dcais')" style="cursor:pointer;" title="Click to open full DCAIS teacher details">
             <div>
               <div class="choice-card-top">
                 <span class="choice-icon-wrap blue">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
                 </span>
-                <span class="choice-badge">School &amp; Student Innovation</span>
+                <span class="choice-badge">Teacher Training</span>
               </div>
-              <h3>DCAIS Innovation Framework</h3>
+              <h3>DCAIS Teacher Training</h3>
               <p>
-                Digital Creativity &amp; Innovation Skills (Stages M1–M4), classroom projects (Grades 6–8), and student creative output.
+                Digital Creativity &amp; AI Skills teacher training across Modules 1 to 4, school attendance status, and regional summary table.
               </p>
               <div style="background:var(--slate-50);border:1.5px solid var(--slate-200);border-radius:var(--radius-md);padding:11px 16px;font-size:0.88rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
-                Student Status: <span id="homeDcaisStats" style="color:var(--blue);">Stage M1 Active • 0 Students</span>
+                Training Status: <span id="homeDcaisStats" style="color:var(--blue);">Module 1 Active</span>
               </div>
             </div>
             <button class="btn-enter-portal" style="background:var(--slate-900);" onclick="event.stopPropagation();navigateTo('dcais')">
-              <span>Open DCAIS Student Portal</span>
+              <span>Open DCAIS Module</span>
               <span class="btn-arrow" style="font-size:1.15rem;font-weight:900;">→</span>
             </button>
           </div>
@@ -1997,16 +2157,16 @@
       </div>
     </div>
 
-    <!-- ==================== VIEW 2: DEDICATED CPD PORTAL ==================== -->
+    <!-- ==================== VIEW 2: DEDICATED CPD MODULE ==================== -->
     <div id="viewCpd" class="view-container" style="display:none;">
       <!-- Navigation Bar -->
       <div class="view-nav-bar">
         <button class="btn-nav-back" onclick="navigateTo('home')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          <span>Return to School Selector</span>
+          <span>Back to School Search</span>
         </button>
         <button class="btn-nav-switch" onclick="navigateTo('dcais')">
-          <span>Switch to DCAIS Innovation</span>
+          <span>Open DCAIS Module</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </button>
       </div>
@@ -2049,35 +2209,72 @@
           <div style="display:flex;flex-direction:column;gap:8px;">
             <button class="btn-print-action" onclick="printSchoolReport('cpd')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-              <span>Print Executive Dossier (A4 PDF)</span>
+              <span>Print Report (PDF)</span>
             </button>
             <button class="btn-csv-action" onclick="exportSchoolCsv('cpd')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Export CSV Roster</span>
+              <span>Download Excel (CSV)</span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- CPD Analytics & Roster -->
+      <!-- CPD Analytics: Pie Chart & Table for Attendance + Pie Chart & Table for Certificates -->
       <div class="charts-row">
+        <!-- Panel 1: CPD Module Attendance -->
         <div class="chart-box">
-          <h4>Teacher Category Distribution</h4>
-          <p style="font-size:0.8rem;color:var(--slate-500);margin-top:2px;margin-bottom:8px;">Faculty breakdown across PRT, TGT, and PGT cadres</p>
-          <div class="canvas-wrap"><canvas id="chartCpdCat"></canvas></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <h4>CPD Module Attendance</h4>
+            <span class="tag-pill green" id="badgeCpdAttRate">0 Attended</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:10px;">Number of teachers who attended each CPD module</p>
+          <div class="chart-with-table-grid">
+            <div class="canvas-wrap" style="height:210px;"><canvas id="chartCpdAttPie"></canvas></div>
+            <div class="table-scroll" style="max-height:220px;">
+              <table class="mini-summary-table">
+                <thead>
+                  <tr>
+                    <th>Module</th>
+                    <th style="text-align:right;">Teachers</th>
+                    <th style="text-align:right;">Share</th>
+                  </tr>
+                </thead>
+                <tbody id="tableCpdAttBody"></tbody>
+              </table>
+            </div>
+          </div>
         </div>
+
+        <!-- Panel 2: CPD Certificates Received -->
         <div class="chart-box">
-          <h4>CPD Completion Funnel (CPD 1–6 Completed · 10 Total Modules)</h4>
-          <p style="font-size:0.8rem;color:var(--slate-500);margin-top:2px;margin-bottom:8px;">Active phase covers Modules 1–6 toward the full 10-module institutional curriculum</p>
-          <div class="canvas-wrap"><canvas id="chartCpdFunnel"></canvas></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <h4>CPD Certificates Received</h4>
+            <span class="tag-pill blue" id="badgeCpdCertRate">0 Certificates</span>
+          </div>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:10px;">Number of certificates received per CPD module</p>
+          <div class="chart-with-table-grid">
+            <div class="canvas-wrap" style="height:210px;"><canvas id="chartCpdCertPie"></canvas></div>
+            <div class="table-scroll" style="max-height:220px;">
+              <table class="mini-summary-table">
+                <thead>
+                  <tr>
+                    <th>Module</th>
+                    <th style="text-align:right;">Certificates</th>
+                    <th style="text-align:right;">Share</th>
+                  </tr>
+                </thead>
+                <tbody id="tableCpdCertBody"></tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="table-box">
         <div class="table-header-row">
           <div>
-            <h4>Teacher Roster &amp; Certification Status</h4>
-            <p>Participating educators from Ministry of Education &amp; KVS Attendance &amp; Certification Records</p>
+            <h4>Teacher Attendance Roster</h4>
+            <p>Educators who attended CPD training from official KVS attendance records</p>
           </div>
           <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
         </div>
@@ -2103,7 +2300,6 @@
                 <th>Module</th>
                 <th>CPD Attendance</th>
                 <th>CPD Certificate</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody id="rosterTableBody"></tbody>
@@ -2112,16 +2308,16 @@
       </div>
     </div>
 
-    <!-- ==================== VIEW 3: DEDICATED DCAIS PORTAL ==================== -->
+    <!-- ==================== VIEW 3: DEDICATED DCAIS TEACHER TRAINING MODULE ==================== -->
     <div id="viewDcais" class="view-container" style="display:none;">
       <!-- Navigation Bar -->
       <div class="view-nav-bar">
         <button class="btn-nav-back" onclick="navigateTo('home')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          <span>Return to School Selector</span>
+          <span>Back to School Search</span>
         </button>
         <button class="btn-nav-switch" onclick="navigateTo('cpd')">
-          <span>Switch to CPD Teacher Module</span>
+          <span>Open CPD Module</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </button>
       </div>
@@ -2137,9 +2333,9 @@
             <h1 class="school-name-title" id="dcaisSchoolNameTitle">Kendriya Vidyalaya School Name</h1>
             <div class="school-meta-tags">
               <span class="tag-pill" id="dcaisSchoolRegionTag">Region</span>
-              <span class="tag-pill blue" id="dcaisSchoolStageTag">DCAIS: M2 Active</span>
-              <span class="benchmark-pill green" id="dcaisBenchmarkPill">Innovation Program</span>
-              <span class="tag-pill green">NCERT Aligned</span>
+              <span class="tag-pill blue" id="dcaisSchoolStageTag">DCAIS: M1 Active</span>
+              <span class="benchmark-pill green" id="dcaisBenchmarkPill">Teacher Training</span>
+              <span class="tag-pill green">NEP 2020 Aligned</span>
             </div>
           </div>
         </div>
@@ -2147,143 +2343,93 @@
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <div class="school-summary-kpis">
             <div class="mini-kpi">
-              <span class="mini-kpi-val" id="dcaisSumFaculty">42</span>
-              <span class="mini-kpi-lbl">Teachers</span>
+              <span class="mini-kpi-val" id="dcaisSumFaculty">0</span>
+              <span class="mini-kpi-lbl">Total Teachers</span>
             </div>
             <div class="mini-kpi">
-              <span class="mini-kpi-val" id="dcaisSumStage" style="color:var(--blue);">M2</span>
-              <span class="mini-kpi-lbl">Stage</span>
+              <span class="mini-kpi-val" id="dcaisSumStage" style="color:var(--blue);">M1</span>
+              <span class="mini-kpi-lbl">Current Module</span>
             </div>
             <div class="mini-kpi">
-              <span class="mini-kpi-val" id="dcaisSumStudents" style="color:var(--green);">14</span>
-              <span class="mini-kpi-lbl">Students</span>
+              <span class="mini-kpi-val" id="dcaisSumRegionAtt" style="color:var(--green);">0</span>
+              <span class="mini-kpi-lbl">Region Total</span>
             </div>
           </div>
 
           <div style="display:flex;flex-direction:column;gap:8px;">
             <button class="btn-print-action" style="background:#1E1B4B;" onclick="printSchoolReport('dcais')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-              <span>Print Executive Dossier (A4 PDF)</span>
+              <span>Print Report (PDF)</span>
             </button>
             <button class="btn-csv-action" onclick="exportSchoolCsv('dcais')">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Export CSV Projects</span>
+              <span>Download Excel (CSV)</span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- 4 DCAIS Stage Cards -->
+      <!-- 4 DCAIS Teacher Module Status Cards -->
       <div class="dcais-stages-row" id="dcaisStagesRow"></div>
 
-      <!-- Student Creative Artifact Showcase -->
-      <div class="artifact-showcase-box">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-          <div>
-            <h4 style="font-size:1.15rem;font-weight:900;color:var(--slate-900);margin-bottom:2px;">Student Creative Artifact Showcase</h4>
-            <p style="font-size:0.85rem;color:var(--slate-600);">Interactive digital outputs produced in Adobe Express across NCERT curriculum</p>
+      <!-- DCAIS School Chart & Details -->
+      <div class="charts-row">
+        <div class="chart-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <h4>DCAIS Module Attendance</h4>
+            <span class="tag-pill blue" id="badgeDcaisStatus">Live Status</span>
           </div>
-          <span style="font-size:0.75rem;font-weight:800;color:var(--red);background:var(--red-subtle);padding:5px 14px;border-radius:var(--radius-full);border:1px solid var(--red-border);">Click Any Project to Inspect</span>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:12px;">Teacher attendance across DCAIS Modules 1 to 4 for this school</p>
+          <div class="canvas-wrap"><canvas id="chartDcaisBar"></canvas></div>
         </div>
 
-        <div class="artifact-grid">
-          <!-- Card 1 -->
-          <div class="artifact-card" onclick="openArtifactModal(0)">
-            <div>
-              <div class="artifact-thumb" style="background:#FFF1F0;color:#FA0F00;">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-              </div>
-              <span class="grade-pill">Grade 6 Science</span>
-              <div class="artifact-title">Ecosystem Conservation Poster</div>
-              <div class="artifact-desc">Visual layout, design thinking principles, NCERT Environmental Studies unit.</div>
-            </div>
-            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact</button>
+        <div class="chart-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+            <h4>School Module Details</h4>
+            <span class="tag-pill green">Teacher Program</span>
           </div>
-
-          <!-- Card 2 -->
-          <div class="artifact-card" onclick="openArtifactModal(1)">
-            <div>
-              <div class="artifact-thumb" style="background:#EFF6FF;color:#2563EB;">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="3" y1="2" x2="21" y2="2"/><line x1="6" y1="6" x2="6" y2="18"/><line x1="12" y1="6" x2="12" y2="18"/><line x1="18" y1="6" x2="18" y2="18"/></svg>
-              </div>
-              <span class="grade-pill">Grade 7 Social Science</span>
-              <div class="artifact-title">Medieval Monuments Infographic</div>
-              <div class="artifact-desc">Process mapping, architectural typography, NCERT History Chapter 5.</div>
-            </div>
-            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact</button>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="artifact-card" onclick="openArtifactModal(2)">
-            <div>
-              <div class="artifact-thumb" style="background:#ECFDF5;color:#059669;">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="m8 10-2 2 2 2"/><path d="m16 10 2 2-2 2"/></svg>
-              </div>
-              <span class="grade-pill">Grade 8 Digital Skills</span>
-              <div class="artifact-title">Personal Digital Portfolio Web Page</div>
-              <div class="artifact-desc">Multimedia web design, responsive sections, student project reflections.</div>
-            </div>
-            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact</button>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="artifact-card" onclick="openArtifactModal(3)">
-            <div>
-              <div class="artifact-thumb" style="background:#FAF5FF;color:#7C3AED;">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polygon points="10 9 15 12 10 15 10 9"/></svg>
-              </div>
-              <span class="grade-pill">Bootcamp Special</span>
-              <div class="artifact-title">Animated Science Story Video</div>
-              <div class="artifact-desc">Voiceover storytelling, keyframe animation, summer innovation credential.</div>
-            </div>
-            <button class="btn-action-small" style="width:100%;text-align:center;">Inspect Artifact</button>
+          <p style="font-size:0.82rem;color:var(--slate-600);margin-bottom:12px;">Training focus area and school attendance verification</p>
+          <div class="table-scroll">
+            <table class="mini-summary-table">
+              <thead>
+                <tr>
+                  <th>Module</th>
+                  <th>Focus Area</th>
+                  <th style="text-align:right;">Status</th>
+                </tr>
+              </thead>
+              <tbody id="tableDcaisSchoolModulesBody"></tbody>
+            </table>
           </div>
         </div>
       </div>
 
-      <!-- Grade 6-8 NCERT Projects -->
-      <div class="grade-projects-box">
-        <h4>Classroom Implementation Projects (Grades 6–8)</h4>
-        <div class="grade-cards-row">
-          <div class="grade-card">
-            <span class="grade-pill">Grade 6</span>
-            <h5>Visual Summaries & Posters</h5>
-            <p>Design thinking principles, color theory, typography, and curriculum posters.</p>
-          </div>
-          <div class="grade-card">
-            <span class="grade-pill">Grade 7</span>
-            <h5>Infographics & Science Videos</h5>
-            <p>Process diagrams, science explainers, video storytelling, and lab presentations.</p>
-          </div>
-          <div class="grade-card">
-            <span class="grade-pill">Grade 8</span>
-            <h5>Digital Portfolios & Web Pages</h5>
-            <p>Multimedia storytelling, project showcases, and student portfolio links.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Student Bootcamp Table -->
+      <!-- DCAIS Summary: Full Telemetry Table from Semi Annual Report.xlsx -->
       <div class="table-box">
         <div class="table-header-row">
           <div>
-            <h4>Student Creative Output & Bootcamp Credentials</h4>
-            <p>Verified student submissions from the Summer Bootcamp</p>
+            <h4>DCAIS Regional &amp; National Summary</h4>
+            <p>Official telemetry from Semi Annual Report.xlsx — Teacher attendance across Modules 1 to 4</p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+            <input type="text" id="dcaisSummarySearch" class="table-search-input" placeholder="Filter by region (e.g. Mumbai, Agra, Delhi)..." oninput="filterDcaisSummary(this.value)">
+            <button class="btn-action-small" onclick="filterDcaisSummaryCurrentRegion()" id="btnDcaisHighlightRegion">Show My Region</button>
+            <button class="btn-action-small" onclick="filterDcaisSummary('')">Show All</button>
           </div>
         </div>
 
         <div class="table-scroll">
-          <table class="styled-table">
+          <table class="dcais-summary-table">
             <thead>
               <tr>
-                <th>Student Name</th>
-                <th>Grade</th>
-                <th>Project Track</th>
-                <th>Status</th>
-                <th>Credential</th>
+                <th>Region</th>
+                <th>Module 1<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent</span></th>
+                <th>Module 2<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent / Planned</span></th>
+                <th>Module 3<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent / Planned</span></th>
+                <th>Module 4<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent / Planned</span></th>
               </tr>
             </thead>
-            <tbody id="bootcampTableBody"></tbody>
+            <tbody id="tableDcaisSummaryBody"></tbody>
           </table>
         </div>
       </div>
@@ -2293,7 +2439,7 @@
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
-    © 2026 Adobe Express for Education × Kendriya Vidyalaya Sangathan (KVS). Dedicated Principal Portal.
+    © 2026 Adobe Express for Education × Kendriya Vidyalaya Sangathan (KVS). Dedicated Principal Dashboard.
   </footer>
 
   <!-- ==================== MODALS ==================== -->
@@ -2353,7 +2499,7 @@
   <div id="appToast" class="app-toast">Notification Message</div>
 
   <!-- Scripts -->
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js?v=20261014_attend_v5"></script>
+  <script src="app.js?v=20261014_attend_v5"></script>
 </body>
 </html>

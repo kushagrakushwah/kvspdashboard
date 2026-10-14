@@ -1421,6 +1421,126 @@
       width: 100%;
     }
 
+    .chart-with-table-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .chart-with-table-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .mini-summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+
+    .mini-summary-table th {
+      padding: 7px 10px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--slate-600);
+      border-bottom: 1.5px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+
+    .mini-summary-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--slate-100);
+      color: var(--slate-800);
+    }
+
+    .mini-summary-table tr:hover td {
+      background: var(--slate-50);
+    }
+
+    .mini-summary-table tr.total-row td {
+      border-top: 2px solid var(--slate-300);
+      border-bottom: none;
+      font-weight: 900;
+      color: var(--slate-900);
+      background: #F8FAFC;
+    }
+
+    .dcais-summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .dcais-summary-table th {
+      padding: 10px 12px;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--slate-700);
+      background: var(--slate-100);
+      border-bottom: 2px solid var(--slate-200);
+      text-align: center;
+    }
+
+    .dcais-summary-table th:first-child {
+      text-align: left;
+    }
+
+    .dcais-summary-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--slate-100);
+      color: var(--slate-800);
+      text-align: center;
+    }
+
+    .dcais-summary-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .dcais-summary-table tr:hover td {
+      background: var(--slate-50);
+    }
+
+    .dcais-summary-table tr.highlight-region td,
+    .dcais-summary-table tr.row-highlight-active td {
+      background: #EFF6FF !important;
+      font-weight: 800;
+      color: #1E40AF;
+    }
+
+    .dcais-summary-table tr.total-row td,
+    .dcais-summary-table tr.row-total td {
+      background: #F1F5F9 !important;
+      font-weight: 900;
+      border-top: 2px solid var(--slate-300);
+      color: var(--slate-900);
+    }
+
+    .val-present {
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .val-absent {
+      color: #D97706;
+      font-weight: 700;
+    }
+
+    .val-planned {
+      color: var(--slate-500);
+      font-weight: 600;
+    }
+
+    .val-sep {
+      color: var(--slate-300);
+      margin: 0 4px;
+    }
+
     /* Tables Box */
     .table-box {
       background: #FFFFFF;
@@ -1543,6 +1663,46 @@
     .btn-action-small.red-nudge:hover {
       background: var(--red);
       color: #FFFFFF;
+    }
+
+    .badge-cert-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      background: transparent;
+      font-family: inherit;
+      transition: var(--transition);
+      text-align: left;
+    }
+
+    .badge-cert-btn.received {
+      background: var(--green-subtle);
+      color: var(--green-text);
+      border-color: var(--green-border);
+    }
+
+    .badge-cert-btn.received:hover {
+      background: #D1FAE5;
+      border-color: #059669;
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.15);
+    }
+
+    .badge-cert-btn.not-received {
+      background: var(--amber-subtle);
+      color: var(--amber-text);
+      border-color: var(--amber-border);
+    }
+
+    .badge-cert-btn.not-received:hover {
+      background: #FEF3C7;
+      border-color: #D97706;
+      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.15);
     }
 
     /* DCAIS 4 STAGES */

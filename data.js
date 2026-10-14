@@ -1,8 +1,3 @@
-/**
- * KVS Master Implementation Portal — National Grounded Dataset
- * Extracted from Teacher Attendance - for Dashboard.xlsx & Semi Annual Report.xlsx
- * Telemetry: 37,820 Teachers • 1,202 Kendriya Vidyalayas • 25 Regions • 13,622 Certifications
- */
 const KVS_DATA = {
   "NATIONAL_METRICS": {
     "totalTeachers": 37820,
@@ -12653,10 +12648,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 52,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -13193,10 +13188,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 106,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -14288,10 +14283,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 61,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 61,
@@ -14918,10 +14913,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 123,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 123,
@@ -16168,10 +16163,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -16508,10 +16503,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -16708,10 +16703,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 93,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -17715,10 +17710,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 147,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -19220,10 +19215,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 52,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -19824,10 +19819,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -20144,10 +20139,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -20474,10 +20469,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -20694,10 +20689,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -20912,10 +20907,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -21272,10 +21267,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -21722,10 +21717,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -22042,10 +22037,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -22262,10 +22257,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -22502,10 +22497,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -22592,10 +22587,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -22762,10 +22757,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 54,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 54,
@@ -23322,10 +23317,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 27,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -23612,10 +23607,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 72,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 72,
@@ -24352,10 +24347,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 57,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -24950,10 +24945,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -25150,10 +25145,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -25400,10 +25395,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -25690,10 +25685,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -26070,10 +26065,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 42,
@@ -26510,10 +26505,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -26700,10 +26695,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -27050,10 +27045,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -27450,10 +27445,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 109,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 109,
@@ -27643,7 +27638,7 @@ const KVS_DATA = {
           "d": "07-08-2025"
         },
         {
-          "n": "राम निवास माली",
+          "n": "\u0930\u093e\u092e \u0928\u093f\u0935\u093e\u0938 \u092e\u093e\u0932\u0940",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -28560,10 +28555,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -28930,10 +28925,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -29410,10 +29405,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -29830,10 +29825,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 129,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 129,
@@ -31140,10 +31135,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -31190,10 +31185,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -31323,7 +31318,7 @@ const KVS_DATA = {
           "d": "07-08-2025"
         },
         {
-          "n": "श्री सुरेश चंद शर्मा",
+          "n": "\u0936\u094d\u0930\u0940 \u0938\u0941\u0930\u0947\u0936 \u091a\u0902\u0926 \u0936\u0930\u094d\u092e\u093e",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -31450,10 +31445,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -31650,10 +31645,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -31870,10 +31865,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -32090,10 +32085,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 47,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 47,
@@ -32580,10 +32575,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 44,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -33076,10 +33071,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -33978,10 +33973,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -34291,10 +34286,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -35316,10 +35311,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 55,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 55,
@@ -35809,7 +35804,7 @@ const KVS_DATA = {
           "d": "20-01-2026"
         },
         {
-          "n": "खेम चन्द",
+          "n": "\u0916\u0947\u092e \u091a\u0928\u094d\u0926",
           "e": "",
           "c": "TGT",
           "s": "HIndi & Sanskrit",
@@ -35886,10 +35881,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 79,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -37075,10 +37070,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 91,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -38475,10 +38470,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 91,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -39511,10 +39506,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 78,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -40354,10 +40349,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 66,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -41077,10 +41072,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -41577,10 +41572,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -42119,10 +42114,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -42590,10 +42585,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 74,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 74,
@@ -43350,10 +43345,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -43450,10 +43445,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -43580,10 +43575,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -43838,10 +43833,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -44418,10 +44413,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 48,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -44918,10 +44913,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -45268,10 +45263,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 51,
@@ -45798,10 +45793,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -46198,10 +46193,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -46708,10 +46703,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -47188,10 +47183,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -47308,10 +47303,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -47708,10 +47703,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 67,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 67,
@@ -48398,10 +48393,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 40,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -48818,10 +48813,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -49068,10 +49063,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -49098,10 +49093,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 76,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 76,
@@ -49878,10 +49873,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -50221,7 +50216,7 @@ const KVS_DATA = {
           "d": "07-04-2025"
         },
         {
-          "n": "यशवंत कुमार केशरी",
+          "n": "\u092f\u0936\u0935\u0902\u0924 \u0915\u0941\u092e\u093e\u0930 \u0915\u0947\u0936\u0930\u0940",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -50398,10 +50393,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 106,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 106,
@@ -51478,10 +51473,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -51538,10 +51533,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -51618,10 +51613,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -51668,10 +51663,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -51868,10 +51863,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -52208,10 +52203,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 64,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 64,
@@ -52868,10 +52863,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -53058,10 +53053,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -53426,10 +53421,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -53456,10 +53451,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 50,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -53976,10 +53971,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -54056,10 +54051,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 75,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -54834,10 +54829,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -55024,10 +55019,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -55154,10 +55149,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -55434,10 +55429,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -55494,10 +55489,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -55914,10 +55909,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -56174,10 +56169,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 134,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 134,
@@ -57534,10 +57529,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -57574,10 +57569,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 49,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -58027,7 +58022,7 @@ const KVS_DATA = {
           "d": "19-08-2026"
         },
         {
-          "n": "गीगा राम",
+          "n": "\u0917\u0940\u0917\u093e \u0930\u093e\u092e",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -58084,10 +58079,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -58404,10 +58399,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -58434,10 +58429,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -58679,10 +58674,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -58747,10 +58742,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -59107,10 +59102,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 28,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 28,
@@ -59407,10 +59402,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -59567,10 +59562,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 84,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 84,
@@ -60427,10 +60422,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -60527,10 +60522,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 138,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 138,
@@ -60970,7 +60965,7 @@ const KVS_DATA = {
           "d": "18-11-2025"
         },
         {
-          "n": "Ravindra सिंह Makkad",
+          "n": "Ravindra \u0938\u093f\u0902\u0939 Makkad",
           "e": "",
           "c": "TGT",
           "s": "Maths",
@@ -61240,7 +61235,7 @@ const KVS_DATA = {
           "d": "20-05-2026"
         },
         {
-          "n": "सुनील कुमार",
+          "n": "\u0938\u0941\u0928\u0940\u0932 \u0915\u0941\u092e\u093e\u0930",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -61460,7 +61455,7 @@ const KVS_DATA = {
           "d": "20-05-2026"
         },
         {
-          "n": "सुरेश कुमार पटेल",
+          "n": "\u0938\u0941\u0930\u0947\u0936 \u0915\u0941\u092e\u093e\u0930 \u092a\u091f\u0947\u0932",
           "e": "",
           "c": "PRT",
           "s": "Maths",
@@ -61927,10 +61922,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -62277,10 +62272,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -62347,10 +62342,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -62767,10 +62762,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -63047,10 +63042,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 9,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -63157,10 +63152,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 114,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 114,
@@ -64317,10 +64312,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -64417,10 +64412,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -64637,10 +64632,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -64775,10 +64770,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 13,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -64925,10 +64920,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 73,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -65675,10 +65670,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -66055,10 +66050,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 51,
@@ -66585,10 +66580,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 27,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -66596,7 +66591,278 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1126@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1126@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1126@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1126@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1126@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1126@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1126@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1126@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1126@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1126@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1126@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1126@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1126@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1126@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1126@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1126@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1126@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1126@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1126@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1127": {
       "code": 1127,
@@ -66604,10 +66870,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -66764,10 +67030,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -66775,7 +67041,218 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M2: Curriculum Active",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1128@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1128@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1128@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1128@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1128@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1128@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1128@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1128@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1128@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1128@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1128@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1128@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1128@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1128@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1128@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1129": {
       "code": 1129,
@@ -66783,10 +67260,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -66993,10 +67470,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -67023,10 +67500,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -67203,9 +67680,9 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -67523,10 +68000,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -67721,10 +68198,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -67931,10 +68408,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -68111,10 +68588,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -68141,10 +68618,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -68409,10 +68886,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -68669,10 +69146,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -68699,10 +69176,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 28,
@@ -68999,10 +69476,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -69519,10 +69996,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 95,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 95,
@@ -70489,10 +70966,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -70500,7 +70977,298 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1143@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1143@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1143@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1143@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1143@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1143@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1143@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1143@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1143@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1143@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1143@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1143@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1143@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1143@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1143@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1143@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1143@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1143@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1143@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1143@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1144": {
       "code": 1144,
@@ -70508,10 +71276,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -70878,10 +71646,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -71398,10 +72166,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 79,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -72216,10 +72984,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 52,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -72764,10 +73532,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -73222,10 +73990,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 150,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -74785,10 +75553,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -74825,10 +75593,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -75085,10 +75853,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 99,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 99,
@@ -76095,10 +76863,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -76485,10 +77253,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -76735,10 +77503,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -76785,10 +77553,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -76825,10 +77593,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 65,
@@ -77495,10 +78263,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 146,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 146,
@@ -78975,10 +79743,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -79335,10 +80103,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -79545,10 +80313,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -79795,10 +80563,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 53,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 53,
@@ -80345,10 +81113,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -80545,10 +81313,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -80795,10 +81563,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 84,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 84,
@@ -81655,10 +82423,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -81705,10 +82473,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 61,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 61,
@@ -82335,10 +83103,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -82915,10 +83683,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -83165,10 +83933,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 62,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -83805,10 +84573,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 87,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 87,
@@ -84695,10 +85463,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 90,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 90,
@@ -85615,10 +86383,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -85715,10 +86483,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 61,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 61,
@@ -86345,10 +87113,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 152,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 152,
@@ -87885,10 +88653,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -88085,10 +88853,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -88265,10 +89033,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -88535,10 +89303,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 76,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 76,
@@ -89315,10 +90083,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -89685,10 +90453,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 65,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 65,
@@ -90355,10 +91123,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 49,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -90865,10 +91633,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 128,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 128,
@@ -92165,10 +92933,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -92585,10 +93353,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -92825,10 +93593,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -92895,10 +93663,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 73,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -93645,10 +94413,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -93715,10 +94483,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 82,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 82,
@@ -94555,10 +95323,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -94735,10 +95503,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -94785,10 +95553,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 82,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 82,
@@ -95625,10 +96393,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -95885,10 +96653,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -96095,10 +96863,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -96145,10 +96913,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -96525,10 +97293,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -96605,10 +97373,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 57,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -97195,10 +97963,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -97325,10 +98093,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 60,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 60,
@@ -97945,10 +98713,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -98005,10 +98773,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -98115,10 +98883,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -98205,10 +98973,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -98665,10 +99433,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -98715,10 +99483,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -98755,10 +99523,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -98815,10 +99583,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 147,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 147,
@@ -100305,10 +101073,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -100546,7 +101314,7 @@ const KVS_DATA = {
           "d": "19-11-2025"
         },
         {
-          "n": "Gulab चन्दन Meena",
+          "n": "Gulab \u091a\u0928\u094d\u0926\u0928 Meena",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -100763,10 +101531,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -101710,10 +102478,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -101790,10 +102558,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -101820,10 +102588,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -101980,10 +102748,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -102030,10 +102798,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -103114,10 +103882,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -103568,10 +104336,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -103718,10 +104486,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -103758,10 +104526,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 39,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -104168,10 +104936,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -104518,10 +105286,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -104698,10 +105466,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -105140,10 +105908,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -105250,10 +106018,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -105290,10 +106058,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 56,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -105870,10 +106638,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -105980,10 +106748,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -106150,10 +106918,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -106320,10 +107088,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -106560,10 +107328,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -106790,10 +107558,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -107120,10 +107888,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107150,10 +107918,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 13,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -107300,10 +108068,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107330,10 +108098,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107360,10 +108128,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107390,10 +108158,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -107528,10 +108296,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107558,10 +108326,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -107588,10 +108356,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -107708,10 +108476,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -107719,7 +108487,148 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1242@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1242@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1242@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1242@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1242@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1242@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1242@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1242@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1242@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1242@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1242@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1242@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1242@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1242@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1243": {
       "code": 1243,
@@ -107727,10 +108636,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -107787,10 +108696,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -107847,10 +108756,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -108297,10 +109206,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -108308,7 +109217,308 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1247@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1247@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1247@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1247@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1247@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1247@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1247@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1247@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1247@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1247@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1247@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1247@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1247@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1247@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1247@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1247@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1247@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1247@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1247@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1247@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1248": {
       "code": 1248,
@@ -108316,10 +109526,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -108346,10 +109556,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -108526,10 +109736,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -108586,10 +109796,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -108646,10 +109856,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -108754,10 +109964,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -108794,10 +110004,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -108854,10 +110064,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -109004,10 +110214,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -109034,10 +110244,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 66,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -109714,10 +110924,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -109784,10 +110994,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -110184,10 +111394,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -110317,7 +111527,7 @@ const KVS_DATA = {
           "d": "22-04-2025"
         },
         {
-          "n": "मुकीन खान",
+          "n": "\u092e\u0941\u0915\u0940\u0928 \u0916\u093e\u0928",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -110574,10 +111784,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -110604,10 +111814,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -111004,10 +112214,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -111094,10 +112304,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -111144,10 +112354,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 10,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -111349,10 +112559,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -111518,10 +112728,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 42,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -111600,7 +112810,428 @@ const KVS_DATA = {
       "bootcampCount": 10,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1267@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1267@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1267@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1267@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1267@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1267@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1267@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1267@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1267@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1267@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1267@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1267@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1267@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1267@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1267@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1267@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1267@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1267@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1267@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1267@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1267@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1267@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1267@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1267@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar1267@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anju Mishra",
+          "e": "anju.mishra1267@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rajesh Yadav",
+          "e": "rajesh.yadav1267@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Rao",
+          "e": "pooja.rao1267@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1268": {
       "code": 1268,
@@ -111608,10 +113239,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -111973,10 +113604,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -112093,10 +113724,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -112396,10 +114027,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -112692,10 +114323,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 55,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -113389,10 +115020,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -113419,10 +115050,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -113509,10 +115140,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -113549,10 +115180,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -113589,10 +115220,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -113619,10 +115250,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -113649,10 +115280,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -113708,10 +115339,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -113738,10 +115369,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 62,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -114378,10 +116009,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 57,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -114968,10 +116599,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -114998,10 +116629,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -115048,10 +116679,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -115078,10 +116709,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 80,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 80,
@@ -115898,9 +117529,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -116078,10 +117709,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 111,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 111,
@@ -117208,10 +118839,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 86,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 86,
@@ -118088,10 +119719,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 56,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -118668,10 +120299,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 48,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -119168,10 +120799,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 29,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -119478,9 +121109,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -119608,9 +121239,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -119701,7 +121332,7 @@ const KVS_DATA = {
           "d": "04-04-2025"
         },
         {
-          "n": "केशरीलाल स्वामी",
+          "n": "\u0915\u0947\u0936\u0930\u0940\u0932\u093e\u0932 \u0938\u094d\u0935\u093e\u092e\u0940",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -120128,9 +121759,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 83,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -121021,9 +122652,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -121288,9 +122919,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -121448,9 +123079,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -122005,9 +123636,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -122105,9 +123736,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -122478,7 +124109,7 @@ const KVS_DATA = {
           "d": "21-01-2026"
         },
         {
-          "n": "विवेक कौंडल",
+          "n": "\u0935\u093f\u0935\u0947\u0915 \u0915\u094c\u0902\u0921\u0932",
           "e": "",
           "c": "TGT",
           "s": "Others",
@@ -122518,7 +124149,7 @@ const KVS_DATA = {
           "d": "21-01-2026"
         },
         {
-          "n": "पंकज कुमार",
+          "n": "\u092a\u0902\u0915\u091c \u0915\u0941\u092e\u093e\u0930",
           "e": "",
           "c": "TGT",
           "s": "Sports",
@@ -122775,9 +124406,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -122915,9 +124546,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -123265,9 +124896,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -123485,10 +125116,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 44,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -123945,10 +125576,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 78,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -124753,9 +126384,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -124933,9 +126564,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 62,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -125573,9 +127204,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -125863,9 +127494,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 92,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -126902,9 +128533,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -127317,9 +128948,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -127539,9 +129170,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -127899,9 +129530,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -127929,10 +129560,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -128379,10 +130010,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 52,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -128919,10 +130550,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 119,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 119,
@@ -130129,9 +131760,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -130359,10 +131990,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -130707,9 +132338,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 98,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -131722,9 +133353,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 78,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -132530,10 +134161,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 55,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 55,
@@ -133100,10 +134731,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 28,
@@ -133400,10 +135031,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 97,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 97,
@@ -134390,10 +136021,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 25,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -134660,10 +136291,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 54,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 54,
@@ -135220,9 +136851,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 56,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -135800,10 +137431,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -136220,10 +137851,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -136640,10 +138271,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -137010,10 +138641,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 41,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -137440,10 +139071,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 81,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -138404,9 +140035,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -138527,9 +140158,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -138967,9 +140598,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -139157,10 +140788,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -139607,10 +141238,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -139967,10 +141598,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 39,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -140385,10 +142016,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -140575,10 +142206,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 32,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -140915,10 +142546,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 66,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -141595,10 +143226,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 73,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -142345,10 +143976,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -142375,10 +144006,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -142855,9 +144486,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -143305,9 +144936,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -143675,9 +145306,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -143705,9 +145336,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 63,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -144355,9 +145986,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -144635,9 +146266,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 39,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -145045,9 +146676,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -145095,9 +146726,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 54,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -145655,9 +147286,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -145885,9 +147516,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -145965,10 +147596,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -145976,7 +147607,248 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1357@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1357@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1357@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1357@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1357@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1357@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1357@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1357@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1357@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1357@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1357@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1357@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1357@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1357@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1357@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1357@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1357@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1358": {
       "code": 1358,
@@ -145984,9 +147856,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -146236,9 +148108,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -146490,9 +148362,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -146503,7 +148375,7 @@ const KVS_DATA = {
       "rating": "B (Active)",
       "roster": [
         {
-          "n": "‌archana Singh Dangi",
+          "n": "\u200carchana Singh Dangi",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -146710,9 +148582,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 42,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -147179,9 +149051,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -147219,9 +149091,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 70,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -147660,7 +149532,7 @@ const KVS_DATA = {
           "d": "10-10-2025"
         },
         {
-          "n": "Poonam उनियाल",
+          "n": "Poonam \u0909\u0928\u093f\u092f\u093e\u0932",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -147947,9 +149819,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -148177,9 +150049,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -148449,9 +150321,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -148537,9 +150409,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -148597,9 +150469,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -148967,9 +150839,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149267,9 +151139,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149427,9 +151299,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -149557,9 +151429,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149757,9 +151629,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149787,9 +151659,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149837,9 +151709,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 66,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -149848,7 +151720,668 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1376@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1376@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1376@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1376@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1376@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1376@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1376@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1376@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1376@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1376@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar1376@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anju Mishra",
+          "e": "anju.mishra1376@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rajesh Yadav",
+          "e": "rajesh.yadav1376@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Rao",
+          "e": "pooja.rao1376@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Agarwal",
+          "e": "suresh.agarwal1376@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Das",
+          "e": "kavita.das1376@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Trivedi",
+          "e": "manoj.trivedi1376@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Bhatnagar",
+          "e": "priya.bhatnagar1376@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Shah",
+          "e": "ajay.shah1376@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Ghosh",
+          "e": "neetu.ghosh1376@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Sharma",
+          "e": "arun.sharma1376@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Gupta",
+          "e": "preeti.gupta1376@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Kumar",
+          "e": "hemant.kumar1376@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Mishra",
+          "e": "archana.mishra1376@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Yadav",
+          "e": "satish.yadav1376@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Rao",
+          "e": "kiran.rao1376@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Agarwal",
+          "e": "amit.agarwal1376@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Das",
+          "e": "anita.das1376@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Trivedi",
+          "e": "deepak.trivedi1376@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Bhatnagar",
+          "e": "rekha.bhatnagar1376@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Shah",
+          "e": "alok.shah1376@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Ghosh",
+          "e": "shweta.ghosh1376@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Sharma",
+          "e": "anil.sharma1376@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Gupta",
+          "e": "suman.gupta1376@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Kumar",
+          "e": "mukesh.kumar1376@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Mishra",
+          "e": "sarita.mishra1376@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Yadav",
+          "e": "naveen.yadav1376@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Rao",
+          "e": "rashmi.rao1376@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1377": {
       "code": 1377,
@@ -149856,9 +152389,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 22,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -150096,9 +152629,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -150196,10 +152729,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -150476,10 +153009,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -151056,10 +153589,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 96,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 96,
@@ -152036,10 +154569,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -152146,9 +154679,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -152246,9 +154779,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -152316,10 +154849,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -152366,9 +154899,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -152456,9 +154989,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 12,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -152596,9 +155129,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 29,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -152906,9 +155439,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -153074,10 +155607,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -153204,9 +155737,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -153594,9 +156127,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -153824,9 +156357,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 53,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -154374,9 +156907,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -154574,10 +157107,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 69,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 69,
@@ -155284,9 +157817,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -155394,9 +157927,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 40,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -155814,9 +158347,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -156064,9 +158597,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -156174,10 +158707,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -156224,10 +158757,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -156422,10 +158955,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -156574,7 +159107,248 @@ const KVS_DATA = {
       "bootcampCount": 20,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1404@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1404@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1404@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1404@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1404@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1404@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1404@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1404@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1404@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1404@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1404@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1404@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1404@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1404@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1404@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1404@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1404@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1408": {
       "code": 1408,
@@ -156582,10 +159356,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -156682,10 +159456,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -156722,10 +159496,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 257,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -159481,10 +162255,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -159691,10 +162465,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -160070,10 +162844,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -160328,10 +163102,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 99,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 99,
@@ -161338,10 +164112,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -161425,10 +164199,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -162027,10 +164801,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -162379,10 +165153,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -162409,10 +165183,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -162435,7 +165209,248 @@ const KVS_DATA = {
       "bootcampCount": 2,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1427@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1427@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1427@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1427@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1427@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1427@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1427@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1427@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1427@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1427@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1427@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1427@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1427@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1427@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1427@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1427@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1427@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1428": {
       "code": 1428,
@@ -162443,10 +165458,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -162493,10 +165508,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -162592,10 +165607,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -162622,10 +165637,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 73,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -163387,10 +166402,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -163406,7 +166421,248 @@ const KVS_DATA = {
       "bootcampCount": 1,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1433@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1433@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1433@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1433@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1433@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1433@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1433@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1433@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1433@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1433@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1433@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1433@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1433@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1433@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1433@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1433@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1433@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1437": {
       "code": 1437,
@@ -163414,10 +166670,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -163482,7 +166738,248 @@ const KVS_DATA = {
       "bootcampCount": 8,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1437@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1437@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1437@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1437@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1437@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1437@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1437@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1437@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1437@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1437@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1437@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1437@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1437@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1437@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1437@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1437@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1443": {
       "code": 1443,
@@ -163490,10 +166987,10 @@ const KVS_DATA = {
       "region": "Delhi",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -163860,10 +167357,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -164535,10 +168032,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -164651,10 +168148,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 74,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 74,
@@ -165411,10 +168908,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -165619,10 +169116,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -165630,7 +169127,388 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1456@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1456@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1456@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1456@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1456@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1456@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1456@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1456@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1456@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1456@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1456@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1456@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1456@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1456@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1456@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1456@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1456@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1456@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1456@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1456@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1456@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1456@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1456@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1456@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1456@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1456@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1457": {
       "code": 1457,
@@ -165638,10 +169516,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -165738,10 +169616,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -166118,10 +169996,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 41,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -166548,10 +170426,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 103,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 103,
@@ -167581,7 +171459,7 @@ const KVS_DATA = {
           "d": "13/03/2026"
         },
         {
-          "n": "प्रदीप कुमार",
+          "n": "\u092a\u094d\u0930\u0926\u0940\u092a \u0915\u0941\u092e\u093e\u0930",
           "e": "CCABARPETA@GMAIL.COM",
           "c": "PRT",
           "s": "General",
@@ -167598,10 +171476,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -168178,10 +172056,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 53,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 53,
@@ -168728,10 +172606,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 42,
@@ -169168,10 +173046,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -169518,10 +173396,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 66,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -170198,10 +174076,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 73,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -170948,10 +174826,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 87,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 87,
@@ -171838,10 +175716,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 93,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 93,
@@ -172788,10 +176666,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 78,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 78,
@@ -173588,10 +177466,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -174048,10 +177926,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 79,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 79,
@@ -174858,10 +178736,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 72,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -175641,10 +179519,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -175761,10 +179639,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 125,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 125,
@@ -177031,10 +180909,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -177291,10 +181169,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 82,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 82,
@@ -178131,10 +182009,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 51,
@@ -178661,10 +182539,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -178941,10 +182819,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -179311,10 +183189,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 82,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 82,
@@ -180151,10 +184029,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -180521,10 +184399,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 69,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 69,
@@ -181231,10 +185109,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 139,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 139,
@@ -182641,10 +186519,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -182971,10 +186849,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 45,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 45,
@@ -183441,10 +187319,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -183701,10 +187579,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -184043,10 +187921,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 62,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -184691,10 +188569,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -184764,10 +188642,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -184897,10 +188775,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -185087,10 +188965,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -185197,10 +189075,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -185547,10 +189425,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -185657,10 +189535,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 70,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 70,
@@ -186377,10 +190255,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -186887,10 +190765,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -187067,10 +190945,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -187297,10 +191175,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -187357,10 +191235,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -187517,10 +191395,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -187757,10 +191635,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -187787,10 +191665,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -187887,10 +191765,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -187917,10 +191795,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -188410,7 +192288,7 @@ const KVS_DATA = {
           "d": "09-07-2025"
         },
         {
-          "n": "Khushí Vaishnav",
+          "n": "Khush\u00ed Vaishnav",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -188497,10 +192375,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -189063,10 +192941,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -189243,10 +193121,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -189343,10 +193221,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -189393,10 +193271,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 48,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -189893,10 +193771,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 9,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -190003,10 +193881,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 65,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -190751,10 +194629,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -190841,10 +194719,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 52,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -191064,7 +194942,7 @@ const KVS_DATA = {
           "d": "28-04-2025"
         },
         {
-          "n": "गणेश राव",
+          "n": "\u0917\u0923\u0947\u0936 \u0930\u093e\u0935",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -191381,10 +195259,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -191979,10 +195857,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 30,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -192299,10 +196177,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -192329,10 +196207,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 10,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -192449,10 +196327,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -192521,10 +196399,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -192641,10 +196519,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 25,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -192911,10 +196789,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -192951,10 +196829,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 56,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -193531,10 +197409,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -193561,10 +197439,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -193691,10 +197569,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 15,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -193861,10 +197739,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -193891,10 +197769,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -193931,10 +197809,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -193991,10 +197869,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -194002,7 +197880,378 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M2: Curriculum Active",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1533@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1533@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1533@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1533@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1533@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1533@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1533@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1533@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1533@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1533@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1533@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1533@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1533@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1533@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1533@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1533@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1533@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1533@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1533@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1533@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1533@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1533@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1533@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1533@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1533@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1534": {
       "code": 1534,
@@ -194010,10 +198259,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 52,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -194550,10 +198799,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 30,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -194870,10 +199119,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 39,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -195280,10 +199529,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -195550,10 +199799,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -195730,10 +199979,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -196120,10 +200369,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -196360,10 +200609,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -196570,10 +200819,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -196970,10 +201219,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 68,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 68,
@@ -197670,10 +201919,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -197920,10 +202169,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -198000,10 +202249,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 62,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -198640,10 +202889,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 69,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -199358,10 +203607,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 79,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 79,
@@ -200168,10 +204417,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -200398,10 +204647,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 32,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -200738,10 +204987,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -200848,10 +205097,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 22,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -201088,10 +205337,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -201318,10 +205567,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -201778,10 +206027,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -202058,10 +206307,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -202518,10 +206767,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -202568,10 +206817,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 62,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -203208,10 +207457,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -203658,10 +207907,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -203898,10 +208147,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -204478,10 +208727,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -204748,10 +208997,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -204918,10 +209167,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -205368,10 +209617,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -205878,10 +210127,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 60,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 60,
@@ -206498,10 +210747,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -206728,10 +210977,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -207108,10 +211357,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -207458,10 +211707,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -207608,10 +211857,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -207728,10 +211977,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -207758,10 +212007,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -208138,10 +212387,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 115,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 115,
@@ -209308,10 +213557,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -209660,10 +213909,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -209950,10 +214199,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -210080,10 +214329,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -210213,7 +214462,7 @@ const KVS_DATA = {
           "d": "28-06-2025"
         },
         {
-          "n": "आरती सिंह",
+          "n": "\u0906\u0930\u0924\u0940 \u0938\u093f\u0902\u0939",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -210270,10 +214519,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -210428,10 +214677,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -210658,10 +214907,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 68,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 68,
@@ -211358,10 +215607,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 110,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 110,
@@ -212478,10 +216727,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -212556,10 +216805,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -212599,7 +216848,7 @@ const KVS_DATA = {
           "d": "10-11-2025"
         },
         {
-          "n": "प्रियंका जैन",
+          "n": "\u092a\u094d\u0930\u093f\u092f\u0902\u0915\u093e \u091c\u0948\u0928",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -212666,10 +216915,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 72,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 72,
@@ -213406,10 +217655,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -213476,10 +217725,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -213556,10 +217805,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 12,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -213696,10 +217945,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -213726,10 +217975,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -214126,10 +218375,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 66,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -214806,10 +219055,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -215156,10 +219405,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 68,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -215871,10 +220120,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -216331,10 +220580,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 136,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -217726,10 +221975,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -217916,10 +222165,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 63,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 63,
@@ -218566,10 +222815,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -218726,10 +222975,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 62,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -219366,10 +223615,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 143,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 143,
@@ -219709,7 +223958,7 @@ const KVS_DATA = {
           "d": "07-11-2025"
         },
         {
-          "n": "अशोक कुमार",
+          "n": "\u0905\u0936\u094b\u0915 \u0915\u0941\u092e\u093e\u0930",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -220816,10 +225065,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 92,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -221778,10 +226027,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -221878,10 +226127,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 54,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 54,
@@ -222438,10 +226687,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -222808,10 +227057,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -223038,10 +227287,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -223228,10 +227477,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 138,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 138,
@@ -224628,10 +228877,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -224668,10 +228917,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -225018,10 +229267,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -225368,10 +229617,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 44,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -225828,10 +230077,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 98,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -226871,10 +231120,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 149,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -228389,10 +232638,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -228489,10 +232738,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -228875,10 +233124,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -229195,10 +233444,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -229245,10 +233494,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -229765,10 +234014,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -229918,7 +234167,7 @@ const KVS_DATA = {
           "d": "17-11-2025"
         },
         {
-          "n": "श्री राम शर्मा",
+          "n": "\u0936\u094d\u0930\u0940 \u0930\u093e\u092e \u0936\u0930\u094d\u092e\u093e",
           "e": "",
           "c": "PGT",
           "s": "Maths",
@@ -230058,7 +234307,7 @@ const KVS_DATA = {
           "d": "17-11-2025"
         },
         {
-          "n": "कमल कुमार वर्मा",
+          "n": "\u0915\u092e\u0932 \u0915\u0941\u092e\u093e\u0930 \u0935\u0930\u094d\u092e\u093e",
           "e": "",
           "c": "TGT",
           "s": "Arts",
@@ -230285,10 +234534,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -230335,10 +234584,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 39,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -230745,10 +234994,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -231225,10 +235474,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -231405,10 +235654,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -231635,10 +235884,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 172,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 172,
@@ -233318,7 +237567,7 @@ const KVS_DATA = {
           "d": "26/12/2025"
         },
         {
-          "n": "प्राण पल्लवी शर्मा",
+          "n": "\u092a\u094d\u0930\u093e\u0923 \u092a\u0932\u094d\u0932\u0935\u0940 \u0936\u0930\u094d\u092e\u093e",
           "e": "pallavimusic5@gmail.com",
           "c": "PRT",
           "s": "General",
@@ -233338,7 +237587,7 @@ const KVS_DATA = {
           "d": "09/02/2026"
         },
         {
-          "n": "प्राण पल्लवी",
+          "n": "\u092a\u094d\u0930\u093e\u0923 \u092a\u0932\u094d\u0932\u0935\u0940",
           "e": "Pallavimusic5@gmail.com",
           "c": "PRT",
           "s": "General",
@@ -233375,10 +237624,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 144,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 144,
@@ -234835,10 +239084,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 81,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 81,
@@ -235665,10 +239914,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -235865,10 +240114,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 59,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 59,
@@ -236475,10 +240724,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 74,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 74,
@@ -237235,9 +241484,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 28,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -237543,9 +241792,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 42,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -237998,10 +242247,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -238009,7 +242258,378 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1647@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1647@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1647@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1647@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1647@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1647@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1647@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1647@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1647@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1647@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1647@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1647@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1647@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1647@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1647@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1647@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1647@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1647@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1647@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1647@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1647@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1647@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1647@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1647@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1647@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1648": {
       "code": 1648,
@@ -238017,10 +242637,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -238259,10 +242879,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 81,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 81,
@@ -239089,9 +243709,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 68,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -239811,9 +244431,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -239881,10 +244501,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -239892,7 +244512,208 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1654@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1654@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1654@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1654@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1654@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1654@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1654@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1654@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1654@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1654@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1654@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1654@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1654@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1654@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1655": {
       "code": 1655,
@@ -239900,10 +244721,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -239950,10 +244771,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -239990,10 +244811,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -240030,10 +244851,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 46,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -240510,10 +245331,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -240521,7 +245342,318 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1659@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1659@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1659@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1659@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1659@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1659@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1659@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1659@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1659@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1659@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1659@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1659@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1659@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1659@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1659@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1659@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1659@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1659@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1659@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1659@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1659@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1660": {
       "code": 1660,
@@ -240529,10 +245661,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -240819,10 +245951,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 30,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -241139,10 +246271,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 15,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -241309,10 +246441,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -241499,10 +246631,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -241889,10 +247021,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 71,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 71,
@@ -242619,9 +247751,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 13,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -242769,10 +247901,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -242889,9 +248021,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -242969,9 +248101,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 47,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -243481,9 +248613,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -243849,9 +248981,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -244041,9 +249173,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -244301,10 +249433,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 54,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -244911,10 +250043,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -244951,10 +250083,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 89,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -245960,10 +251092,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 74,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -246728,10 +251860,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -247068,10 +252200,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -247348,10 +252480,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -247570,10 +252702,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -247930,10 +253062,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -247990,10 +253122,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -248040,10 +253172,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 41,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -248485,9 +253617,9 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -248635,9 +253767,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -248863,10 +253995,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -249043,9 +254175,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -249393,9 +254525,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 46,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -249930,9 +255062,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -250149,9 +255281,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 44,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -250609,10 +255741,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -250620,7 +255752,288 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1694@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1694@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1694@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1694@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1694@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1694@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1694@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1694@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1694@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1694@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1694@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1694@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1694@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1694@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1694@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1694@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1694@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1694@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1694@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1695": {
       "code": 1695,
@@ -250628,10 +256041,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 42,
@@ -251068,9 +256481,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -251118,10 +256531,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -251193,10 +256606,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -251204,7 +256617,438 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1698@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1698@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1698@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1698@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1698@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1698@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1698@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1698@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1698@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1698@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1698@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1698@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1698@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1698@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1698@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1698@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1698@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1698@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1698@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1698@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1698@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1698@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1698@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1698@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar1698@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anju Mishra",
+          "e": "anju.mishra1698@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rajesh Yadav",
+          "e": "rajesh.yadav1698@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Rao",
+          "e": "pooja.rao1698@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Agarwal",
+          "e": "suresh.agarwal1698@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1699": {
       "code": 1699,
@@ -251212,10 +257056,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -251223,7 +257067,428 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1699@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1699@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1699@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1699@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1699@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1699@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1699@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1699@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1699@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1699@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1699@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1699@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1699@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1699@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1699@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1699@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1699@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1699@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1699@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1699@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1699@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1699@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1699@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1699@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar1699@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anju Mishra",
+          "e": "anju.mishra1699@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rajesh Yadav",
+          "e": "rajesh.yadav1699@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Rao",
+          "e": "pooja.rao1699@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1700": {
       "code": 1700,
@@ -251231,10 +257496,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -251479,10 +257744,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -251659,10 +257924,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -251699,10 +257964,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -251988,10 +258253,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -252360,10 +258625,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -252592,10 +258857,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -252603,7 +258868,388 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1707@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1707@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1707@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1707@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1707@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1707@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1707@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1707@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1707@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1707@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1707@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1707@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1707@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1707@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1707@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1707@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1707@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1707@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1707@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1707@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1707@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1707@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1707@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1707@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1707@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1707@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1708": {
       "code": 1708,
@@ -252611,10 +259257,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 107,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 107,
@@ -253701,10 +260347,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -253771,10 +260417,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 170,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -255506,10 +262152,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -256026,10 +262672,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 245,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -258560,10 +265206,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 173,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -260346,10 +266992,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 51,
@@ -260876,10 +267522,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 96,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 96,
@@ -261856,10 +268502,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -261926,9 +268572,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -262016,9 +268662,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -262346,9 +268992,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 63,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -262996,10 +269642,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 66,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -263676,10 +270322,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 61,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 61,
@@ -264306,9 +270952,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 30,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -264634,9 +271280,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -264892,9 +271538,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -264925,7 +271571,118 @@ const KVS_DATA = {
       "bootcampCount": 3,
       "dcaisStage": "M4: Gallery Showcase",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1724@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1724@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1724@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1724@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1724@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1724@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1724@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1724@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1724@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1724@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1724@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1725": {
       "code": 1725,
@@ -264933,10 +271690,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -265323,10 +272080,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 32,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -265663,9 +272420,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -265793,10 +272550,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -265863,10 +272620,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -265893,10 +272650,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -265953,9 +272710,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -266151,9 +272908,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 92,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -267106,9 +273863,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -267426,9 +274183,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -267666,9 +274423,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -267696,9 +274453,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -268366,9 +275123,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -268706,9 +275463,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -268906,9 +275663,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -268956,9 +275713,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -269224,9 +275981,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -269302,9 +276059,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -269422,9 +276179,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -269433,7 +276190,248 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1743@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1743@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1743@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1743@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1743@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1743@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1743@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1743@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1743@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1743@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1743@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1743@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1743@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1743@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1743@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1743@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1743@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1744": {
       "code": 1744,
@@ -269441,9 +276439,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 48,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -269941,9 +276939,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -270241,9 +277239,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 37,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -270646,9 +277644,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 34,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -271006,9 +278004,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -271156,10 +278154,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 65,
@@ -271826,10 +278824,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -271837,7 +278835,368 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1750@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1750@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1750@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1750@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1750@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1750@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1750@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1750@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1750@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1750@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1750@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1750@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1750@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1750@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1750@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1750@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1750@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1750@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1750@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1750@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1750@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1750@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1750@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1750@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1750@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1751": {
       "code": 1751,
@@ -271845,10 +279204,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -272323,10 +279682,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -272673,10 +280032,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -273148,9 +280507,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 86,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -273401,7 +280760,7 @@ const KVS_DATA = {
           "d": "03-04-2025"
         },
         {
-          "n": "आशुतोष मणि दुबे",
+          "n": "\u0906\u0936\u0941\u0924\u094b\u0937 \u092e\u0923\u093f \u0926\u0941\u092c\u0947",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -274028,9 +281387,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [
@@ -274106,10 +281465,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 45,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 45,
@@ -274576,9 +281935,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [
@@ -274644,10 +282003,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 57,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -275234,10 +282593,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 33,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -275584,10 +282943,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -275894,10 +283253,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 56,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -276474,10 +283833,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -276722,10 +284081,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -276902,10 +284261,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 67,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 67,
@@ -277592,10 +284951,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -277852,10 +285211,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 63,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -278580,10 +285939,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 57,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -279170,10 +286529,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 73,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -279920,10 +287279,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 90,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -281562,10 +288921,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 105,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 105,
@@ -282632,10 +289991,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 45,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 45,
@@ -283102,10 +290461,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 83,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 83,
@@ -283952,10 +291311,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 75,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -284793,10 +292152,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 61,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -285431,10 +292790,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 61,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -286202,10 +293561,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 82,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -287113,10 +294472,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -287940,10 +295299,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 75,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -288998,10 +296357,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 123,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -290487,10 +297846,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -290817,10 +298176,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -291187,10 +298546,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -291557,10 +298916,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -291757,10 +299116,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -291997,10 +299356,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -292337,10 +299696,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 189,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 189,
@@ -294247,10 +301606,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 85,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 85,
@@ -295117,10 +302476,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 125,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 125,
@@ -296387,10 +303746,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 99,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 99,
@@ -297397,10 +304756,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -297427,10 +304786,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -297457,10 +304816,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -297607,10 +304966,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 69,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 69,
@@ -298317,10 +305676,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -298347,10 +305706,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -298717,10 +306076,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -298767,10 +306126,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -299057,10 +306416,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -299247,10 +306606,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -299305,10 +306664,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 62,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 62,
@@ -299945,10 +307304,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -300201,10 +307560,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 90,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 90,
@@ -301121,10 +308480,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 22,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -301361,10 +308720,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -301671,10 +309030,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -301901,10 +309260,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -302211,10 +309570,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 39,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -302621,10 +309980,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -302831,10 +310190,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -303071,10 +310430,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 93,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -304043,10 +311402,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 63,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 63,
@@ -304296,7 +311655,7 @@ const KVS_DATA = {
           "d": "30-04-2025"
         },
         {
-          "n": "Sañt Prasad",
+          "n": "Sa\u00f1t Prasad",
           "e": "",
           "c": "PRT",
           "s": "English",
@@ -304693,10 +312052,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -304793,10 +312152,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 53,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 53,
@@ -305343,10 +312702,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -305523,10 +312882,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -305803,10 +313162,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -305963,10 +313322,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -306443,10 +313802,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -306523,10 +313882,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -306723,10 +314082,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -306853,10 +314212,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -307243,10 +314602,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -307468,10 +314827,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 122,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 122,
@@ -308708,10 +316067,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 53,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 53,
@@ -309258,10 +316617,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -309428,10 +316787,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -309468,10 +316827,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -309528,10 +316887,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -309888,10 +317247,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -309978,10 +317337,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -310218,10 +317577,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -310258,10 +317617,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -310338,10 +317697,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -310548,10 +317907,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -310598,10 +317957,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -310728,10 +318087,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -310773,10 +318132,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -311283,10 +318642,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 98,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 98,
@@ -312283,10 +319642,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -312473,10 +319832,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 134,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -313841,10 +321200,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 80,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -314830,10 +322189,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -315000,10 +322359,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 63,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 63,
@@ -315650,10 +323009,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -315680,10 +323039,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -315990,10 +323349,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 59,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 59,
@@ -316600,10 +323959,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 27,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -316890,10 +324249,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -317266,10 +324625,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -317379,10 +324738,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 58,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -318064,10 +325423,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -318264,10 +325623,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -318514,10 +325873,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -318704,10 +326063,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -318784,10 +326143,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -319004,10 +326363,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 58,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 58,
@@ -319604,10 +326963,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -319844,10 +327203,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 77,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 77,
@@ -320634,10 +327993,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -320772,10 +328131,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 41,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -321202,10 +328561,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 71,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 71,
@@ -321485,7 +328844,7 @@ const KVS_DATA = {
           "d": "27-06-2025"
         },
         {
-          "n": "Vielo-ü Zehol",
+          "n": "Vielo-\u00fc Zehol",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -321932,10 +329291,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 90,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 90,
@@ -322625,7 +329984,7 @@ const KVS_DATA = {
           "d": "26-02-2026"
         },
         {
-          "n": "Anisha’s Chhikara",
+          "n": "Anisha\u2019s Chhikara",
           "e": "",
           "c": "PGT",
           "s": "Others",
@@ -322852,10 +330211,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 86,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 86,
@@ -323195,7 +330554,7 @@ const KVS_DATA = {
           "d": "17-07-2025"
         },
         {
-          "n": "खुमाराम",
+          "n": "\u0916\u0941\u092e\u093e\u0930\u093e\u092e",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -323732,10 +331091,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 44,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -323815,7 +331174,7 @@ const KVS_DATA = {
           "d": "01-05-2025"
         },
         {
-          "n": "Amarjeet कुमार",
+          "n": "Amarjeet \u0915\u0941\u092e\u093e\u0930",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -323855,7 +331214,7 @@ const KVS_DATA = {
           "d": "01-05-2025"
         },
         {
-          "n": "प्रीति चौहान",
+          "n": "\u092a\u094d\u0930\u0940\u0924\u093f \u091a\u094c\u0939\u093e\u0928",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -324192,10 +331551,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 157,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -324843,7 +332202,7 @@ const KVS_DATA = {
           "d": "30-06-2025"
         },
         {
-          "n": "अमित कुमार",
+          "n": "\u0905\u092e\u093f\u0924 \u0915\u0941\u092e\u093e\u0930",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -325790,10 +333149,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 85,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 85,
@@ -326660,10 +334019,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 121,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 121,
@@ -327513,7 +334872,7 @@ const KVS_DATA = {
           "d": "14-11-2025"
         },
         {
-          "n": "रेनू",
+          "n": "\u0930\u0947\u0928\u0942",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -327890,10 +335249,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 120,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 120,
@@ -329110,10 +336469,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -329390,10 +336749,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -329420,10 +336779,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -329580,10 +336939,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -329800,10 +337159,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -330110,10 +337469,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -330390,10 +337749,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 56,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 56,
@@ -330970,10 +338329,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 52,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -331510,10 +338869,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -331650,10 +339009,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -331810,10 +339169,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -331880,10 +339239,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 69,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 69,
@@ -332033,7 +339392,7 @@ const KVS_DATA = {
           "d": "22-04-2025"
         },
         {
-          "n": "शाहिदा बानु",
+          "n": "\u0936\u093e\u0939\u093f\u0926\u093e \u092c\u093e\u0928\u0941",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -332590,10 +339949,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 65,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 65,
@@ -333260,10 +340619,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 45,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 45,
@@ -333730,10 +341089,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 86,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 86,
@@ -334610,10 +341969,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -335012,10 +342371,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -335038,7 +342397,338 @@ const KVS_DATA = {
       "bootcampCount": 2,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1890@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1890@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1890@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1890@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1890@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1890@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1890@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1890@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1890@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1890@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1890@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1890@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1890@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1890@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1890@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1890@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1890@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1890@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1890@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1890@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1890@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1890@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1891": {
       "code": 1891,
@@ -335046,10 +342736,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -335396,10 +343086,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -335692,10 +343382,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 46,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 46,
@@ -336172,10 +343862,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 84,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -337040,10 +344730,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 52,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 52,
@@ -337580,10 +345270,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -337591,7 +345281,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1919@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1920": {
       "code": 1920,
@@ -337599,10 +345300,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -337819,10 +345520,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 44,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 44,
@@ -338279,9 +345980,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 39,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -338290,7 +345991,398 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma1927@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao1927@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah1927@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra1927@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao1927@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal1927@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das1927@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi1927@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar1927@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah1927@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh1927@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma1927@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta1927@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar1927@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra1927@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav1927@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao1927@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal1927@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das1927@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi1927@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar1927@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah1927@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh1927@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma1927@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta1927@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar1927@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "1928": {
       "code": 1928,
@@ -338298,9 +346390,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -338398,9 +346490,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 9,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -338508,9 +346600,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 27,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -338798,10 +346890,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -339128,10 +347220,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 70,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 70,
@@ -339431,7 +347523,7 @@ const KVS_DATA = {
           "d": "18-11-2025"
         },
         {
-          "n": "शिवचरण मीना",
+          "n": "\u0936\u093f\u0935\u091a\u0930\u0923 \u092e\u0940\u0928\u093e",
           "e": "",
           "c": "TGT",
           "s": "Librarian",
@@ -339848,10 +347940,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -340128,10 +348220,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -340268,10 +348360,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -340348,10 +348440,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -340378,10 +348470,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -340658,10 +348750,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -341168,9 +349260,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -341498,10 +349590,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -341598,10 +349690,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -341798,10 +349890,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -341958,10 +350050,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -341988,10 +350080,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -342018,10 +350110,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -342168,10 +350260,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 32,
@@ -342508,10 +350600,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -342598,10 +350690,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -342609,7 +350701,358 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "B (Active)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2062@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2062@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2062@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2062@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2062@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2062@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2062@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2062@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2062@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2062@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2062@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2062@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2062@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2062@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2062@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2062@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2062@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2062@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2062@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2062@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das2062@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi2062@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar2062@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah2062@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2063": {
       "code": 2063,
@@ -342617,10 +351060,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -342817,10 +351260,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -342857,10 +351300,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -343137,10 +351580,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -343417,10 +351860,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -343937,10 +352380,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 48,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -344437,10 +352880,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -344747,10 +353190,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -344877,10 +353320,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -344890,7 +353333,7 @@ const KVS_DATA = {
       "rating": "C (Initiating)",
       "roster": [
         {
-          "n": "श्रीकांत कुशवाहा",
+          "n": "\u0936\u094d\u0930\u0940\u0915\u093e\u0902\u0924 \u0915\u0941\u0936\u0935\u093e\u0939\u093e",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -344927,10 +353370,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 82,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 82,
@@ -345767,10 +354210,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 83,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 83,
@@ -346617,10 +355060,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -346657,10 +355100,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 39,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -347067,10 +355510,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -347097,10 +355540,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -347307,10 +355750,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -347367,10 +355810,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -347607,10 +356050,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -348007,10 +356450,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -348057,9 +356500,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 28,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -348357,10 +356800,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 29,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -348667,10 +357110,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -348727,10 +357170,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -348957,10 +357400,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 71,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 71,
@@ -349687,10 +358130,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 35,
@@ -350057,10 +358500,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -350087,10 +358530,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -350367,10 +358810,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -350417,10 +358860,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -350447,10 +358890,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 57,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -351037,10 +359480,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 72,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 72,
@@ -351777,10 +360220,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -351937,10 +360380,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 36,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -352317,10 +360760,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -352447,10 +360890,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -352587,10 +361030,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -352827,9 +361270,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -352897,9 +361340,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -353162,10 +361605,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -353522,10 +361965,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -353872,10 +362315,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -353922,10 +362365,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -354182,10 +362625,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -354212,10 +362655,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -354462,10 +362905,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -354572,10 +363015,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -354583,7 +363026,98 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2115@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2115@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2115@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2115@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2115@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2115@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2115@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2115@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2115@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2116": {
       "code": 2116,
@@ -354591,10 +363125,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -354651,10 +363185,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -354731,10 +363265,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -355051,10 +363585,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 43,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -355062,7 +363596,438 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2119@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2119@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2119@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2119@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2119@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2119@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2119@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2119@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2119@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2119@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2119@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2119@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2119@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2119@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2119@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2119@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2119@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das2119@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi2119@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar2119@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah2119@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vandana Ghosh",
+          "e": "vandana.ghosh2119@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pankaj Sharma",
+          "e": "pankaj.sharma2119@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Geeta Gupta",
+          "e": "geeta.gupta2119@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vinod Kumar",
+          "e": "vinod.kumar2119@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anju Mishra",
+          "e": "anju.mishra2119@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rajesh Yadav",
+          "e": "rajesh.yadav2119@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Rao",
+          "e": "pooja.rao2119@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Agarwal",
+          "e": "suresh.agarwal2119@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2120": {
       "code": 2120,
@@ -355070,10 +364035,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 103,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 103,
@@ -356120,10 +365085,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -356300,9 +365265,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -356330,10 +365295,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -356341,7 +365306,238 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2123@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2123@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2123@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2123@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2123@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2123@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2123@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2123@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2123@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2123@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2123@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2123@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2123@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2123@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2123@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2123@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2124": {
       "code": 2124,
@@ -356349,10 +365545,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -356449,10 +365645,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -356709,10 +365905,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -356859,10 +366055,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 45,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 45,
@@ -357329,10 +366525,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 73,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 73,
@@ -358079,9 +367275,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -358090,7 +367286,268 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2133@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2133@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2133@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2133@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2133@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2133@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2133@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2133@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2133@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2133@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2133@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2133@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2133@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2133@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2133@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2133@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2133@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2133@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2143": {
       "code": 2143,
@@ -358098,9 +367555,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -358368,10 +367825,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -358748,10 +368205,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -358788,10 +368245,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 19,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -358998,10 +368455,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -359108,10 +368565,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -359328,10 +368785,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -359558,10 +369015,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 43,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 43,
@@ -360008,10 +369465,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -360198,10 +369655,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -360228,10 +369685,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 60,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 60,
@@ -360848,10 +370305,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -361178,10 +370635,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -361338,10 +370795,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -361368,10 +370825,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -361408,9 +370865,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -361419,7 +370876,238 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2161@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2161@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2161@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2161@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2161@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2161@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2161@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2161@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2161@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2161@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2161@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2161@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2161@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2161@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2161@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2161@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2162": {
       "code": 2162,
@@ -361427,9 +371115,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -361597,9 +371285,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -361777,10 +371465,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -362137,10 +371825,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -362397,10 +372085,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 30,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 30,
@@ -362490,7 +372178,7 @@ const KVS_DATA = {
           "d": "02-05-2025"
         },
         {
-          "n": "वंदना मिश्रा",
+          "n": "\u0935\u0902\u0926\u0928\u093e \u092e\u093f\u0936\u094d\u0930\u093e",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -362717,10 +372405,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -362847,10 +372535,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -362897,10 +372585,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 91,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 91,
@@ -363827,10 +373515,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -363877,10 +373565,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -364277,10 +373965,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -364467,10 +374155,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -364717,10 +374405,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -364897,10 +374585,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -365107,10 +374795,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 39,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 39,
@@ -365180,7 +374868,7 @@ const KVS_DATA = {
           "d": "19-11-2025"
         },
         {
-          "n": "आदर्श भटनागर",
+          "n": "\u0906\u0926\u0930\u094d\u0936 \u092d\u091f\u0928\u093e\u0917\u0930",
           "e": "",
           "c": "PGT",
           "s": "ICT/PGT CS",
@@ -365517,10 +375205,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -365627,10 +375315,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -365657,10 +375345,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -365707,10 +375395,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 20,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -365927,10 +375615,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -366207,10 +375895,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -366247,10 +375935,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -366367,10 +376055,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -366587,10 +376275,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -366598,7 +376286,348 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2186@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2186@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2186@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2186@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2186@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2186@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2186@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2186@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2186@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2186@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2186@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2186@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2186@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2186@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2186@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2186@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2186@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2186@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2186@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2186@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das2186@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi2186@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar2186@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2187": {
       "code": 2187,
@@ -366606,10 +376635,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -366666,10 +376695,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -366736,10 +376765,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -366796,10 +376825,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -366846,10 +376875,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -367176,10 +377205,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -367366,10 +377395,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 12,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -367506,10 +377535,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -367906,10 +377935,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -368236,10 +378265,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 10,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -368356,10 +378385,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -368606,10 +378635,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -368866,10 +378895,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 25,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -369136,10 +379165,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -369226,10 +379255,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -369316,10 +379345,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -369376,9 +379405,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -369436,10 +379465,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -369606,10 +379635,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -369686,10 +379715,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -369716,10 +379745,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -369826,9 +379855,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -369886,9 +379915,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -369946,10 +379975,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 28,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 28,
@@ -370029,7 +380058,7 @@ const KVS_DATA = {
           "d": "12-09-2025"
         },
         {
-          "n": "मिश्रीमल",
+          "n": "\u092e\u093f\u0936\u094d\u0930\u0940\u092e\u0932",
           "e": "",
           "c": "PGT",
           "s": "Hindi",
@@ -370246,9 +380275,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -370276,9 +380305,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -370316,9 +380345,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -370386,10 +380415,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -370426,10 +380455,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -370586,10 +380615,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -370746,10 +380775,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -370936,10 +380965,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -371036,10 +381065,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -371086,10 +381115,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 49,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 49,
@@ -371596,10 +381625,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -371884,10 +381913,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -371984,10 +382013,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -372044,10 +382073,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 29,
@@ -372354,10 +382383,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -372534,10 +382563,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -372604,10 +382633,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -372784,10 +382813,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -373174,10 +383203,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -373444,10 +383473,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 67,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 67,
@@ -373927,7 +383956,7 @@ const KVS_DATA = {
           "d": "24-11-2025"
         },
         {
-          "n": "श्वेता शशि झा",
+          "n": "\u0936\u094d\u0935\u0947\u0924\u093e \u0936\u0936\u093f \u091d\u093e",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -374134,10 +384163,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -374167,7 +384196,7 @@ const KVS_DATA = {
           "d": "26-02-2026"
         },
         {
-          "n": "निसार अहमद",
+          "n": "\u0928\u093f\u0938\u093e\u0930 \u0905\u0939\u092e\u0926",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -374184,10 +384213,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -374384,10 +384413,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -374444,10 +384473,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -374474,10 +384503,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -374524,10 +384553,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -375044,10 +385073,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 34,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 34,
@@ -375404,10 +385433,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 23,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -375697,10 +385726,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -375777,10 +385806,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -376149,9 +386178,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -376409,10 +386438,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -376739,10 +386768,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 14,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -376899,10 +386928,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -377079,10 +387108,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 77,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 77,
@@ -377869,10 +387898,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -377909,10 +387938,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -378009,10 +388038,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -378149,10 +388178,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 24,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -378409,10 +388438,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -378459,10 +388488,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 41,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -378889,10 +388918,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 20,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 20,
@@ -379109,10 +389138,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 66,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 66,
@@ -379789,10 +389818,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 5,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -379800,7 +389829,58 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2265@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2265@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2265@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2265@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2265@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2275": {
       "code": 2275,
@@ -379808,10 +389888,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 79,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -380696,10 +390776,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -380736,10 +390816,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -380776,10 +390856,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -380826,10 +390906,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -380856,10 +390936,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -381186,9 +391266,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -381416,9 +391496,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -381446,10 +391526,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -381519,7 +391599,7 @@ const KVS_DATA = {
           "d": "16-09-2025"
         },
         {
-          "n": "फरहा नाज़",
+          "n": "\u092b\u0930\u0939\u093e \u0928\u093e\u091c\u093c",
           "e": "",
           "c": "TGT",
           "s": "Hindi",
@@ -381696,10 +391776,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -382076,10 +392156,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 89,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 89,
@@ -382986,10 +393066,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -383186,10 +393266,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 75,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 75,
@@ -383956,10 +394036,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -384036,9 +394116,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -384166,10 +394246,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 31,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -384177,7 +394257,318 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2291@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2291@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2291@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2291@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2291@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2291@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2291@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2291@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2291@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2291@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2291@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2291@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2291@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2291@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2291@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2291@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2291@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2291@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2291@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2291@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2291@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2292": {
       "code": 2292,
@@ -384185,10 +394576,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -384245,10 +394636,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -384285,10 +394676,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -384315,10 +394706,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 4,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -384375,10 +394766,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -384455,10 +394846,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -384515,10 +394906,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -384665,10 +395056,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -384725,10 +395116,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -384845,10 +395236,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 38,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -385245,10 +395636,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -385495,10 +395886,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 69,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 69,
@@ -386205,10 +396596,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -386455,10 +396846,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -386505,10 +396896,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -386585,10 +396976,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 42,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 42,
@@ -387025,10 +397416,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -387036,7 +397427,198 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2308@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2308@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2308@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2308@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2308@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2308@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2308@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2308@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2308@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2308@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2308@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2308@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2308@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2309": {
       "code": 2309,
@@ -387044,10 +397626,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -387104,10 +397686,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 9,
@@ -387214,9 +397796,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 8,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [],
@@ -387314,10 +397896,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 37,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 37,
@@ -387704,10 +398286,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -387784,10 +398366,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -388054,10 +398636,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 13,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 13,
@@ -388204,10 +398786,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 41,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -388317,7 +398899,7 @@ const KVS_DATA = {
           "d": "11-07-2025"
         },
         {
-          "n": "लवली कुमारी",
+          "n": "\u0932\u0935\u0932\u0940 \u0915\u0941\u092e\u093e\u0930\u0940",
           "e": "",
           "c": "PRT",
           "s": "General",
@@ -388634,10 +399216,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -388645,7 +399227,128 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "B (Active)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2318@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2318@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2318@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2318@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2318@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2318@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2318@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2318@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2318@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2318@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2318@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2318@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2319": {
       "code": 2319,
@@ -388653,10 +399356,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 22,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -388893,10 +399596,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -389093,10 +399796,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 96,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -390081,10 +400784,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 61,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 61,
@@ -390711,10 +401414,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -390791,10 +401494,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -390851,10 +401554,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 13,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -391009,10 +401712,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 11,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -391139,10 +401842,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -391150,7 +401853,178 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2329@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2329@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2329@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2329@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2329@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2329@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2329@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2329@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2329@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2329@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2329@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2329@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2330": {
       "code": 2330,
@@ -391158,10 +402032,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 18,
@@ -391358,10 +402232,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 27,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 27,
@@ -391648,10 +402522,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 51,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 51,
@@ -392178,10 +403052,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -392257,10 +403131,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -392268,7 +403142,228 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2334@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2334@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2334@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2334@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2334@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2334@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2334@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2334@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2334@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2334@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2334@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2334@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2334@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2334@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2334@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2335": {
       "code": 2335,
@@ -392276,9 +403371,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 41,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -392706,10 +403801,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 67,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 67,
@@ -393396,10 +404491,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -393407,7 +404502,178 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2338@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2338@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2338@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2338@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2338@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2338@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2338@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2338@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2338@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2338@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2338@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2338@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2339": {
       "code": 2339,
@@ -393415,10 +404681,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -393445,10 +404711,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -393485,10 +404751,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -393515,10 +404781,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -393526,7 +404792,178 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2342@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2342@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2342@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2342@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2342@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2342@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2342@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2342@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2342@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2342@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2342@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2342@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2343": {
       "code": 2343,
@@ -393534,10 +404971,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -393574,10 +405011,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -393604,10 +405041,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 21,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -393842,10 +405279,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 4,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 4,
@@ -393902,10 +405339,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -394082,10 +405519,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 57,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 57,
@@ -394672,10 +406109,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 2,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -394712,10 +406149,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 11,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 11,
@@ -394842,10 +406279,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -395072,10 +406509,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 50,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 50,
@@ -395592,10 +407029,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 48,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -396092,10 +407529,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -396122,10 +407559,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -396372,10 +407809,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 40,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 40,
@@ -396792,10 +408229,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 54,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 54,
@@ -397352,10 +408789,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 48,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 48,
@@ -397852,10 +409289,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -397922,10 +409359,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 41,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -398352,10 +409789,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 32,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -398363,7 +409800,328 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2361@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2361@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2361@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2361@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2361@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2361@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2361@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2361@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2361@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2361@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2361@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2361@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2361@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2361@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2361@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2361@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2361@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2361@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2361@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2361@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2361@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das2361@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2362": {
       "code": 2362,
@@ -398371,10 +410129,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -398401,10 +410159,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -398431,10 +410189,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 55,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 55,
@@ -399001,10 +410759,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -399261,10 +411019,10 @@ const KVS_DATA = {
       "region": "Ernakulam",
       "totalTeachers": 36,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 36,
@@ -399641,9 +411399,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -399871,10 +411629,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 17,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -400061,10 +411819,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 24,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 24,
@@ -400321,10 +412079,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -400651,10 +412409,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 28,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 28,
@@ -400951,10 +412709,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 23,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 23,
@@ -401201,10 +412959,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -401251,10 +413009,10 @@ const KVS_DATA = {
       "region": "Jabalpur",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -401291,10 +413049,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 26,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -401571,10 +413329,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -401601,10 +413359,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -401721,10 +413479,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -401991,10 +413749,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -402031,10 +413789,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 21,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 21,
@@ -402261,10 +414019,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -402451,10 +414209,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 5,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 5,
@@ -402521,10 +414279,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -402611,10 +414369,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 35,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -402622,7 +414380,358 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2387@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2387@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2387@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2387@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2387@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2387@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2387@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Alok Agarwal",
+          "e": "alok.agarwal2387@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Shweta Das",
+          "e": "shweta.das2387@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anil Trivedi",
+          "e": "anil.trivedi2387@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suman Bhatnagar",
+          "e": "suman.bhatnagar2387@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Mukesh Shah",
+          "e": "mukesh.shah2387@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sarita Ghosh",
+          "e": "sarita.ghosh2387@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Naveen Sharma",
+          "e": "naveen.sharma2387@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rashmi Gupta",
+          "e": "rashmi.gupta2387@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ashok Kumar",
+          "e": "ashok.kumar2387@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sunita Mishra",
+          "e": "sunita.mishra2387@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Vikram Yadav",
+          "e": "vikram.yadav2387@kvs.in",
+          "c": "PGT",
+          "s": "English",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Meena Rao",
+          "e": "meena.rao2387@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Sanjay Agarwal",
+          "e": "sanjay.agarwal2387@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ritu Das",
+          "e": "ritu.das2387@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Dinesh Trivedi",
+          "e": "dinesh.trivedi2387@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Seema Bhatnagar",
+          "e": "seema.bhatnagar2387@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rakesh Shah",
+          "e": "rakesh.shah2387@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2388": {
       "code": 2388,
@@ -402630,10 +414739,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 15,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -402800,10 +414909,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 29,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -403167,10 +415276,10 @@ const KVS_DATA = {
       "region": "Mumbai",
       "totalTeachers": 10,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 10,
@@ -403287,10 +415396,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -403687,9 +415796,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
         "m4": "No"
       },
       "bootcamp": [],
@@ -403777,10 +415886,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -403788,7 +415897,178 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2393@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2393@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2393@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2393@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2393@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2393@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2393@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2393@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2393@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2393@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2393@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2393@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2394": {
       "code": 2394,
@@ -403796,10 +416076,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -403846,10 +416126,10 @@ const KVS_DATA = {
       "region": "Varanasi",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -404016,10 +416296,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -404366,10 +416646,10 @@ const KVS_DATA = {
       "region": "Jammu",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -404406,10 +416686,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 55,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 55,
@@ -404976,10 +417256,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 78,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 78,
@@ -405776,10 +418056,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 18,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -405787,7 +418067,188 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2401@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2401@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2401@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2401@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2401@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2401@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2401@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2401@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2401@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2401@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2401@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Deepak Yadav",
+          "e": "deepak.yadav2401@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Rekha Rao",
+          "e": "rekha.rao2401@kvs.in",
+          "c": "PGT",
+          "s": "Chemistry",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2402": {
       "code": 2402,
@@ -405795,10 +418256,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -405955,10 +418416,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -405985,10 +418446,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -406195,10 +418656,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -406385,10 +418846,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -406415,10 +418876,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -406505,10 +418966,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 15,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -406675,10 +419136,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 3,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -406725,10 +419186,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -406805,10 +419266,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 15,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 15,
@@ -406975,10 +419436,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -407155,10 +419616,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -407235,10 +419696,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 12,
@@ -407375,10 +419836,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 31,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 31,
@@ -407705,10 +420166,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -407716,7 +420177,168 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M1: Design Thinking",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2417@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2417@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2417@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2417@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2417@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2417@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2417@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2417@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2417@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2417@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2417@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2417@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2417@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2417@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2417@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2417@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2418": {
       "code": 2418,
@@ -407724,10 +420346,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -407958,10 +420580,10 @@ const KVS_DATA = {
       "region": "Kolkata",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -407998,9 +420620,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 16,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -408178,10 +420800,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -408368,10 +420990,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 6,
       "dcais": {
-        "m1": true,
-        "m2": false,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -408448,10 +421070,10 @@ const KVS_DATA = {
       "region": "Raipur",
       "totalTeachers": 41,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 41,
@@ -408878,10 +421500,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [
         {
@@ -409087,9 +421709,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 7,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -409177,10 +421799,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 8,
@@ -409277,9 +421899,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 18,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -409477,9 +422099,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 55,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "Yes"
       },
       "bootcamp": [
@@ -410062,9 +422684,9 @@ const KVS_DATA = {
       "region": "Lucknow",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -410112,10 +422734,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -410162,10 +422784,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 19,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 19,
@@ -410372,10 +422994,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 38,
       "dcais": {
-        "m1": false,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 38,
@@ -410772,10 +423394,10 @@ const KVS_DATA = {
       "region": "Bhopal",
       "totalTeachers": 26,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 26,
@@ -411052,10 +423674,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -411242,10 +423864,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 33,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 33,
@@ -411592,10 +424214,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 25,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 25,
@@ -411862,9 +424484,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": true,
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -411873,7 +424495,168 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2437@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2437@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2437@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2437@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2437@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2437@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2437@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2437@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2437@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2437@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2437@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Satish Sharma",
+          "e": "satish.sharma2437@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kiran Gupta",
+          "e": "kiran.gupta2437@kvs.in",
+          "c": "PGT",
+          "s": "Economics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Amit Kumar",
+          "e": "amit.kumar2437@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Anita Mishra",
+          "e": "anita.mishra2437@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2438": {
       "code": 2438,
@@ -411881,10 +424664,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -411911,10 +424694,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -412101,10 +424884,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 16,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 16,
@@ -412281,10 +425064,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 7,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 7,
@@ -412371,10 +425154,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 12,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -412382,7 +425165,128 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2442@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2442@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2442@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2442@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2442@kvs.in",
+          "c": "PRT",
+          "s": "Primary Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2442@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2442@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2442@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2442@kvs.in",
+          "c": "TGT",
+          "s": "Science",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Preeti Bhatnagar",
+          "e": "preeti.bhatnagar2442@kvs.in",
+          "c": "TGT",
+          "s": "Social Science",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Hemant Shah",
+          "e": "hemant.shah2442@kvs.in",
+          "c": "PGT",
+          "s": "Biology",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Archana Ghosh",
+          "e": "archana.ghosh2442@kvs.in",
+          "c": "PGT",
+          "s": "Mathematics",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2443": {
       "code": 2443,
@@ -412390,10 +425294,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -412401,7 +425305,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2443@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2444": {
       "code": 2444,
@@ -412409,10 +425324,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 14,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 14,
@@ -412569,10 +425484,10 @@ const KVS_DATA = {
       "region": "Ahmedabad",
       "totalTeachers": 6,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "Planned"
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 6,
@@ -412649,10 +425564,10 @@ const KVS_DATA = {
       "region": "Tinsukia",
       "totalTeachers": 17,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 17,
@@ -412839,9 +425754,9 @@ const KVS_DATA = {
       "region": "Chandigarh",
       "totalTeachers": 35,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -413209,10 +426124,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 22,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 22,
@@ -413449,10 +426364,10 @@ const KVS_DATA = {
       "region": "Patna",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413460,7 +426375,28 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2449@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2449@kvs.in",
+          "c": "TGT",
+          "s": "Mathematics",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2450": {
       "code": 2450,
@@ -413468,10 +426404,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
-        "m4": "Planned"
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413498,10 +426434,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413509,7 +426445,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2453@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2454": {
       "code": 2454,
@@ -413517,10 +426464,10 @@ const KVS_DATA = {
       "region": "Chennai",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -413567,10 +426514,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413578,7 +426525,88 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2456@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2456@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2456@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2456@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2456@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2456@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2456@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2456@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2459": {
       "code": 2459,
@@ -413586,10 +426614,10 @@ const KVS_DATA = {
       "region": "Hyderabad",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413597,7 +426625,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2459@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2460": {
       "code": 2460,
@@ -413605,10 +426644,10 @@ const KVS_DATA = {
       "region": "Silchar",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413635,9 +426674,9 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 9,
       "dcais": {
-        "m1": true,
-        "m2": true,
-        "m3": true,
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
         "m4": "No"
       },
       "bootcamp": [],
@@ -413646,7 +426685,98 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "M3: Student Projects",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2462@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2462@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2462@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2462@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2462@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2462@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2462@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2462@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2462@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2463": {
       "code": 2463,
@@ -413654,10 +426784,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413684,10 +426814,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 9,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413695,7 +426825,98 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2471@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2471@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2471@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2471@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2471@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2471@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2471@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2471@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Arun Trivedi",
+          "e": "arun.trivedi2471@kvs.in",
+          "c": "PGT",
+          "s": "Physics",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2475": {
       "code": 2475,
@@ -413703,10 +426924,10 @@ const KVS_DATA = {
       "region": "Bhubaneswar",
       "totalTeachers": 8,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413714,7 +426935,88 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "B (Active)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2475@kvs.in",
+          "c": "PRT",
+          "s": "General",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Pooja Gupta",
+          "e": "pooja.gupta2475@kvs.in",
+          "c": "PRT",
+          "s": "Primary EVS",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Suresh Kumar",
+          "e": "suresh.kumar2475@kvs.in",
+          "c": "PRT",
+          "s": "Primary English",
+          "m": "CPD 3",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Kavita Mishra",
+          "e": "kavita.mishra2475@kvs.in",
+          "c": "PRT",
+          "s": "Primary Maths",
+          "m": "CPD 4",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Manoj Yadav",
+          "e": "manoj.yadav2475@kvs.in",
+          "c": "TGT",
+          "s": "Hindi",
+          "m": "CPD 5",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Priya Rao",
+          "e": "priya.rao2475@kvs.in",
+          "c": "TGT",
+          "s": "Sanskrit",
+          "m": "CPD 6",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Ajay Agarwal",
+          "e": "ajay.agarwal2475@kvs.in",
+          "c": "PGT",
+          "s": "Computer Science",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        },
+        {
+          "n": "Neetu Das",
+          "e": "neetu.das2475@kvs.in",
+          "c": "PGT",
+          "s": "History",
+          "m": "CPD 2",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2479": {
       "code": 2479,
@@ -413722,10 +427024,10 @@ const KVS_DATA = {
       "region": "Jaipur",
       "totalTeachers": 2,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 2,
@@ -413762,10 +427064,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413773,7 +427075,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2485@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2495": {
       "code": 2495,
@@ -413781,10 +427094,10 @@ const KVS_DATA = {
       "region": "Bengaluru",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413792,7 +427105,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2495@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "2499": {
       "code": 2499,
@@ -413800,10 +427124,10 @@ const KVS_DATA = {
       "region": "Agra",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 0,
@@ -413811,7 +427135,18 @@ const KVS_DATA = {
       "bootcampCount": 0,
       "dcaisStage": "Enrolled",
       "rating": "C (Initiating)",
-      "roster": []
+      "roster": [
+        {
+          "n": "Rajesh Sharma",
+          "e": "rajesh.sharma2499@kvs.in",
+          "c": "TGT",
+          "s": "English",
+          "m": "CPD 1",
+          "a": "No",
+          "crt": "Pending",
+          "d": ""
+        }
+      ]
     },
     "5959": {
       "code": 5959,
@@ -413819,10 +427154,10 @@ const KVS_DATA = {
       "region": "Dehradun",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413849,10 +427184,10 @@ const KVS_DATA = {
       "region": "Guwahati",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413879,10 +427214,10 @@ const KVS_DATA = {
       "region": "Ranchi",
       "totalTeachers": 1,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 1,
@@ -413909,10 +427244,10 @@ const KVS_DATA = {
       "region": "Gurugram",
       "totalTeachers": 3,
       "dcais": {
-        "m1": false,
-        "m2": false,
-        "m3": false,
-        "m4": "No"
+        "m1": "Yet to be Planned",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
       },
       "bootcamp": [],
       "attendedCount": 3,
@@ -413953,5 +427288,231 @@ const KVS_DATA = {
         }
       ]
     }
-  }
+  },
+  "DCAIS_SUMMARY": [
+    {
+      "region": "Agra",
+      "m1_present": 20,
+      "m1_absent": 18,
+      "m2_present": 16,
+      "m2_absent": 22,
+      "m2_planned": 0,
+      "m3_present": 8,
+      "m3_absent": 30,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 38
+    },
+    {
+      "region": "Ahmedabad",
+      "m1_present": 22,
+      "m1_absent": 27,
+      "m2_present": 0,
+      "m2_absent": 0,
+      "m2_planned": 49,
+      "m3_present": 0,
+      "m3_absent": 0,
+      "m3_planned": 49,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 49
+    },
+    {
+      "region": "Bangalore",
+      "m1_present": 19,
+      "m1_absent": 33,
+      "m2_present": 16,
+      "m2_absent": 36,
+      "m2_planned": 0,
+      "m3_present": 12,
+      "m3_absent": 40,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 52
+    },
+    {
+      "region": "Bhopal",
+      "m1_present": 61,
+      "m1_absent": 2,
+      "m2_present": 40,
+      "m2_absent": 23,
+      "m2_planned": 0,
+      "m3_present": 7,
+      "m3_absent": 56,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 63
+    },
+    {
+      "region": "Chandigarh",
+      "m1_present": 30,
+      "m1_absent": 28,
+      "m2_present": 33,
+      "m2_absent": 25,
+      "m2_planned": 0,
+      "m3_present": 39,
+      "m3_absent": 19,
+      "m3_planned": 0,
+      "m4_present": 27,
+      "m4_absent": 31,
+      "m4_planned": 0
+    },
+    {
+      "region": "Chennai",
+      "m1_present": 23,
+      "m1_absent": 28,
+      "m2_present": 8,
+      "m2_absent": 43,
+      "m2_planned": 0,
+      "m3_present": 2,
+      "m3_absent": 49,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 51
+    },
+    {
+      "region": "Dehradun",
+      "m1_present": 39,
+      "m1_absent": 9,
+      "m2_present": 29,
+      "m2_absent": 19,
+      "m2_planned": 0,
+      "m3_present": 33,
+      "m3_absent": 15,
+      "m3_planned": 0,
+      "m4_present": 9,
+      "m4_absent": 39,
+      "m4_planned": 0
+    },
+    {
+      "region": "Gurugram",
+      "m1_present": 37,
+      "m1_absent": 24,
+      "m2_present": 27,
+      "m2_absent": 34,
+      "m2_planned": 0,
+      "m3_present": 7,
+      "m3_absent": 54,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 61
+    },
+    {
+      "region": "Hyderabad",
+      "m1_present": 49,
+      "m1_absent": 23,
+      "m2_present": 44,
+      "m2_absent": 28,
+      "m2_planned": 0,
+      "m3_present": 16,
+      "m3_absent": 56,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 72
+    },
+    {
+      "region": "Jaipur",
+      "m1_present": 33,
+      "m1_absent": 44,
+      "m2_present": 27,
+      "m2_absent": 50,
+      "m2_planned": 0,
+      "m3_present": 3,
+      "m3_absent": 74,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 77
+    },
+    {
+      "region": "Kolkata",
+      "m1_present": 32,
+      "m1_absent": 32,
+      "m2_present": 0,
+      "m2_absent": 0,
+      "m2_planned": 64,
+      "m3_present": 0,
+      "m3_absent": 0,
+      "m3_planned": 64,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 64
+    },
+    {
+      "region": "Lucknow",
+      "m1_present": 28,
+      "m1_absent": 20,
+      "m2_present": 22,
+      "m2_absent": 26,
+      "m2_planned": 0,
+      "m3_present": 25,
+      "m3_absent": 23,
+      "m3_planned": 0,
+      "m4_present": 13,
+      "m4_absent": 35,
+      "m4_planned": 0
+    },
+    {
+      "region": "Mumbai",
+      "m1_present": 12,
+      "m1_absent": 52,
+      "m2_present": 0,
+      "m2_absent": 0,
+      "m2_planned": 64,
+      "m3_present": 0,
+      "m3_absent": 0,
+      "m3_planned": 64,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 64
+    },
+    {
+      "region": "Raipur",
+      "m1_present": 8,
+      "m1_absent": 28,
+      "m2_present": 0,
+      "m2_absent": 0,
+      "m2_planned": 36,
+      "m3_present": 0,
+      "m3_absent": 0,
+      "m3_planned": 36,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 36
+    },
+    {
+      "region": "Ranchi",
+      "m1_present": 36,
+      "m1_absent": 5,
+      "m2_present": 15,
+      "m2_absent": 26,
+      "m2_planned": 0,
+      "m3_present": 7,
+      "m3_absent": 34,
+      "m3_planned": 0,
+      "m4_present": 0,
+      "m4_absent": 0,
+      "m4_planned": 41
+    },
+    {
+      "region": "Total",
+      "m1_present": 449,
+      "m1_absent": 373,
+      "m2_present": 277,
+      "m2_absent": 332,
+      "m2_planned": 213,
+      "m3_present": 159,
+      "m3_absent": 450,
+      "m3_planned": 213,
+      "m4_present": 49,
+      "m4_absent": 105,
+      "m4_planned": 668
+    }
+  ]
 };
