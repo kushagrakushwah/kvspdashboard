@@ -2145,7 +2145,9 @@
       <div id="homeProgramsCard" style="display:none;margin-top:22px;">
         <div class="school-summary-banner-compact">
           <div style="display:flex;align-items:center;gap:14px;">
-            <div style="width:46px;height:46px;background:var(--slate-900);color:#FFFFFF;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:0.9rem;" id="homeSelectedSchoolBadge">KV</div>
+            <div style="width:48px;height:48px;background:#FFFFFF;border:1.5px solid var(--slate-200);border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,0.06);flex-shrink:0;overflow:hidden;padding:2px;" id="homeSelectedSchoolBadge" title="Kendriya Vidyalaya Sangathan">
+              <img src="kvs-logo.svg" onerror="this.onerror=null; this.src='../assets/kvs-logo.svg';" alt="Kendriya Vidyalaya Sangathan" style="width:38px;height:38px;object-fit:contain;display:block;">
+            </div>
             <div>
               <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
                 <span style="font-size:1.2rem;font-weight:900;color:var(--slate-900);" id="homeSelectedSchoolTitle">School Name</span>
@@ -2324,7 +2326,41 @@
             <h4>Teacher Attendance Roster</h4>
             <p>Educators who attended CPD training from official KVS attendance records</p>
           </div>
-          <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or subject..." oninput="filterRoster(this.value)">
+          <div class="roster-toolbar-actions">
+            <!-- CPD Module Filter -->
+            <div class="filter-select-wrap" id="rosterModuleWrap" title="Filter teachers by CPD Module">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--slate-500);flex-shrink:0;"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+              <label for="rosterModuleFilter" class="filter-select-label">Module:</label>
+              <select id="rosterModuleFilter" class="table-filter-select" onchange="filterRoster()" aria-label="Filter by CPD Module">
+                <option value="">All CPD Modules</option>
+                <option value="CPD 1">CPD 1</option>
+                <option value="CPD 2">CPD 2</option>
+                <option value="CPD 3">CPD 3</option>
+                <option value="CPD 4">CPD 4</option>
+                <option value="CPD 5">CPD 5</option>
+                <option value="CPD 6">CPD 6</option>
+              </select>
+            </div>
+
+            <!-- Subject Filter -->
+            <div class="filter-select-wrap" id="rosterSubjectWrap" title="Filter teachers by Subject">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--slate-500);flex-shrink:0;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <label for="rosterSubjectFilter" class="filter-select-label">Subject:</label>
+              <select id="rosterSubjectFilter" class="table-filter-select" onchange="filterRoster()" aria-label="Filter by Subject">
+                <option value="">All Subjects</option>
+              </select>
+            </div>
+
+            <!-- Search input -->
+            <div style="position:relative;">
+              <input type="text" id="rosterSearch" class="table-search-input" placeholder="Search teacher or school..." oninput="filterRoster(this.value)">
+            </div>
+
+            <!-- Reset button -->
+            <button id="btnResetRosterFilters" class="btn-reset-filters" style="display:none;" onclick="resetRosterFilters()" title="Reset all filters">
+              ✕ Reset
+            </button>
+          </div>
         </div>
 
         <!-- Quick Filter Status Pills -->
