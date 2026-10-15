@@ -2500,6 +2500,83 @@
         </div>
       </div>
 
+      <!-- DCAIS School Participation & KV Code Attendance Roster -->
+      <div class="table-box" id="dcaisRosterBox" style="margin-bottom:24px;">
+        <div class="table-header-row">
+          <div>
+            <h4>KV Code Attendance &amp; Participation Roster</h4>
+            <p>School-level teacher attendance records across DCAIS Modules 1 to 4 from official KVS telemetry</p>
+          </div>
+          <div class="roster-toolbar-actions">
+            <!-- Region Filter -->
+            <div class="filter-select-wrap" id="dcaisRegionWrap" title="Filter by Region">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--slate-500);flex-shrink:0;"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+              <label for="dcaisRosterRegionFilter" class="filter-select-label">Region:</label>
+              <select id="dcaisRosterRegionFilter" class="table-filter-select" onchange="filterDcaisRoster()" aria-label="Filter by Region">
+                <option value="CURRENT">Current Region</option>
+                <option value="ALL">All Regions (National)</option>
+              </select>
+            </div>
+
+            <!-- Module Filter -->
+            <div class="filter-select-wrap" id="dcaisModuleWrap" title="Filter by DCAIS Module">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--slate-500);flex-shrink:0;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <label for="dcaisRosterModuleFilter" class="filter-select-label">Module:</label>
+              <select id="dcaisRosterModuleFilter" class="table-filter-select" onchange="filterDcaisRoster()" aria-label="Filter by DCAIS Module">
+                <option value="m1">Module 1 (Orientation &amp; Design)</option>
+                <option value="m2">Module 2 (Curriculum Integration)</option>
+                <option value="m3">Module 3 (Project Implementation)</option>
+                <option value="m4">Module 4 (AI Showcase)</option>
+                <option value="all">All 4 Modules Overview</option>
+              </select>
+            </div>
+
+            <!-- Search input -->
+            <div style="position:relative;">
+              <input type="text" id="dcaisRosterSearch" class="table-search-input" placeholder="Search KV code or school name..." oninput="filterDcaisRoster(this.value)">
+            </div>
+
+            <!-- Reset button -->
+            <button id="btnResetDcaisFilters" class="btn-reset-filters" style="display:none;" onclick="resetDcaisRosterFilters()" title="Reset all filters">
+              ✕ Reset
+            </button>
+
+            <!-- Export CSV button -->
+            <button class="btn-action-small" onclick="exportDcaisRosterCsv()" title="Export filtered KV codes to CSV">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Export CSV</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Filter Status Pills -->
+        <div class="filter-pills-row" id="dcaisRosterFilterPills">
+          <button class="filter-pill active" data-filter="all" onclick="setDcaisRosterFilter('all', this)">All KV Codes (<span id="countDcaisAll">0</span>)</button>
+          <button class="filter-pill" data-filter="attended" onclick="setDcaisRosterFilter('attended', this)">✓ Attended Session (<span id="countDcaisAttended">0</span>)</button>
+          <button class="filter-pill" data-filter="not_attended" onclick="setDcaisRosterFilter('not_attended', this)">✗ Not Attended (<span id="countDcaisNotAttended">0</span>)</button>
+          <button class="filter-pill" data-filter="planned" onclick="setDcaisRosterFilter('planned', this)">○ Yet to be Planned (<span id="countDcaisPlanned">0</span>)</button>
+        </div>
+
+        <div class="table-scroll">
+          <table class="roster-table" id="dcaisRosterTable">
+            <thead>
+              <tr>
+                <th style="width:40px;text-align:center;">#</th>
+                <th style="width:110px;">KV Code</th>
+                <th>School Name</th>
+                <th>Region</th>
+                <th style="text-align:center;">Module 1</th>
+                <th style="text-align:center;">Module 2</th>
+                <th style="text-align:center;">Module 3</th>
+                <th style="text-align:center;">Module 4</th>
+                <th style="text-align:center;">Overall Status</th>
+              </tr>
+            </thead>
+            <tbody id="tableDcaisRosterBody"></tbody>
+          </table>
+        </div>
+      </div>
+
       <!-- DCAIS Summary: Full Telemetry Table from Semi Annual Report.xlsx -->
       <div class="table-box">
         <div class="table-header-row">

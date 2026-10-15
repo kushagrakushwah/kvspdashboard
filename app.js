@@ -1188,6 +1188,7 @@ function renderDcaisView(sch) {
   renderDcaisBarChart(sch);
   renderDcaisSchoolModulesTable(sch);
   highlightDcaisSummarySchoolRegion(sch.region);
+  initDcaisRoster(sch);
 }
 
 // 4 Module Status Cards for the Selected School
@@ -1465,6 +1466,276 @@ function highlightDcaisSummarySchoolRegion(regionName) {
   }
 }
 
+// ==================== DCAIS KV CODE PARTICIPATION ROSTER ====================
+
+let currentDcaisRosterFilter = 'all'; // 'all' | 'attended' | 'not_attended' | 'planned'
+let currentDcaisModuleFilter = 'm1';  // 'm1' | 'm2' | 'm3' | 'm4' | 'all'
+let currentDcaisRegionFilter = 'CURRENT'; // 'CURRENT' | 'ALL' | region name
+
+function initDcaisRoster(sch) {
+  const regSelect = document.getElementById('dcaisRosterRegionFilter');
+  if (regSelect && regSelect.options.length <= 2) {
+    const summary = KVS_DATA.DCAIS_SUMMARY || [];
+    summary.forEach(r => {
+      if (r.region && r.region.toLowerCase() !== 'total') {
+        const opt = document.createElement('option');
+        opt.value = r.region;
+        opt.textContent = `${r.region} Region`;
+        regSelect.appendChild(opt);
+      }
+    });
+  }
+
+  if (regSelect) {
+    regSelect.value = 'CURRENT';
+    const currentOpt = regSelect.querySelector('option[value="CURRENT"]');
+    if (currentOpt) {
+      currentOpt.textContent = `Current Region (${sch.region})`;
+    }
+  }
+
+  const searchInput = document.getElementById('dcaisRosterSearch');
+  if (searchInput) {
+    if (selectedKVCode !== 'ALL' && sch.code) {
+      searchInput.value = String(sch.code);
+    } else {
+      searchInput.value = '';
+    }
+  }
+
+  filterDcaisRoster();
+}
+
+function setDcaisRosterFilter(filterType, btn) {
+  currentDcaisRosterFilter = filterType;
+
+  document.querySelectorAll('#dcaisRosterFilterPills .filter-pill').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  filterDcaisRoster();
+}
+
+function resetDcaisRosterFilters() {
+  currentDcaisRosterFilter = 'all';
+  currentDcaisModuleFilter = 'm1';
+  currentDcaisRegionFilter = 'CURRENT';
+
+  const regSelect = document.getElementById('dcaisRosterRegionFilter');
+  if (regSelect) regSelect.value = 'CURRENT';
+
+  const modSelect = document.getElementById('dcaisRosterModuleFilter');
+  if (modSelect) modSelect.value = 'm1';
+
+  const searchInput = document.getElementById('dcaisRosterSearch');
+  if (searchInput) searchInput.value = '';
+
+  document.querySelectorAll('#dcaisRosterFilterPills .filter-pill').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-filter') === 'all');
+  });
+
+  filterDcaisRoster();
+}
+
+function filterDcaisRoster(textQuery) {
+  const sch = getActiveSchool();
+  const currentRegion = sch ? sch.region : (selectedRegion || 'Agra');
+
+  const searchInput = document.getElementById('dcaisRosterSearch');
+  const q = (typeof textQuery === 'string' ? textQuery : (searchInput ? searchInput.value : '')).toLowerCase().trim();
+
+  const modSelect = document.getElementById('dcaisRosterModuleFilter');
+  currentDcaisModuleFilter = modSelect ? modSelect.value : 'm1';
+
+  const regSelect = document.getElementById('dcaisRosterRegionFilter');
+  const selectedRegVal = regSelect ? regSelect.value : 'CURRENT';
+  currentDcaisRegionFilter = selectedRegVal;
+
+  const btnReset = document.getElementById('btnResetDcaisFilters');
+  const hasActiveFilters = (selectedRegVal !== 'CURRENT') || (currentDcaisModuleFilter !== 'm1') || (q !== '') || (currentDcaisRosterFilter !== 'all');
+  if (btnReset) {
+    btnReset.style.display = hasActiveFilters ? 'inline-flex' : 'none';
+  }
+
+  const allDcais = KVS_DATA.DCAIS_SCHOOLS || [];
+
+  let baseFiltered = allDcais.filter(item => {
+    if (selectedRegVal === 'CURRENT') {
+      return item.region.toLowerCase() === currentRegion.toLowerCase();
+    } else if (selectedRegVal === 'ALL') {
+      return true;
+    } else {
+      return item.region.toLowerCase() === selectedRegVal.toLowerCase();
+    }
+  });
+
+  const targetMod = currentDcaisModuleFilter === 'all' ? 'm1' : currentDcaisModuleFilter;
+  let countAtt = 0;
+  let countNotAtt = 0;
+  let countPlan = 0;
+
+  baseFiltered.forEach(item => {
+    const st = item[targetMod];
+    if (st === 'Yes') countAtt++;
+    else if (st === 'Yet to be Planned') countPlan++;
+    else countNotAtt++;
+  });
+
+  const elAll = document.getElementById('countDcaisAll');
+  const elAtt = document.getElementById('countDcaisAttended');
+  const elNotAtt = document.getElementById('countDcaisNotAttended');
+  const elPlan = document.getElementById('countDcaisPlanned');
+
+  if (elAll) elAll.textContent = baseFiltered.length.toLocaleString();
+  if (elAtt) elAtt.textContent = countAtt.toLocaleString();
+  if (elNotAtt) elNotAtt.textContent = countNotAtt.toLocaleString();
+  if (elPlan) elPlan.textContent = countPlan.toLocaleString();
+
+  if (q) {
+    baseFiltered = baseFiltered.filter(item => {
+      const matchCode = String(item.code).toLowerCase().includes(q);
+      const matchName = (item.name || '').toLowerCase().includes(q);
+      const matchReg = (item.region || '').toLowerCase().includes(q);
+      return matchCode || matchName || matchReg;
+    });
+  }
+
+  const finalFiltered = baseFiltered.filter(item => {
+    const st = item[targetMod];
+    if (currentDcaisRosterFilter === 'attended') return st === 'Yes';
+    if (currentDcaisRosterFilter === 'not_attended') return st === 'No';
+    if (currentDcaisRosterFilter === 'planned') return st === 'Yet to be Planned';
+    return true;
+  });
+
+  renderDcaisRosterTable(finalFiltered);
+}
+
+function renderDcaisRosterTable(schoolsList) {
+  const tbody = document.getElementById('tableDcaisRosterBody');
+  if (!tbody) return;
+  tbody.innerHTML = '';
+
+  if (!schoolsList || schoolsList.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="9" style="text-align:center;padding:28px;color:var(--slate-500);font-weight:600;">No KV school records found matching criteria.</td></tr>';
+    return;
+  }
+
+  const sch = getActiveSchool();
+  const activeCode = sch ? sch.code : null;
+  const frag = document.createDocumentFragment();
+
+  schoolsList.forEach((item, idx) => {
+    const isSelected = activeCode && (String(item.code) === String(activeCode));
+    const tr = document.createElement('tr');
+    if (isSelected) tr.className = 'row-highlight-active';
+
+    function getPill(val) {
+      if (val === 'Yes') {
+        return `<span class="tag-pill green" style="display:inline-flex;align-items:center;gap:3px;font-weight:800;font-size:0.75rem;padding:3px 8px;"><span style="font-size:0.82rem;">✓</span> Attended</span>`;
+      } else if (val === 'Yet to be Planned') {
+        return `<span class="tag-pill" style="background:#F1F5F9;color:#64748B;font-weight:700;font-size:0.75rem;padding:3px 8px;">○ Planned</span>`;
+      } else {
+        return `<span class="tag-pill" style="display:inline-flex;align-items:center;gap:3px;background:#FEE2E2;color:#991B1B;border-color:#FCA5A5;font-weight:800;font-size:0.75rem;padding:3px 8px;"><span style="font-size:0.82rem;">✗</span> Not Attended</span>`;
+      }
+    }
+
+    let overall = '';
+    if (item.m4 === 'Yes') {
+      overall = `<span class="tag-pill purple" style="font-weight:800;font-size:0.74rem;">M4 Showcase</span>`;
+    } else if (item.m3 === 'Yes') {
+      overall = `<span class="tag-pill blue" style="font-weight:800;font-size:0.74rem;">M3 Projects</span>`;
+    } else if (item.m2 === 'Yes') {
+      overall = `<span class="tag-pill green" style="font-weight:800;font-size:0.74rem;">M2 Curriculum</span>`;
+    } else if (item.m1 === 'Yes') {
+      overall = `<span class="tag-pill green" style="font-weight:800;font-size:0.74rem;">M1 Attended</span>`;
+    } else {
+      overall = `<span class="tag-pill" style="background:#FEF3C7;color:#92400E;border-color:#FDE68A;font-weight:800;font-size:0.74rem;">Not Started</span>`;
+    }
+
+    tr.innerHTML = `
+      <td style="text-align:center;color:var(--slate-400);font-weight:700;font-size:0.82rem;">${idx + 1}</td>
+      <td>
+        <span class="combobox-kv-pill" style="font-size:0.82rem;padding:3px 9px;cursor:pointer;" onclick="selectSchoolFromDcais('${item.code}')" title="Click to view details for KV ${item.code}">
+          KV ${item.code}
+        </span>
+      </td>
+      <td>
+        <strong style="color:var(--slate-900);font-size:0.88rem;cursor:pointer;" onclick="selectSchoolFromDcais('${item.code}')" title="Click to view details for ${item.name}">
+          ${item.name}
+        </strong>
+      </td>
+      <td style="font-size:0.82rem;color:var(--slate-700);font-weight:600;">${item.region}</td>
+      <td style="text-align:center;">${getPill(item.m1)}</td>
+      <td style="text-align:center;">${getPill(item.m2)}</td>
+      <td style="text-align:center;">${getPill(item.m3)}</td>
+      <td style="text-align:center;">${getPill(item.m4)}</td>
+      <td style="text-align:center;">${overall}</td>
+    `;
+    frag.appendChild(tr);
+  });
+
+  tbody.appendChild(frag);
+}
+
+function selectSchoolFromDcais(kvCode) {
+  setSchool(kvCode);
+  navigateTo('dcais');
+}
+
+function exportDcaisRosterCsv() {
+  const sch = getActiveSchool();
+  const currentRegion = sch ? sch.region : (selectedRegion || 'Agra');
+  const regSelect = document.getElementById('dcaisRosterRegionFilter');
+  const selectedRegVal = regSelect ? regSelect.value : 'CURRENT';
+
+  const allDcais = KVS_DATA.DCAIS_SCHOOLS || [];
+  let records = allDcais.filter(item => {
+    if (selectedRegVal === 'CURRENT') {
+      return item.region.toLowerCase() === currentRegion.toLowerCase();
+    } else if (selectedRegVal === 'ALL') {
+      return true;
+    } else {
+      return item.region.toLowerCase() === selectedRegVal.toLowerCase();
+    }
+  });
+
+  if (records.length === 0) {
+    showToast('No DCAIS records available to export.');
+    return;
+  }
+
+  const headers = ['KV Code', 'School Name', 'Region', 'Module 1 Status', 'Module 2 Status', 'Module 3 Status', 'Module 4 Status', 'Overall Maturity'];
+  const rows = records.map(r => {
+    let overall = 'Not Started';
+    if (r.m4 === 'Yes') overall = 'M4 Showcase';
+    else if (r.m3 === 'Yes') overall = 'M3 Projects';
+    else if (r.m2 === 'Yes') overall = 'M2 Curriculum';
+    else if (r.m1 === 'Yes') overall = 'M1 Attended';
+
+    return [
+      `"${r.code}"`,
+      `"${r.name.replace(/"/g, '""')}"`,
+      `"${r.region}"`,
+      `"${r.m1 === 'Yes' ? 'Attended' : 'Not Attended'}"`,
+      `"${r.m2}"`,
+      `"${r.m3}"`,
+      `"${r.m4}"`,
+      `"${overall}"`
+    ].join(',');
+  });
+
+  const csvContent = 'data:text/csv;charset=utf-8,\uFEFF' + [headers.join(','), ...rows].join('\n');
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement('a');
+  link.setAttribute('href', encodedUri);
+  const regName = selectedRegVal === 'ALL' ? 'All_Regions_National' : (selectedRegVal === 'CURRENT' ? currentRegion : selectedRegVal);
+  link.setAttribute('download', `KVS_DCAIS_KV_Codes_Attendance_${regName}.csv`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast(`Exported ${records.length} KV Codes to CSV!`);
+}
+
 // ==================== 9. EASY ENGLISH PRINTABLE REPORTS (PDF) ====================
 
 function printSchoolReport(type) {
@@ -1657,9 +1928,37 @@ function printSchoolReport(type) {
           </div>
 
           <div style="font-size:12px;font-weight:900;text-transform:uppercase;color:#334155;margin-bottom:6px;">
-            School DCAIS Teacher Module Status
+            ${sch.code === 'ALL' ? `Regional KV Codes DCAIS Attendance Roster (${sch.region} Region)` : 'School DCAIS Teacher Module Status'}
           </div>
 
+          ${sch.code === 'ALL' ? `
+          <table>
+            <thead>
+              <tr>
+                <th style="width:30px;">#</th>
+                <th style="width:70px;">KV Code</th>
+                <th>School Name</th>
+                <th style="text-align:center;">Module 1</th>
+                <th style="text-align:center;">Module 2</th>
+                <th style="text-align:center;">Module 3</th>
+                <th style="text-align:center;">Module 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${(KVS_DATA.DCAIS_SCHOOLS || []).filter(item => item.region.toLowerCase() === sch.region.toLowerCase()).map((item, idx) => `
+                <tr>
+                  <td>${idx + 1}</td>
+                  <td><strong>${item.code}</strong></td>
+                  <td>${item.name}</td>
+                  <td style="text-align:center;font-weight:bold;color:${item.m1 === 'Yes' ? '#059669' : '#D97706'};">${item.m1 === 'Yes' ? 'Attended' : 'Not Attended'}</td>
+                  <td style="text-align:center;font-weight:bold;color:${item.m2 === 'Yes' ? '#059669' : '#64748B'};">${item.m2 === 'Yes' ? 'Attended' : item.m2}</td>
+                  <td style="text-align:center;font-weight:bold;color:${item.m3 === 'Yes' ? '#059669' : '#64748B'};">${item.m3 === 'Yes' ? 'Attended' : item.m3}</td>
+                  <td style="text-align:center;font-weight:bold;color:${item.m4 === 'Yes' ? '#059669' : '#64748B'};">${item.m4 === 'Yes' ? 'Attended' : item.m4}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+          ` : `
           <table>
             <thead>
               <tr>
@@ -1672,7 +1971,7 @@ function printSchoolReport(type) {
               <tr>
                 <td><strong>Module 1: Orientation &amp; Design Thinking</strong></td>
                 <td>Creative Pedagogy Foundations</td>
-                <td style="font-weight:bold;color:${dcais.m1 === 'Yes' ? '#059669' : '#D97706'};">${dcais.m1 === 'Yes' ? 'Attended' : 'Absent'}</td>
+                <td style="font-weight:bold;color:${dcais.m1 === 'Yes' ? '#059669' : '#D97706'};">${dcais.m1 === 'Yes' ? 'Attended' : 'Not Attended'}</td>
               </tr>
               <tr>
                 <td><strong>Module 2: Creative Curriculum Integration</strong></td>
@@ -1691,6 +1990,7 @@ function printSchoolReport(type) {
               </tr>
             </tbody>
           </table>
+          `}
 
           <div class="sign-area">
             <div class="sign-col">Principal Signature &amp; Stamp</div>
@@ -1740,15 +2040,43 @@ function exportSchoolCsv(type) {
     });
     csvContent = rows.map(r => r.map(c => `"${c}"`).join(',')).join('\n');
   } else {
-    filename = `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_DCAIS_Teacher_Training.csv`;
-    const dcais = sch.dcais || { m1: 'No', m2: 'Yet to be Planned', m3: 'Yet to be Planned', m4: 'Yet to be Planned' };
-    const rows = [
-      ['KV Code', 'School Name', 'Region', 'Module', 'Focus Area', 'Attendance Status'],
-      [sch.code, sch.name, sch.region, 'Module 1', 'Orientation & Design Thinking', dcais.m1 === 'Yes' ? 'Attended' : 'Absent'],
-      [sch.code, sch.name, sch.region, 'Module 2', 'Creative Curriculum Integration', dcais.m2 === 'Yes' ? 'Attended' : dcais.m2],
-      [sch.code, sch.name, sch.region, 'Module 3', 'Student Project Implementation', dcais.m3 === 'Yes' ? 'Attended' : dcais.m3],
-      [sch.code, sch.name, sch.region, 'Module 4', 'Gallery Publishing & Showcase', dcais.m4 === 'Yes' ? 'Attended' : dcais.m4]
-    ];
+    const isRegional = sch.code === 'ALL';
+    filename = isRegional 
+      ? `All_Schools_in_${sch.region}_Region_DCAIS_Teacher_Training.csv`
+      : `KV_${sch.code}_${sch.name.replace(/[^a-zA-Z0-9]/g, '_')}_DCAIS_Teacher_Training.csv`;
+    
+    let rows = [];
+    if (isRegional) {
+      rows.push(['KV Code', 'School Name', 'Region', 'Module 1 (Orientation)', 'Module 2 (Curriculum)', 'Module 3 (Projects)', 'Module 4 (Showcase)', 'Overall Status']);
+      const regSchools = (KVS_DATA.DCAIS_SCHOOLS || []).filter(item => item.region.toLowerCase() === sch.region.toLowerCase());
+      regSchools.forEach(r => {
+        let overall = 'Not Started';
+        if (r.m4 === 'Yes') overall = 'M4 Showcase';
+        else if (r.m3 === 'Yes') overall = 'M3 Projects';
+        else if (r.m2 === 'Yes') overall = 'M2 Curriculum';
+        else if (r.m1 === 'Yes') overall = 'M1 Attended';
+        
+        rows.push([
+          r.code,
+          r.name,
+          r.region,
+          r.m1 === 'Yes' ? 'Attended' : 'Not Attended',
+          r.m2,
+          r.m3,
+          r.m4,
+          overall
+        ]);
+      });
+    } else {
+      const dcais = sch.dcais || { m1: 'No', m2: 'Yet to be Planned', m3: 'Yet to be Planned', m4: 'Yet to be Planned' };
+      rows = [
+        ['KV Code', 'School Name', 'Region', 'Module', 'Focus Area', 'Attendance Status'],
+        [sch.code, sch.name, sch.region, 'Module 1', 'Orientation & Design Thinking', dcais.m1 === 'Yes' ? 'Attended' : 'Not Attended'],
+        [sch.code, sch.name, sch.region, 'Module 2', 'Creative Curriculum Integration', dcais.m2 === 'Yes' ? 'Attended' : dcais.m2],
+        [sch.code, sch.name, sch.region, 'Module 3', 'Student Project Implementation', dcais.m3 === 'Yes' ? 'Attended' : dcais.m3],
+        [sch.code, sch.name, sch.region, 'Module 4', 'Gallery Publishing & Showcase', dcais.m4 === 'Yes' ? 'Attended' : dcais.m4]
+      ];
+    }
     csvContent = rows.map(r => r.map(c => `"${c}"`).join(',')).join('\n');
   }
 

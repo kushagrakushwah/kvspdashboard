@@ -12642,6 +12642,82 @@ const KVS_DATA = {
     }
   ],
   "SCHOOLS": {
+    "2513": {
+  "code": 2513,
+  "name": "DEHRADUN (REGIONAL)",
+  "region": "Dehradun",
+  "totalTeachers": 30,
+  "dcais": {
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  "bootcamp": [],
+  "attendedCount": 0,
+  "certifiedCount": 0,
+  "bootcampCount": 0,
+  "dcaisStage": "Enrolled",
+  "rating": "C (Initiating)",
+  "roster": []
+},
+    "2492": {
+  "code": 2492,
+  "name": "BAIRUGANIPALLE",
+  "region": "Hyderabad",
+  "totalTeachers": 28,
+  "dcais": {
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  "bootcamp": [],
+  "attendedCount": 0,
+  "certifiedCount": 0,
+  "bootcampCount": 0,
+  "dcaisStage": "Enrolled",
+  "rating": "C (Initiating)",
+  "roster": []
+},
+    "1109": {
+  "code": 1109,
+  "name": "HOSHANGABAD",
+  "region": "Bhopal",
+  "totalTeachers": 38,
+  "dcais": {
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  "bootcamp": [],
+  "attendedCount": 1,
+  "certifiedCount": 0,
+  "bootcampCount": 0,
+  "dcaisStage": "M2: Curriculum Active",
+  "rating": "B (Active)",
+  "roster": []
+},
+    "1093": {
+  "code": 1093,
+  "name": "NO. 2 BHOPAL",
+  "region": "Bhopal",
+  "totalTeachers": 42,
+  "dcais": {
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  "bootcamp": [],
+  "attendedCount": 1,
+  "certifiedCount": 0,
+  "bootcampCount": 0,
+  "dcaisStage": "M1: Orientation",
+  "rating": "B (Active)",
+  "roster": []
+},
     "1001": {
       "code": 1001,
       "name": "AHMEDABAD SAC",
@@ -427514,5 +427590,14806 @@ const KVS_DATA = {
       "m4_absent": 105,
       "m4_planned": 668
     }
-  ]
+  ],
+  "DCAIS_SCHOOLS": [
+    {
+        "code": 1357,
+        "name": "CHANDINAGAR",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1379,
+        "name": "MEERUT DL",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1380,
+        "name": "MEERUT PL",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1381,
+        "name": "MEERUT SL",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1382,
+        "name": "MORADABAD",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1385,
+        "name": "MUZAFFARNAGAR (SHIFT 1)",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1390,
+        "name": "RAMPUR CRPF",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1395,
+        "name": "SARSAWA AFS",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1400,
+        "name": "BABUGARH CANTT EBS",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1402,
+        "name": "DADRI NTPC",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1421,
+        "name": "HINDAN 1",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1422,
+        "name": "HINDAN 2",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1431,
+        "name": "NOIDA (SHIFT 1)",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1452,
+        "name": "GHAZIABAD (SHIFT 1)",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1453,
+        "name": "GREATER NOIDA",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1455,
+        "name": "MURADNAGAR OF",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1704,
+        "name": "AGRA AFS 1",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1705,
+        "name": "AGRA CANTT 2",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1706,
+        "name": "AGRA CANTT 3",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1707,
+        "name": "ALIGARH",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1716,
+        "name": "BABINA CANTT",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1721,
+        "name": "BULANDSHAHAR (SHIFT 1)",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1726,
+        "name": "HAZRATPUR OEF",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1728,
+        "name": "JHANSI CANTT 1",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1729,
+        "name": "JHANSI CANTT 2",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1730,
+        "name": "JHANSI 3",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1750,
+        "name": "MATHURA MRN",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1751,
+        "name": "MATHURA BAAD",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1752,
+        "name": "MATHURA CANTT",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1756,
+        "name": "TALBEHAT",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2186,
+        "name": "ETAH",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2187,
+        "name": "MAHOBA",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2188,
+        "name": "HATHRAS",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2256,
+        "name": "ETAWAH",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2257,
+        "name": "LALITPUR",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2387,
+        "name": "BAOLI BAGHPAT",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2389,
+        "name": "SURAJPUR CISF",
+        "region": "Agra",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2417,
+        "name": "IDGAH",
+        "region": "Agra",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1001,
+        "name": "AHMEDABAD SAC",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1002,
+        "name": "AHMEDABAD CANTT 2",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1003,
+        "name": "AHMEDABAD SHAHIBAUG 1",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1004,
+        "name": "CHANDKHEDA ONGC",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1005,
+        "name": "SABARMATI",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1006,
+        "name": "ANKLESHWAR ONGC",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1007,
+        "name": "BARODA HARNI ROAD 1",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1008,
+        "name": "BARODA ARMY 2",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1009,
+        "name": "BARODA AFS MAKARPURA 3",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1010,
+        "name": "BARODA ONGC 4",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1011,
+        "name": "BHAVNAGAR PARA",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1012,
+        "name": "BHUJ AFS 1",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1013,
+        "name": "BHUJ CANTT 2",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1014,
+        "name": "CAMBAY ONGC",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1015,
+        "name": "DANTIWADA BSF",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1016,
+        "name": "DHRANGADHRA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1017,
+        "name": "DIU",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1018,
+        "name": "DWARKA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1019,
+        "name": "GANDHIDHAM IFFCO",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1020,
+        "name": "GANDHIDHAM RLY COLONY",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1021,
+        "name": "GANDHINAGAR CRPF",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1022,
+        "name": "GANDHINAGAR CANTT",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1023,
+        "name": "GANDHINAGAR 1",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1024,
+        "name": "HIMMATNAGAR",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1025,
+        "name": "JAMNAGAR AFS 1",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1026,
+        "name": "JAMNAGAR INF LINES 2",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1027,
+        "name": "JAMNAGAR 3",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1028,
+        "name": "SAMANA AFS",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1029,
+        "name": "JAMNAGAR INS VALSURA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1030,
+        "name": "JETPUR",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1031,
+        "name": "JUNAGARH",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1032,
+        "name": "MEHSANA ONGC",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1033,
+        "name": "NALIYA AFS",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1034,
+        "name": "OKHA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1035,
+        "name": "PORBANDER",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1036,
+        "name": "RAJKOT",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1037,
+        "name": "SILVASSA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1038,
+        "name": "SURAT ICHCHNATH 1",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1039,
+        "name": "SURAT KRIBHCO 2",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1040,
+        "name": "SURAT ONGC 3",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1041,
+        "name": "VALLABH VIDYANAGAR",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1042,
+        "name": "VIRAMGAM",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1043,
+        "name": "WADSAR AFS",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1102,
+        "name": "1102 DHAR",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2085,
+        "name": "PANCHMAHAL GODHRA",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2194,
+        "name": "DARJEEPURA AFS BARODA",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2195,
+        "name": "DAHOD RAILWAY COLONY",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2371,
+        "name": "PATAN",
+        "region": "Ahmedabad",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2445,
+        "name": "GANDHIDHAM DPA",
+        "region": "Ahmedabad",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1044,
+        "name": "ASC BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1045,
+        "name": "DRDO BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1046,
+        "name": "HEBBAL BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1047,
+        "name": "IISC BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1048,
+        "name": "NAL BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1049,
+        "name": "MALLESHWARAM BANGALORE SH1",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1050,
+        "name": "MEG CENTRE BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1051,
+        "name": "AFS JALAHALLI 1 BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1052,
+        "name": "AFS JALAHALLI 2 BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1053,
+        "name": "MG RLY BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1054,
+        "name": "AFS YELAHANKA BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1055,
+        "name": "CRPF YELAHANKA BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1056,
+        "name": "WAP YELAHANKA BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1057,
+        "name": "BELGAUM CANTT 2",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1058,
+        "name": "AFS SAMBRA",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1059,
+        "name": "BELLARY",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1060,
+        "name": "BEML NAGAR KOLAR",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1061,
+        "name": "AFS BIDAR",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1062,
+        "name": "VIJAYAPURA",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1065,
+        "name": "NDMC DONIMALAI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1071,
+        "name": "GULBARGA KALABURAGI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1072,
+        "name": "HASSAN",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1073,
+        "name": "HOSPET",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1074,
+        "name": "DHARWAD",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1075,
+        "name": "HUBLI 1",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1076,
+        "name": "HUBLI 2",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1081,
+        "name": "MANGALURU 1",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1082,
+        "name": "MANGALURU 2",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1083,
+        "name": "MYSURU",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1085,
+        "name": "RAICHUR",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1086,
+        "name": "TUMKUR",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2060,
+        "name": "KARWAR",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2064,
+        "name": "KODAGU",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2116,
+        "name": "BELGAUM 3",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2117,
+        "name": "BAGALKOT",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2167,
+        "name": "KOPPAL",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2168,
+        "name": "DAVANGERE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2169,
+        "name": "SHIVAMOGGA",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2246,
+        "name": "KRISHNARAJA PURAM BANGALORE",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2284,
+        "name": "CHAMRAJ NAGAR",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2299,
+        "name": "HAVERI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2300,
+        "name": "MANDYA",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2301,
+        "name": "CHIKODI",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2306,
+        "name": "UDUPI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2314,
+        "name": "HUTTI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2342,
+        "name": "KADRIMIDRI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2354,
+        "name": "CHANNAPATNA",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2377,
+        "name": "GANGAVATHI",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2381,
+        "name": "BRBNMPL MYSURU",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2385,
+        "name": "2385 GAURIBIDANUR",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2418,
+        "name": "YESHWANTHPUR RAILWAY BANGALORE",
+        "region": "Bangalore",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2438,
+        "name": "SADALAGA",
+        "region": "Bangalore",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1087,
+        "name": "1087 AMLA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1088,
+        "name": "1088 BARWAHA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1090,
+        "name": "1090 BHIND",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1091,
+        "name": "1091 BAIRAGARH",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1092,
+        "name": "1092 BHOPAL 1",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1093,
+        "name": "KV NO. 2 BHOPAL",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1094,
+        "name": "1094 BHOPAL 3 SHIFT 1",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1095,
+        "name": "1095 SEHORE",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1096,
+        "name": "1096 BINA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1101,
+        "name": "1101 DEWAS",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1103,
+        "name": "1103 GUNA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1104,
+        "name": "1104 GWALIOR 1 SHIFT 1",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1105,
+        "name": "1105 GWALIOR 2",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1106,
+        "name": "1106 GWALIOR 3",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1107,
+        "name": "1107 GWALIOR 4",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1108,
+        "name": "1108 GWALIOR 5",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1109,
+        "name": "KV BAIRAGARH BHOPAL",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1110,
+        "name": "1110 INDORE 1 SHIFT 1",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1111,
+        "name": "1111 INDORE 2",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1112,
+        "name": "1112 MHOW",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1113,
+        "name": "1113 ITARSI OF",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1114,
+        "name": "1114 ITARSI CPE",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1115,
+        "name": "1115 JHABUA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1117,
+        "name": "1117 KARERA ITBP",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1118,
+        "name": "1118 KHANDWA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1119,
+        "name": "1119 KHARGONE",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1120,
+        "name": "1120 MANDSAUR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1121,
+        "name": "1121 MORENA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1126,
+        "name": "1126 NARMADANAGAR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1127,
+        "name": "1127 NEEMUCH 1",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1128,
+        "name": "1128 NEPANAGAR",
+        "region": "Bhopal",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1130,
+        "name": "1130 PACHMARHI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1133,
+        "name": "1133 RATLAM",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1134,
+        "name": "1134 SARNI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1135,
+        "name": "1135 SEONIMALWA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1136,
+        "name": "1136 SHIVPURI ITBP",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1137,
+        "name": "1137 UJJAIN",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1138,
+        "name": "1138 VIDISHA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1139,
+        "name": "1139 GAILGUNA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1925,
+        "name": "1925 SHAJAPUR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2061,
+        "name": "2061 MUNGAOLI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2093,
+        "name": "2093 BARWANI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2123,
+        "name": "2123 SHEOPUR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2146,
+        "name": "2146 DATIA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2199,
+        "name": "2199 BANGRASIA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2200,
+        "name": "2200 RAISEN",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2201,
+        "name": "2201 BETUL",
+        "region": "Bhopal",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2202,
+        "name": "2202 BURHANPUR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2203,
+        "name": "2203 HARDA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2248,
+        "name": "2248 TIKAMGARH",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2295,
+        "name": "2295 KASRAWAD",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2320,
+        "name": "AMBAH",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2327,
+        "name": "2327 TEKANPUR BSF",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2339,
+        "name": "2339 CHANDERI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2341,
+        "name": "2341 GANJBASODA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2343,
+        "name": "2343 MULTAI",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2345,
+        "name": "2345 NEEMUCH 2",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2356,
+        "name": "2356 DABRA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2410,
+        "name": "2410 SHAMGARH",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2414,
+        "name": "2414 GWALIOR CRPF",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2416,
+        "name": "2416 AGARMALWA",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2422,
+        "name": "2422 ALIRAJPUR",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2433,
+        "name": "2433 IIT INDORE",
+        "region": "Bhopal",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1289,
+        "name": "Abohar",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1295,
+        "name": "Baddowal Cantt",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1296,
+        "name": "Barnala",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1297,
+        "name": "Bathinda 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1298,
+        "name": "Bathinda 4",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1299,
+        "name": "Bathinda Cantt 5",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1300,
+        "name": "Bathinda 3",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1301,
+        "name": "Chandigarh OCF 29",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1302,
+        "name": "Chandigarh BRD 3",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1303,
+        "name": "Chandigarh Highgrounds",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1304,
+        "name": "Chandigarh 31",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1305,
+        "name": "Chandigarh 47 (Shift 1)",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1308,
+        "name": "Mullanpur",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1309,
+        "name": "Zirakpur",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1310,
+        "name": "Dappar",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1311,
+        "name": "Faridkot",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1312,
+        "name": "Ferozepur Cantt 1",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1313,
+        "name": "Ferozepur Cantt 2",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1314,
+        "name": "Halwara 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1315,
+        "name": "Halwara 2",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1319,
+        "name": "BSF Jalalabad",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1321,
+        "name": "Hussainpur 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1322,
+        "name": "Kapurthala",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1328,
+        "name": "Nabha Cantt",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1335,
+        "name": "Patiala 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1336,
+        "name": "Patiala 2",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1337,
+        "name": "Patiala Cantt 3",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1645,
+        "name": "Adampur 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1646,
+        "name": "Adampur 2",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1650,
+        "name": "Amritsar Cantt 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1652,
+        "name": "Amritsar 3",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1667,
+        "name": "Gurdaspur Tibri Cantt",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1669,
+        "name": "Jalandhar Cantt 1",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1670,
+        "name": "Jalandhar Cantt 2",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1671,
+        "name": "Jalandhar Cantt 3",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1672,
+        "name": "Jalandhar Cantt 4",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1673,
+        "name": "Jalandhar Suranassi",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1686,
+        "name": "LEH",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1687,
+        "name": "Nangal Bhur",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1690,
+        "name": "Pathankot 1",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1691,
+        "name": "Pathankot 2",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1692,
+        "name": "Pathankot 3",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1693,
+        "name": "Pathankot 4",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1696,
+        "name": "BSF Shikar",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2106,
+        "name": "Hussainpur 2",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2161,
+        "name": "CRPF Saraikhas",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2162,
+        "name": "Bhikiwind",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 2163,
+        "name": "BSF Amarkot",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2212,
+        "name": "Mohali",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2213,
+        "name": "BSF KMS Wala",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2215,
+        "name": "Ubhawal",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 2216,
+        "name": "Fazilka",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2217,
+        "name": "Fatehgarh Sahib",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2249,
+        "name": "Bhunga",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2281,
+        "name": "Sliet",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2335,
+        "name": "Khanpur",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2437,
+        "name": "IIT Ropar",
+        "region": "Chandigarh",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2447,
+        "name": "Bathinda CUP",
+        "region": "Chandigarh",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1283,
+        "name": "PORT BLAIR 1",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1284,
+        "name": "PORT BLAIR 2",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1759,
+        "name": "ARAKKONAM 1",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1760,
+        "name": "THAKKOLAM ARAKKONAM 2",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1761,
+        "name": "ARUVANKADU",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1762,
+        "name": "OOTY",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1763,
+        "name": "WELLINGTON",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1766,
+        "name": "CHENNAI CLRI",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1767,
+        "name": "CHENNAI ANNANAGAR",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1768,
+        "name": "CHENNAI ASHOKNAGAR",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1769,
+        "name": "CHENNAI AFS AVADI",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1770,
+        "name": "CHENNAI CRPF AVADI",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1771,
+        "name": "CHENNAI HVF AVADI",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1772,
+        "name": "CHENNAI OCF AVADI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1773,
+        "name": "CHENNAI DGQA",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1774,
+        "name": "CHENNAI GILL NAGAR",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1775,
+        "name": "CHENNAI IIT",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1776,
+        "name": "CHENNAI ISLAND GROUNDS",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1777,
+        "name": "CHENNAI MINAMBAKKAM",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1778,
+        "name": "CHENNAI TAMBARAM 1",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1779,
+        "name": "CHENNAI TAMBARAM 2",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1786,
+        "name": "COIMBATORE",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1787,
+        "name": "SULUR",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1788,
+        "name": "KALPAKKAM 1",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1789,
+        "name": "KALPAKKAM 2",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1790,
+        "name": "KARAIKUDI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1794,
+        "name": "MADURAI 1",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1796,
+        "name": "MANDAPAM",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1801,
+        "name": "PONDICHERRY 1 SHIFT 1",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1802,
+        "name": "PONDICHERRY 2",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1803,
+        "name": "TRICHY 1",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1804,
+        "name": "TRICHY 2",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1809,
+        "name": "VIJAYANARAYANAM",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1936,
+        "name": "MADURAI 2",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1937,
+        "name": "RAMESHWARAM",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2096,
+        "name": "THIRUVANNAMALAI",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2107,
+        "name": "SIVAGANGA",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2108,
+        "name": "THANJAVUR",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2121,
+        "name": "DHARMAPURI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2127,
+        "name": "DINDIGUL",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2147,
+        "name": "MAHE",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2148,
+        "name": "NAGERKOIL",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2191,
+        "name": "KARAIKKAL",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2192,
+        "name": "VIRUDHUNAGAR",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2193,
+        "name": "PERAMBALUR",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2259,
+        "name": "NEYVELI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2280,
+        "name": "THIRUVARUR",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2319,
+        "name": "TRICHY GOLDEN ROCK 3",
+        "region": "Chennai",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2413,
+        "name": "UDUMALPET",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2432,
+        "name": "ITBP IDAYAPATTI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2434,
+        "name": "RTC ITBP ILLUPPAIKUDI",
+        "region": "Chennai",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1132,
+        "name": "1132 RAJGARH",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1347,
+        "name": "ALMORA",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1348,
+        "name": "BANBASA CANTT",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1349,
+        "name": "BANBASA NHPC",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1356,
+        "name": "BHIMTAL",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1358,
+        "name": "DDN-FRI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1359,
+        "name": "DDN-IIP",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1360,
+        "name": "DDN-IMA",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1361,
+        "name": "ITBPDDN-1",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1362,
+        "name": "DDN-OLF",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1363,
+        "name": "DDN-ONGC",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1364,
+        "name": "BIRPUR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1365,
+        "name": "UPPERCAMP",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1367,
+        "name": "HBK-DDN1",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1368,
+        "name": "HBK-DDN2",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1369,
+        "name": "OFD-DDN",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1370,
+        "name": "DHARCHULA-NHPC",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1371,
+        "name": "GAUCHAR ITBP",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1372,
+        "name": "GWALDOM",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1373,
+        "name": "HALDWANI-1",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1374,
+        "name": "HARDWAR",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1375,
+        "name": "JOSHIMATH",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1376,
+        "name": "KASHIPUR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1377,
+        "name": "KAUSANI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1378,
+        "name": "LANSDOWNE",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1383,
+        "name": "MUKTESHWAR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1384,
+        "name": "MUSSORIE",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1386,
+        "name": "NEW-TEHRI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1387,
+        "name": "PAURI GARHWAL",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1388,
+        "name": "PITHORAGARH",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1389,
+        "name": "RAIWALA",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1391,
+        "name": "RANIKHET",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1392,
+        "name": "RISHIKESH",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1393,
+        "name": "ROORKEE-1",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1394,
+        "name": "ROORKEE-2",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1398,
+        "name": "SRINAGAR-SSB",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1399,
+        "name": "UTTARKASHI",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1927,
+        "name": "AUGUSTYAMUNI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1928,
+        "name": "LOHAGHAT",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1929,
+        "name": "MERTHI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1930,
+        "name": "RAJGARI",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1944,
+        "name": "SAURKHAND",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2133,
+        "name": "GOPESHWAR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2204,
+        "name": "BAGESHWAR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2392,
+        "name": "KHATIMA",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2427,
+        "name": "Champawat",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2462,
+        "name": "KOTDWAR",
+        "region": "Dehradun",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2513,
+        "name": "KV ROORKEE / DEHRADUN",
+        "region": "Dehradun",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1290,
+        "name": "Haryana/1290 AMBALA CANTT 1",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1291,
+        "name": "Haryana/1291 AMBALA CANTT 2",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1292,
+        "name": "Haryana/1292 AMBALA CANTT 3",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1293,
+        "name": "Haryana/1293 AMBALA CANTT 4",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1294,
+        "name": "Haryana/1294 ITBP RAMGARH BHANU",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1306,
+        "name": "Haryana/1306 CHANDIMANDIR 1",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1307,
+        "name": "Haryana/1307 CHANDIMANDIR 2",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1316,
+        "name": "Himachal/1316 HAMIRPUR",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1317,
+        "name": "Haryana/1317 HARSINGPURA",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1318,
+        "name": "Haryana/1318 HISSAR CANTT",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1320,
+        "name": "Haryana/1320 JHAJJAR",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1323,
+        "name": "Haryana/1323 KARNAL",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1324,
+        "name": "Himachal/1324 AFS KASAULI",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1325,
+        "name": "Himachal/1325 SUBATHU",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1326,
+        "name": "Himachal/1326 SAINJ",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1327,
+        "name": "Himachal/1327 MANDI",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1329,
+        "name": "Himachal/1329 NADAUN HP",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1330,
+        "name": "Haryana/1330 NAHARA",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1331,
+        "name": "Himachal/1331 NALETI",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1332,
+        "name": "Himachal/1332 PALAMPUR",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1333,
+        "name": "Haryana/1333 PALUWAS",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1338,
+        "name": "Haryana/1338 GC CRPF PINJORE",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1339,
+        "name": "Himachal/1339 RECONG PEO",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1340,
+        "name": "Haryana/1340 ROHTAK",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1341,
+        "name": "Himachal/1341 ITBP SARAHAN",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1342,
+        "name": "Himachal/1342 JUTOGH",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1343,
+        "name": "Himachal/1343 SHIMLA JAKHOO HILLS",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1344,
+        "name": "Haryana/1344 AFS SIRSA 1",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1345,
+        "name": "Haryana/1345 SIRSA 2",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1346,
+        "name": "Himachal/1346 YOL CANTT",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1414,
+        "name": "Haryana/1414 FARIDABAD 1",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1415,
+        "name": "Haryana/1415 FARIDABAD 2",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1416,
+        "name": "Haryana/1416 FARIDABAD 3",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1418,
+        "name": "Haryana/1418 AFS GURGAON 1 SHIFT 1",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1420,
+        "name": "Haryana/1420 SOHNA ROAD GURGAON 2",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1454,
+        "name": "Haryana/1454 NSG MANESAR",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1456,
+        "name": "Haryana/1456 PALWAL",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1457,
+        "name": "Haryana/1457 RAGHUNATHPURA NARNAUL",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1458,
+        "name": "Haryana/1458 REWARI",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1649,
+        "name": "Himachal/1649 ALHILAL",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1656,
+        "name": "Himachal/1656 BAKLOH",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1658,
+        "name": "Himachal/1658 BANIKHET",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1661,
+        "name": "Himachal/1661 BHANALA",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1662,
+        "name": "Himachal/1662 NHPC HEP CHAMERA 1",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1663,
+        "name": "Himachal/1663 CHAMERA 2",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1666,
+        "name": "Himachal/1666 DHARAMSHALA CANTT",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2075,
+        "name": "Himachal/2075 KEYLONG LAHAUL SPITI",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2214,
+        "name": "Himachal/2214 BANGANA",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2235,
+        "name": "Haryana/2235 BHAKLI",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2276,
+        "name": "Himachal/2276 GHUMARWIN",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2296,
+        "name": "Himachal/2296 SALOH",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2322,
+        "name": "Haryana/2322 MATHANA",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2330,
+        "name": "Haryana/2330 BUDAYAN JIND",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2331,
+        "name": "Himachal/2331 SANDHOLE",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2346,
+        "name": "Haryana/2346 MATANHAIL",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2347,
+        "name": "Haryana/2347 FATEHABAD",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2370,
+        "name": "Haryana/2370 SAMALKHA BEHOLI",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2400,
+        "name": "Haryana/2400 GC CRPF SONEPAT",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2404,
+        "name": "Haryana/2404 GC CRPF KADARPUR",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2439,
+        "name": "Haryana/2439 BILASPUR",
+        "region": "Gurugram",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2444,
+        "name": "Himachal/2444 DHARAMPUR",
+        "region": "Gurugram",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1501,
+        "name": "ANANTAPUR",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1502,
+        "name": "INS KALINGA",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1503,
+        "name": "NFC NAGAR",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1504,
+        "name": "GOOTY",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1505,
+        "name": "GUNTAKAL",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1506,
+        "name": "GUNTUR (Shift 2)",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1507,
+        "name": "GACHIBOWLI",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1508,
+        "name": "BEGUMPET",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1509,
+        "name": "CRPF BARKAS",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1510,
+        "name": "AFA HYDERABAD 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1511,
+        "name": "AFA HYDERABAD 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1512,
+        "name": "GOLCONDA 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1513,
+        "name": "GOLCONDA 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1514,
+        "name": "DRDO KANCHANBAGH",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1515,
+        "name": "NPA SHIVRAMAPALLY",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1516,
+        "name": "UPPAL 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1517,
+        "name": "UPPAL 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1518,
+        "name": "BOLARUM",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1519,
+        "name": "BOWENPALLY",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1520,
+        "name": "AFS HAKIMPET",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1521,
+        "name": "PICKET",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1522,
+        "name": "TIRUMALAGIRI",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1523,
+        "name": "KURNOOL",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1524,
+        "name": "MACHILIPATNAM",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1525,
+        "name": "OF MEDAK",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1526,
+        "name": "ONGC RAJAHMUNDRY",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1527,
+        "name": "RAMAGUNDAM",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1528,
+        "name": "SRIKAKULAM",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1529,
+        "name": "SURYALANKA",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1530,
+        "name": "TIRUPATI 1 (Shift 1)",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1531,
+        "name": "TIRUPATI 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1532,
+        "name": "VIJAYAWADA 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1533,
+        "name": "VIJAYAWADA 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1534,
+        "name": "MALKAPURAM",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1535,
+        "name": "NAD",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1536,
+        "name": "NAUSENABAUGH 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1537,
+        "name": "NAUSENABAUGH 2",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1538,
+        "name": "SVN 1",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1539,
+        "name": "SRIVIJAYANAGAR 2",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1540,
+        "name": "STEEL PLANT",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1541,
+        "name": "WALTAIR",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2008,
+        "name": "ADILABAD",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2077,
+        "name": "KADAPA",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2078,
+        "name": "KHAMMAM",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2079,
+        "name": "WARANGAL",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2091,
+        "name": "ELURU",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2092,
+        "name": "VIZIANAGARAM",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2103,
+        "name": "VENKATAGIRI",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2119,
+        "name": "ONGOLE",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2153,
+        "name": "MAHABUBNAGAR",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2155,
+        "name": "NALGONDA",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2156,
+        "name": "NELLORE",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2247,
+        "name": "KARIMNAGAR",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2279,
+        "name": "UOH",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2287,
+        "name": "MIRYALAGUDA",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2289,
+        "name": "TENALI",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2293,
+        "name": "MAHABUBABAD",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2305,
+        "name": "SIRCILLA",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2308,
+        "name": "BODHAN",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2309,
+        "name": "JHARASANGAM",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2318,
+        "name": "RAJAMPET",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2325,
+        "name": "KAKINADA",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2329,
+        "name": "MANCHERIAL",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2344,
+        "name": "SATTENAPALLI",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2372,
+        "name": "RAJAMAPLLI",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2373,
+        "name": "BHONGIR",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2379,
+        "name": "NIZAMABAD",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2388,
+        "name": "SIDDIPET",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2402,
+        "name": "KANDUKUR TOWN",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2403,
+        "name": "IRLAPADU",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2450,
+        "name": "IIT TIRUPATI",
+        "region": "Hyderabad",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2492,
+        "name": "KV KADAPA / HYDERABAD",
+        "region": "Hyderabad",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1592,
+        "name": "AJMER 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1593,
+        "name": "AJMER 2",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1594,
+        "name": "NASIRABAD",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1595,
+        "name": "ALWAR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1596,
+        "name": "ITRANA",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1597,
+        "name": "BSF ANOOPGARH",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1598,
+        "name": "AGPP ANTA",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1599,
+        "name": "SWRI AVIKANAGAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1600,
+        "name": "BANSWARA",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1601,
+        "name": "BARAN",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1602,
+        "name": "BEAWAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1603,
+        "name": "BHARATPUR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1604,
+        "name": "BHILWARA",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1605,
+        "name": "SAGAR ROAD BIKANER 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1606,
+        "name": "BIKANER 2",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1607,
+        "name": "AFS NAL BIKANER 3",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1608,
+        "name": "CHURU",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1609,
+        "name": "BSF DABLA",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1610,
+        "name": "CISF DEOLI",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1611,
+        "name": "AFS JAISALMER",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1612,
+        "name": "BAJAJ NAGAR JAIPUR 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1613,
+        "name": "JAIPUR CANTT 2",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1614,
+        "name": "MREC JAIPUR 3",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1615,
+        "name": "KHATIPURA JAIPUR 4",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1616,
+        "name": "MANSAROVER JAIPUR 5 (SH1)",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1617,
+        "name": "PRATAP NAGAR JAIPUR 6",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1618,
+        "name": "JALIPA CANTT",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1619,
+        "name": "UTTARLAI",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1620,
+        "name": "JHALAWAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1621,
+        "name": "JHUNJHUNU",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1622,
+        "name": "BANAR JODHPUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1623,
+        "name": "BSF JODHPUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1624,
+        "name": "AFS JODHPUR 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1625,
+        "name": "ARMY JODHPUR 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1626,
+        "name": "AFS JODHPUR 2",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1627,
+        "name": "ARMY JODHPUR 2",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1628,
+        "name": "KOTA 1",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1629,
+        "name": "KOTA 2",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1630,
+        "name": "CRPF MOUNT ABU",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1631,
+        "name": "PHULERA",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1632,
+        "name": "BSF POKHRAN",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1634,
+        "name": "LALGARH JATTAN",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1635,
+        "name": "SHRI GANGANAGAR CANTT",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1636,
+        "name": "SIKAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1637,
+        "name": "AFS SURATGARH 2",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1638,
+        "name": "AFS SURATGARH 1",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1639,
+        "name": "SURATGARH CANTT 2",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1640,
+        "name": "STPS SURATGARH",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1641,
+        "name": "SAWAI MADHOPUR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1642,
+        "name": "PRATAP NAGAR UDAIPUR 1",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1643,
+        "name": "EKLINGGARH UDAIPUR 2",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1933,
+        "name": "GANGANAGAR CITY",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1934,
+        "name": "KARAULI",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2012,
+        "name": "KHETRINAGAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2099,
+        "name": "DUNGARPUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2120,
+        "name": "CHITTORGARH",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2173,
+        "name": "BSF RAMGARH",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2174,
+        "name": "BSF RAISINGHNAGAR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2176,
+        "name": "DEOGARH",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2177,
+        "name": "BSF KHAJUWALA",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2253,
+        "name": "TONK",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2261,
+        "name": "INDERPURA",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2262,
+        "name": "CHHABRA TPP",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2286,
+        "name": "JALORE",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2292,
+        "name": "CUR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2294,
+        "name": "BUNDI",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2297,
+        "name": "JAISINDHAR",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2298,
+        "name": "DAUSA",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2303,
+        "name": "HANUMANGARH",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2337,
+        "name": "NAGAUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2340,
+        "name": "CISF JAIPUR 7",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2350,
+        "name": "IIT JODHPUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2353,
+        "name": "DHOLPUR",
+        "region": "Jaipur",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2375,
+        "name": "TINVARI",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2376,
+        "name": "PALI",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2411,
+        "name": "BANDIKUI",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2426,
+        "name": "PRATAPGARH",
+        "region": "Jaipur",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1235,
+        "name": "Adra",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1236,
+        "name": "Alipurduar",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1237,
+        "name": "Andal",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1238,
+        "name": "Asansol",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1239,
+        "name": "Bagdora AFS",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1240,
+        "name": "Bengdubi",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1241,
+        "name": "Berhampore",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1242,
+        "name": "Binnaguri 1",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1243,
+        "name": "Binnaguri 2",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1244,
+        "name": "Burdwan",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1246,
+        "name": "Chittaranjan",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1247,
+        "name": "Cooch Behar",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1248,
+        "name": "Durgapur CMERI",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1249,
+        "name": "Durgapur CRPF",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1250,
+        "name": "Farakka NTPC",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1251,
+        "name": "Malda NHPC",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1252,
+        "name": "Gangtok",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1253,
+        "name": "Raiganj Govindpur BSF",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1254,
+        "name": "Haldia IOC",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1255,
+        "name": "Hasimara",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1256,
+        "name": "Kalimpong",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1257,
+        "name": "Sukna Khaprail",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1258,
+        "name": "Kalaikunda 1",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1259,
+        "name": "Kalaikunda 2",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1260,
+        "name": "Kharagpur 1 IIT",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1261,
+        "name": "Kharagpur 2 Rly",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1262,
+        "name": "Bamangachi",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1263,
+        "name": "Barrackpore AFS",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1264,
+        "name": "Barrackpore Army",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1265,
+        "name": "Cossipore",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1266,
+        "name": "Ballygunge",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1267,
+        "name": "Command Hospital",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1268,
+        "name": "Dum Dum OF",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1269,
+        "name": "Fort William",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1270,
+        "name": "Garden Reach",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1271,
+        "name": "Joka IIM",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1272,
+        "name": "Salt Lake 1",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1273,
+        "name": "Salt Lake 2",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1274,
+        "name": "Santragachi",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1275,
+        "name": "Ishapore 1",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1276,
+        "name": "Ishapore 2",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1277,
+        "name": "Kanchrapara 1",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1278,
+        "name": "Kanchrapara 2",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1279,
+        "name": "Kankinara",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1282,
+        "name": "Panagarh",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1285,
+        "name": "Salboni",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1286,
+        "name": "Salua AFS",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1287,
+        "name": "Sevoke Road",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1288,
+        "name": "Teesta NHPC Singtam",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2082,
+        "name": "Balurghat",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2086,
+        "name": "Birbhum",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2111,
+        "name": "Ranaghat",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2115,
+        "name": "Teesta NHPC Rambi",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2178,
+        "name": "BSF Krishna Nagar",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2179,
+        "name": "Raninagar BSF",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2180,
+        "name": "Gandhinagar BSF",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2181,
+        "name": "Tarakeswar",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2182,
+        "name": "Bolpur",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2183,
+        "name": "Aradhpur",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2184,
+        "name": "Baikunthpur BFS",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2338,
+        "name": "Bandel",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2368,
+        "name": "Kharagpur Rly Col",
+        "region": "Kolkata",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2415,
+        "name": "NFR New Jalpaiguri",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2419,
+        "name": "GC CRPF Siliguri",
+        "region": "Kolkata",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1350,
+        "name": "BAREILLY AFS-1350",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1351,
+        "name": "BAREILLY-JLA-1351",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1352,
+        "name": "BAREILLY-JRC-1352",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1353,
+        "name": "BAREILLY-IFFCO-1353",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1354,
+        "name": "BAREILLY-NER-1354",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1355,
+        "name": "BAREILLY-IVRI-1355",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1396,
+        "name": "SHAHJAHANPUR-CANTT-SHIFT-1-1396",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1397,
+        "name": "SHAHJAHANPUR-OCF-SHIFT-1-1397",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1717,
+        "name": "LUCKNOW-BKT-1717",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1718,
+        "name": "BALRAMPUR-1718",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1719,
+        "name": "BARABANKI-1719",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1722,
+        "name": "DIBIYAPUR-NTPC-1722",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1723,
+        "name": "FAIZABAD-CANTT-1723",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1724,
+        "name": "FATEHGARH-RRC-1724",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1727,
+        "name": "JAGDISHPUR-BHEL-1727",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1731,
+        "name": "KANPUR-IIT-1731",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1732,
+        "name": "KANPUR-CANTT-SHIFT-1-1732",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1733,
+        "name": "KANPUR-NO.1-ARMAPUR-1733",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1734,
+        "name": "KANPUR-NO.2-ARMAPUR-1734",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1735,
+        "name": "KANPUR-NO.1-CHAKERI-1735",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1736,
+        "name": "KANPUR-NO.2-CHAKERI-1736",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1737,
+        "name": "KANPUR-NO.3-CHAKERI-1737",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1738,
+        "name": "KANPUR-OEF-1738",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1739,
+        "name": "KANPUR-RAKSHA VIHAR-1739",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1740,
+        "name": "LUCKNOW-AMC-SHIFT-1-1740",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1741,
+        "name": "LUCKNOW-IIM-1741",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1742,
+        "name": "LUCKNOW-RDSO-1742",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1743,
+        "name": "LUCKNOW-SGPGI-1743",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1744,
+        "name": "LUCKNOW-ALIGANJ-SHIFT-1-1744",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yes"
+    },
+    {
+        "code": 1745,
+        "name": "LUCKNOW-CANTT-1745",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1746,
+        "name": "LUCKNOW-GOMTINAGAR-SHIFT-1-1746",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1747,
+        "name": "LUCKNOW-CRPF-SHIFT-1-1747",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1748,
+        "name": "LUCKNOW-MEMAURA-1748",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 1754,
+        "name": "RAEBARELI-SHIFT-1-1754",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 1755,
+        "name": "SITAPUR-SHIFT-1-1755",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1757,
+        "name": "UNNAO-1757",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2083,
+        "name": "BADAUN-2083",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2105,
+        "name": "MATI AKBARPUR-SHIFT-1-2105",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2122,
+        "name": "PILIBHIT-2122",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2143,
+        "name": "LAKHIMPUR KHIRI-SHIFT-1-2143",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2283,
+        "name": "SHIVGARH-2283",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2290,
+        "name": "HARDOI-2290",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2312,
+        "name": "SHRAWASTI-2312",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2367,
+        "name": "RAIBARELI-MCF-LALGANJ-2367",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "No"
+    },
+    {
+        "code": 2420,
+        "name": "PALIAKALA-LAKHIMPUR-2420",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2425,
+        "name": "NANPARA-BAHRAICH-2425",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 2428,
+        "name": "MADHUPURI-FATEHPUR-2428",
+        "region": "Lucknow",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yes"
+    },
+    {
+        "code": 2429,
+        "name": "SUMERPUR-HAMIRPUR-2429",
+        "region": "Lucknow",
+        "m1": "No",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "No"
+    },
+    {
+        "code": 1066,
+        "name": "Goa/1066-BAMBOLIM",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1067,
+        "name": "Goa/1067-INS MANDOVI",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1068,
+        "name": "Goa/1068-PONDA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1069,
+        "name": "Goa/1069-VASCO 1",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1070,
+        "name": "Goa/1070-VASCO 2",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1089,
+        "name": "Maharashtra/1089-BHANDARA",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1097,
+        "name": "Maharashtra/1097-CHANDA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1099,
+        "name": "Maharashtra/1099-CHANDRAPUR",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1116,
+        "name": "Maharashtra/1116-KAMPTEE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1122,
+        "name": "Maharashtra/1122-CRPF NAGPUR",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1123,
+        "name": "Maharashtra/1123-VSN NAGPUR",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1124,
+        "name": "Maharashtra/1124-AJNI NAGPUR (Shift 1)",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1125,
+        "name": "Maharashtra/1125-AMBAJHARI",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1129,
+        "name": "Maharashtra/1129-NEW MAJARI",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1131,
+        "name": "Maharashtra/1131-PULGAON",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1194,
+        "name": "Maharashtra/1194-AHMEDNAGAR 1",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1195,
+        "name": "Maharashtra/1195-AHMEDNAGAR 2",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1196,
+        "name": "Maharashtra/1196-AHMEDNAGAR 3",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1197,
+        "name": "Maharashtra/1197-AURANGABAD (Shift 1)",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1198,
+        "name": "Maharashtra/1198-BHUSAWAL 1",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1199,
+        "name": "Maharashtra/1199-DEVLALI 1",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1200,
+        "name": "Maharashtra/1200-DEVLALI 2",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1201,
+        "name": "Maharashtra/1201-NASIK ROAD 1",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1202,
+        "name": "Maharashtra/1202-NASIK ROAD 2",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1203,
+        "name": "Maharashtra/1203-OJHAR",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1204,
+        "name": "Maharashtra/1204-JALGAON",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1205,
+        "name": "Maharashtra/1205-NAD KARANJA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1206,
+        "name": "Maharashtra/1206-LONAVALA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1207,
+        "name": "Maharashtra/1207-MANMAD",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1208,
+        "name": "Maharashtra/1208-CRPF MUDKHED",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1209,
+        "name": "Maharashtra/1209-AMBARNATH (Shift 1)",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1210,
+        "name": "Maharashtra/1210-BHANDUP (Shift 1)",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1211,
+        "name": "Maharashtra/1211-COLABA 1",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1212,
+        "name": "Maharashtra/1212-COLABA 2",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1213,
+        "name": "Maharashtra/1213-COLABA 3",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1214,
+        "name": "Maharashtra/1214-IIT POWAI",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1215,
+        "name": "Maharashtra/1215-INS HAMLA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1216,
+        "name": "Maharashtra/1216-KOLIWADA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1217,
+        "name": "Maharashtra/1217-MANKHURD",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1218,
+        "name": "Maharashtra/1218-ONGC PANVEL",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1219,
+        "name": "Maharashtra/1219-AFS THANE (Shift 2)",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1220,
+        "name": "Maharashtra/1220-DEHUROAD 1",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1221,
+        "name": "Maharashtra/1221-DEHUROAD 2",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1222,
+        "name": "Maharashtra/1222-SC PUNE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1223,
+        "name": "Maharashtra/1223-AFS PUNE 1",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1224,
+        "name": "Maharashtra/1224-AFS PUNE 2",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1225,
+        "name": "Maharashtra/1225-9 BRD PUNE 3",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1226,
+        "name": "Maharashtra/1226-ARMY AREA PUNE",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1227,
+        "name": "Maharashtra/1227-BEG PUNE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1228,
+        "name": "Maharashtra/1228-CME PUNE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1229,
+        "name": "Maharashtra/1229-GANESHKHIND",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1230,
+        "name": "Maharashtra/1230-IAT GIRINAGAR",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1231,
+        "name": "Maharashtra/1231-KHADAKVASLA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1232,
+        "name": "Maharashtra/1232-RANGE HILLS ESTATE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1233,
+        "name": "Maharashtra/1233-SHOLAPUR",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1234,
+        "name": "Maharashtra/1234-VARANGAON",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2088,
+        "name": "Maharashtra/2088-YAWATMAL",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2101,
+        "name": "Maharashtra/2101-DHULE",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2196,
+        "name": "Maharashtra/2196-SCR NANDED",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2197,
+        "name": "Maharashtra/2197-BSF CHAKUR",
+        "region": "Mumbai",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2198,
+        "name": "Maharashtra/2198-CRPF TALEGAON",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2310,
+        "name": "Maharashtra/2310-WARDHA",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2384,
+        "name": "Maharashtra/2384-WASHIM",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2390,
+        "name": "Maharashtra/2390-PARBHANI",
+        "region": "Mumbai",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1542,
+        "name": "AMBIKAPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1543,
+        "name": "BACHELI",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1544,
+        "name": "BAIKUNTPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1546,
+        "name": "BMY BHILAI",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1547,
+        "name": "DURG",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1548,
+        "name": "BILASPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1550,
+        "name": "CHIRIMIRI",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1552,
+        "name": "DANTEWADA",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1555,
+        "name": "DONGARGARH",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1564,
+        "name": "JAGDALPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1566,
+        "name": "JASHPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1568,
+        "name": "JHAGRAKHAND",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1571,
+        "name": "KIRANDUL",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1573,
+        "name": "KORBA 2",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1574,
+        "name": "KORBA 3",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1575,
+        "name": "KORBA 4",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1576,
+        "name": "MAHASAMUND",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1578,
+        "name": "MANENDRAGARH",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1581,
+        "name": "RAIGARH",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1582,
+        "name": "RAIPUR 1 (Shift 1)",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1583,
+        "name": "RAIPUR 2",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2080,
+        "name": "DHAMTARI",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2081,
+        "name": "KANKER",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2152,
+        "name": "KHAIRAGARH",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2236,
+        "name": "CISF BHILAI",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2264,
+        "name": "RAJNANDGAON",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2288,
+        "name": "JANJGIR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2313,
+        "name": "NARAYANPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2351,
+        "name": "BIJAPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2352,
+        "name": "SUKMA",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2357,
+        "name": "NAYA RAIPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2364,
+        "name": "KURUD",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2365,
+        "name": "SARAIPALI",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2369,
+        "name": "KAWARDHA",
+        "region": "Raipur",
+        "m1": "Yes",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2396,
+        "name": "CRPF BILASPUR",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2423,
+        "name": "KONDAGAON",
+        "region": "Raipur",
+        "m1": "No",
+        "m2": "Yet to be Planned",
+        "m3": "Yet to be Planned",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1152,
+        "name": "AC/1152 BOKARO 1",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1153,
+        "name": "AC/1153 BOKARO 3",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1154,
+        "name": "AC/1154 BOKARO THERMAL",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1158,
+        "name": "AC/1158 CHAKRADHARPUR",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1159,
+        "name": "AC/1159 CHANDRAPURA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1163,
+        "name": "AC/1163 DHANBAD 1",
+        "region": "Ranchi",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1164,
+        "name": "AC/1164 DHANBAD 2",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1166,
+        "name": "AC/1166 GOMOH",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1168,
+        "name": "AC/1168 HAZARIBAGH",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1172,
+        "name": "AC/1172 MAITHON DAM",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1173,
+        "name": "AC/1173 MEGHAHATURBURU",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1175,
+        "name": "AC/1175 PATRATU",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1177,
+        "name": "AC/1177 BARKAKANA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1178,
+        "name": "AC/1178 BHURKUNDA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1179,
+        "name": "AC/1179 RAMGARH CANTT",
+        "region": "Ranchi",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1180,
+        "name": "AC/1180 RANCHI CRPF",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1181,
+        "name": "AC/1181 RANCHI HEC",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1182,
+        "name": "AC/1182 RANCHI DEEPATOLI",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1183,
+        "name": "AC/1183 RANCHI CCL",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1184,
+        "name": "AC/1184 RANCHI HINOO SHIFT 1",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1185,
+        "name": "AC/1185 RANCHI NAMKUM",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1188,
+        "name": "AC/1188 SINGHARSI",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1191,
+        "name": "AC/1191 SURDA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 1193,
+        "name": "AC/1193 TATANAGAR",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2071,
+        "name": "AC/2071 GARHWA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2072,
+        "name": "AC/2072 GODDA",
+        "region": "Ranchi",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2073,
+        "name": "AC/2073 JAMTARA",
+        "region": "Ranchi",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2074,
+        "name": "AC/2074 LATEHAR",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2097,
+        "name": "AC/2097 MADHUPUR",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2112,
+        "name": "AC/2112 SIMDEGA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2130,
+        "name": "AC/2130 SAHIBGANJ",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2151,
+        "name": "AC/2151 GUMLA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2348,
+        "name": "AC/2348 KHUNTI",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2349,
+        "name": "AC/2349 LOHARDAGA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2358,
+        "name": "AC/2358 DUMKA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2359,
+        "name": "AC/2359 GIRIDIH",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2360,
+        "name": "AC/2360 CHATRA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2408,
+        "name": "AC/2408 SARAIKELA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2409,
+        "name": "AC/2409 KODERMA",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2430,
+        "name": "AC/2430 DANGOAPOSI",
+        "region": "Ranchi",
+        "m1": "No",
+        "m2": "No",
+        "m3": "No",
+        "m4": "Yet to be Planned"
+    },
+    {
+        "code": 2431,
+        "name": "AC/2431 PALAMU",
+        "region": "Ranchi",
+        "m1": "Yes",
+        "m2": "Yes",
+        "m3": "Yes",
+        "m4": "Yet to be Planned"
+    }
+]
+,
+  "DCAIS_KV_DETAILS": [
+  {
+    "code": 1357,
+    "name": "CHANDINAGAR",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1379,
+    "name": "MEERUT DL",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1380,
+    "name": "MEERUT PL",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1381,
+    "name": "MEERUT SL",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1382,
+    "name": "MORADABAD",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1385,
+    "name": "MUZAFFARNAGAR (SHIFT 1)",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1390,
+    "name": "RAMPUR CRPF",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1395,
+    "name": "SARSAWA AFS",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1400,
+    "name": "BABUGARH CANTT EBS",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1402,
+    "name": "DADRI NTPC",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1421,
+    "name": "HINDAN 1",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1422,
+    "name": "HINDAN 2",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1431,
+    "name": "NOIDA (SHIFT 1)",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1452,
+    "name": "GHAZIABAD (SHIFT 1)",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1453,
+    "name": "GREATER NOIDA",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1455,
+    "name": "MURADNAGAR OF",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1704,
+    "name": "AGRA AFS 1",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1705,
+    "name": "AGRA CANTT 2",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1706,
+    "name": "AGRA CANTT 3",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1707,
+    "name": "ALIGARH",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1716,
+    "name": "BABINA CANTT",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1721,
+    "name": "BULANDSHAHAR (SHIFT 1)",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1726,
+    "name": "HAZRATPUR OEF",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1728,
+    "name": "JHANSI CANTT 1",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1729,
+    "name": "JHANSI CANTT 2",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1730,
+    "name": "JHANSI 3",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1750,
+    "name": "MATHURA MRN",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1751,
+    "name": "MATHURA BAAD",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1752,
+    "name": "MATHURA CANTT",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1756,
+    "name": "TALBEHAT",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2186,
+    "name": "ETAH",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2187,
+    "name": "MAHOBA",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2188,
+    "name": "HATHRAS",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2256,
+    "name": "ETAWAH",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2257,
+    "name": "LALITPUR",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2387,
+    "name": "BAOLI BAGHPAT",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2389,
+    "name": "SURAJPUR CISF",
+    "region": "Agra",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2417,
+    "name": "IDGAH",
+    "region": "Agra",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1001,
+    "name": "AHMEDABAD SAC",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1002,
+    "name": "AHMEDABAD CANTT 2",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1003,
+    "name": "AHMEDABAD SHAHIBAUG 1",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1004,
+    "name": "CHANDKHEDA ONGC",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1005,
+    "name": "SABARMATI",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1006,
+    "name": "ANKLESHWAR ONGC",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1007,
+    "name": "BARODA HARNI ROAD 1",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1008,
+    "name": "BARODA ARMY 2",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1009,
+    "name": "BARODA AFS MAKARPURA 3",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1010,
+    "name": "BARODA ONGC 4",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1011,
+    "name": "BHAVNAGAR PARA",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1012,
+    "name": "BHUJ AFS 1",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1013,
+    "name": "BHUJ CANTT 2",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1014,
+    "name": "CAMBAY ONGC",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1015,
+    "name": "DANTIWADA BSF",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1016,
+    "name": "DHRANGADHRA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1017,
+    "name": "DIU",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1018,
+    "name": "DWARKA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1019,
+    "name": "GANDHIDHAM IFFCO",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1020,
+    "name": "GANDHIDHAM RLY COLONY",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1021,
+    "name": "GANDHINAGAR CRPF",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1022,
+    "name": "GANDHINAGAR CANTT",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1023,
+    "name": "GANDHINAGAR 1",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1024,
+    "name": "HIMMATNAGAR",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1025,
+    "name": "JAMNAGAR AFS 1",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1026,
+    "name": "JAMNAGAR INF LINES 2",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1027,
+    "name": "JAMNAGAR 3",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1028,
+    "name": "SAMANA AFS",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1029,
+    "name": "JAMNAGAR INS VALSURA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1030,
+    "name": "JETPUR",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1031,
+    "name": "JUNAGARH",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1032,
+    "name": "MEHSANA ONGC",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1033,
+    "name": "NALIYA AFS",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1034,
+    "name": "OKHA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1035,
+    "name": "PORBANDER",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1036,
+    "name": "RAJKOT",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1037,
+    "name": "SILVASSA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1038,
+    "name": "SURAT ICHCHNATH 1",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1039,
+    "name": "SURAT KRIBHCO 2",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1040,
+    "name": "SURAT ONGC 3",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1041,
+    "name": "VALLABH VIDYANAGAR",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1042,
+    "name": "VIRAMGAM",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1043,
+    "name": "WADSAR AFS",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1102,
+    "name": "1102 DHAR",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2085,
+    "name": "PANCHMAHAL GODHRA",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2194,
+    "name": "DARJEEPURA AFS BARODA",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2195,
+    "name": "DAHOD RAILWAY COLONY",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2371,
+    "name": "PATAN",
+    "region": "Ahmedabad",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2445,
+    "name": "GANDHIDHAM DPA",
+    "region": "Ahmedabad",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1044,
+    "name": "ASC BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1045,
+    "name": "DRDO BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1046,
+    "name": "HEBBAL BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1047,
+    "name": "IISC BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1048,
+    "name": "NAL BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1049,
+    "name": "MALLESHWARAM BANGALORE SH1",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1050,
+    "name": "MEG CENTRE BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1051,
+    "name": "AFS JALAHALLI 1 BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1052,
+    "name": "AFS JALAHALLI 2 BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1053,
+    "name": "MG RLY BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1054,
+    "name": "AFS YELAHANKA BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1055,
+    "name": "CRPF YELAHANKA BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1056,
+    "name": "WAP YELAHANKA BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1057,
+    "name": "BELGAUM CANTT 2",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1058,
+    "name": "AFS SAMBRA",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1059,
+    "name": "BELLARY",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1060,
+    "name": "BEML NAGAR KOLAR",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1061,
+    "name": "AFS BIDAR",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1062,
+    "name": "VIJAYAPURA",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1065,
+    "name": "NDMC DONIMALAI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1071,
+    "name": "GULBARGA KALABURAGI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1072,
+    "name": "HASSAN",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1073,
+    "name": "HOSPET",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1074,
+    "name": "DHARWAD",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1075,
+    "name": "HUBLI 1",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1076,
+    "name": "HUBLI 2",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1081,
+    "name": "MANGALURU 1",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1082,
+    "name": "MANGALURU 2",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1083,
+    "name": "MYSURU",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1085,
+    "name": "RAICHUR",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1086,
+    "name": "TUMKUR",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2060,
+    "name": "KARWAR",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2064,
+    "name": "KODAGU",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2116,
+    "name": "BELGAUM 3",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2117,
+    "name": "BAGALKOT",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2167,
+    "name": "KOPPAL",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2168,
+    "name": "DAVANGERE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2169,
+    "name": "SHIVAMOGGA",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2246,
+    "name": "KRISHNARAJA PURAM BANGALORE",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2284,
+    "name": "CHAMRAJ NAGAR",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2299,
+    "name": "HAVERI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2300,
+    "name": "MANDYA",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2301,
+    "name": "CHIKODI",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2306,
+    "name": "UDUPI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2314,
+    "name": "HUTTI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2342,
+    "name": "KADRIMIDRI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2354,
+    "name": "CHANNAPATNA",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2377,
+    "name": "GANGAVATHI",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2381,
+    "name": "BRBNMPL MYSURU",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2385,
+    "name": "2385 GAURIBIDANUR",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2418,
+    "name": "YESHWANTHPUR RAILWAY BANGALORE",
+    "region": "Bangalore",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2438,
+    "name": "SADALAGA",
+    "region": "Bangalore",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1087,
+    "name": "1087 AMLA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1088,
+    "name": "1088 BARWAHA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1090,
+    "name": "1090 BHIND",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1091,
+    "name": "1091 BAIRAGARH",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1092,
+    "name": "1092 BHOPAL 1",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1093,
+    "name": "NO. 2 BHOPAL",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1094,
+    "name": "1094 BHOPAL 3 SHIFT 1",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1095,
+    "name": "1095 SEHORE",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1096,
+    "name": "1096 BINA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1101,
+    "name": "1101 DEWAS",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1103,
+    "name": "1103 GUNA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1104,
+    "name": "1104 GWALIOR 1 SHIFT 1",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1105,
+    "name": "1105 GWALIOR 2",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1106,
+    "name": "1106 GWALIOR 3",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1107,
+    "name": "1107 GWALIOR 4",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1108,
+    "name": "1108 GWALIOR 5",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1109,
+    "name": "HOSHANGABAD",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1110,
+    "name": "1110 INDORE 1 SHIFT 1",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1111,
+    "name": "1111 INDORE 2",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1112,
+    "name": "1112 MHOW",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1113,
+    "name": "1113 ITARSI OF",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1114,
+    "name": "1114 ITARSI CPE",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1115,
+    "name": "1115 JHABUA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1117,
+    "name": "1117 KARERA ITBP",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1118,
+    "name": "1118 KHANDWA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1119,
+    "name": "1119 KHARGONE",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1120,
+    "name": "1120 MANDSAUR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1121,
+    "name": "1121 MORENA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1126,
+    "name": "1126 NARMADANAGAR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1127,
+    "name": "1127 NEEMUCH 1",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1128,
+    "name": "1128 NEPANAGAR",
+    "region": "Bhopal",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1130,
+    "name": "1130 PACHMARHI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1133,
+    "name": "1133 RATLAM",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1134,
+    "name": "1134 SARNI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1135,
+    "name": "1135 SEONIMALWA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1136,
+    "name": "1136 SHIVPURI ITBP",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1137,
+    "name": "1137 UJJAIN",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1138,
+    "name": "1138 VIDISHA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1139,
+    "name": "1139 GAILGUNA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1925,
+    "name": "1925 SHAJAPUR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2061,
+    "name": "2061 MUNGAOLI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2093,
+    "name": "2093 BARWANI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2123,
+    "name": "2123 SHEOPUR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2146,
+    "name": "2146 DATIA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2199,
+    "name": "2199 BANGRASIA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2200,
+    "name": "2200 RAISEN",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2201,
+    "name": "2201 BETUL",
+    "region": "Bhopal",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2202,
+    "name": "2202 BURHANPUR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2203,
+    "name": "2203 HARDA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2248,
+    "name": "2248 TIKAMGARH",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2295,
+    "name": "2295 KASRAWAD",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2320,
+    "name": "AMBAH",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2327,
+    "name": "2327 TEKANPUR BSF",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2339,
+    "name": "2339 CHANDERI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2341,
+    "name": "2341 GANJBASODA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2343,
+    "name": "2343 MULTAI",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2345,
+    "name": "2345 NEEMUCH 2",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2356,
+    "name": "2356 DABRA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2410,
+    "name": "2410 SHAMGARH",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2414,
+    "name": "2414 GWALIOR CRPF",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2416,
+    "name": "2416 AGARMALWA",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2422,
+    "name": "2422 ALIRAJPUR",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2433,
+    "name": "2433 IIT INDORE",
+    "region": "Bhopal",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1289,
+    "name": "Abohar",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1295,
+    "name": "Baddowal Cantt",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1296,
+    "name": "Barnala",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1297,
+    "name": "Bathinda 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1298,
+    "name": "Bathinda 4",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1299,
+    "name": "Bathinda Cantt 5",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1300,
+    "name": "Bathinda 3",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1301,
+    "name": "Chandigarh OCF 29",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1302,
+    "name": "Chandigarh BRD 3",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1303,
+    "name": "Chandigarh Highgrounds",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1304,
+    "name": "Chandigarh 31",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1305,
+    "name": "Chandigarh 47 (Shift 1)",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1308,
+    "name": "Mullanpur",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1309,
+    "name": "Zirakpur",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1310,
+    "name": "Dappar",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1311,
+    "name": "Faridkot",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1312,
+    "name": "Ferozepur Cantt 1",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1313,
+    "name": "Ferozepur Cantt 2",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1314,
+    "name": "Halwara 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1315,
+    "name": "Halwara 2",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1319,
+    "name": "BSF Jalalabad",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1321,
+    "name": "Hussainpur 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1322,
+    "name": "Kapurthala",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1328,
+    "name": "Nabha Cantt",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1335,
+    "name": "Patiala 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1336,
+    "name": "Patiala 2",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1337,
+    "name": "Patiala Cantt 3",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1645,
+    "name": "Adampur 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1646,
+    "name": "Adampur 2",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1650,
+    "name": "Amritsar Cantt 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1652,
+    "name": "Amritsar 3",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1667,
+    "name": "Gurdaspur Tibri Cantt",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1669,
+    "name": "Jalandhar Cantt 1",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1670,
+    "name": "Jalandhar Cantt 2",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1671,
+    "name": "Jalandhar Cantt 3",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1672,
+    "name": "Jalandhar Cantt 4",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1673,
+    "name": "Jalandhar Suranassi",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1686,
+    "name": "LEH",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1687,
+    "name": "Nangal Bhur",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1690,
+    "name": "Pathankot 1",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1691,
+    "name": "Pathankot 2",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1692,
+    "name": "Pathankot 3",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1693,
+    "name": "Pathankot 4",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1696,
+    "name": "BSF Shikar",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2106,
+    "name": "Hussainpur 2",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2161,
+    "name": "CRPF Saraikhas",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2162,
+    "name": "Bhikiwind",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 2163,
+    "name": "BSF Amarkot",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2212,
+    "name": "Mohali",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2213,
+    "name": "BSF KMS Wala",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2215,
+    "name": "Ubhawal",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 2216,
+    "name": "Fazilka",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2217,
+    "name": "Fatehgarh Sahib",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2249,
+    "name": "Bhunga",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2281,
+    "name": "Sliet",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2335,
+    "name": "Khanpur",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2437,
+    "name": "IIT Ropar",
+    "region": "Chandigarh",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2447,
+    "name": "Bathinda CUP",
+    "region": "Chandigarh",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1283,
+    "name": "PORT BLAIR 1",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1284,
+    "name": "PORT BLAIR 2",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1759,
+    "name": "ARAKKONAM 1",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1760,
+    "name": "THAKKOLAM ARAKKONAM 2",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1761,
+    "name": "ARUVANKADU",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1762,
+    "name": "OOTY",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1763,
+    "name": "WELLINGTON",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1766,
+    "name": "CHENNAI CLRI",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1767,
+    "name": "CHENNAI ANNANAGAR",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1768,
+    "name": "CHENNAI ASHOKNAGAR",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1769,
+    "name": "CHENNAI AFS AVADI",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1770,
+    "name": "CHENNAI CRPF AVADI",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1771,
+    "name": "CHENNAI HVF AVADI",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1772,
+    "name": "CHENNAI OCF AVADI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1773,
+    "name": "CHENNAI DGQA",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1774,
+    "name": "CHENNAI GILL NAGAR",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1775,
+    "name": "CHENNAI IIT",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1776,
+    "name": "CHENNAI ISLAND GROUNDS",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1777,
+    "name": "CHENNAI MINAMBAKKAM",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1778,
+    "name": "CHENNAI TAMBARAM 1",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1779,
+    "name": "CHENNAI TAMBARAM 2",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1786,
+    "name": "COIMBATORE",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1787,
+    "name": "SULUR",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1788,
+    "name": "KALPAKKAM 1",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1789,
+    "name": "KALPAKKAM 2",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1790,
+    "name": "KARAIKUDI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1794,
+    "name": "MADURAI 1",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1796,
+    "name": "MANDAPAM",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1801,
+    "name": "PONDICHERRY 1 SHIFT 1",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1802,
+    "name": "PONDICHERRY 2",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1803,
+    "name": "TRICHY 1",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1804,
+    "name": "TRICHY 2",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1809,
+    "name": "VIJAYANARAYANAM",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1936,
+    "name": "MADURAI 2",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1937,
+    "name": "RAMESHWARAM",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2096,
+    "name": "THIRUVANNAMALAI",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2107,
+    "name": "SIVAGANGA",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2108,
+    "name": "THANJAVUR",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2121,
+    "name": "DHARMAPURI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2127,
+    "name": "DINDIGUL",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2147,
+    "name": "MAHE",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2148,
+    "name": "NAGERKOIL",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2191,
+    "name": "KARAIKKAL",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2192,
+    "name": "VIRUDHUNAGAR",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2193,
+    "name": "PERAMBALUR",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2259,
+    "name": "NEYVELI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2280,
+    "name": "THIRUVARUR",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2319,
+    "name": "TRICHY GOLDEN ROCK 3",
+    "region": "Chennai",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2413,
+    "name": "UDUMALPET",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2432,
+    "name": "ITBP IDAYAPATTI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2434,
+    "name": "RTC ITBP ILLUPPAIKUDI",
+    "region": "Chennai",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1132,
+    "name": "1132 RAJGARH",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1347,
+    "name": "ALMORA",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1348,
+    "name": "BANBASA CANTT",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1349,
+    "name": "BANBASA NHPC",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1356,
+    "name": "BHIMTAL",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1358,
+    "name": "DDN-FRI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1359,
+    "name": "DDN-IIP",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1360,
+    "name": "DDN-IMA",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1361,
+    "name": "ITBPDDN-1",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1362,
+    "name": "DDN-OLF",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1363,
+    "name": "DDN-ONGC",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1364,
+    "name": "BIRPUR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1365,
+    "name": "UPPERCAMP",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1367,
+    "name": "HBK-DDN1",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1368,
+    "name": "HBK-DDN2",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1369,
+    "name": "OFD-DDN",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1370,
+    "name": "DHARCHULA-NHPC",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1371,
+    "name": "GAUCHAR ITBP",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1372,
+    "name": "GWALDOM",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1373,
+    "name": "HALDWANI-1",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1374,
+    "name": "HARDWAR",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1375,
+    "name": "JOSHIMATH",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1376,
+    "name": "KASHIPUR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1377,
+    "name": "KAUSANI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1378,
+    "name": "LANSDOWNE",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1383,
+    "name": "MUKTESHWAR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1384,
+    "name": "MUSSORIE",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1386,
+    "name": "NEW-TEHRI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1387,
+    "name": "PAURI GARHWAL",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1388,
+    "name": "PITHORAGARH",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1389,
+    "name": "RAIWALA",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1391,
+    "name": "RANIKHET",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1392,
+    "name": "RISHIKESH",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1393,
+    "name": "ROORKEE-1",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1394,
+    "name": "ROORKEE-2",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1398,
+    "name": "SRINAGAR-SSB",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1399,
+    "name": "UTTARKASHI",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1927,
+    "name": "AUGUSTYAMUNI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1928,
+    "name": "LOHAGHAT",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1929,
+    "name": "MERTHI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1930,
+    "name": "RAJGARI",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1944,
+    "name": "SAURKHAND",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2133,
+    "name": "GOPESHWAR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2204,
+    "name": "BAGESHWAR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2392,
+    "name": "KHATIMA",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2427,
+    "name": "Champawat",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2462,
+    "name": "KOTDWAR",
+    "region": "Dehradun",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2513,
+    "name": "DEHRADUN (REGIONAL)",
+    "region": "Dehradun",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1290,
+    "name": "Haryana/1290 AMBALA CANTT 1",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1291,
+    "name": "Haryana/1291 AMBALA CANTT 2",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1292,
+    "name": "Haryana/1292 AMBALA CANTT 3",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1293,
+    "name": "Haryana/1293 AMBALA CANTT 4",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1294,
+    "name": "Haryana/1294 ITBP RAMGARH BHANU",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1306,
+    "name": "Haryana/1306 CHANDIMANDIR 1",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1307,
+    "name": "Haryana/1307 CHANDIMANDIR 2",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1316,
+    "name": "Himachal/1316 HAMIRPUR",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1317,
+    "name": "Haryana/1317 HARSINGPURA",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1318,
+    "name": "Haryana/1318 HISSAR CANTT",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1320,
+    "name": "Haryana/1320 JHAJJAR",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1323,
+    "name": "Haryana/1323 KARNAL",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1324,
+    "name": "Himachal/1324 AFS KASAULI",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1325,
+    "name": "Himachal/1325 SUBATHU",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1326,
+    "name": "Himachal/1326 SAINJ",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1327,
+    "name": "Himachal/1327 MANDI",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1329,
+    "name": "Himachal/1329 NADAUN HP",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1330,
+    "name": "Haryana/1330 NAHARA",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1331,
+    "name": "Himachal/1331 NALETI",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1332,
+    "name": "Himachal/1332 PALAMPUR",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1333,
+    "name": "Haryana/1333 PALUWAS",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1338,
+    "name": "Haryana/1338 GC CRPF PINJORE",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1339,
+    "name": "Himachal/1339 RECONG PEO",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1340,
+    "name": "Haryana/1340 ROHTAK",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1341,
+    "name": "Himachal/1341 ITBP SARAHAN",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1342,
+    "name": "Himachal/1342 JUTOGH",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1343,
+    "name": "Himachal/1343 SHIMLA JAKHOO HILLS",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1344,
+    "name": "Haryana/1344 AFS SIRSA 1",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1345,
+    "name": "Haryana/1345 SIRSA 2",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1346,
+    "name": "Himachal/1346 YOL CANTT",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1414,
+    "name": "Haryana/1414 FARIDABAD 1",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1415,
+    "name": "Haryana/1415 FARIDABAD 2",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1416,
+    "name": "Haryana/1416 FARIDABAD 3",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1418,
+    "name": "Haryana/1418 AFS GURGAON 1 SHIFT 1",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1420,
+    "name": "Haryana/1420 SOHNA ROAD GURGAON 2",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1454,
+    "name": "Haryana/1454 NSG MANESAR",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1456,
+    "name": "Haryana/1456 PALWAL",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1457,
+    "name": "Haryana/1457 RAGHUNATHPURA NARNAUL",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1458,
+    "name": "Haryana/1458 REWARI",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1649,
+    "name": "Himachal/1649 ALHILAL",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1656,
+    "name": "Himachal/1656 BAKLOH",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1658,
+    "name": "Himachal/1658 BANIKHET",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1661,
+    "name": "Himachal/1661 BHANALA",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1662,
+    "name": "Himachal/1662 NHPC HEP CHAMERA 1",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1663,
+    "name": "Himachal/1663 CHAMERA 2",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1666,
+    "name": "Himachal/1666 DHARAMSHALA CANTT",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2075,
+    "name": "Himachal/2075 KEYLONG LAHAUL SPITI",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2214,
+    "name": "Himachal/2214 BANGANA",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2235,
+    "name": "Haryana/2235 BHAKLI",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2276,
+    "name": "Himachal/2276 GHUMARWIN",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2296,
+    "name": "Himachal/2296 SALOH",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2322,
+    "name": "Haryana/2322 MATHANA",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2330,
+    "name": "Haryana/2330 BUDAYAN JIND",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2331,
+    "name": "Himachal/2331 SANDHOLE",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2346,
+    "name": "Haryana/2346 MATANHAIL",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2347,
+    "name": "Haryana/2347 FATEHABAD",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2370,
+    "name": "Haryana/2370 SAMALKHA BEHOLI",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2400,
+    "name": "Haryana/2400 GC CRPF SONEPAT",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2404,
+    "name": "Haryana/2404 GC CRPF KADARPUR",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2439,
+    "name": "Haryana/2439 BILASPUR",
+    "region": "Gurugram",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2444,
+    "name": "Himachal/2444 DHARAMPUR",
+    "region": "Gurugram",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1501,
+    "name": "ANANTAPUR",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1502,
+    "name": "INS KALINGA",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1503,
+    "name": "NFC NAGAR",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1504,
+    "name": "GOOTY",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1505,
+    "name": "GUNTAKAL",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1506,
+    "name": "GUNTUR (Shift 2)",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1507,
+    "name": "GACHIBOWLI",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1508,
+    "name": "BEGUMPET",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1509,
+    "name": "CRPF BARKAS",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1510,
+    "name": "AFA HYDERABAD 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1511,
+    "name": "AFA HYDERABAD 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1512,
+    "name": "GOLCONDA 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1513,
+    "name": "GOLCONDA 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1514,
+    "name": "DRDO KANCHANBAGH",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1515,
+    "name": "NPA SHIVRAMAPALLY",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1516,
+    "name": "UPPAL 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1517,
+    "name": "UPPAL 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1518,
+    "name": "BOLARUM",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1519,
+    "name": "BOWENPALLY",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1520,
+    "name": "AFS HAKIMPET",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1521,
+    "name": "PICKET",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1522,
+    "name": "TIRUMALAGIRI",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1523,
+    "name": "KURNOOL",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1524,
+    "name": "MACHILIPATNAM",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1525,
+    "name": "OF MEDAK",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1526,
+    "name": "ONGC RAJAHMUNDRY",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1527,
+    "name": "RAMAGUNDAM",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1528,
+    "name": "SRIKAKULAM",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1529,
+    "name": "SURYALANKA",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1530,
+    "name": "TIRUPATI 1 (Shift 1)",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1531,
+    "name": "TIRUPATI 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1532,
+    "name": "VIJAYAWADA 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1533,
+    "name": "VIJAYAWADA 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1534,
+    "name": "MALKAPURAM",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1535,
+    "name": "NAD",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1536,
+    "name": "NAUSENABAUGH 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1537,
+    "name": "NAUSENABAUGH 2",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1538,
+    "name": "SVN 1",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1539,
+    "name": "SRIVIJAYANAGAR 2",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1540,
+    "name": "STEEL PLANT",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1541,
+    "name": "WALTAIR",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2008,
+    "name": "ADILABAD",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2077,
+    "name": "KADAPA",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2078,
+    "name": "KHAMMAM",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2079,
+    "name": "WARANGAL",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2091,
+    "name": "ELURU",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2092,
+    "name": "VIZIANAGARAM",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2103,
+    "name": "VENKATAGIRI",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2119,
+    "name": "ONGOLE",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2153,
+    "name": "MAHABUBNAGAR",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2155,
+    "name": "NALGONDA",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2156,
+    "name": "NELLORE",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2247,
+    "name": "KARIMNAGAR",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2279,
+    "name": "UOH",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2287,
+    "name": "MIRYALAGUDA",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2289,
+    "name": "TENALI",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2293,
+    "name": "MAHABUBABAD",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2305,
+    "name": "SIRCILLA",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2308,
+    "name": "BODHAN",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2309,
+    "name": "JHARASANGAM",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2318,
+    "name": "RAJAMPET",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2325,
+    "name": "KAKINADA",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2329,
+    "name": "MANCHERIAL",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2344,
+    "name": "SATTENAPALLI",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2372,
+    "name": "RAJAMAPLLI",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2373,
+    "name": "BHONGIR",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2379,
+    "name": "NIZAMABAD",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2388,
+    "name": "SIDDIPET",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2402,
+    "name": "KANDUKUR TOWN",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2403,
+    "name": "IRLAPADU",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2450,
+    "name": "IIT TIRUPATI",
+    "region": "Hyderabad",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2492,
+    "name": "BAIRUGANIPALLE",
+    "region": "Hyderabad",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1592,
+    "name": "AJMER 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1593,
+    "name": "AJMER 2",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1594,
+    "name": "NASIRABAD",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1595,
+    "name": "ALWAR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1596,
+    "name": "ITRANA",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1597,
+    "name": "BSF ANOOPGARH",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1598,
+    "name": "AGPP ANTA",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1599,
+    "name": "SWRI AVIKANAGAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1600,
+    "name": "BANSWARA",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1601,
+    "name": "BARAN",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1602,
+    "name": "BEAWAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1603,
+    "name": "BHARATPUR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1604,
+    "name": "BHILWARA",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1605,
+    "name": "SAGAR ROAD BIKANER 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1606,
+    "name": "BIKANER 2",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1607,
+    "name": "AFS NAL BIKANER 3",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1608,
+    "name": "CHURU",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1609,
+    "name": "BSF DABLA",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1610,
+    "name": "CISF DEOLI",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1611,
+    "name": "AFS JAISALMER",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1612,
+    "name": "BAJAJ NAGAR JAIPUR 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1613,
+    "name": "JAIPUR CANTT 2",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1614,
+    "name": "MREC JAIPUR 3",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1615,
+    "name": "KHATIPURA JAIPUR 4",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1616,
+    "name": "MANSAROVER JAIPUR 5 (SH1)",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1617,
+    "name": "PRATAP NAGAR JAIPUR 6",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1618,
+    "name": "JALIPA CANTT",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1619,
+    "name": "UTTARLAI",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1620,
+    "name": "JHALAWAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1621,
+    "name": "JHUNJHUNU",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1622,
+    "name": "BANAR JODHPUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1623,
+    "name": "BSF JODHPUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1624,
+    "name": "AFS JODHPUR 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1625,
+    "name": "ARMY JODHPUR 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1626,
+    "name": "AFS JODHPUR 2",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1627,
+    "name": "ARMY JODHPUR 2",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1628,
+    "name": "KOTA 1",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1629,
+    "name": "KOTA 2",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1630,
+    "name": "CRPF MOUNT ABU",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1631,
+    "name": "PHULERA",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1632,
+    "name": "BSF POKHRAN",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1634,
+    "name": "LALGARH JATTAN",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1635,
+    "name": "SHRI GANGANAGAR CANTT",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1636,
+    "name": "SIKAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1637,
+    "name": "AFS SURATGARH 2",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1638,
+    "name": "AFS SURATGARH 1",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1639,
+    "name": "SURATGARH CANTT 2",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1640,
+    "name": "STPS SURATGARH",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1641,
+    "name": "SAWAI MADHOPUR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1642,
+    "name": "PRATAP NAGAR UDAIPUR 1",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1643,
+    "name": "EKLINGGARH UDAIPUR 2",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1933,
+    "name": "GANGANAGAR CITY",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1934,
+    "name": "KARAULI",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2012,
+    "name": "KHETRINAGAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2099,
+    "name": "DUNGARPUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2120,
+    "name": "CHITTORGARH",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2173,
+    "name": "BSF RAMGARH",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2174,
+    "name": "BSF RAISINGHNAGAR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2176,
+    "name": "DEOGARH",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2177,
+    "name": "BSF KHAJUWALA",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2253,
+    "name": "TONK",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2261,
+    "name": "INDERPURA",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2262,
+    "name": "CHHABRA TPP",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2286,
+    "name": "JALORE",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2292,
+    "name": "CUR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2294,
+    "name": "BUNDI",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2297,
+    "name": "JAISINDHAR",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2298,
+    "name": "DAUSA",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2303,
+    "name": "HANUMANGARH",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2337,
+    "name": "NAGAUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2340,
+    "name": "CISF JAIPUR 7",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2350,
+    "name": "IIT JODHPUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2353,
+    "name": "DHOLPUR",
+    "region": "Jaipur",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2375,
+    "name": "TINVARI",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2376,
+    "name": "PALI",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2411,
+    "name": "BANDIKUI",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2426,
+    "name": "PRATAPGARH",
+    "region": "Jaipur",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1235,
+    "name": "Adra",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1236,
+    "name": "Alipurduar",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1237,
+    "name": "Andal",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1238,
+    "name": "Asansol",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1239,
+    "name": "Bagdora AFS",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1240,
+    "name": "Bengdubi",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1241,
+    "name": "Berhampore",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1242,
+    "name": "Binnaguri 1",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1243,
+    "name": "Binnaguri 2",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1244,
+    "name": "Burdwan",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1246,
+    "name": "Chittaranjan",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1247,
+    "name": "Cooch Behar",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1248,
+    "name": "Durgapur CMERI",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1249,
+    "name": "Durgapur CRPF",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1250,
+    "name": "Farakka NTPC",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1251,
+    "name": "Malda NHPC",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1252,
+    "name": "Gangtok",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1253,
+    "name": "Raiganj Govindpur BSF",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1254,
+    "name": "Haldia IOC",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1255,
+    "name": "Hasimara",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1256,
+    "name": "Kalimpong",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1257,
+    "name": "Sukna Khaprail",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1258,
+    "name": "Kalaikunda 1",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1259,
+    "name": "Kalaikunda 2",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1260,
+    "name": "Kharagpur 1 IIT",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1261,
+    "name": "Kharagpur 2 Rly",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1262,
+    "name": "Bamangachi",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1263,
+    "name": "Barrackpore AFS",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1264,
+    "name": "Barrackpore Army",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1265,
+    "name": "Cossipore",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1266,
+    "name": "Ballygunge",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1267,
+    "name": "Command Hospital",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1268,
+    "name": "Dum Dum OF",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1269,
+    "name": "Fort William",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1270,
+    "name": "Garden Reach",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1271,
+    "name": "Joka IIM",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1272,
+    "name": "Salt Lake 1",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1273,
+    "name": "Salt Lake 2",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1274,
+    "name": "Santragachi",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1275,
+    "name": "Ishapore 1",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1276,
+    "name": "Ishapore 2",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1277,
+    "name": "Kanchrapara 1",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1278,
+    "name": "Kanchrapara 2",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1279,
+    "name": "Kankinara",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1282,
+    "name": "Panagarh",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1285,
+    "name": "Salboni",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1286,
+    "name": "Salua AFS",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1287,
+    "name": "Sevoke Road",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1288,
+    "name": "Teesta NHPC Singtam",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2082,
+    "name": "Balurghat",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2086,
+    "name": "Birbhum",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2111,
+    "name": "Ranaghat",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2115,
+    "name": "Teesta NHPC Rambi",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2178,
+    "name": "BSF Krishna Nagar",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2179,
+    "name": "Raninagar BSF",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2180,
+    "name": "Gandhinagar BSF",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2181,
+    "name": "Tarakeswar",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2182,
+    "name": "Bolpur",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2183,
+    "name": "Aradhpur",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2184,
+    "name": "Baikunthpur BFS",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2338,
+    "name": "Bandel",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2368,
+    "name": "Kharagpur Rly Col",
+    "region": "Kolkata",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2415,
+    "name": "NFR New Jalpaiguri",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2419,
+    "name": "GC CRPF Siliguri",
+    "region": "Kolkata",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1350,
+    "name": "BAREILLY AFS-1350",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1351,
+    "name": "BAREILLY-JLA-1351",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1352,
+    "name": "BAREILLY-JRC-1352",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1353,
+    "name": "BAREILLY-IFFCO-1353",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1354,
+    "name": "BAREILLY-NER-1354",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1355,
+    "name": "BAREILLY-IVRI-1355",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1396,
+    "name": "SHAHJAHANPUR-CANTT-SHIFT-1-1396",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1397,
+    "name": "SHAHJAHANPUR-OCF-SHIFT-1-1397",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1717,
+    "name": "LUCKNOW-BKT-1717",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1718,
+    "name": "BALRAMPUR-1718",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1719,
+    "name": "BARABANKI-1719",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1722,
+    "name": "DIBIYAPUR-NTPC-1722",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1723,
+    "name": "FAIZABAD-CANTT-1723",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1724,
+    "name": "FATEHGARH-RRC-1724",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1727,
+    "name": "JAGDISHPUR-BHEL-1727",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1731,
+    "name": "KANPUR-IIT-1731",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1732,
+    "name": "KANPUR-CANTT-SHIFT-1-1732",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1733,
+    "name": "KANPUR-NO.1-ARMAPUR-1733",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1734,
+    "name": "KANPUR-NO.2-ARMAPUR-1734",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1735,
+    "name": "KANPUR-NO.1-CHAKERI-1735",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1736,
+    "name": "KANPUR-NO.2-CHAKERI-1736",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1737,
+    "name": "KANPUR-NO.3-CHAKERI-1737",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1738,
+    "name": "KANPUR-OEF-1738",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1739,
+    "name": "KANPUR-RAKSHA VIHAR-1739",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1740,
+    "name": "LUCKNOW-AMC-SHIFT-1-1740",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1741,
+    "name": "LUCKNOW-IIM-1741",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1742,
+    "name": "LUCKNOW-RDSO-1742",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1743,
+    "name": "LUCKNOW-SGPGI-1743",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1744,
+    "name": "LUCKNOW-ALIGANJ-SHIFT-1-1744",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yes"
+  },
+  {
+    "code": 1745,
+    "name": "LUCKNOW-CANTT-1745",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1746,
+    "name": "LUCKNOW-GOMTINAGAR-SHIFT-1-1746",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1747,
+    "name": "LUCKNOW-CRPF-SHIFT-1-1747",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1748,
+    "name": "LUCKNOW-MEMAURA-1748",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 1754,
+    "name": "RAEBARELI-SHIFT-1-1754",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 1755,
+    "name": "SITAPUR-SHIFT-1-1755",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1757,
+    "name": "UNNAO-1757",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2083,
+    "name": "BADAUN-2083",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2105,
+    "name": "MATI AKBARPUR-SHIFT-1-2105",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2122,
+    "name": "PILIBHIT-2122",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2143,
+    "name": "LAKHIMPUR KHIRI-SHIFT-1-2143",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2283,
+    "name": "SHIVGARH-2283",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2290,
+    "name": "HARDOI-2290",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2312,
+    "name": "SHRAWASTI-2312",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2367,
+    "name": "RAIBARELI-MCF-LALGANJ-2367",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "No"
+  },
+  {
+    "code": 2420,
+    "name": "PALIAKALA-LAKHIMPUR-2420",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2425,
+    "name": "NANPARA-BAHRAICH-2425",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 2428,
+    "name": "MADHUPURI-FATEHPUR-2428",
+    "region": "Lucknow",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yes"
+  },
+  {
+    "code": 2429,
+    "name": "SUMERPUR-HAMIRPUR-2429",
+    "region": "Lucknow",
+    "m1": "No",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "No"
+  },
+  {
+    "code": 1066,
+    "name": "Goa/1066-BAMBOLIM",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1067,
+    "name": "Goa/1067-INS MANDOVI",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1068,
+    "name": "Goa/1068-PONDA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1069,
+    "name": "Goa/1069-VASCO 1",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1070,
+    "name": "Goa/1070-VASCO 2",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1089,
+    "name": "Maharashtra/1089-BHANDARA",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1097,
+    "name": "Maharashtra/1097-CHANDA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1099,
+    "name": "Maharashtra/1099-CHANDRAPUR",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1116,
+    "name": "Maharashtra/1116-KAMPTEE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1122,
+    "name": "Maharashtra/1122-CRPF NAGPUR",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1123,
+    "name": "Maharashtra/1123-VSN NAGPUR",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1124,
+    "name": "Maharashtra/1124-AJNI NAGPUR (Shift 1)",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1125,
+    "name": "Maharashtra/1125-AMBAJHARI",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1129,
+    "name": "Maharashtra/1129-NEW MAJARI",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1131,
+    "name": "Maharashtra/1131-PULGAON",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1194,
+    "name": "Maharashtra/1194-AHMEDNAGAR 1",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1195,
+    "name": "Maharashtra/1195-AHMEDNAGAR 2",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1196,
+    "name": "Maharashtra/1196-AHMEDNAGAR 3",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1197,
+    "name": "Maharashtra/1197-AURANGABAD (Shift 1)",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1198,
+    "name": "Maharashtra/1198-BHUSAWAL 1",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1199,
+    "name": "Maharashtra/1199-DEVLALI 1",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1200,
+    "name": "Maharashtra/1200-DEVLALI 2",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1201,
+    "name": "Maharashtra/1201-NASIK ROAD 1",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1202,
+    "name": "Maharashtra/1202-NASIK ROAD 2",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1203,
+    "name": "Maharashtra/1203-OJHAR",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1204,
+    "name": "Maharashtra/1204-JALGAON",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1205,
+    "name": "Maharashtra/1205-NAD KARANJA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1206,
+    "name": "Maharashtra/1206-LONAVALA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1207,
+    "name": "Maharashtra/1207-MANMAD",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1208,
+    "name": "Maharashtra/1208-CRPF MUDKHED",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1209,
+    "name": "Maharashtra/1209-AMBARNATH (Shift 1)",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1210,
+    "name": "Maharashtra/1210-BHANDUP (Shift 1)",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1211,
+    "name": "Maharashtra/1211-COLABA 1",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1212,
+    "name": "Maharashtra/1212-COLABA 2",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1213,
+    "name": "Maharashtra/1213-COLABA 3",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1214,
+    "name": "Maharashtra/1214-IIT POWAI",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1215,
+    "name": "Maharashtra/1215-INS HAMLA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1216,
+    "name": "Maharashtra/1216-KOLIWADA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1217,
+    "name": "Maharashtra/1217-MANKHURD",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1218,
+    "name": "Maharashtra/1218-ONGC PANVEL",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1219,
+    "name": "Maharashtra/1219-AFS THANE (Shift 2)",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1220,
+    "name": "Maharashtra/1220-DEHUROAD 1",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1221,
+    "name": "Maharashtra/1221-DEHUROAD 2",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1222,
+    "name": "Maharashtra/1222-SC PUNE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1223,
+    "name": "Maharashtra/1223-AFS PUNE 1",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1224,
+    "name": "Maharashtra/1224-AFS PUNE 2",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1225,
+    "name": "Maharashtra/1225-9 BRD PUNE 3",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1226,
+    "name": "Maharashtra/1226-ARMY AREA PUNE",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1227,
+    "name": "Maharashtra/1227-BEG PUNE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1228,
+    "name": "Maharashtra/1228-CME PUNE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1229,
+    "name": "Maharashtra/1229-GANESHKHIND",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1230,
+    "name": "Maharashtra/1230-IAT GIRINAGAR",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1231,
+    "name": "Maharashtra/1231-KHADAKVASLA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1232,
+    "name": "Maharashtra/1232-RANGE HILLS ESTATE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1233,
+    "name": "Maharashtra/1233-SHOLAPUR",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1234,
+    "name": "Maharashtra/1234-VARANGAON",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2088,
+    "name": "Maharashtra/2088-YAWATMAL",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2101,
+    "name": "Maharashtra/2101-DHULE",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2196,
+    "name": "Maharashtra/2196-SCR NANDED",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2197,
+    "name": "Maharashtra/2197-BSF CHAKUR",
+    "region": "Mumbai",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2198,
+    "name": "Maharashtra/2198-CRPF TALEGAON",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2310,
+    "name": "Maharashtra/2310-WARDHA",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2384,
+    "name": "Maharashtra/2384-WASHIM",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2390,
+    "name": "Maharashtra/2390-PARBHANI",
+    "region": "Mumbai",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1542,
+    "name": "AMBIKAPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1543,
+    "name": "BACHELI",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1544,
+    "name": "BAIKUNTPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1546,
+    "name": "BMY BHILAI",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1547,
+    "name": "DURG",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1548,
+    "name": "BILASPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1550,
+    "name": "CHIRIMIRI",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1552,
+    "name": "DANTEWADA",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1555,
+    "name": "DONGARGARH",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1564,
+    "name": "JAGDALPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1566,
+    "name": "JASHPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1568,
+    "name": "JHAGRAKHAND",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1571,
+    "name": "KIRANDUL",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1573,
+    "name": "KORBA 2",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1574,
+    "name": "KORBA 3",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1575,
+    "name": "KORBA 4",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1576,
+    "name": "MAHASAMUND",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1578,
+    "name": "MANENDRAGARH",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1581,
+    "name": "RAIGARH",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1582,
+    "name": "RAIPUR 1 (Shift 1)",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1583,
+    "name": "RAIPUR 2",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2080,
+    "name": "DHAMTARI",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2081,
+    "name": "KANKER",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2152,
+    "name": "KHAIRAGARH",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2236,
+    "name": "CISF BHILAI",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2264,
+    "name": "RAJNANDGAON",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2288,
+    "name": "JANJGIR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2313,
+    "name": "NARAYANPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2351,
+    "name": "BIJAPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2352,
+    "name": "SUKMA",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2357,
+    "name": "NAYA RAIPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2364,
+    "name": "KURUD",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2365,
+    "name": "SARAIPALI",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2369,
+    "name": "KAWARDHA",
+    "region": "Raipur",
+    "m1": "Yes",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2396,
+    "name": "CRPF BILASPUR",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2423,
+    "name": "KONDAGAON",
+    "region": "Raipur",
+    "m1": "No",
+    "m2": "Yet to be Planned",
+    "m3": "Yet to be Planned",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1152,
+    "name": "AC/1152 BOKARO 1",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1153,
+    "name": "AC/1153 BOKARO 3",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1154,
+    "name": "AC/1154 BOKARO THERMAL",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1158,
+    "name": "AC/1158 CHAKRADHARPUR",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1159,
+    "name": "AC/1159 CHANDRAPURA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1163,
+    "name": "AC/1163 DHANBAD 1",
+    "region": "Ranchi",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1164,
+    "name": "AC/1164 DHANBAD 2",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1166,
+    "name": "AC/1166 GOMOH",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1168,
+    "name": "AC/1168 HAZARIBAGH",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1172,
+    "name": "AC/1172 MAITHON DAM",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1173,
+    "name": "AC/1173 MEGHAHATURBURU",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1175,
+    "name": "AC/1175 PATRATU",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1177,
+    "name": "AC/1177 BARKAKANA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1178,
+    "name": "AC/1178 BHURKUNDA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1179,
+    "name": "AC/1179 RAMGARH CANTT",
+    "region": "Ranchi",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1180,
+    "name": "AC/1180 RANCHI CRPF",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1181,
+    "name": "AC/1181 RANCHI HEC",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1182,
+    "name": "AC/1182 RANCHI DEEPATOLI",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1183,
+    "name": "AC/1183 RANCHI CCL",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1184,
+    "name": "AC/1184 RANCHI HINOO SHIFT 1",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1185,
+    "name": "AC/1185 RANCHI NAMKUM",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1188,
+    "name": "AC/1188 SINGHARSI",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1191,
+    "name": "AC/1191 SURDA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 1193,
+    "name": "AC/1193 TATANAGAR",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2071,
+    "name": "AC/2071 GARHWA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2072,
+    "name": "AC/2072 GODDA",
+    "region": "Ranchi",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2073,
+    "name": "AC/2073 JAMTARA",
+    "region": "Ranchi",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2074,
+    "name": "AC/2074 LATEHAR",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2097,
+    "name": "AC/2097 MADHUPUR",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2112,
+    "name": "AC/2112 SIMDEGA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2130,
+    "name": "AC/2130 SAHIBGANJ",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2151,
+    "name": "AC/2151 GUMLA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2348,
+    "name": "AC/2348 KHUNTI",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2349,
+    "name": "AC/2349 LOHARDAGA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2358,
+    "name": "AC/2358 DUMKA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2359,
+    "name": "AC/2359 GIRIDIH",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2360,
+    "name": "AC/2360 CHATRA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2408,
+    "name": "AC/2408 SARAIKELA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2409,
+    "name": "AC/2409 KODERMA",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2430,
+    "name": "AC/2430 DANGOAPOSI",
+    "region": "Ranchi",
+    "m1": "No",
+    "m2": "No",
+    "m3": "No",
+    "m4": "Yet to be Planned"
+  },
+  {
+    "code": 2431,
+    "name": "AC/2431 PALAMU",
+    "region": "Ranchi",
+    "m1": "Yes",
+    "m2": "Yes",
+    "m3": "Yes",
+    "m4": "Yet to be Planned"
+  }
+]
 };
