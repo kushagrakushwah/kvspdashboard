@@ -118,7 +118,7 @@ function onGlobalSearchInput(val) {
         <span class="combobox-kv-pill">KV ${s.code}</span>
         <div>
           <div class="combobox-item-name">${s.name}</div>
-          <div class="combobox-item-region">${s.region} Region • ${s.totalTeachers} Teachers</div>
+          <div class="combobox-item-region">${s.region} Region</div>
         </div>
       </div>
       <div class="combobox-item-right">
@@ -211,7 +211,7 @@ function onRegionChange() {
   if (!regObj) return;
 
   // Populate dropdown with "All Schools in Region" as first option, followed by individual schools
-  schSelect.innerHTML = `<option value="ALL">All Schools in ${regName} (${regObj.totalTeachers.toLocaleString()} Teachers)</option>`;
+  schSelect.innerHTML = `<option value="ALL">All Schools in ${regName} (${regObj.totalKVs} Kendriya Vidyalayas)</option>`;
   regObj.kvs.forEach(k => {
     const opt = document.createElement('option');
     opt.value = k.code;
@@ -233,23 +233,19 @@ function renderRegionSummary(regObj) {
   const badge = document.getElementById('regSummaryBadge');
   const meta = document.getElementById('regSummaryMeta');
   if (badge) badge.textContent = `${regObj.name} Regional Overview`;
-  if (meta) meta.textContent = `${regObj.totalKVs} Kendriya Vidyalayas • ${regObj.totalTeachers.toLocaleString()} Total Teachers`;
+  if (meta) meta.textContent = `${regObj.totalKVs} Kendriya Vidyalayas • ${regObj.cpdAttended.toLocaleString()} Teachers Attended CPD`;
 
   const cpdDesc = document.getElementById('regCpdDesc');
   if (cpdDesc) cpdDesc.textContent = `Continuous Professional Development across all ${regObj.totalKVs} schools in ${regObj.name} Region.`;
 
-  const totalTeachers = regObj.totalTeachers || 1;
   const certified = regObj.cpdCertified || 0;
   const attended = regObj.cpdAttended || 0;
   const pendingCert = Math.max(0, attended - certified);
-  const yetToAttend = Math.max(0, totalTeachers - attended);
 
-  const certRate = Math.round((certified / totalTeachers) * 100);
-  const pendRate = Math.round((pendingCert / totalTeachers) * 100);
-  const yetRate = Math.max(0, 100 - certRate - pendRate);
-  const attRate = Math.round((attended / totalTeachers) * 100);
+  const certRate = attended > 0 ? Math.round((certified / attended) * 100) : 0;
+  const pendRate = attended > 0 ? Math.round((pendingCert / attended) * 100) : 0;
 
-  const cpdTot = document.getElementById('regCpdTotalFaculty');
+  const cpdTot = document.getElementById('regCpdTotalAttended') || document.getElementById('regCpdTotalFaculty');
   const cpdCert = document.getElementById('regCpdCertified');
   const cpdCertPct = document.getElementById('regCpdCertPct');
   const cpdPend = document.getElementById('regCpdPendingCert');
@@ -258,18 +254,18 @@ function renderRegionSummary(regObj) {
   const cpdYetPct = document.getElementById('regCpdYetPct');
   const cpdAttSum = document.getElementById('regCpdAttendedSummary');
 
-  if (cpdTot) cpdTot.textContent = totalTeachers.toLocaleString();
+  if (cpdTot) cpdTot.textContent = attended.toLocaleString();
   if (cpdCert) cpdCert.textContent = certified.toLocaleString();
   if (cpdCertPct) cpdCertPct.textContent = `(${certRate}%)`;
   if (cpdPend) cpdPend.textContent = pendingCert.toLocaleString();
   if (cpdPendPct) cpdPendPct.textContent = `(${pendRate}%)`;
-  if (cpdYet) cpdYet.textContent = yetToAttend.toLocaleString();
-  if (cpdYetPct) cpdYetPct.textContent = `(${yetRate}%)`;
+  if (cpdYet) cpdYet.textContent = "0";
+  if (cpdYetPct) cpdYetPct.textContent = "(0%)";
   if (cpdAttSum) {
-    cpdAttSum.textContent = `${attended.toLocaleString()} Teachers Attended in ${regObj.name} (${attRate}% Regional Attendance Rate)`;
+    cpdAttSum.textContent = `${certified.toLocaleString()} of ${attended.toLocaleString()} Attended Teachers Certified (${certRate}% Certification Rate)`;
   }
 
-  // Render Regional CPD Pie/Donut Chart
+  // Render Regional CPD Pie/Donut Chart (Certified vs Attended Pending Certification)
   const ctx = document.getElementById('chartRegCpdPie');
   if (ctx) {
     if (regionalCpdChart) regionalCpdChart.destroy();
@@ -278,12 +274,11 @@ function renderRegionSummary(regObj) {
       data: {
         labels: [
           `CPD Certified: ${certified.toLocaleString()} (${certRate}%)`,
-          `Attended (Pending Cert): ${pendingCert.toLocaleString()} (${pendRate}%)`,
-          `Yet to Attend: ${yetToAttend.toLocaleString()} (${yetRate}%)`
+          `Attended (Pending Cert): ${pendingCert.toLocaleString()} (${pendRate}%)`
         ],
         datasets: [{
-          data: [certified, pendingCert, yetToAttend],
-          backgroundColor: ['#2563EB', '#F59E0B', '#CBD5E1'],
+          data: [certified, pendingCert],
+          backgroundColor: ['#2563EB', '#F59E0B'],
           borderColor: '#FFFFFF',
           borderWidth: 2,
           hoverOffset: 6
@@ -442,12 +437,12 @@ function computeRegionalBenchmark(sch) {
   if (regSchools.length === 0) return { text: "Regional Leader", cls: "gold" };
 
   const totalCert = regSchools.reduce((acc, s) => acc + s.certifiedCount, 0);
-  const totalFaculty = regSchools.reduce((acc, s) => acc + s.totalTeachers, 0);
-  const regAvgRate = totalFaculty > 0 ? (totalCert / totalFaculty) * 100 : 20;
+  const totalAttended = regSchools.reduce((acc, s) => acc + (s.attendedCount || 0), 0);
+  const regAvgRate = totalAttended > 0 ? (totalCert / totalAttended) * 100 : 20;
 
-  const schoolRate = (sch.certifiedCount / Math.max(1, sch.totalTeachers)) * 100;
+  const schoolRate = (sch.certifiedCount / Math.max(1, sch.attendedCount)) * 100;
 
-  const sorted = [...regSchools].sort((a, b) => (b.certifiedCount / b.totalTeachers) - (a.certifiedCount / a.totalTeachers));
+  const sorted = [...regSchools].sort((a, b) => (b.certifiedCount / Math.max(1, b.attendedCount)) - (a.certifiedCount / Math.max(1, a.attendedCount)));
   const rank = sorted.findIndex(s => s.code === sch.code) + 1;
   const percentile = Math.round((rank / sorted.length) * 100);
 
@@ -536,7 +531,7 @@ function setSchool(kvCode) {
   const shrunkTitle = document.getElementById('shrunkSchoolTitle');
   if (shrunkTitle) {
     shrunkTitle.textContent = kvCode === 'ALL'
-      ? `All Schools in ${sch.region} Region (${sch.totalTeachers.toLocaleString()} Teachers)`
+      ? `All Schools in ${sch.region} Region (${regObj ? regObj.totalKVs : ''} Kendriya Vidyalayas)`
       : `KV ${sch.code} — ${sch.name} (${sch.region} Region)`;
   }
 
@@ -577,7 +572,7 @@ function setSchool(kvCode) {
     }
     if (title) title.textContent = `KV ${sch.code} — ${sch.name}`;
     if (reg) reg.textContent = `${sch.region} Region`;
-    if (cpdStats) cpdStats.textContent = `${sch.attendedCount} Attended • ${sch.certifiedCount} Certified • ${sch.totalTeachers} Total Teachers`;
+    if (cpdStats) cpdStats.textContent = `${sch.attendedCount} Attended • ${sch.certifiedCount} Certified`;
     
     const dcaisM1Status = sch.dcais && sch.dcais.m1 === 'Yes' ? 'Module 1 Attended' : 'Module 1 Pending';
     if (dcaisStats) dcaisStats.textContent = `${dcaisM1Status} • Teacher Program`;
@@ -604,6 +599,7 @@ function setSchool(kvCode) {
   const cpdFaculty = document.getElementById('cpdSumFaculty');
   const cpdAtt = document.getElementById('cpdSumAttended');
   const cpdCert = document.getElementById('cpdSumCertified');
+  const cpdCertRateKpi = document.getElementById('cpdSumCertRate');
   const cpdBench = document.getElementById('cpdBenchmarkPill');
 
   const cpdBadgeBox = cpdBadge ? cpdBadge.closest('.kv-badge-square') : null;
@@ -625,9 +621,11 @@ function setSchool(kvCode) {
   if (cpdTitle) cpdTitle.textContent = sch.name;
   if (cpdReg) cpdReg.textContent = `${sch.region} Region`;
   if (cpdRating) cpdRating.textContent = `Rating: ${sch.rating}`;
-  if (cpdFaculty) cpdFaculty.textContent = sch.totalTeachers;
+  if (cpdFaculty) cpdFaculty.textContent = sch.attendedCount;
   if (cpdAtt) cpdAtt.textContent = sch.attendedCount;
   if (cpdCert) cpdCert.textContent = sch.certifiedCount;
+  const cpdRateVal = sch.attendedCount > 0 ? Math.round((sch.certifiedCount / sch.attendedCount) * 100) : 0;
+  if (cpdCertRateKpi) cpdCertRateKpi.textContent = `${cpdRateVal}%`;
   if (cpdBench) {
     if (benchmark.text) {
       cpdBench.style.display = 'inline-flex';
@@ -644,6 +642,7 @@ function setSchool(kvCode) {
   const dcaisReg = document.getElementById('dcaisSchoolRegionTag');
   const dcaisStage = document.getElementById('dcaisSchoolStageTag');
   const dcaisFaculty = document.getElementById('dcaisSumFaculty');
+  const dcaisStatusKpi = document.getElementById('dcaisSumSchoolStatus');
   const dcaisSumStage = document.getElementById('dcaisSumStage');
   const dcaisSumRegionAtt = document.getElementById('dcaisSumRegionAtt');
   const dcaisBench = document.getElementById('dcaisBenchmarkPill');
@@ -670,7 +669,8 @@ function setSchool(kvCode) {
   if (dcaisTitle) dcaisTitle.textContent = sch.name;
   if (dcaisReg) dcaisReg.textContent = `${sch.region} Region`;
   if (dcaisStage) dcaisStage.textContent = `DCAIS: ${sch.dcais && sch.dcais.m1 === 'Yes' ? 'M1 Attended' : 'Initiating'}`;
-  if (dcaisFaculty) dcaisFaculty.textContent = sch.totalTeachers;
+  if (dcaisFaculty) dcaisFaculty.textContent = sch.attendedCount;
+  if (dcaisStatusKpi) dcaisStatusKpi.textContent = (sch.dcais && sch.dcais.m1 === 'Yes') ? 'Active' : 'Initiating';
   if (dcaisSumStage) {
     let currentMod = 'Initiating';
     if (sch.dcais) {
@@ -1547,16 +1547,16 @@ function printSchoolReport(type) {
 
           <div class="summary-cards">
             <div class="s-tile">
-              <div class="s-val">${sch.totalTeachers}</div>
-              <div class="s-lbl">Total Teachers</div>
-            </div>
-            <div class="s-tile">
               <div class="s-val" style="color:#059669;">${sch.attendedCount}</div>
-              <div class="s-lbl">CPD Attended</div>
+              <div class="s-lbl">Teachers Attended</div>
             </div>
             <div class="s-tile">
               <div class="s-val" style="color:#2563EB;">${sch.certifiedCount}</div>
               <div class="s-lbl">CPD Certified</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#D97706;">${sch.attendedCount > 0 ? Math.round((sch.certifiedCount / sch.attendedCount) * 100) : 0}%</div>
+              <div class="s-lbl">Certification Rate</div>
             </div>
           </div>
 
@@ -1643,16 +1643,16 @@ function printSchoolReport(type) {
 
           <div class="summary-cards">
             <div class="s-tile">
-              <div class="s-val">${sch.totalTeachers}</div>
-              <div class="s-lbl">School Teachers</div>
-            </div>
-            <div class="s-tile">
               <div class="s-val" style="color:#2563EB;">${dcais.m1 === 'Yes' ? 'Attended M1' : 'Initiating'}</div>
               <div class="s-lbl">Module 1 Status</div>
             </div>
             <div class="s-tile">
               <div class="s-val" style="color:#059669;">${regSum.m1_present || 0}</div>
               <div class="s-lbl">Region Teachers Attended</div>
+            </div>
+            <div class="s-tile">
+              <div class="s-val" style="color:#D97706;">${sch.region}</div>
+              <div class="s-lbl">KVS Region</div>
             </div>
           </div>
 

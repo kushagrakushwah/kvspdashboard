@@ -2084,24 +2084,16 @@
                       <span class="reg-legend-pct" id="regCpdPendingPct">(0%)</span>
                     </div>
                   </div>
-                  <div class="reg-legend-item">
-                    <span class="reg-legend-dot slate"></span>
-                    <div class="reg-legend-text">
-                      <span class="reg-legend-label">Yet to Attend:</span>
-                      <strong class="reg-legend-val" id="regCpdYetToAttend">0</strong>
-                      <span class="reg-legend-pct" id="regCpdYetPct">(0%)</span>
-                    </div>
-                  </div>
                   <div class="reg-legend-total">
-                    <span>Total Region Teachers:</span>
-                    <strong id="regCpdTotalFaculty">0</strong>
+                    <span>Total Attended Teachers:</span>
+                    <strong id="regCpdTotalAttended">0</strong>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="reg-card-footer-strip">
-              <span id="regCpdAttendedSummary">0 Teachers Attended in Region (0% Attendance Rate)</span>
+              <span id="regCpdAttendedSummary">0 of 0 Attended Teachers Certified (0% Certification Rate)</span>
             </div>
           </div>
 
@@ -2203,7 +2195,7 @@
                 Continuous Professional Development across Modules 1 to 6 (out of 10 total modules), teacher attendance records, and training status.
               </p>
               <div style="background:var(--slate-50);border:1.5px solid var(--slate-200);border-radius:var(--radius-md);padding:11px 16px;font-size:0.88rem;font-weight:800;color:var(--slate-800);margin-bottom:16px;">
-                Teacher Status: <span id="homeCpdStats" style="color:var(--red);">0 Attended</span>
+                Teacher Status: <span id="homeCpdStats" style="color:var(--red);">0 Attended • 0 Certified</span>
               </div>
             </div>
             <button class="btn-enter-portal" onclick="event.stopPropagation();navigateTo('cpd')">
@@ -2272,16 +2264,16 @@
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <div class="school-summary-kpis">
             <div class="mini-kpi">
-              <span class="mini-kpi-val" id="cpdSumFaculty">0</span>
-              <span class="mini-kpi-lbl">Teachers</span>
-            </div>
-            <div class="mini-kpi">
               <span class="mini-kpi-val" id="cpdSumAttended">0</span>
-              <span class="mini-kpi-lbl">CPD Attended</span>
+              <span class="mini-kpi-lbl">Teachers Attended</span>
             </div>
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="cpdSumCertified" style="color:var(--red);">0</span>
               <span class="mini-kpi-lbl">CPD Certified</span>
+            </div>
+            <div class="mini-kpi">
+              <span class="mini-kpi-val" id="cpdSumCertRate" style="color:var(--blue);">0%</span>
+              <span class="mini-kpi-lbl">Certification Rate</span>
             </div>
           </div>
 
@@ -2450,8 +2442,8 @@
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
           <div class="school-summary-kpis">
             <div class="mini-kpi">
-              <span class="mini-kpi-val" id="dcaisSumFaculty">0</span>
-              <span class="mini-kpi-lbl">Total Teachers</span>
+              <span class="mini-kpi-val" id="dcaisSumSchoolStatus" style="color:var(--blue);">Active</span>
+              <span class="mini-kpi-lbl">School Status</span>
             </div>
             <div class="mini-kpi">
               <span class="mini-kpi-val" id="dcaisSumStage" style="color:var(--blue);">M1</span>
