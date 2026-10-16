@@ -1854,6 +1854,296 @@
       box-shadow: 0 20px 50px rgba(0,0,0,0.15);
     }
 
+    /* DCAIS Regional Detailed Attendance Modal & Links */
+    .dcais-region-link {
+      color: #1E40AF;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.92rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .dcais-region-link:hover {
+      color: var(--red);
+      text-decoration: underline;
+    }
+    .btn-dcais-drilldown {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      background: #EFF6FF;
+      color: #2563EB;
+      border: 1px solid #BFDBFE;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-dcais-drilldown:hover {
+      background: #2563EB;
+      color: #FFFFFF;
+      border-color: #2563EB;
+    }
+    .btn-dcais-drilldown.national {
+      background: #FFF1F0;
+      color: var(--red);
+      border-color: var(--red-border);
+    }
+    .btn-dcais-drilldown.national:hover {
+      background: var(--red);
+      color: #FFFFFF;
+    }
+
+    .modal-dialog.dcais-detail-dialog {
+      max-width: 1080px;
+      width: 95vw;
+      max-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .dcais-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1.5px solid var(--slate-200);
+      flex-shrink: 0;
+    }
+    .dcais-modal-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-share-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      background: #F1F5F9;
+      color: var(--slate-700);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-share-link:hover {
+      background: var(--slate-900);
+      color: #FFFFFF;
+      border-color: var(--slate-900);
+    }
+    .btn-modal-close {
+      border: none;
+      background: #F1F5F9;
+      color: var(--slate-700);
+      cursor: pointer;
+      font-size: 1.1rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+    .btn-modal-close:hover {
+      background: var(--red);
+      color: #FFFFFF;
+    }
+
+    .dcais-kpi-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .dcais-kpi-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .dcais-kpi-num {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      line-height: 1.1;
+    }
+    .dcais-kpi-num .sub {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--slate-500);
+    }
+    .dcais-kpi-lbl {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--slate-600);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .dcais-modal-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .dcais-toolbar-search {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+    }
+    .dcais-modal-search {
+      width: 100%;
+      padding: 9px 12px 9px 36px;
+      font-size: 0.85rem;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      color: var(--slate-900);
+      box-sizing: border-box;
+      outline: none;
+    }
+    .dcais-modal-search:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px var(--red-subtle);
+    }
+    .dcais-modal-filter-select {
+      padding: 8px 12px;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      background: #FFFFFF;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .dcais-modal-table-wrap {
+      overflow-y: auto;
+      max-height: 50vh;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      flex: 1 1 auto;
+      background: #FFFFFF;
+    }
+    .dcais-kv-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+    .dcais-kv-table thead {
+      position: sticky;
+      top: 0;
+      background: #F8FAFC;
+      z-index: 2;
+    }
+    .dcais-kv-table th {
+      padding: 10px 12px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-600);
+      border-bottom: 1.5px solid var(--slate-200);
+      white-space: nowrap;
+    }
+    .dcais-kv-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--slate-100);
+      vertical-align: middle;
+      color: var(--slate-800);
+    }
+    .dcais-kv-table tbody tr:hover {
+      background: #F8FAFC;
+    }
+    .kv-code-badge {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: var(--slate-100);
+      color: var(--slate-800);
+      border: 1px solid var(--slate-200);
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .status-pill.present {
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+    .status-pill.absent {
+      background: #FEF2F2;
+      color: #991B1B;
+      border: 1px solid #FECACA;
+    }
+    .status-pill.planned {
+      background: #F1F5F9;
+      color: #475569;
+      border: 1px solid #CBD5E1;
+    }
+    .btn-select-school-modal {
+      padding: 4px 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-select-school-modal:hover {
+      background: var(--red);
+      color: #FFFFFF;
+      border-color: var(--red);
+    }
+
+    .dcais-modal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--slate-200);
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
     .app-toast {
       position: fixed;
       bottom: 24px;
@@ -2582,12 +2872,16 @@
         <div class="table-header-row">
           <div>
             <h4>DCAIS Regional &amp; National Summary</h4>
-            <p>Official telemetry from Semi Annual Report.xlsx — Teacher attendance across Modules 1 to 4</p>
+            <p>Official telemetry from Semi Annual Report.xlsx — Teacher attendance across Modules 1 to 4 (Click any region to open detailed KV attendance summary)</p>
           </div>
           <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
             <input type="text" id="dcaisSummarySearch" class="table-search-input" placeholder="Filter by region (e.g. Mumbai, Agra, Delhi)..." oninput="filterDcaisSummary(this.value)">
             <button class="btn-action-small" onclick="filterDcaisSummaryCurrentRegion()" id="btnDcaisHighlightRegion">Show My Region</button>
             <button class="btn-action-small" onclick="filterDcaisSummary('')">Show All</button>
+            <button class="btn-action-small" onclick="openRegionDcaisModal(selectedRegion || 'Total')" style="background:#2563EB;color:#FFF;border-color:#2563EB;display:inline-flex;align-items:center;gap:6px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>Detailed KV Directory</span>
+            </button>
           </div>
         </div>
 
@@ -2595,7 +2889,7 @@
           <table class="dcais-summary-table">
             <thead>
               <tr>
-                <th>Region</th>
+                <th>Region <span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);display:block;">(Click to view KV codes)</span></th>
                 <th>Module 1<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent</span></th>
                 <th>Module 2<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent / Planned</span></th>
                 <th>Module 3<br><span style="font-size:0.7rem;font-weight:normal;color:var(--slate-500);">Present / Absent / Planned</span></th>
@@ -2666,13 +2960,136 @@
         <button class="btn-action-small red-nudge" style="padding:7px 16px;" onclick="closeArtifactModal()">Done Viewing</button>
       </div>
     </div>
+  <!-- DCAIS Regional Detailed Attendance Modal -->
+  <div id="regionDcaisModal" class="modal-overlay" onclick="closeRegionDcaisModal()" style="display:none;">
+    <div class="modal-dialog dcais-detail-dialog" onclick="event.stopPropagation()">
+      <!-- Modal Header -->
+      <div class="dcais-modal-header">
+        <div class="dcais-modal-header-left">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+            <span class="region-badge-pill" id="dcaisModalBadge">Agra Region</span>
+            <span class="tag-pill blue" style="font-size:0.7rem;font-weight:700;">Official Semi-Annual Telemetry</span>
+          </div>
+          <h3 id="dcaisModalTitle" style="font-size:1.35rem;font-weight:900;color:var(--slate-900);margin:0;">
+            DCAIS Detailed Attendance Summary
+          </h3>
+          <p id="dcaisModalSubtitle" style="font-size:0.84rem;color:var(--slate-600);margin:4px 0 0 0;">
+            School-by-school teacher attendance across Modules 1 to 4 for all Kendriya Vidyalayas.
+          </p>
+        </div>
+        <div class="dcais-modal-header-actions">
+          <button class="btn-share-link" onclick="copyRegionDcaisShareLink()" title="Copy direct shareable link for today's discussion">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <span>Share Link</span>
+          </button>
+          <button class="btn-modal-close" onclick="closeRegionDcaisModal()" title="Close dialog">✕</button>
+        </div>
+      </div>
+
+      <!-- KPI Summary Cards Row -->
+      <div class="dcais-kpi-row" id="dcaisModalKpiRow">
+        <div class="dcais-kpi-card">
+          <span class="dcais-kpi-num" id="kpiModalTotalKVs">38</span>
+          <span class="dcais-kpi-lbl">Total KV Codes</span>
+        </div>
+        <div class="dcais-kpi-card">
+          <span class="dcais-kpi-num" id="kpiModalM1">20 <span class="sub">/ 18</span></span>
+          <span class="dcais-kpi-lbl">Mod 1: Present / Absent</span>
+        </div>
+        <div class="dcais-kpi-card">
+          <span class="dcais-kpi-num" id="kpiModalM2">16 <span class="sub">/ 22</span></span>
+          <span class="dcais-kpi-lbl">Mod 2: Present / Absent</span>
+        </div>
+        <div class="dcais-kpi-card">
+          <span class="dcais-kpi-num" id="kpiModalM3">8 <span class="sub">/ 30</span></span>
+          <span class="dcais-kpi-lbl">Mod 3: Present / Absent</span>
+        </div>
+        <div class="dcais-kpi-card">
+          <span class="dcais-kpi-num" id="kpiModalM4">0 <span class="sub">/ 38 planned</span></span>
+          <span class="dcais-kpi-lbl">Mod 4: Present / Planned</span>
+        </div>
+      </div>
+
+      <!-- Filters & Action Bar -->
+      <div class="dcais-modal-toolbar">
+        <div class="dcais-toolbar-search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.2" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="dcaisModalSearchInput" class="dcais-modal-search" placeholder="Filter by KV code or school name (e.g. 1357, Chandinagar)..." oninput="onDcaisModalSearch(this.value)">
+        </div>
+
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+          <select id="dcaisModalStatusFilter" class="dcais-modal-filter-select" onchange="onDcaisModalFilterChange()">
+            <option value="ALL">All Attendance Statuses</option>
+            <option value="M1_YES">Module 1: Attended (Present)</option>
+            <option value="M1_NO">Module 1: Absent</option>
+            <option value="M2_YES">Module 2: Attended (Present)</option>
+            <option value="M2_NO">Module 2: Absent</option>
+            <option value="M2_PLAN">Module 2: Planned</option>
+            <option value="M3_YES">Module 3: Attended (Present)</option>
+            <option value="M4_YES">Module 4: Completed (Present)</option>
+            <option value="M4_PLAN">Module 4: Yet to be Planned</option>
+          </select>
+
+          <select id="dcaisModalRegionFilter" class="dcais-modal-filter-select" onchange="onDcaisModalRegionSelect(this.value)">
+            <!-- Populated dynamically -->
+          </select>
+
+          <button class="btn-action-small" onclick="exportRegionDcaisCsv()" style="display:flex;align-items:center;gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Export CSV</span>
+          </button>
+
+          <button class="btn-action-small" onclick="printRegionDcaisReport()" style="display:flex;align-items:center;gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span>Print Report</span>
+          </button>
+
+          <button class="btn-action-small" onclick="jumpToDcaisRosterTable()" style="display:flex;align-items:center;gap:5px;background:#F1F5F9;" title="Scroll to in-page roster table">
+            <span>In-Page Table ↓</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Scrollable Detailed Table -->
+      <div class="dcais-modal-table-wrap">
+        <table class="dcais-kv-table" id="dcaisModalKvTable">
+          <thead>
+            <tr>
+              <th style="width:100px;">KV Code</th>
+              <th>Kendriya Vidyalaya Name</th>
+              <th>Region</th>
+              <th style="text-align:center;">Module 1<br><span style="font-size:0.68rem;font-weight:normal;opacity:0.8;">Orientation</span></th>
+              <th style="text-align:center;">Module 2<br><span style="font-size:0.68rem;font-weight:normal;opacity:0.8;">Curriculum</span></th>
+              <th style="text-align:center;">Module 3<br><span style="font-size:0.68rem;font-weight:normal;opacity:0.8;">Projects</span></th>
+              <th style="text-align:center;">Module 4<br><span style="font-size:0.68rem;font-weight:normal;opacity:0.8;">Showcase</span></th>
+              <th>Overall Stage</th>
+              <th style="text-align:center;width:110px;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="dcaisModalTableBody">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="dcais-modal-footer">
+        <span id="dcaisModalCounter" style="font-size:0.82rem;font-weight:600;color:var(--slate-600);">
+          Showing 38 Kendriya Vidyalayas
+        </span>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <span style="font-size:0.75rem;color:var(--slate-500);">Verified against KVS Semi-Annual Telemetry</span>
+          <button class="btn-action-small" onclick="closeRegionDcaisModal()">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Toast -->
   <div id="appToast" class="app-toast">Notification Message</div>
 
   <!-- Scripts -->
-  <script src="data.js?v=20261014_attend_v5"></script>
-  <script src="app.js?v=20261014_attend_v5"></script>
+  <script src="data.js?v=20261015_dcais_v6"></script>
+  <script src="app.js?v=20261015_dcais_v6"></script>
 </body>
 </html>

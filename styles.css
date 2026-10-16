@@ -2078,6 +2078,296 @@
       box-shadow: 0 20px 50px rgba(0,0,0,0.15);
     }
 
+    /* DCAIS Regional Detailed Attendance Modal & Links */
+    .dcais-region-link {
+      color: #1E40AF;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.92rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    .dcais-region-link:hover {
+      color: var(--red);
+      text-decoration: underline;
+    }
+    .btn-dcais-drilldown {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      background: #EFF6FF;
+      color: #2563EB;
+      border: 1px solid #BFDBFE;
+      border-radius: var(--radius-sm);
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-dcais-drilldown:hover {
+      background: #2563EB;
+      color: #FFFFFF;
+      border-color: #2563EB;
+    }
+    .btn-dcais-drilldown.national {
+      background: #FFF1F0;
+      color: var(--red);
+      border-color: var(--red-border);
+    }
+    .btn-dcais-drilldown.national:hover {
+      background: var(--red);
+      color: #FFFFFF;
+    }
+
+    .modal-dialog.dcais-detail-dialog {
+      max-width: 1080px;
+      width: 95vw;
+      max-height: 92vh;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .dcais-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1.5px solid var(--slate-200);
+      flex-shrink: 0;
+    }
+    .dcais-modal-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-share-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 12px;
+      background: #F1F5F9;
+      color: var(--slate-700);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-share-link:hover {
+      background: var(--slate-900);
+      color: #FFFFFF;
+      border-color: var(--slate-900);
+    }
+    .btn-modal-close {
+      border: none;
+      background: #F1F5F9;
+      color: var(--slate-700);
+      cursor: pointer;
+      font-size: 1.1rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+    }
+    .btn-modal-close:hover {
+      background: var(--red);
+      color: #FFFFFF;
+    }
+
+    .dcais-kpi-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .dcais-kpi-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .dcais-kpi-num {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--slate-900);
+      line-height: 1.1;
+    }
+    .dcais-kpi-num .sub {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--slate-500);
+    }
+    .dcais-kpi-lbl {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--slate-600);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .dcais-modal-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .dcais-toolbar-search {
+      position: relative;
+      flex: 1;
+      min-width: 240px;
+    }
+    .dcais-modal-search {
+      width: 100%;
+      padding: 9px 12px 9px 36px;
+      font-size: 0.85rem;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      color: var(--slate-900);
+      box-sizing: border-box;
+      outline: none;
+    }
+    .dcais-modal-search:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px var(--red-subtle);
+    }
+    .dcais-modal-filter-select {
+      padding: 8px 12px;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      background: #FFFFFF;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .dcais-modal-table-wrap {
+      overflow-y: auto;
+      max-height: 50vh;
+      border: 1.5px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      flex: 1 1 auto;
+      background: #FFFFFF;
+    }
+    .dcais-kv-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      text-align: left;
+    }
+    .dcais-kv-table thead {
+      position: sticky;
+      top: 0;
+      background: #F8FAFC;
+      z-index: 2;
+    }
+    .dcais-kv-table th {
+      padding: 10px 12px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--slate-600);
+      border-bottom: 1.5px solid var(--slate-200);
+      white-space: nowrap;
+    }
+    .dcais-kv-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--slate-100);
+      vertical-align: middle;
+      color: var(--slate-800);
+    }
+    .dcais-kv-table tbody tr:hover {
+      background: #F8FAFC;
+    }
+    .kv-code-badge {
+      display: inline-block;
+      font-family: monospace;
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: var(--slate-100);
+      color: var(--slate-800);
+      border: 1px solid var(--slate-200);
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .status-pill.present {
+      background: #ECFDF5;
+      color: #065F46;
+      border: 1px solid #A7F3D0;
+    }
+    .status-pill.absent {
+      background: #FEF2F2;
+      color: #991B1B;
+      border: 1px solid #FECACA;
+    }
+    .status-pill.planned {
+      background: #F1F5F9;
+      color: #475569;
+      border: 1px solid #CBD5E1;
+    }
+    .btn-select-school-modal {
+      padding: 4px 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn-select-school-modal:hover {
+      background: var(--red);
+      color: #FFFFFF;
+      border-color: var(--red);
+    }
+
+    .dcais-modal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--slate-200);
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
     .app-toast {
       position: fixed;
       bottom: 24px;

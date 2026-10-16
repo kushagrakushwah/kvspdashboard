@@ -49,6 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
       hideComboboxDropdown();
     }
   });
+
+  // Handle URL deep linking for DCAIS region (?dcaisRegion=Agra or #dcaisRegion=Agra)
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const dcaisRegParam = urlParams.get('dcaisRegion');
+    if (dcaisRegParam) {
+      setTimeout(() => {
+        navigateTo('dcais');
+        openRegionDcaisModal(dcaisRegParam);
+      }, 350);
+    }
+  } catch (err) {
+    console.error('Error parsing dcaisRegion param', err);
+  }
+
+  // Close DCAIS modal on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeRegionDcaisModal();
+    }
+  });
 });
 
 function initPortal() {
@@ -470,8 +491,9 @@ function getActiveSchool() {
 
 function setSchool(kvCode) {
   let sch;
+  let regObj = null;
   if (kvCode === 'ALL') {
-    const regObj = KVS_DATA.REGIONS.find(r => r.name === selectedRegion);
+    regObj = KVS_DATA.REGIONS.find(r => r.name === selectedRegion);
     if (!regObj) return;
     const regSchools = Object.values(KVS_DATA.SCHOOLS).filter(s => s.region === selectedRegion);
     const combinedRoster = [];
@@ -509,14 +531,15 @@ function setSchool(kvCode) {
     if (!sch) return;
     selectedKVCode = kvCode;
     selectedRegion = sch.region;
+    regObj = KVS_DATA.REGIONS.find(r => r.name === sch.region);
   }
 
   currentActiveSchool = sch;
   const benchmark = computeRegionalBenchmark(sch);
 
-  // Hide the region summary block so school summary takes focus
+  // Hide the region summary block only when an individual school is chosen, not when aggregate is active
   const summaryBlock = document.getElementById('regionSummaryBlock');
-  if (summaryBlock) summaryBlock.style.display = 'none';
+  if (summaryBlock && kvCode !== 'ALL') summaryBlock.style.display = 'none';
 
   // Smoothly morph selector hero from expanded to shrunk state
   const heroCard = document.getElementById('selectorHeroCard');
@@ -570,7 +593,7 @@ function setSchool(kvCode) {
         badge.title = `KV ${sch.code} — ${sch.name}`;
       }
     }
-    if (title) title.textContent = `KV ${sch.code} — ${sch.name}`;
+    if (title) title.textContent = kvCode === 'ALL' ? sch.name : `KV ${sch.code} — ${sch.name}`;
     if (reg) reg.textContent = `${sch.region} Region`;
     if (cpdStats) cpdStats.textContent = `${sch.attendedCount} Attended • ${sch.certifiedCount} Certified`;
     
@@ -1398,12 +1421,22 @@ function renderDcaisSummaryTable(dataList) {
     const isTotal = r.region.toLowerCase() === 'total';
     const isSelected = selectedRegion && r.region.toLowerCase() === selectedRegion.toLowerCase();
     const rowClass = isTotal ? 'row-total' : (isSelected ? 'row-highlight-active' : '');
+    const displayRegionName = isTotal ? 'Total (All 15 Regions)' : r.region;
 
     return `
       <tr class="${rowClass}" id="dcaisRow_${r.region.replace(/\s+/g, '_')}">
-        <td>
-          <strong>${r.region}</strong>
-          ${isSelected ? `<span class="tag-pill blue" style="margin-left:8px;font-size:0.7rem;padding:2px 7px;">Current Region</span>` : ''}
+        <td style="cursor:pointer;" onclick="openRegionDcaisModal('${r.region}')">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+            <a href="javascript:void(0)" class="dcais-region-link" onclick="event.stopPropagation(); openRegionDcaisModal('${r.region}');" title="Click to view detailed attendance summary of all KV codes in ${r.region}">
+              <strong>${displayRegionName}</strong>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:3px;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <button class="btn-dcais-drilldown ${isTotal ? 'national' : ''}" onclick="event.stopPropagation(); openRegionDcaisModal('${r.region}');" title="Open detailed attendance of all ${isTotal ? '822' : r.region} KV codes">
+              <span>${isTotal ? 'View All 822 KVs' : 'View KVs'}</span>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            ${isSelected ? `<span class="tag-pill blue" style="font-size:0.68rem;padding:2px 7px;">Current Region</span>` : ''}
+          </div>
         </td>
         <td>
           <span class="val-present">${r.m1_present}</span>
@@ -1463,6 +1496,380 @@ function highlightDcaisSummarySchoolRegion(regionName) {
   const targetRow = document.getElementById(rowId);
   if (targetRow) {
     targetRow.classList.add('row-highlight-active');
+  }
+}
+
+// ==================== DCAIS REGIONAL ATTENDANCE DETAIL MODAL ====================
+let currentDcaisModalRegion = 'Agra';
+let currentDcaisModalData = [];
+let currentDcaisModalFiltered = [];
+
+function openRegionDcaisModal(regionName) {
+  if (!regionName || regionName === 'undefined') regionName = selectedRegion || 'Total';
+  currentDcaisModalRegion = regionName;
+
+  const modal = document.getElementById('regionDcaisModal');
+  if (!modal) return;
+
+  const isTotal = regionName.toLowerCase() === 'total' || regionName.toLowerCase() === 'all';
+  
+  // Get all DCAIS KV details
+  const allList = (typeof KVS_DATA !== 'undefined' && (KVS_DATA.DCAIS_SCHOOLS || KVS_DATA.DCAIS_KV_DETAILS)) || [];
+
+  // Populate region dropdown in modal if not populated or update its selection
+  const regSelect = document.getElementById('dcaisModalRegionFilter');
+  if (regSelect) {
+    const uniqueRegions = Array.from(new Set(allList.map(d => d.region))).filter(Boolean).sort();
+    regSelect.innerHTML = `<option value="Total">All 15 Regions (${allList.length} KVs)</option>` +
+      uniqueRegions.map(reg => {
+        const count = allList.filter(d => d.region.toLowerCase() === reg.toLowerCase()).length;
+        return `<option value="${reg}">${reg} (${count} KVs)</option>`;
+      }).join('');
+    
+    if (isTotal) {
+      regSelect.value = 'Total';
+    } else {
+      const match = uniqueRegions.find(r => r.toLowerCase() === regionName.toLowerCase() || 
+        (regionName.toLowerCase() === 'bengaluru' && r.toLowerCase() === 'bangalore') ||
+        (regionName.toLowerCase() === 'bangalore' && r.toLowerCase() === 'bengaluru'));
+      regSelect.value = match || regionName;
+    }
+  }
+
+  // Update Header Title & Subtitle
+  const badge = document.getElementById('dcaisModalBadge');
+  const title = document.getElementById('dcaisModalTitle');
+
+  const displayRegion = isTotal ? 'National Total (All 15 Regions)' : `${regionName} Region`;
+  if (badge) badge.textContent = displayRegion;
+  if (title) title.textContent = `DCAIS Attendance Summary — ${displayRegion}`;
+
+  // Filter records
+  if (isTotal) {
+    currentDcaisModalData = allList.slice();
+  } else {
+    currentDcaisModalData = allList.filter(d => {
+      const dr = d.region.toLowerCase();
+      const tr = regionName.toLowerCase();
+      return dr === tr || (tr === 'bengaluru' && dr === 'bangalore') || (tr === 'bangalore' && dr === 'bengaluru');
+    });
+
+    // Fallback if region not in 15 cohorts
+    if (currentDcaisModalData.length === 0 && KVS_DATA.SCHOOLS) {
+      const schs = Object.values(KVS_DATA.SCHOOLS).filter(s => s.region.toLowerCase() === regionName.toLowerCase());
+      currentDcaisModalData = schs.map(s => ({
+        code: s.code,
+        name: s.name,
+        region: s.region,
+        m1: (s.dcais && s.dcais.m1) || 'Yet to be Planned',
+        m2: (s.dcais && s.dcais.m2) || 'Yet to be Planned',
+        m3: (s.dcais && s.dcais.m3) || 'Yet to be Planned',
+        m4: (s.dcais && s.dcais.m4) || 'Yet to be Planned'
+      }));
+    }
+  }
+
+  // Also sync the in-page roster filter dropdown to this region if applicable
+  const pageRosterRegSelect = document.getElementById('dcaisRosterRegionFilter');
+  if (pageRosterRegSelect) {
+    if (isTotal) {
+      pageRosterRegSelect.value = 'ALL';
+    } else {
+      const foundOpt = Array.from(pageRosterRegSelect.options).find(o => o.value.toLowerCase() === regionName.toLowerCase());
+      if (foundOpt) pageRosterRegSelect.value = foundOpt.value;
+    }
+  }
+
+  // Reset search and filter inputs
+  const searchInput = document.getElementById('dcaisModalSearchInput');
+  if (searchInput) searchInput.value = '';
+  const statusFilter = document.getElementById('dcaisModalStatusFilter');
+  if (statusFilter) statusFilter.value = 'ALL';
+
+  // Calculate and populate KPI strip
+  updateDcaisModalKpis(currentDcaisModalData, isTotal, regionName);
+
+  // Render Table
+  filterAndRenderDcaisModalTable();
+
+  // Show Modal
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeRegionDcaisModal() {
+  const modal = document.getElementById('regionDcaisModal');
+  if (modal) modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function updateDcaisModalKpis(dataList, isTotal, regionName) {
+  const totalKVs = dataList.length;
+  const m1Present = dataList.filter(d => d.m1 === 'Yes').length;
+  const m1Absent = dataList.filter(d => d.m1 === 'No').length;
+  const m2Present = dataList.filter(d => d.m2 === 'Yes').length;
+  const m2Absent = dataList.filter(d => d.m2 === 'No').length;
+  const m2Planned = dataList.filter(d => d.m2 === 'Yet to be Planned').length;
+  const m3Present = dataList.filter(d => d.m3 === 'Yes').length;
+  const m3Absent = dataList.filter(d => d.m3 === 'No').length;
+  const m3Planned = dataList.filter(d => d.m3 === 'Yet to be Planned').length;
+  const m4Present = dataList.filter(d => d.m4 === 'Yes').length;
+  const m4Absent = dataList.filter(d => d.m4 === 'No').length;
+  const m4Planned = dataList.filter(d => d.m4 === 'Yet to be Planned').length;
+
+  const kpiTotal = document.getElementById('kpiModalTotalKVs');
+  const kpiM1 = document.getElementById('kpiModalM1');
+  const kpiM2 = document.getElementById('kpiModalM2');
+  const kpiM3 = document.getElementById('kpiModalM3');
+  const kpiM4 = document.getElementById('kpiModalM4');
+
+  if (kpiTotal) kpiTotal.textContent = `${totalKVs.toLocaleString()} KVs`;
+  if (kpiM1) kpiM1.innerHTML = `${m1Present} <span class="sub">/ ${m1Absent} absent</span>`;
+  if (kpiM2) kpiM2.innerHTML = `${m2Present} <span class="sub">/ ${m2Absent} absent</span>`;
+  if (kpiM3) kpiM3.innerHTML = `${m3Present} <span class="sub">/ ${m3Absent} absent</span>`;
+  if (kpiM4) kpiM4.innerHTML = `${m4Present} <span class="sub">/ ${m4Planned} planned</span>`;
+
+  const subtitle = document.getElementById('dcaisModalSubtitle');
+  if (subtitle) {
+    const pct = totalKVs ? Math.round(m1Present * 100 / totalKVs) : 0;
+    subtitle.textContent = `${totalKVs} Kendriya Vidyalayas • ${m1Present} M1 Attended (${pct}%) • Official Telemetry from Semi Annual Report.xlsx`;
+  }
+}
+
+function onDcaisModalSearch(val) {
+  filterAndRenderDcaisModalTable();
+}
+
+function onDcaisModalFilterChange() {
+  filterAndRenderDcaisModalTable();
+}
+
+function onDcaisModalRegionSelect(region) {
+  openRegionDcaisModal(region);
+}
+
+function filterAndRenderDcaisModalTable() {
+  const searchInput = document.getElementById('dcaisModalSearchInput');
+  const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+  const statusFilter = document.getElementById('dcaisModalStatusFilter');
+  const sf = statusFilter ? statusFilter.value : 'ALL';
+
+  let list = currentDcaisModalData.slice();
+
+  // Apply Search
+  if (q) {
+    list = list.filter(d => 
+      String(d.code).includes(q) || 
+      (d.name && d.name.toLowerCase().includes(q)) ||
+      (d.region && d.region.toLowerCase().includes(q))
+    );
+  }
+
+  // Apply Status Filter
+  if (sf === 'M1_YES') list = list.filter(d => d.m1 === 'Yes');
+  else if (sf === 'M1_NO') list = list.filter(d => d.m1 === 'No');
+  else if (sf === 'M2_YES') list = list.filter(d => d.m2 === 'Yes');
+  else if (sf === 'M2_NO') list = list.filter(d => d.m2 === 'No');
+  else if (sf === 'M2_PLAN') list = list.filter(d => d.m2 === 'Yet to be Planned');
+  else if (sf === 'M3_YES') list = list.filter(d => d.m3 === 'Yes');
+  else if (sf === 'M4_YES') list = list.filter(d => d.m4 === 'Yes');
+  else if (sf === 'M4_PLAN') list = list.filter(d => d.m4 === 'Yet to be Planned');
+
+  currentDcaisModalFiltered = list;
+  renderDcaisModalTableRows(list);
+
+  const counter = document.getElementById('dcaisModalCounter');
+  if (counter) {
+    counter.textContent = `Showing ${list.length} of ${currentDcaisModalData.length} Kendriya Vidyalayas`;
+  }
+}
+
+function renderDcaisModalTableRows(list) {
+  const tbody = document.getElementById('dcaisModalTableBody');
+  if (!tbody) return;
+
+  if (list.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:32px;color:var(--slate-500);font-weight:600;">No Kendriya Vidyalayas match the search/filter criteria.</td></tr>`;
+    return;
+  }
+
+  function pill(val) {
+    if (val === 'Yes') {
+      return `<span class="status-pill present"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Attended</span>`;
+    } else if (val === 'No') {
+      return `<span class="status-pill absent"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Absent</span>`;
+    } else {
+      return `<span class="status-pill planned">⏳ Planned</span>`;
+    }
+  }
+
+  function getOverallStage(d) {
+    if (d.m4 === 'Yes') return '<span class="tag-pill green">M4 Completed</span>';
+    if (d.m3 === 'Yes') return '<span class="tag-pill blue">M3 Completed</span>';
+    if (d.m2 === 'Yes') return '<span class="tag-pill blue">M2 Completed</span>';
+    if (d.m1 === 'Yes') return '<span class="tag-pill" style="background:#EFF6FF;color:#1D4ED8;">M1 Attended</span>';
+    return '<span class="tag-pill" style="background:#F1F5F9;color:#64748B;">Initiating</span>';
+  }
+
+  tbody.innerHTML = list.map(d => {
+    return `
+      <tr>
+        <td><span class="kv-code-badge">${d.code}</span></td>
+        <td><strong>${d.name}</strong></td>
+        <td><span style="font-size:0.78rem;font-weight:700;color:var(--slate-700);">${d.region}</span></td>
+        <td style="text-align:center;">${pill(d.m1)}</td>
+        <td style="text-align:center;">${pill(d.m2)}</td>
+        <td style="text-align:center;">${pill(d.m3)}</td>
+        <td style="text-align:center;">${pill(d.m4)}</td>
+        <td>${getOverallStage(d)}</td>
+        <td style="text-align:center;">
+          <button class="btn-select-school-modal" onclick="selectSchoolFromDcaisModal(${d.code})" title="Select KV ${d.code} in main dashboard">
+            Select School
+          </button>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+function selectSchoolFromDcaisModal(kvCode) {
+  closeRegionDcaisModal();
+  setSchool(Number(kvCode));
+  const schSelect = document.getElementById('schoolSelect');
+  if (schSelect) {
+    schSelect.disabled = false;
+    schSelect.value = String(kvCode);
+  }
+  const regSelect = document.getElementById('regionSelect');
+  if (regSelect && selectedRegion) {
+    regSelect.value = selectedRegion;
+  }
+  const homeCard = document.getElementById('homeProgramsCard');
+  if (homeCard) {
+    homeCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function copyRegionDcaisShareLink() {
+  const reg = currentDcaisModalRegion || 'Total';
+  const url = `${window.location.origin}${window.location.pathname}?dcaisRegion=${encodeURIComponent(reg)}`;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(() => {
+      showToast(`Copied shareable link: ${url}`);
+    }).catch(() => {
+      prompt('Copy shareable link for today\'s discussion:', url);
+    });
+  } else {
+    prompt('Copy shareable link for today\'s discussion:', url);
+  }
+}
+
+function exportRegionDcaisCsv() {
+  const list = currentDcaisModalFiltered || currentDcaisModalData || [];
+  if (list.length === 0) {
+    showToast('No records to export');
+    return;
+  }
+
+  const regName = (currentDcaisModalRegion || 'National_Total').replace(/[^a-zA-Z0-9]/g, '_');
+  const filename = `KVS_DCAIS_Attendance_Summary_${regName}.csv`;
+
+  const headers = ['KV Code', 'Kendriya Vidyalaya Name', 'Region', 'Module 1 (Orientation)', 'Module 2 (Curriculum)', 'Module 3 (Projects)', 'Module 4 (Showcase)', 'Overall Status'];
+  
+  const rows = list.map(d => [
+    d.code,
+    `"${(d.name || '').replace(/"/g, '""')}"`,
+    `"${(d.region || '').replace(/"/g, '""')}"`,
+    d.m1 === 'Yes' ? 'Attended' : (d.m1 === 'No' ? 'Absent' : d.m1),
+    d.m2 === 'Yes' ? 'Attended' : (d.m2 === 'No' ? 'Absent' : d.m2),
+    d.m3 === 'Yes' ? 'Attended' : (d.m3 === 'No' ? 'Absent' : d.m3),
+    d.m4 === 'Yes' ? 'Attended' : (d.m4 === 'No' ? 'Absent' : d.m4),
+    d.m4 === 'Yes' ? 'M4 Completed' : (d.m3 === 'Yes' ? 'M3 Completed' : (d.m2 === 'Yes' ? 'M2 Completed' : (d.m1 === 'Yes' ? 'M1 Attended' : 'Initiating')))
+  ]);
+
+  const csvContent = [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.setAttribute('download', filename);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  showToast(`Exported ${list.length} KV records to ${filename}`);
+}
+
+function printRegionDcaisReport() {
+  const list = currentDcaisModalFiltered || currentDcaisModalData || [];
+  const reg = currentDcaisModalRegion || 'National Total';
+  
+  const printWindow = window.open('', '_blank');
+  if (!printWindow) {
+    window.print();
+    return;
+  }
+
+  const rowsHtml = list.map((d, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td><strong>${d.code}</strong></td>
+      <td>${d.name}</td>
+      <td>${d.region}</td>
+      <td style="text-align:center;font-weight:bold;color:${d.m1 === 'Yes' ? '#059669' : '#DC2626'};">${d.m1 === 'Yes' ? 'Attended' : 'Absent'}</td>
+      <td style="text-align:center;font-weight:bold;color:${d.m2 === 'Yes' ? '#059669' : (d.m2 === 'No' ? '#DC2626' : '#64748B')};">${d.m2 === 'Yes' ? 'Attended' : d.m2}</td>
+      <td style="text-align:center;font-weight:bold;color:${d.m3 === 'Yes' ? '#059669' : (d.m3 === 'No' ? '#DC2626' : '#64748B')};">${d.m3 === 'Yes' ? 'Attended' : d.m3}</td>
+      <td style="text-align:center;font-weight:bold;color:${d.m4 === 'Yes' ? '#059669' : (d.m4 === 'No' ? '#DC2626' : '#64748B')};">${d.m4 === 'Yes' ? 'Attended' : d.m4}</td>
+    </tr>
+  `).join('');
+
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>DCAIS Detailed Attendance Summary - ${reg}</title>
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; padding: 24px; color: #0F172A; }
+        h1 { font-size: 1.4rem; margin: 0 0 4px 0; color: #0F172A; }
+        p { margin: 0 0 16px 0; color: #475569; font-size: 0.85rem; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 12px; }
+        th { background: #F1F5F9; border: 1px solid #CBD5E1; padding: 8px 10px; text-align: left; font-size: 0.75rem; }
+        td { border: 1px solid #E2E8F0; padding: 6px 10px; }
+        tr:nth-child(even) { background: #F8FAFC; }
+        @media print { body { padding: 0; } }
+      </style>
+    </head>
+    <body>
+      <h1>Kendriya Vidyalaya Sangathan — DCAIS Attendance Summary</h1>
+      <p>Region: <strong>${reg}</strong> • Total Records: <strong>${list.length}</strong> • Source: Semi Annual Report.xlsx</p>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>KV Code</th>
+            <th>School Name</th>
+            <th>Region</th>
+            <th style="text-align:center;">Module 1</th>
+            <th style="text-align:center;">Module 2</th>
+            <th style="text-align:center;">Module 3</th>
+            <th style="text-align:center;">Module 4</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+      <script>window.onload = function() { window.print(); }<\/script>
+    </body>
+    </html>
+  `);
+  printWindow.document.close();
+}
+
+function jumpToDcaisRosterTable() {
+  closeRegionDcaisModal();
+  const box = document.getElementById('dcaisRosterBox');
+  if (box) {
+    box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    box.style.outline = '3px solid #2563EB';
+    setTimeout(() => { box.style.outline = ''; }, 2000);
   }
 }
 
